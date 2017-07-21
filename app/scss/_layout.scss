@@ -1,0 +1,435 @@
+
+// Sacar espacios a body 
+body { margin: 0px; overflow: hidden; }
+
+// Ubicación de los floats
+.right {float: right;}
+.left {float: left;}
+.oculto {display: none;}
+.block {display:inline-block;}
+.inline {display: inline;}
+.relative {position: relative;}
+.absolute {position: absolute;}
+.centrado {position: relative; margin-left: auto; margin-right: auto;}
+.centradovertical {
+	position: absolute; top: 0px; width: 100%; height: 100%;
+	display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center;}
+
+// Tamaño de la pantalla
+.draw {
+	width: $ancho_draw; 
+	height: $alto_draw;
+	position: relative;
+	margin:auto; 
+	//top: calc(50vh - 384px);
+}
+
+
+.col_left, .col_right {
+	width: 300px; 
+	@extend .inline;
+	@extend .mg-t-15;
+	vertical-align: top;
+}
+.col_right {@extend .mg-l-20}
+
+
+// Fondos
+.brandbar, .footer, .panel {
+	.bnlc & { background-color: #fff; }
+	.ayuda & { background-color: $ayuda_oscuro; }
+}
+
+// Brandbar y logos
+.brandbar { 
+	width: $ancho_draw; 
+	height: $alto_brandbar;
+	position: relative;
+	z-index: $z-index-brandbar;
+	svg {
+		position: absolute;
+		&#bnlc {
+			top: -6px;
+			right: -14px;
+			transform: scale(0.7);
+		}
+		&#banco {
+			top: -1px;
+			left: -19px;
+			transform: scale(0.75);
+		};
+		.ayuda & {
+			path, polygon {fill: $ayuda;}
+		}
+		&.ocultar {
+			display: none;
+		}
+	};
+}
+
+// Tamaño y ubicación del footer (adentro van los botones)
+.footer { width: $ancho_footer; height: $alto_footer; position: absolute; bottom: 0px; padding: $padding_footer}
+
+// Contenido del medio
+.content { width: $ancho_draw; height: $alto_content; position: absolute; top: $posicion_content;}
+
+// Modal
+.fondomodal {
+	position: fixed;
+	top: 0px;
+	z-index: $z-index-fondomodal;
+	background: rgba(0, 0, 0, 0.6);
+	width: $ancho_draw;
+	height: $alto_draw;
+	.ayuda & {
+		background: rgba(0, 0, 0, 0.9);
+	}
+}
+
+// Modal Content
+.content-modal {
+	z-index: $z-index-contenidomodal; 
+	position: absolute;
+	min-width: 60%;
+	@extend  .bounceIn;
+	@extend .animated;
+	.close {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		font-size: 50px;
+		a {text-decoration: none;}
+	}
+	&.bounceIn {
+		animation-delay: 0.3s;
+	}
+	.ayuda & {border: 2px solid white;}
+}
+
+// Modal timeout
+.timeout {
+	.fondomodal {z-index: $z-index-fondotimeout; }
+	.content-modal {z-index: $z-index-fondotimeout; 
+	@extend  .bounceIn;
+	@extend .animated;
+	animation-delay: 0.5s;
+	}
+}
+
+
+//Icono del fondo
+.iconback {
+	position: absolute;
+	right: 0px;
+	top: -60px;
+	font-size: 314px;
+	opacity: 0.03;
+}
+
+// Panel antes 25px - 30px
+$padding-panel: 22px 27px;
+.panel, .panel-sinfondo {
+	padding: $padding-panel;
+	position: absolute;
+	max-width: ($ancho_draw - 200px) ;
+	.ayuda & {
+		max-width: initial;
+	}
+	&.centrado {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.notita {
+	position: absolute; 
+	right: 30px; 
+	bottom: 30px; 
+	text-align: right;
+}
+
+/* Ticket -----------------------*/
+$color-ticket: #fff;
+$color-ticket-ayuda: invert($color-ticket);
+
+.ticket {
+	-webkit-filter: drop-shadow(rgba(0, 0, 0, 0.7) 0px 1px 5px);
+	width: 350px;
+	margin: 20px auto;
+	background: $color-ticket;
+	position: relative;
+	padding: 20px 20px 25px;
+	&::after{
+		content: "";
+		width: calc(100% + 20px);
+		position: absolute;
+		left: -10px;
+		top: -10px;
+		height: 10px;
+		background: #888;
+	}
+	&::before {
+		background: 
+		linear-gradient(45deg, transparent 20px, $color-ticket 0), 
+		linear-gradient( -45deg, transparent 20px, $color-ticket 0);
+		background-size: 20px 20px;
+		content: "";
+		height: 20px;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		width: 100%;
+	}
+	.ayuda & {
+		background: $color-ticket-ayuda;
+		-webkit-filter: drop-shadow(rgba(255, 255, 255, 0.7) 0px 1px 15px);
+		border: solid 3px white;
+		border-top-style: dashed;
+		border-bottom-style: dashed;
+		width: 350px;
+		font-size: 80%;
+		::before{
+			display: none;
+		}
+		::after {
+			display: none;
+		}
+	}
+}
+
+.tabs {
+	width: calc(100% + 10px);
+	.botones {
+		padding: 0px 10px; 
+		position: relative;
+		z-index: $z-index-default;
+		font-size: .95em;
+		a {	
+			@extend p;
+			@extend .azul;
+			@extend .medium;
+			display: inline-block; 
+			box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
+			padding: 15px 20px 10px;
+			border-top-left-radius: 5px; 
+			border-top-right-radius: 5px; 
+			margin-right: 5px; 
+			margin-bottom: 0px;
+			text-decoration: none;
+			background-color: $azul;
+			color: $blanco;
+			&.selected {
+				@extend .azul;
+				background-color: $blanco; 
+				
+			}
+		}
+		.ayuda & {
+			top: 2px;
+			a {
+				font-size: 24pt;
+				background-color: $negro;
+				border: solid 2px $azul_claro;
+				border-bottom: $blanco;
+				color: $azul_claro;
+				&.selected {
+					border-color: $blanco;
+					border-bottom: solid 2px $negro;
+					color: $blanco;
+				}
+			}
+		}
+	}
+	.contenido {
+		@extend .panel;
+		width: calc(95% - 70px);
+		padding: 30px 30px 20px;
+		.altofijo {height: 60px; }
+		.ayuda & {
+			border: solid 2px $blanco;
+			background-color: $negro;
+		}
+	}
+}
+
+.connotita {
+	position: relative;
+	width: 100%;
+	.notita {bottom: 0px;}
+}
+
+.numerocbu, .aliascbu {
+	float: left;
+	width: 100%;
+	@extend .mg-t-10;
+	.bloque {
+		margin-right: 20px;
+		display: inline-block;
+	}
+	.numero {
+		@extend .bold;
+		@extend .big_20;
+		color: $gris_oscuro;
+		border-bottom: 2px solid $gris_masclaro;
+		letter-spacing: 0.16em;
+		.ayuda & {
+			color: $blanco;
+		}
+	}
+	.label {
+		@extend .light;
+		@extend .mayuscula;
+		@extend .small_8;
+		@extend .alinear-centro;
+		color: $gris_masclaro;
+		.ayuda & {color: $gris_oscuro;}
+	}
+}
+
+.ultimosmovimientos {
+	width: 700px; 
+	height: 235px; 
+	overflow-y: auto;
+
+	.tabs {
+		font-size: 1.8em;
+	}
+	table {
+		@extend p;
+		border: none; 
+		border-spacing: 0;
+		width: 100%;
+		margin: 0;
+		td {
+			padding: 6px 10px; 
+		}
+		td:nth-child(1) {
+			text-align: center;
+			width: 3.2em;
+		}
+		td:nth-child(2) {
+			padding: 0 10px;
+			overflow: hidden;
+			height: 38px;
+			display: inline-block;
+			line-height: 47px;
+		}
+		td:nth-child(3) {
+			text-align: right;
+		}
+		tr:nth-child(even) {
+			background-color: lighten($gris_claro, 30%);
+		}
+	}
+
+	.btn-chico.arriba {position: absolute; right: 20px; top: 30px;}
+	.btn-chico.abajo {position: absolute; right: 20px; bottom: 15px;}
+}
+
+
+.marcador {
+	width: 5px;
+	height: 230px;
+	background: lighten($gris_claro, 20%);
+	position: absolute;
+	top: 30px;
+	right: 110px;
+	.posicion {
+		position: relative;
+		background: $gris;
+		height: 50px;
+	}
+}
+
+.idpos, .btidpositiva {
+	white-space: nowrap;
+	@extend .alinear-centro;
+	@extend .mg-t-20;
+}
+
+.idpos { @extend .mg-b-20;}
+.btidpositiva { @extend .mg-b-0; }
+
+
+/* Barras de últimos movimientos */
+::-webkit-scrollbar {
+	width: 5px;
+	padding-left: 25px;
+}
+
+::-webkit-scrollbar-track {
+	//-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.2); 
+	background-color: lighten($gris,40%);
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.2); 
+	background-color: $azul;
+}
+
+.sg-v-scroll-cell {background-color: white;}
+
+.sg-v-scroll-container { margin-left: 10px;}
+
+
+.bx-wrapper { 
+	margin: 0; 
+	.bx-viewport { 
+		border: none !important; 
+		left: 0 !important; 
+	}
+}
+.bx-pager.bx-default-pager { 
+	position: absolute !important; 
+	bottom: 5px !important; 
+}
+.slider-navs { 
+	position: absolute; 
+	top: 50%; 
+	width: 100%; 
+	> i {
+		height: 40px;
+		width: 40px;
+		display: block;
+		text-align: center;
+		line-height: 40px;
+		position: relative;
+		margin: -20px 10px;
+		background: rgba(255, 255, 255, 0.8);
+		font-size: 20px;
+		border-radius: 50%;
+		opacity: .6;
+
+		&#slider-next { 
+			float: right; 
+		}
+		a {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			left: 0;
+		}
+	}
+}
+
+
+// Ordenar esto es del offline
+body#offline {
+	&.ayuda { font-size: .85em; }
+	.brandbar { background: transparent; box-shadow: none; }
+	.draw { background: #1f1f1f url(img/bg-sad.png); }
+	.content { background: url(img/bg-offline.png) no-repeat center; }
+	.panel { 
+		margin: 70px 150px 100px 150px;
+		padding: 50px;
+		background: #3d3d3d;
+		color: #ccc;
+		border-radius: 0;
+		border: 1px solid #666;
+	}
+	#funciones div { width: 140px; font-size: 16px; }
+	#funciones i { font-size: 3em; line-height: 60px; }
+}
+
+

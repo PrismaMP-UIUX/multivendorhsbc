@@ -1,0 +1,45 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<!-- <meta http-equiv="refresh" content="10; URL='retire_todo.html'" /> -->
+
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+	<div class="draw">
+
+		<!-- Brandbar -->
+		@@include('_partials/brandbar.html')
+
+		<div class="fondomodal"></div>
+
+
+		<!-- Contenido de la página -->
+		<div class="content centradovertical"><div class="iconback">%</div>
+
+			<!-- <div class="iconback">%</div> -->
+
+			<div class="content-modal panel centrado">
+				<h5 class="titulo"><span class="azul"><i class="prisma cancelar"></i> |</span> Disculpá</h5>
+				<div class="col_left">
+					<div class="imagen error_limites"></div>
+				</div>
+				<div class="col_right">
+					<p>La operación que seleccionaste excede tu límite diario</p>
+				</div>
+				
+				<hr class="piemodal">
+				<p class="alinear-derecha">
+					<a href="inicio.php" class="btn naranja left"><i class="prisma inicio"></i> Volver a Inicio</a>
+				</p>
+				
+			</div>
+
+
+
+		</div><!-- /Contenido de la página -->
+
+
+		<!-- Javascript -->
+		  @@include('_partials/scripts.html')
+
+	</body>
+	</html>

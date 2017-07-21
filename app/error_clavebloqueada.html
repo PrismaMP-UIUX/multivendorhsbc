@@ -1,0 +1,43 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback prisma-clave"></div>
+
+	<div class="fondomodal"></div>
+
+	<div class="centradovertical">
+		<div class="panel content-modal centrado bounceIn animated">
+			<h5 class="titulo"><span class="azul"><i class="prisma cancelar"></i> |</span> Disculpá</h5>
+			<p class="naranja"><i class="prisma advertencia"></i> Ingresaste una clave incorrecta. </p>
+			<div class="col_left">
+				<div class="imagen clave_bloqueada"></div>	
+			</div>
+			<div class="col_right">
+				<p>Por tu seguridad, tu clave fué bloqueada y tu tarjeta no podrá operar por el momento. Retirala y comunicate con tu banco. </p>
+			</div>
+			<hr class="piemodal">
+			<a href=" errores.php" class="btn rojo"><i class="prisma salir"></i> Salir</a>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+
+<!-- Footer -->
+<!-- <div class="footer">
+	<a href="loop.php" class="btn rojo mg-r-20">% Salir</a>
+</div>
+ -->
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+</body>
+</html>

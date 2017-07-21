@@ -1,0 +1,59 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma cambio-de-clave"></i></div>
+
+	<div class="centradovertical">
+		<div class="centrado panel">
+			<h5 class="titulo"><span class="azul"><i class="prisma cambio-de-clave"></i> |</span> Cambio de clave</h5>
+			<p class="alinear-centro">Por favor, ingresá <b>la clave nueva</b><br>usando el teclado numérico</p>
+			<p class="naranja alinear-centro small_8 mg-t-10"><i class="prisma informacion"></i> La clave debe ser diferente a la anterior.</p>
+			<style>
+				.containerdeinput.pin {width: 220px; }
+			</style>
+			<div class="mg-t-20 containerdeinput pin centrado deshabilitado">
+				<div class="key"><i class="prisma confirmar verde"></i></div><!-- Llave que pasa por arriba -->
+				<input type="password" maxlength="8" id="password1" disabled placeholder="●●●●">
+			</div>
+			<div class="mg-t-20 containerdeinput pin centrado">
+				<div class="key"><i class="prisma cambio-de-clave"></i></div><!-- Llave que pasa por arriba -->
+				<input type="password" maxlength="8" id="password2">
+			</div>
+			<div class="mg-t-20 containerdeinput pin centrado deshabilitado">
+				<div class="key"><i class="prisma clave"></i></div><!-- Llave que pasa por arriba -->
+				<input type="password" maxlength="8" id="password3" disabled>
+			</div>
+		</div>
+	</div>
+
+	<div id="notita" class="notita pulse animated infinite" style="width: 200px">
+		<p class="big_13 light"><i><i class="prisma advertencia"></i> Al finalizar presioná  <b>siguiente</b> o el botón verde del teclado numérico</i></p>
+	</div>
+
+
+</div><!-- /Contenido de la página -->
+
+
+<!-- Footer -->
+<div class="footer">
+	<!-- <a href="inicio.php" class="btn naranja">% Volver a inicio</a> -->
+	<a href="loop.php" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="cambioclave3.php" id="siguiente" class="btn azul right">Siguiente <i class="prisma continuar"></i></a>
+</div>
+
+
+<!-- Javascript -->
+@@include('_partials/scripts.html')
+<script type="text/javascript">
+	alescribir("password2","siguiente");		
+	alescribir("password2","notita");		
+</script>
+</body>
+</html>

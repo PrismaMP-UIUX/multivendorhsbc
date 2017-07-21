@@ -1,0 +1,35 @@
+@@include('extraccion.html')
+
+
+<div class="fondomodal"></div>
+
+
+<div class="centradovertical">
+	<div id="extraccion_confirmacion" class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="extraccion.php"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo"><span class="azul"><i class="prisma si-no"></i> |</span> ¿Confirmas?</h5>
+		<p class="mg-b-15 mg-t-20">Extraer <b>$1500</b>.- <a href="extraccion.php" class="btn-chico naranja mg-l-5"><i class="prisma editar"></i> Modificar</a></p>
+		
+		<div class="inline p">De mi cuenta </div>
+		<div id="cuentas" class="dropdown inline btn gris mg-t-10 mg-b-10 mg-l-10" style="min-width: 440px">
+			<div class="contenedor">
+				<div indice="1" data-dd="data1"><i class="prisma cuenta"></i> [CA $] 12345678901234567811</div>
+				<div indice="2" data-dd="data2"><i class="prisma cuenta"></i> [CA $] 12345678901234567811</div>
+				<div indice="3" data-dd="data3" class=""><i class="prisma cuenta"></i> [CA $] 45678123456</div>
+				<div indice="4" data-dd="data4" class=""><i class="prisma cuenta"></i> [CA $] 78901234567</div>
+			</div>
+		</div> <br>
+
+		<div id="checkboxes" class="inline mg-t-10">
+			<input type="checkbox" value="1" id="r1"/>
+			<label class="btn" for="r1"><span class="si"><i class="prisma confirmar"></i> Si</span><span class="no"><i class="prisma cancelar"></i> No</span></label>
+		</div>
+		<div class="inline mg-t-30" style="vertical-align: top;"><p class="mg-t-5 mg-l-10">Imprimir un comprobante</p></div>
+			
+		<hr class="piemodal">
+		<p class="alinear-derecha">
+			<a href="inicio.php" class="btn rojo mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+			<a href="espera.php" class="btn verde"><i class="prisma confirmar"></i> Confirmar</a>
+		</p>
+	</div>
+</div>

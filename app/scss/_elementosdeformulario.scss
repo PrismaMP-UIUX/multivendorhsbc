@@ -1,0 +1,250 @@
+	
+// Definición de elementos del formulario
+// --------------------------------------------------
+
+
+
+// Inputs
+input {
+	height: 60px;
+	border: solid 2px $gris;
+	width: calc(100% - 6px);
+	padding-left: 8px;
+	.ayuda & {
+		background-color: $ayuda_oscuro;
+		border: solid 2px $gris_claro;
+	}
+	&#extraccion {
+		width: calc(100% - 36px);
+		padding-left: 38px;
+	}
+	&:focus { outline: none;}
+}
+
+// Input del pin
+.containerdeinput::before, input {
+	color: $gris;
+	background-color: $blanco;
+	.ayuda & {
+		color: #fff;
+		background-color: $ayuda_oscuro;
+	}
+}
+
+.containerdeinput {
+	width: calc(100% - 8px);
+	position: relative; 
+	@extend .mg-t-10;
+	@extend .mg-b-10;
+
+	// iconos
+	.iconoseninput {
+		border: solid 2px $gris;
+		position: absolute;
+		width: 62px;
+		height: 62px;
+		text-align: center;
+		font-size: $font-size-inputs-icon;
+		color: $gris;
+		line-height: 44pt;
+		z-index: 1;
+	}
+	// icono de la llave
+	.key {    
+		@extend .iconoseninput;
+	}
+	&.pin {
+		width: 250px;
+		@extend .centrado;
+		@extend .alinear-centro;
+		input{
+				margin-left: 64px;
+				width: calc(100% - 75px);
+				font-size: $font-size-input-pass;
+				// &[type="password"] {
+				// 	text-align: center;
+				// }
+			}
+		} 
+	&.deshabilitado { opacity: 0.3;}
+	&.signopesos::before {
+		content: "$";
+		position: absolute;
+		left: 20px;
+		top: 18px;
+	}
+}
+
+
+// Loadings
+
+@keyframes esperaLoop {
+	0% {
+		opacity:0.5;
+		transform:  translate(-150%,0px)  ;
+	}
+	50% {
+		opacity:1;
+		transform:  translate(0,0px)  ;
+	}
+	100% {
+		opacity:0.5;
+		transform:  translate(200%,0px)  ;
+	}
+}
+
+.progress {
+	position: relative;
+	height: 4px;
+	width: 100%;
+	background-color: lighten($gris_claro,30%);
+	border-radius: 2px;
+	margin: 1em 0;
+	overflow: hidden;
+	& .indeterminate {
+		background-color: #26a69a;
+		height: 5px;
+		width: 50%;
+		background-color: $azul;
+		animation: esperaLoop linear 1.5s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+	}
+}
+
+// Dropdown
+// Dropdown
+.dropdown, .ayuda .dropdown { 
+	padding-right: 70px;
+	white-space: nowrap;
+	text-align: left;
+	box-sizing: border-box;
+	min-height: 30px;
+	height: auto !important;
+	position: relative;
+	z-index: $z-index-dropdown;
+	&.active {
+		position: relative;
+		z-index: $z-index-dropdown-over;
+		&::after {
+			display: none;
+		}
+	}
+	&::after {
+		@extend .prisma;
+		@extend .prisma.desplegable:before;
+		position: absolute;
+		right: 22px;
+		top: 22px;
+		color: $blanco;
+	}
+	.prisma.cuenta{ position: initial; color: inherit;}
+	.contenedor {
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		background-color: $blanco;
+		color: $gris;
+		min-width: 100%;
+		&.active {
+			height: auto;
+			@include sombra(0px, 0px, 20px, 2px, #000, 0.8);
+			border: solid 1px $gris_oscuro;
+		}
+		.ayuda & {
+			background-color: $gris_oscuro;
+			color: $blanco;
+		}
+	}
+	& div[data-dd] {
+		border: solid 1px $gris_claro;
+		padding: 15px 70px 15px 22px;
+		&.active {
+			background-color: lighten($gris_claro,40%);
+			font-family: $font-bold;
+			color: darken($gris, 30%);
+			.ayuda & {
+				background-color: $gris;
+				color: $blanco;
+			}
+		}	
+	}
+}
+
+$checkbox_binario: 230px;
+$checkbox_selector: $checkbox_binario / 2.2 ;
+
+// Radiobuttons
+#checkboxes {
+	border: solid 2px grey;
+	padding: 2px;
+	border-radius: 7px;
+	position: relative;
+	height: 78px;
+	width: $checkbox_binario;
+	white-space: nowrap;
+	input[type=checkbox] {
+		display: none;
+		& + label{
+			left: 1px;
+			transition: left 0.3s ease-in-out, background 0.3s ease-in-out !important;
+			min-width: 72px;
+			margin: 0 -1px;
+			@extend .btn.gris;
+			// -------- Si queríamos el boton deshabilitado
+			// @extend .btn.blanco;
+			// &.btn.blanco {
+			// 	border: solid 2px lighten($gris_claro,30%);
+			// 	box-shadow: none;
+			// }
+			.si {display: none};
+			.no {display: initial};
+			.ayudas & {
+				left: 2px;
+				min-width: 98px;
+			}
+		}
+		&:checked + label {
+			@extend .btn.azul;
+			left: 45%;
+			min-width: 72px;
+			transition: left 0.3s ease-in-out, background 0.3s ease-in-out !important;
+			border: initial;
+			.si {display: initial};
+			.no {display: none;}
+			// z-index: $z-index-radiobutton;
+			.ayuda & {
+				left: 33%;
+				min-width: 98px;
+			};
+		}
+	}
+	.btn{
+		display: inline-block;
+	}
+}
+
+
+.idpos {
+	@extend .mg-b-20;
+	.inline {
+		@extend .light;
+		@extend .h4;
+		@extend .gris_claro;
+		display: inline-block;
+		margin-bottom: -12px;
+	}
+	.carga {
+		height: 60px;
+		border: solid 2px $azul;
+		display: inline-block;
+		@extend .light;
+		@extend .h4;
+		@extend .gris_claro;
+		@extend .alinear-centro;
+		padding: 0px 10px;
+		letter-spacing: 0.2em;
+	}
+}

@@ -1,0 +1,48 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma bloqueado"></i></div>
+
+	<div class="centradovertical">
+		<div class="centrado panel">
+			<h5 class="titulo"><span class="azul"><i class="prisma bloqueado"></i> |</span> Ingreso</h5>
+
+			<div class="col_left">
+				<div class="imagen login" style="height: 280px"></div>
+			</div>
+			<div class="col_right">
+				<p class="alinear-centro">Por favor ingresá tu clave en el teclado numérico</p>
+				<div class="containerdeinput pin">
+					<div class="key"><i class="prisma clave"></i></div><!-- Llave que pasa por arriba -->
+					<input type="password" maxlength="8" id="password">
+				</div>
+				<a href="login2.php" class="btn block verde">Ingresar</a>
+			</div>
+			
+
+			
+		</div>
+	</div>
+
+
+</div><!-- /Contenido de la página -->
+
+
+<!-- Footer -->
+<div class="footer">
+	<a href="loop.php" class="btn rojo mg-r-20"><i class="prisma salir"></i> Salir</a>
+</div>
+
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+</body>
+</html>

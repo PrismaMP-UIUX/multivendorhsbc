@@ -1,0 +1,365 @@
+// Definiciones de colores
+// --------------------------------------------
+
+$gris:						#777; 
+$gris_oscuro:				darken($gris, 15%);
+$gris_claro:				lighten($gris, 10%);
+$gris_masclaro:				lighten($gris, 25%);
+// (*) Este gris no se toca, se usa para los inputs y los defaults
+
+$azul:						#418ccf;
+$azul_oscuro:				darken($azul, 15%);
+$azul_claro:				lighten($azul, 10%);
+
+$verde:						#39b54a;
+$verde_oscuro:				darken($verde, 15%);
+$verde_claro:				lighten($verde, 10%);
+
+$rojo:						#CC332B;
+$rojo_oscuro:				darken($rojo, 15%);
+$rojo_claro:				lighten($rojo, 10%);
+
+$naranja:					#d47c1e;
+$naranja_oscuro:			darken($naranja, 15%);
+$naranja_claro:				lighten($naranja, 10%);
+
+$amarillo:					#BFB522;
+$amarillo_oscuro:			darken($amarillo, 15%);
+$amarillo_claro:			lighten($amarillo, 10%);
+
+$ayuda:						#777;
+$ayuda_oscuro:				darken($ayuda, 40%);
+$ayuda_claro:				lighten($ayuda, 40%);
+
+$blanco:					#fff;
+$blanco_oscuro:				darken($blanco, 15%);
+$blanco_claro:				$blanco;
+
+$negro:						#000;
+$negro_oscuro:				$negro;
+$negro_claro:				lighten($negro, 15%);
+
+
+// Funciones de degrades
+// --------------------------------------------
+
+// Mixins degradé lineal de arriba a abajo
+@mixin degradelinealhaciaabajo ($arriba, $abajo) { 
+	background: linear-gradient(to bottom, $arriba, $abajo); }
+
+// Mixins degradé radial de adentro hacia afuera + porecentajes
+@mixin degraderadialhaciaafuera ($adentro, $porcentajedentro, $afuera, $porcentajefuera) { 
+	background: radial-gradient($adentro $porcentajedentro, $afuera $porcentajefuera); }
+
+// Tabla de colores
+$tabla_de_colores:(
+	gris	$gris	$gris_oscuro	$gris_claro,
+	azul	$azul	$azul_oscuro	$azul_claro,
+	verde	$verde	$verde_oscuro	$verde_claro,
+	rojo	$rojo	$rojo_oscuro	$rojo_claro,
+	naranja	$naranja	$naranja_oscuro	$naranja_claro,
+	amarillo	$amarillo	$amarillo_oscuro	$amarillo_claro,
+	ayuda	$ayuda	$ayuda_oscuro	$ayuda_claro,
+	blanco	$blanco	$blanco_oscuro	$blanco_claro,
+	negro	$negro	$negro_oscuro	$negro_claro
+	);
+
+@each $color in $tabla_de_colores{
+	//.$color_* {color: $color_*}
+	.#{nth($color,1)} {color: nth($color,2)} 
+	.#{nth($color,1)}_oscuro {color: nth($color,3)} 
+	.#{nth($color,1)}_claro {color: nth($color,4)}  
+
+	//.fondo_$color_* {background_color: $color_*}
+	.fondo_#{nth($color,1)} {
+		background-color: nth($color,2);
+		.ayuda & {
+			background-color: initial;
+			border: solid 2px nth($color,4);
+			color: nth($color,4);
+		}
+	} 
+	.fondo_#{nth($color,1)}_oscuro {background-color: nth($color,3)} 
+	.fondo_#{nth($color,1)}_claro {background-color: nth($color,4)} 
+
+	.degrade_#{nth($color,1)} {
+		@include degradelinealhaciaabajo(nth($color,4), nth($color,2));
+		&:hover { @include degradelinealhaciaabajo(nth($color,2), nth($color,3)); }
+	}
+
+	// Extend del degradé .btn.$color { @extend .degrade_$color }
+	.btn {
+		&.#{nth($color,1)} {
+			@extend .degrade_#{nth($color,1)};
+			box-shadow: 0 4px 0 nth($color,3);
+			transition: all .03s linear;
+			height: 30px;
+			color: white;
+			&:active {
+				box-shadow: 0 1px 0 nth($color,3);
+				transform: translateY(3px);
+			}
+			.ayuda & {
+				border-color: #{nth($color,4)}; 
+				color: #{nth($color,4) !important};
+				background: black !important;
+				line-height: 0.7em;
+				text-shadow: 0px 0px 3px #000, 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000;
+				&.rojo {
+					background: repeating-linear-gradient(
+						45deg,
+						black,
+						black 16px,
+						transparentize(nth($color,2),0.35) 10px,
+						transparentize(nth($color,2),0.35) 20px
+						) !important;
+				}
+				&.verde {
+					background: repeating-linear-gradient(
+						-45deg,
+						black,
+						black 16px,
+						transparentize(nth($color,2),0.4) 10px,
+						transparentize(nth($color,2),0.4) 20px
+						) !important;
+				}
+			}
+		}
+		&.blanco {color: $gris_claro;}
+		@extend .btn.gris; // Default si no tiene nada
+		
+		
+	}
+	.btn-flat {
+		@extend .btn-flat.gris; // Default
+		@extend .btn;
+		box-shadow: none;
+		&.#{nth($color,1)} {
+			background: transparentize( nth($color,2) , 0.9);
+			color: darken(nth($color,2), 20%);
+			box-shadow: 0 2px 8px nth($color,4);
+			&:hover{
+				background: transparentize( nth($color,2) , 0.8);
+			}
+		}
+	}
+}
+
+body {
+	background-color: $gris_oscuro;
+	&.bnlc .draw { @include degraderadialhaciaafuera(white, 50%, $gris_claro, 150%); }
+	&.ayuda .draw { @include degradelinealhaciaabajo(#000, $ayuda_oscuro);}
+}
+
+
+
+
+// Sombras
+// --------------------------------------------------
+
+// Mixin Sombra
+@mixin sombra ($hori, $vert, $radio, $radprop, $color, $transp) { 
+	box-shadow: $hori $vert $radio  $radprop rgba($color,$transp);
+}
+.sombra, .brandbar, .footer, .draw { @include sombra(0px, 0px, 8px, 0px, #000, 0.5); }
+.panel {@include sombra(0px, 1px, 8px, 0px, #000, 0.4);}
+
+
+// Radios
+// --------------------------------------------------
+
+.radius, .btn { border-radius:5px; }
+.panel { border-radius: 2px; }
+
+
+// Tipografías
+// --------------------------------------------------
+
+@font-face { font-family: 'BanelcoLight'; src: url('../font/banelco/banelcobeau-light-webfont.ttf'); }
+@font-face { font-family: 'BanelcoRegular'; src: url('../font/banelco/banelcobeau-reg-webfont.ttf'); }
+@font-face { font-family: 'BanelcoSemiBold'; src: url('../font/banelco/banelcobeau-sebold-webfont.ttf'); }
+@font-face { font-family: 'BanelcoBold'; src: url('../font/banelco/banelcobeau-bold-webfont.ttf'); }
+
+@font-face { font-family: 'Ubuntu Mono'; src: url('../font/ubuntumono/UbuntuMono-Regular.ttf'); }
+
+$font-light:              "BanelcoLight", Arial, Helvetica, sans-serif;
+$font-regular:            "BanelcoRegular", Arial, Helvetica, sans-serif;
+$font-medium:             "BanelcoSemiBold", Arial, Helvetica, sans-serif;
+$font-bold:               "BanelcoBold", Arial, Helvetica, sans-serif;
+
+$font-size-base:          1.65em;//22pt
+$font-weight:	          500;
+
+$font-size-inputs-icon:   $font-size-base * 1.2;	//ceil(($font-size-base * 1.2)); 
+$font-size-input-pass:    $font-size-base * 2;		//ceil(($font-size-base * 2)); 
+$font-size-inputs:  	  $font-size-base * 1;		//ceil(($font-size-base * 1)); 
+
+
+$tabla_de_fuentes:(
+	p	1.1	0.7	3	$font-regular,
+	ul	1.3	0.7	3	$font-regular,
+	li	0.606	1.2	0	$font-regular,
+	h6	1.4	0.6	4	$font-bold,
+	h5	1.6	0.5 5	$font-bold,
+	h4	1.8	0.4	6	$font-medium,
+	h3	2.2	0.3	7	$font-regular,
+	h2	2.5	0.28	10	$font-light,
+	h1	3	0.22	15	$font-light
+	);
+
+
+%todos {
+	letter-spacing: -0.5px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	margin: initial;
+	font-weight: $font-weight;
+	font-style: normal;
+	color: $gris;
+	.ayuda & {color: $ayuda_claro;}
+}
+
+a {@extend %todos}
+
+@each $tamanio in $tabla_de_fuentes{
+	#{nth($tamanio,1)}, .#{nth($tamanio,1)} { 
+		font: {
+			size: $font-size-base*nth($tamanio,2);
+			family: #{nth($tamanio,5)};
+		}
+		line-height: $font-size-base*nth($tamanio,2)*nth($tamanio,3);
+		margin-bottom: #{nth($tamanio,4)}pt;
+		@extend %todos;
+	}
+}
+
+
+$tabla_smallybig:(
+	7	0.7,
+	8	0.8,
+	9	0.9,
+	10	1,
+	11	1.1,
+	12	1.2,
+	13	1.3,
+	15	1.5,
+	20	2,
+	25	2.5,
+	30	3,
+	);
+
+@each $tamanio in $tabla_smallybig {
+	.big_#{nth($tamanio,1)} {font-size: nth($tamanio,2)*1em;}
+	.small_#{nth($tamanio,1)} {font-size: 1em / nth($tamanio,2);}
+}
+
+
+// Tamaños Layout
+// --------------------------------------------
+
+// Tamaños de pantalla
+$ancho_draw: 				1024px;
+$centro_draw:				$ancho_draw / 2;
+$alto_draw: 				768px;
+
+// Brandbar: posición y alto
+$alto_brandbar: 			90px;
+
+// Footer posición y alto
+$padding_footer: 			10px;
+$alto_realfooter: 			100px;
+$alto_footer: 				$alto_realfooter - ($padding_footer * 2);
+$ancho_footer: 				$ancho_draw - ($padding_footer * 2);
+$posicion_footer: 			$alto_draw - $alto_realfooter ;
+
+// Contenido: posicion y alto
+$padding_container:			20px;
+$ancho_realcontainer:		$ancho_draw - ( $padding_container * 2);
+$alto_content: 				$alto_draw - ($alto_realfooter + $alto_brandbar);
+$posicion_content: 			$alto_brandbar;
+
+// Z-index
+// --------------------------------------------
+
+$z-index-default:			1;
+$z-index-brandbar:			$z-index-default + 1;
+$z-index-dropdown:			10;
+$z-index-dropdown-over:		100;
+
+$z-index-fondomodal:		$z-index-brandbar + 100;
+$z-index-contenidomodal:	$z-index-fondomodal + 1;
+$z-index-radiobutton:		$z-index-contenidomodal + 1;
+
+$z-index-fondotimeout:		$z-index-fondomodal + 100;
+$z-index-contenidotimeout:  $z-index-fondotimeout + 1;
+
+
+
+
+// Definiciones de márgenes
+// --------------------------------------------
+
+$tabla_de_margenes:(
+	0,
+	5,
+	10,
+	15,
+	20,
+	25,
+	30,
+	50,
+	100,
+	);
+
+@each $margen in $tabla_de_margenes {
+	.mg-#{$margen} {margin-left: #{$margen}px;}
+	.mg-l-#{$margen} {margin-left: #{$margen}px;}
+	.mg-r-#{$margen} {margin-right: #{$margen}px;}
+	.mg-t-#{$margen} {margin-top: #{$margen}px}
+	.mg-b-#{$margen} {margin-bottom: #{$margen}px;}
+}
+
+
+// Imágenes
+// --------------------------------------------
+
+$tabla_de_imagenes:(
+	aguarde,
+	clave_bloqueada,
+	ingrese_tarjeta,
+	login,
+	mas_tiempo,
+	retire_tarjeta,
+	sin_dinero,
+	sin_papel,
+	sin_dineronipapel,
+	falta_imagen,
+	cancelada_retiretarjeta,
+	tarjeta_inhabilitada,
+	tarjeta_nosirve,
+	error_generico,
+	error_cajero
+	retire_tarjeta,
+	retire_dinero,
+	retire_ticket,
+	retire_ticketydinero,
+	retire_tarjetayticket,
+	retire_tarjetaydinero,
+	retire_tarjetaticketydinero,
+	leyendo_chip,
+	sin_fondos,
+	error_limites
+	);
+
+.imagen {
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	width: 100%;
+	height: 200px;
+	@each $imagen in $tabla_de_imagenes {
+		&.#{nth($imagen,1)}{
+			background-image: url("../img/"+nth($imagen,1)+".png");
+		}
+	}	
+}

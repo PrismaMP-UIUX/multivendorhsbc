@@ -1,0 +1,43 @@
+@@include('_partials/int_consulta_arriba.html')
+
+		<div class="tabs">
+			<div class="botones">
+				<a href="consultasaldo.php" class="selected"><i class="prisma consulta-saldo"></i> Saldos y disponibles</a>
+				<a href="consultamovimientos.php"><i class="prisma consulta-movimientos"></i> Últimos Movimientos</a>
+				<a href="consultacbu.php"><i class="prisma consulta-cbu"></i> CBU</a>
+			</div>
+			<div class="contenido">
+				<div class="alinear-derecha left mg-l-50 mg-t-10 mg-r-15 small_11">
+					<div class="altofijo"><p><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p></div>
+					<div class="altofijo"><p><span class="azul"><i class="prisma disponible"></i></span> Disponible:</p></div>
+					<div class="altofijo"><p><span class="azul"><i class="prisma limite-pagos"></i></span> Límite de pagos:</p></div>
+					<div class="altofijo"><p><span class="azul"><i class="prisma limite-compra"></i></span> Límite de compras:</p></div>
+				</div>
+				<div class="left mg-r-20">
+					<div class="altofijo"><p class="big_25"><b>$45.000</b></p></div>
+					<div class="altofijo"><p class="big_25"><b>$2.500</b></p></div>
+					<div class="altofijo"><p id="limpagos" class="big_25 oculto"><b>$2.500</b></p><a href="#" id="bt_limpagos" class="btn-chico azul">% Mostrar</a></div>
+					<div class="altofijo"><p id="limcompras" class="big_25 oculto"><b>$2.500</b></p><a href="#" id="bt_limcompras" class="btn-chico azul">% Mostrar</a></div>
+				</div>
+				<div id="ayuda" class="left oculto">
+					<div class="altofijo"><p class="small_9">Dinero total<br>en tu cuenta</p></div>
+					<div class="altofijo"><p class="small_9">Monto máximo diario<br>que puede extrar</p></div>
+					<div class="altofijo"><p class="small_9">Monto máximo diario<br>para efectuar pagos</p></div>
+					<div class="altofijo"><p class="small_9">Monto máximo diario<br>disponible para realizar compras</p></div>
+				</div>
+				<div class="notita">
+					<p class="big_13 light"><i><i class="prisma informacion"></i> Presioná el botón <br>ayuda para conocer <br> qué es cada importe</i></p>
+					<a id="bt_ayuda" href="#" class="btn-chico"><i class="prisma informacion"></i> Ayuda</a>
+				</div>
+			</div>
+		</div>
+
+	</div> <!-- div consultas -->
+
+@@include('_partials/int_consulta_abajo.html')
+
+<script>
+	hideandshow("#bt_limpagos", "#bt_limpagos", "#limpagos");
+	hideandshow("#bt_limcompras", "#bt_limcompras", "#limcompras");
+	hideandshow("#bt_ayuda", ".notita", "#ayuda");
+</script>

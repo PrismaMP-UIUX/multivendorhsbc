@@ -1,0 +1,61 @@
+@@include('_partials/int_consulta_arriba.html')
+
+		<div class="tabs">
+			<div class="botones">
+				<a href="consultasaldo.php">% Saldos y disponibles</a>
+				<a href="consultamovimientos.php">% Últimos Movimientos</a>
+				<a href="consultacbu.php" class="selected">% CBU</a>
+			</div>
+			<div class="contenido">
+				<div class="inline connotita">
+					<p>Tu Clave Bancaria Única (CBU) es:</p>
+					<div class="numerocbu">
+						<div class="bloque">
+							<p class="numero">437</p>
+							<p class="label">Entidad</p>
+						</div>
+						<div class="bloque">
+							<p class="numero">9896</p>
+							<p class="label">Sucursal</p>
+						</div>
+						<div class="bloque">
+							<p class="numero">7</p>
+							<p class="label">D.V.</p>
+						</div>
+						<div class="bloque">
+							<p class="numero">1234567890123</p>
+							<p class="label">Cuenta</p>
+						</div>
+						<div class="bloque">
+							<p class="numero">4</p>
+							<p class="label">D.V.</p>
+						</div>
+						<div class="notita">
+							<p class="big_13 light"><i>(*) D.V.: Dígito <br>Verificador</i></p>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+		
+	</div> <!-- div consultas -->
+
+
+<div class="fondomodal"></div>
+
+<div class="centradovertical">
+	<div id="confirmacion" class="content-modal panel bounceIn animated centrado" style="width: 70%; ">
+		@@include('_partials/int_idposexperto2.html')
+		<a href="consultacbulimpia.php" class="right">% selecciona boton</a>
+	</div>
+</div>
+	
+
+
+
+
+@@include('_partials/int_consulta_abajo.html')
+
+
