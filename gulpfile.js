@@ -18,12 +18,12 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('../server/dist/'+config.name+'/js/'))
         .pipe(browserSync.stream());
 });
-
+ 
 gulp.task('styles', function() {
-    return gulp.src(['app/**/*.scss', 'app/**/*.css'],{base:'app/scss'})
+    return gulp.src(['app/**/*.scss', 'app/**/*.css'],{base:'app/sass'})
         .pipe(sass())
         .on('error', console.log)
-        .pipe(minifyCSS({compatibility: 'ie8'}))
+        // .pipe(minifyCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('../server/dist/'+config.name+'/css'))
         .pipe(browserSync.stream());
 });
@@ -42,7 +42,7 @@ gulp.task('html', function() {
         .pipe(browserSync.stream());
 })
 
-gulp.task('assets', ['images', 'fonts']);
+gulp.task('assets', ['images', 'fonts', 'videos']);
 
 gulp.task('images', function() {
     return gulp.src(config.images+'**/*')
@@ -51,8 +51,15 @@ gulp.task('images', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('videos', function() {
+    return gulp.src(config.videos+'**/*')
+        .pipe(imagemin({optimizationLevel: 5}))
+        .pipe(gulp.dest('../server/dist/'+config.name))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('fonts', function() {
-    return gulp.src('app/font/**/*', {base: 'app'})
+    return gulp.src('app/fonts/**/*', {base: 'app'})
         .pipe(gulp.dest('../server/dist/'+config.name))
         .pipe(browserSync.stream());
 });
@@ -69,10 +76,18 @@ gulp.task('serve', function() {
         port: 7000,
     });
     gulp.watch(['app/**/*.js'], ['scripts']);
-    gulp.watch(['app/**/*.scss'], ['styles']);
+    gulp.watch(['app/**/*.scss', 'app/**/*.css'], ['styles']);
     gulp.watch(['app/**/*.html'], ['html']);
     gulp.watch(config.images+'**/*', ['images']);
-    gulp.watch('app/font/**/*', ['images']);
+    gulp.watch('app/fonts/**/*', ['images']);
+});
+
+gulp.task('watch', function() {
+    gulp.watch(['app/**/*.js'], ['scripts']);
+    gulp.watch(['app/**/*.scss', 'app/**/*.css'], ['styles']);
+    gulp.watch(['app/**/*.html'], ['html']);
+    gulp.watch(config.images+'**/*', ['images']);
+    gulp.watch('app/fonts/**/*', ['images']);
 });
 
 gulp.task('default', ['scripts', 'styles', 'html', 'assets']);

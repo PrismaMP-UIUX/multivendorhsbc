@@ -10,26 +10,31 @@ $gris_masclaro:				lighten($gris, 25%);
 $azul:						#418ccf;
 $azul_oscuro:				darken($azul, 15%);
 $azul_claro:				lighten($azul, 10%);
+$azul_ayuda:				#6aa5d9;
 
 $verde:						#39b54a;
 $verde_oscuro:				darken($verde, 15%);
 $verde_claro:				lighten($verde, 10%);
+$verde_ayuda:				#57ca67;
 
 $rojo:						#CC332B;
 $rojo_oscuro:				darken($rojo, 15%);
-$rojo_claro:				lighten($rojo, 10%);
+$rojo_claro:				#da5750; //lighten($rojo, 10%);
+$rojo_ayuda:				#da5750;
 
 $naranja:					#d47c1e;
 $naranja_oscuro:			darken($naranja, 15%);
 $naranja_claro:				lighten($naranja, 10%);
+$naranja_ayuda:				#e49541;
 
 $amarillo:					#BFB522;
 $amarillo_oscuro:			darken($amarillo, 15%);
 $amarillo_claro:			lighten($amarillo, 10%);
+$amarillo_ayuda:			#ffd23a;
 
 $ayuda:						#777;
 $ayuda_oscuro:				darken($ayuda, 40%);
-$ayuda_claro:				lighten($ayuda, 40%);
+$ayuda_claro:				#eee; //lighten($ayuda, 40%);
 
 $blanco:					#fff;
 $blanco_oscuro:				darken($blanco, 15%);
@@ -84,7 +89,7 @@ $tabla_de_colores:(
 
 	.degrade_#{nth($color,1)} {
 		@include degradelinealhaciaabajo(nth($color,4), nth($color,2));
-		&:hover { @include degradelinealhaciaabajo(nth($color,2), nth($color,3)); }
+		// &:hover { @include degradelinealhaciaabajo(nth($color,2), nth($color,3)); }
 	}
 
 	// Extend del degradé .btn.$color { @extend .degrade_$color }
@@ -104,24 +109,28 @@ $tabla_de_colores:(
 				color: #{nth($color,4) !important};
 				background: black !important;
 				line-height: 0.7em;
-				text-shadow: 0px 0px 3px #000, 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000;
+				//text-shadow: 0px 0px 3px #000, 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000;
 				&.rojo {
-					background: repeating-linear-gradient(
+					/*background: repeating-linear-gradient(
 						45deg,
 						black,
 						black 16px,
 						transparentize(nth($color,2),0.35) 10px,
 						transparentize(nth($color,2),0.35) 20px
-						) !important;
+						) !important;*/
+					background: $rojo_ayuda !important;
+					color: #000 !important;
 				}
 				&.verde {
-					background: repeating-linear-gradient(
+					/*background: repeating-linear-gradient(
 						-45deg,
 						black,
 						black 16px,
 						transparentize(nth($color,2),0.4) 10px,
 						transparentize(nth($color,2),0.4) 20px
-						) !important;
+						) !important;*/
+					background: $verde_ayuda !important;
+					color: #000 !important;
 				}
 			}
 		}
@@ -138,9 +147,9 @@ $tabla_de_colores:(
 			background: transparentize( nth($color,2) , 0.9);
 			color: darken(nth($color,2), 20%);
 			box-shadow: 0 2px 8px nth($color,4);
-			&:hover{
-				background: transparentize( nth($color,2) , 0.8);
-			}
+			// &:hover{
+			// 	background: transparentize( nth($color,2) , 0.8);
+			// }
 		}
 	}
 }
@@ -150,7 +159,6 @@ body {
 	&.bnlc .draw { @include degraderadialhaciaafuera(white, 50%, $gris_claro, 150%); }
 	&.ayuda .draw { @include degradelinealhaciaabajo(#000, $ayuda_oscuro);}
 }
-
 
 
 
@@ -308,15 +316,19 @@ $tabla_de_margenes:(
 	25,
 	30,
 	50,
+	60,
+	70,
+	80,
+	90,
 	100,
 	);
 
 @each $margen in $tabla_de_margenes {
-	.mg-#{$margen} {margin-left: #{$margen}px;}
-	.mg-l-#{$margen} {margin-left: #{$margen}px;}
-	.mg-r-#{$margen} {margin-right: #{$margen}px;}
-	.mg-t-#{$margen} {margin-top: #{$margen}px}
-	.mg-b-#{$margen} {margin-bottom: #{$margen}px;}
+	.mg-#{$margen} {margin: #{$margen}px !important;}
+	.mg-l-#{$margen} {margin-left: #{$margen}px !important;}
+	.mg-r-#{$margen} {margin-right: #{$margen}px !important;}
+	.mg-t-#{$margen} {margin-top: #{$margen}px !important;}
+	.mg-b-#{$margen} {margin-bottom: #{$margen}px !important;}
 }
 
 

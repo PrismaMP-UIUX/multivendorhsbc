@@ -1,0 +1,314 @@
+// Definición de los botones
+// --------------------------------------------------
+$pad-bt-tb: 22px; //top y bottom
+$pad-bt-lr: 28px; //left y right
+
+$pad-btchico-tb: 12px; //top y bottom de los botones chicos
+$pad-btchico-lr: 15px; //left y right de los botones chicos
+$alto-btchico: 35px; 
+
+$brd-ayuda: 3px; //borde de la ayuda
+
+
+// Botones
+.btn {
+	padding: $pad-bt-tb $pad-bt-lr;
+	margin: 0px 5px 14px;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-size: 1.9em;
+	line-height: 1.1em;
+	font-family: $font-medium;
+	text-align: center;	
+	.ayuda & {
+		padding: ($pad-bt-tb - $brd-ayuda) ($pad-bt-lr - $brd-ayuda);
+		border: solid $brd-ayuda $ayuda;
+	}
+	// boton en bloque para otro importe o que ocupe todo, btingresa y bt otro importe
+	&.block {
+		display: block;
+	}
+	// botones fijos de 100px para la home
+	&.fijo-100 {
+		width: 100px;
+	}
+	// botones fijos de 70px para la calculadora
+	&.fijo-70 {
+		width: 70px;
+	}
+	// botones fijos de 50px para id+alfa
+	&.fijo-50 {
+		width: 50px;
+	}
+	//tiempo que lleva la transacción, lo sacamos
+	.timer {
+		position: absolute;
+		font-size: 10pt;
+		right: 10px;
+		top: 0px;
+	}
+	&.menosimportante {
+		opacity: 0.8;
+	}
+	&.deshabilitado {
+		opacity: 0.1;
+		cursor: not-allowed;
+	}
+	p & {font-size: 1em;}
+	i.prisma {
+		@extend .mg-r-5;
+	}
+}
+
+
+
+// Mismo botón mas chico
+.btn-chico {
+	@extend .btn;
+	height: $alto-btchico;
+	padding: ($pad-btchico-tb) ($pad-btchico-lr) ($pad-btchico-tb - $brd-ayuda * 2);
+	font-size: 1.5em;
+	height: 30px;
+	.ayuda & {
+		padding: 14px 15px 2px 15px; //($pad-btchico-tb - $brd-ayuda) ($pad-btchico-lr - $brd-ayuda ) ($pad-btchico-tb - $brd-ayuda * 2);
+	}
+	p & {font-size: 0.8em;}
+}
+
+// boton borrar adentro del input 
+.btn.borrar {
+	position: absolute;
+	right: 4px;
+	top: 8px;
+	.ayuda & {
+		top: 5px;
+		right: 2px;
+	}
+}
+
+// Los botones de ayuda van en blanco
+.ayuda a.btn {color: #FFF;}
+
+
+// Ocultar botones para javascript 
+.btn.continuar, .btn.borrar { display: none; }
+
+
+// Ellipsis al inicio
+.reverse-ellipsis {
+	text-overflow: clip;
+	> span {
+		max-width: 100%;
+		display: inline-block;
+		overflow: hidden;
+		> span {
+			float: right;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			width: 17px;
+			height: 30px;
+			top: 22px;
+			background-color: inherit;
+			left: 0px;
+		}
+	}
+	&.btn-chico span:before {
+		top: 11px;
+	}
+	&.gris span:before {
+		background: linear-gradient(to bottom, #888888, #818181);
+		box-shadow: 9px 0 10px #848484;
+	}
+	&.azul span:before {
+		background: linear-gradient(to bottom, #5d9dd6, #4d93d2);
+		box-shadow: 9px 0 10px #5498d3;
+	}
+	&.verde span:before {
+		background: linear-gradient(to bottom, #4fc35e, #42bb53);
+		box-shadow: 9px 0 10px #48bf58;
+	}
+	&.rojo span:before {
+		background: linear-gradient(to bottom, #d64c45, #d13d36);
+		box-shadow: 9px 0 10px #d2443c;
+	}
+	&.naranja span:before {
+		background: linear-gradient(to bottom, #df8d36, #d98328);
+		box-shadow: 9px 0 10px #db882e;
+	}
+	&.amarillo span:before {
+		background: linear-gradient(to bottom, #d3c830, #c8bd28);
+		box-shadow: 9px 0 10px #cdc32d;
+	}
+
+	/*&:active,
+	&:hover {
+		&.gris span:before {
+			background: linear-gradient(to bottom, #686868, #5e5e5e);
+			box-shadow: 9px 0 10px #636363;
+		}
+		&.azul span:before {
+			background: linear-gradient(to bottom, #367cbb, #3073ae);
+			box-shadow: 9px 0 10px #3378b4;
+		}
+		&.verde span:before {
+			background: linear-gradient(to bottom, #32a040, #2e913b);
+			box-shadow: 9px 0 10px #30963e;
+		}
+		&.rojo span:before {
+			background: linear-gradient(to bottom, #b52d26, #a22822);
+			box-shadow: 9px 0 10px #aa2a24;
+		}
+		&.naranja span:before {
+			background: linear-gradient(to bottom, #be6e1a, #a86217);
+			box-shadow: 9px 0 10px #b16719;
+		}
+		&.amarillo span:before {
+			background: linear-gradient(to bottom, #a79f1d, #938b19);
+			box-shadow: 9px 0 10px #9e961c
+		}
+	}*/
+	.ayuda & {
+		span:before {
+			width: 18px;
+			height: 35px;
+			top: 16px;
+		}
+		&.gris span:before,
+		&.azul span:before,
+		&.naranja span:before,
+		&.amarillo span:before {
+			background: #000;
+			box-shadow: 9px 0 10px #000;
+		}
+		&.verde span:before {
+			background: $verde_ayuda;
+			box-shadow: 9px 0 10px $verde_ayuda;
+		}
+		&.rojo span:before {
+			background: $rojo_ayuda;
+			box-shadow: 9px 0 10px $rojo_ayuda;
+		}
+	}
+}
+	
+
+
+/*********************
+  Waves
+**********************/
+/*!
+ * Waves v0.6.0
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
+ */
+.btn, .waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn .waves-ripple,
+.waves-effect .waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 0;
+  background: rgba(255, 255, 255, .4);
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.waves-notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+.waves-circle {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.waves-input-wrapper {
+  border-radius: 0.2em;
+  vertical-align: bottom;
+}
+
+.waves-input-wrapper .waves-button-input {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.waves-circle {
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 50%;
+  -webkit-mask-image: none;
+}
+
+.waves-block {
+  display: block;
+}
+
+/* Firefox Bug: link not triggered */
+a.btn .waves-ripple,
+a.waves-effect .waves-ripple {
+  z-index: -1;
+}
+
+
+// fix dropdowns
+.btn.dropdown {
+	overflow: visible !important;
+	> .waves-ripple {
+		display: none !important;
+	}
+}

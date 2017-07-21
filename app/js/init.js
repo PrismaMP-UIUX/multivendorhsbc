@@ -19,21 +19,24 @@ $("body").on("keypress",function(e){
   }
   // control enter
   if((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey){
-    window.location.href='inicio.html'
+    window.location.href='inicio.php'
   }
 });
 
 function ayudavisual(){
-$("body").toggleClass("bnlc ayuda");
-    setTimeout(function(){
+  $("body").toggleClass("bnlc ayuda");
+  /*setTimeout(function(){
       changeWidth();
-  }, 200);
+  }, 200);*/
 }
+
 
 
 // checkbox slider
 $(function() {
   var isDragging = false;
+
+  // touch drag
   $("#checkboxes")
   .bind( "touchstart", function(e) {
     isDragging = false;
@@ -51,6 +54,25 @@ $(function() {
     }
   });
 
+  // mouse drag
+  $("#checkboxes")
+  .mousedown(function() {
+    isDragging = false;
+  })
+  .mousemove(function() {
+    isDragging = true;
+  })
+  .mouseup(function() {
+    var input = $(this).children('input');
+    var wasDragging = isDragging;
+    isDragging = true;
+    if (wasDragging) {
+
+      input.prop("checked", !input.prop("checked"));
+    }
+  });
+
+  // click
   $("#checkboxes").click(function() {
       var input = $(this).children('input');
       input.prop("checked", !input.prop("checked"));

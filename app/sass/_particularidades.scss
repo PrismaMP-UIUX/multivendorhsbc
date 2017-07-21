@@ -1,0 +1,28 @@
+// inicio.php
+	#inicio_extraccion { position: relative; margin: 0 auto; right: -20px; }
+	#inicio_opnoextraccion { position: relative; margin: 0 auto; left: -20px; }
+	#consultas_selectordecuenta { top: 0px; right: -15px;
+		.ayuda & {top: -10px; right: -10px;}
+	}
+	#consultas {
+		top: 60px; 
+		.ayuda {top: 80px; }
+	}
+
+	#loop.panel { max-width: none; width: 975px; height: 520px; padding: 0; }
+
+	.ayuda .oculto {display: none;}
+
+	#inicio_cuentas { left: 550px; }
+
+	#extraccion_cuotas {
+		width: 340px;
+		vertical-align: top;
+		.containerdeinput { width: 312px; }
+		.btn.fijo-100 {	width: 122px;}
+
+		.ayuda & {
+
+			.btn.fijo-100 {	width: 118px;}
+		}
+	}

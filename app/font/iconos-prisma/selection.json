@@ -407,7 +407,7 @@
       "properties": {
         "order": 41,
         "id": 0,
-        "name": "volver",
+        "name": "izquierda",
         "prevSize": 32,
         "code": 59655
       },
@@ -545,7 +545,7 @@
       "properties": {
         "order": 39,
         "id": 4,
-        "name": "continuar",
+        "name": "derecha",
         "prevSize": 32,
         "code": 59651
       },
