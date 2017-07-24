@@ -4,3 +4,4 @@ dist/
 *.log
 *.scssc
 *.lock
+config.json
