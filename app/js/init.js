@@ -19,7 +19,7 @@ $("body").on("keypress",function(e){
   }
   // control enter
   if((event.keyCode == 10 || event.keyCode == 13) && event.ctrlKey){
-    window.location.href='inicio.php'
+    window.location.href='inicio.html'
   }
 });
 
