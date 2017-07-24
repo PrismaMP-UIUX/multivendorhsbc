@@ -1,0 +1,76 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Extraer</h5>
+
+			<div class="inline" style="width: 300px; vertical-align: top;">
+				<p class="big_25 mg-t-20">
+					<label class="radio" for="pesos"><input id="pesos" type="radio" name="gender" value="pesos" checked> Pesos</label>
+	  				<label class="radio mg-t-30" for="dolares"><input id="dolares" type="radio" name="gender" value="dolares"> Dólares</label>
+	  			</p>
+			</div>
+
+			<div class="inline mg-l-30" style="width: 420px;">
+				<div class="mg-b-10 containerdeinput signopesos">
+					<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('extraccion')"><i class="prisma borrar"></i> Borrar</a>
+					<input type="text" maxlength="6" id="extraccion">
+				</div>
+				<a href="" class="btn fijo-70 azul ">1</a>
+				<a href="" class="btn fijo-70 azul ">2</a>
+				<a href="" class="btn fijo-70 azul ">3</a><br>
+				<a href="" class="btn fijo-70 azul ">4</a>
+				<a href="" class="btn fijo-70 azul ">5</a>
+				<a href="" class="btn fijo-70 azul ">6</a><br>
+				<a href="" class="btn fijo-70 azul ">7</a>
+				<a href="" class="btn fijo-70 azul ">8</a>
+				<a href="" class="btn fijo-70 azul ">9</a><br>
+				<a href="" class="btn fijo-70 azul menosimportante">00</a>
+				<a href="" class="btn fijo-70 azul ">0</a>
+				<a href="" class="btn fijo-70 azul ">000</a>
+			</div>
+			
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="extraccion3_cuenta.html" class="btn azul right continuar" id="continuar">Continuar <i class="prisma derecha"></i></a>
+</div>
+
+<!-- Javascript -->
+<?php   include 'assets/scripts.html';  ?>
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("extraccion","borrar");
+	alescribir("extraccion","continuar");
+
+	$('input[type=radio]').change(function() {
+		var inputMonto = $('.containerdeinput');
+	    if($('#pesos').is(":checked")){
+	        $(inputMonto).removeClass('signodolar');
+	        $(inputMonto).addClass('signopesos');
+	    }
+	     if($('#dolares').is(":checked")){
+	    	$(inputMonto).removeClass('signopesos');
+	        $(inputMonto).addClass('signodolar');
+	    }
+	});
+
+</script>
+</body>
+</html>
