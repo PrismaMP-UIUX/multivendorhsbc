@@ -44,16 +44,28 @@
 </div>
 
 <script type="text/javascript">
-	alescribir("cuotas","borrar"); 
+	alescribir("cuotas","borrar");
 	$('#extraccion_cuotas a').click(function(){
 		var ecVal = $(this).children("span").text();
 		$("#cuotas").val(ecVal);
-		alescribir("cuotas","borrar"); 
+		if( $("#cuotas").val().length > 0 ){
+			$("#borrar").css("display","block");
+		}else{
+			$("#borrar").css("display","none");
+		}
+
 	});
 	$(' #extraccion_cuotas_tecl a').click(function(){
 	   	var valu = $(this).text();
-		var inpu = $("#cuotas");
-		inpu.val(inpu.val() + valu);
+		var inpu = $("#cuotas"); 
+		if( inpu.val().length <= 2 ) {
+			inpu.val(inpu.val() + valu); 
+		};
+		if( inpu.val().length > 0 ){
+			$("#borrar").css("display","block");
+		}else{
+			$("#borrar").css("display","none");
+		}
 		return false;
-	});
+	});  
 </script>
