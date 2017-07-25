@@ -9,7 +9,8 @@ var clean = require('gulp-clean');
 var config = require('./config.json');
 var browserSync = require('browser-sync');
 var mainNpmFiles = require('gulp-main-npm-files');
-var include = require('gulp-file-include');
+var include = require('gulp-file-include'); 
+var ejs = require('gulp-ejs'); 
 
 gulp.task('scripts', function() {
     return gulp.src(['app/**/*.js'], {base: 'app/js'})
@@ -34,10 +35,11 @@ gulp.task('clean', function(){
 });
 
 gulp.task('html', function() {
-    // return gulp.src(['app/**/*.html', '!app/{_*,_**}'])
-    return gulp.src(['app/*.html'])
+    return gulp.src(['app/**/*.html','app/**/*.ejs', '!app/{_*,_**}'])
+    // return gulp.src(['app/*.html'])
         .pipe(embedlr())
         .pipe(include({prefix: '@@', basepath: '@file'}))
+        .pipe(ejs({},{}, {ext:'.html'})) 
         .pipe(gulp.dest('../server/dist/'+config.name))
         .pipe(browserSync.stream());
 })

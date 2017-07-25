@@ -230,6 +230,7 @@ $tabla_de_fuentes:(
 a {@extend %todos}
 
 @each $tamanio in $tabla_de_fuentes{
+	$sss : $font-size-base * nth($tamanio,2);
 	#{nth($tamanio,1)}, .#{nth($tamanio,1)} { 
 		font: {
 			size: $font-size-base*nth($tamanio,2);
@@ -237,8 +238,13 @@ a {@extend %todos}
 		}
 		line-height: $font-size-base*nth($tamanio,2)*nth($tamanio,3);
 		margin-bottom: #{nth($tamanio,4)}pt;
-		@extend %todos;
+		@extend %todos; 
 	}
+	@for $tam from 1 through 1000 {
+		#{nth($tamanio,1)}.font_#{$tam}, .#{nth($tamanio,1)}.font_#{$tam} { 
+		    font-size: ($tam * $sss) * 0.01;
+		};
+	} 
 }
 
 
@@ -253,14 +259,13 @@ $tabla_smallybig:(
 	15	1.5,
 	20	2,
 	25	2.5,
-	30	3,
+	30	3
 	);
 
 @each $tamanio in $tabla_smallybig {
 	.big_#{nth($tamanio,1)} {font-size: nth($tamanio,2)*1em;}
 	.small_#{nth($tamanio,1)} {font-size: 1em / nth($tamanio,2);}
-}
-
+} 
 
 // Tamaños Layout
 // --------------------------------------------
@@ -307,30 +312,36 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
 // Definiciones de márgenes
 // --------------------------------------------
 
-$tabla_de_margenes:(
-	0,
-	5,
-	10,
-	15,
-	20,
-	25,
-	30,
-	50,
-	60,
-	70,
-	80,
-	90,
-	100,
-	);
+// $tabla_de_margenes:(
+// 	0,
+// 	5,
+// 	10,
+// 	15,
+// 	20,
+// 	25,
+// 	30,
+// 	50,
+// 	60,
+// 	70,
+// 	80,
+// 	90,
+// 	100,
+// 	);
 
-@each $margen in $tabla_de_margenes {
-	.mg-#{$margen} {margin: #{$margen}px !important;}
-	.mg-l-#{$margen} {margin-left: #{$margen}px !important;}
-	.mg-r-#{$margen} {margin-right: #{$margen}px !important;}
-	.mg-t-#{$margen} {margin-top: #{$margen}px !important;}
-	.mg-b-#{$margen} {margin-bottom: #{$margen}px !important;}
-}
-
+// @each $margen in $tabla_de_margenes {
+// 	.1mg-#{$margen} {margin: #{$margen}px !important;}
+// 	.1mg-l-#{$margen} {margin-left: #{$margen}px !important;}
+// 	.1mg-r-#{$margen} {margin-right: #{$margen}px !important;}
+// 	.1mg-t-#{$margen} {margin-top: #{$margen}px !important;}
+// 	.1mg-b-#{$margen} {margin-bottom: #{$margen}px !important;}
+// }
+@for $mg from 0 through 1000 {
+	.mg-#{$mg} {margin: #{$mg}px !important;}
+	.mg-l-#{$mg} {margin-left: #{$mg}px !important;}
+	.mg-r-#{$mg} {margin-right: #{$mg}px !important;}
+	.mg-t-#{$mg} {margin-top: #{$mg}px !important;}
+	.mg-b-#{$mg} {margin-bottom: #{$mg}px !important;}
+} 
 
 // Imágenes
 // --------------------------------------------
