@@ -1,0 +1,55 @@
+@@include('transferencias_destino.html')
+
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="transferencias_destino.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Ingresá el CBU de destino</h5>
+
+		<div class="containerdeinput mg-b-20" style="width: calc(100% - 15px);">
+			<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('cbu')"><i class="prisma borrar"></i> Borrar</a>
+			<input type="text" maxlength="22" id="cbu" style="letter-spacing: .1em; font-size: 2em;">
+		</div>
+		
+		<div class="left" style="width: 370px;">
+
+			<p class="mg-t-15 mg-b-50">
+				<label class="check">
+					<input id="pesos" type="checkbox"> Agregar CBU a mi agenda
+				</label>
+			</p>
+			<p class="mg-t-15">Para fines impositivos necesitamos que declares la cuenta destino</p>
+			<div id="tipo" class="dropdown btn gris block mg-0">
+				<div class="contenedor">
+					<div indice="1" data-dd="data1"><i class="prisma cuenta"></i> Caja de ahorro</div>
+					<div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Cuenta corriente</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="inline mg-l-30" style="width: 420px;">
+			<a href="" class="btn fijo-70 azul ">1</a>
+			<a href="" class="btn fijo-70 azul ">2</a>
+			<a href="" class="btn fijo-70 azul ">3</a><br>
+			<a href="" class="btn fijo-70 azul ">4</a>
+			<a href="" class="btn fijo-70 azul ">5</a>
+			<a href="" class="btn fijo-70 azul ">6</a><br>
+			<a href="" class="btn fijo-70 azul ">7</a>
+			<a href="" class="btn fijo-70 azul ">8</a>
+			<a href="" class="btn fijo-70 azul ">9</a><br>
+			<a href="" class="btn block azul mg-r-10">0</a>
+		</div>
+			
+		<hr class="piemodal">
+		<p class="alinear-derecha">
+			<a href="transferencias_destino.html" class="btn gris mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+			<a href="transferencias_destino_confirmar.html" class="btn verde confirmar"><i class="prisma confirmar"></i> Listo</a>
+		</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	alescribir("cbu","borrar");
+</script>

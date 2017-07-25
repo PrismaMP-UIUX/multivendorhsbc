@@ -1,0 +1,40 @@
+@@include('transferencias_destino.html')
+
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="transferencias_destino.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Seleccioná la cuenta destino</h5>
+
+		<div class="btn-group btn-inputs">
+			<div class="inline" style="width: 370px;">
+				<label class="btn azul block">
+					<input type="radio" name="options" id="ca"> Caja de ahorro
+				</label>
+				<label class="btn azul block">
+					<input type="radio" name="options" id="ce"> Cuenta especial
+				</label>
+				<label class="btn azul block">
+					<input type="radio" name="options" id="cc"> Cuenta corriente
+				</label>
+			</div>
+			<div class="inline" style="width: 370px;"></div>
+		</div>
+
+		<hr class="piemodal">
+		<p class="alinear-derecha">
+			<a href="transferencias_destino.html" class="btn gris mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+			<a href="transferencias_destino_confirmar.html" class="btn verde confirmar"><i class="prisma confirmar"></i> Listo</a>
+		</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('.btn-inputs label').click( function(){
+	  $(this).addClass('active');
+	  $(this).siblings().removeClass('active');
+
+	  $('#continuar').show();
+	})
+</script>

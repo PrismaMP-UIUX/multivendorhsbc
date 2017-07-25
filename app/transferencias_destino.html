@@ -1,0 +1,61 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+
+
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma inicio"></i></div>
+
+	<div class="centradovertical">
+
+		<div id="transferencias" class="panel">
+			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Transferencias</h5>
+			<ul class="pasos">
+				<li><a href="transferencias_origen.html">1. Origen</a></li>
+				<li class="active"><a href="transferencias_destino.html">2. Destino</a></li>
+				<li class="disabled"><a href="transferencias_importe.html">3. Importe</a></li>
+				<li class="disabled"><a href="transferencias_motivo.html">4. Motivo</a></li>
+				<li class="disabled"><a href="transferencias_confirmacion.html">5. Confirmación</a></li>
+			</ul>
+
+			<p class="mg-t-50 mg-b-20">Seleccioná la cuenta a transferir</p>
+			<div class="left" style="width: 45%">
+				<p><strong>Cuenta de terceros</strong></p>
+				<a class="btn azul block mg-l-0" href="transferencias_destino_cbu.html">Ingresar CBU</a>
+				<a class="btn azul block mg-l-0" href="transferencias_destino_agenda.html">Cuenta agendada</a>
+			</div>
+			<div class="right" style="width: 52%">
+				<p><strong>Mis cuentas</strong></p>
+				<a class="btn azul block mg-l-0" href="transferencias_destino_mio.html">Otra cuenta de esta tarjeta</a>
+			</div>
+		</div>
+	</div>
+	
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+</div>
+
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+  <script type="text/javascript">
+  	$('.btn-inputs label').click( function(){
+  		$(this).addClass('active');
+  		$(this).siblings().removeClass('active');
+  	})
+  </script>
+</body>
+</html>

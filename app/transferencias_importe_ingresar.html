@@ -1,0 +1,43 @@
+@@include('transferencias_importe.html')
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="transferencias_destino.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Ingresá el importe</h5>
+		
+		<div class="left" style="width: 370px;">
+			<!-- Cambiar la clase "signopesos" o "signodolar" según la moneda elegida antes -->
+			<div class="containerdeinput mg-b-20 signopesos">
+				<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('importe')"><i class="prisma borrar"></i> Borrar</a>
+				<input type="text" maxlength="22" id="importe">
+			</div>
+			<p><strong>Incluí los centavos.</strong> <br>Ejemplo: 1000,00</p>
+		</div>
+
+		<div class="inline mg-l-30" style="width: 420px;">
+			<a href="" class="btn fijo-70 azul ">1</a>
+			<a href="" class="btn fijo-70 azul ">2</a>
+			<a href="" class="btn fijo-70 azul ">3</a><br>
+			<a href="" class="btn fijo-70 azul ">4</a>
+			<a href="" class="btn fijo-70 azul ">5</a>
+			<a href="" class="btn fijo-70 azul ">6</a><br>
+			<a href="" class="btn fijo-70 azul ">7</a>
+			<a href="" class="btn fijo-70 azul ">8</a>
+			<a href="" class="btn fijo-70 azul ">9</a><br>
+			<a href="" class="btn fijo-70 azul ">,</a>
+			<a href="" class="btn fijo-70 azul ">0</a>
+			<a href="" class="btn fijo-70 azul ">000</a>
+		</div>
+			
+		<hr class="piemodal">
+		<p class="alinear-derecha">
+			<a href="transferencias_importe.html" class="btn gris mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+			<a href="transferencias_importe_confirmar.html" class="btn verde confirmar"><i class="prisma confirmar"></i> Listo</a>
+		</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	alescribir("importe","borrar");
+</script>
