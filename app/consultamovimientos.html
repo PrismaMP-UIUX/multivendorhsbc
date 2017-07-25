@@ -2,9 +2,9 @@
 
 <div class="tabs">
 	<div class="botones">
-		<a href="consultasaldo.html"><i class="prisma consulta-saldo"></i> Saldos y disponibles</a>
-		<a href="consultamovimientos.html" class="selected"><i class="prisma consulta-movimientos"></i> Últimos Movimientos</a>
-		<a href="consultacbu.html"><i class="prisma consulta-cbu"></i> CBU</a>
+		<a href="consultasaldo.html" class="waves-effect"><i class="prisma consulta-saldo"></i> Saldos y disponibles</a>
+		<a href="consultamovimientos.html" class="waves-effect selected"><i class="prisma consulta-movimientos"></i> Últimos Movimientos</a>
+		<a href="consultacbu.html" class="waves-effect"><i class="prisma consulta-cbu"></i> CBU</a>
 	</div>
 	<div class="contenido">
 		<div class="ultimosmovimientos mg-b-10">
@@ -172,12 +172,13 @@
 					<td class="bold verde">+$5000</td>
 				</tr>
 			</table>
-			<div class="right">
-				<a href="#" class="btn-chico azul arriba">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
-				<a href="#" class="btn-chico azul abajo">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
-			</div>
 		</div>
-		
+		<div class="ultimosmovimientos-botones">
+			<a href="#" class="btn-chico azul arriba"><i class="prisma arriba"></i></a>
+			<a href="#" class="btn-chico azul abajo"><i class="prisma abajo"></i></a>
+		</div>
+			
+		<a href="espera.html" class="btn btn-chico azul right mg-r-0 mg-t-15 mg-b-10"><i class="prisma imprimir"></i> Imprimir</a>
 	</div>
 </div>
 
@@ -186,18 +187,19 @@
 @@include('_partials/int_consulta_abajo.html')
 
 <script>
+	var ultimosMovs = 200;
 	$('a.abajo').click( function() {
 		var scrollPosition = $('.ultimosmovimientos').scrollTop();
-		$('.ultimosmovimientos').animate({scrollTop: scrollPosition + 235 });
+		$('.ultimosmovimientos').animate({scrollTop: scrollPosition + ultimosMovs });
 	});
 	$('a.arriba').click( function() {
 		var scrollPosition = $('.ultimosmovimientos').scrollTop();
-		$('.ultimosmovimientos').animate({scrollTop: scrollPosition - 235 });
+		$('.ultimosmovimientos').animate({scrollTop: scrollPosition - ultimosMovs });
 	});
 
 	// si hay 5 o menos movimientos, ocultar flechas y ensanchar tabla
 	var tableHeight = $('table').height();
-	if (tableHeight <= 235) { 
+	if (tableHeight <= ultimosMovs) { 
 		$('table + .right').hide();
 		$('.ultimosmovimientos').css('width', '770px');
 	}
