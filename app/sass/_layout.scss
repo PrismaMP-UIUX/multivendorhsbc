@@ -361,6 +361,53 @@ $color-ticket-ayuda: invert($color-ticket);
 }
 
 
+.transferencia_agendados {
+	position: relative;
+    width: 800px;
+	.tabla {
+		width: calc(100% - 100px);
+		height: 300px; 
+		overflow-y: auto;
+		table {
+			@extend p;
+			border: none; 
+			border-spacing: 0;
+			width: 100%;
+			margin: 0;
+			td {
+				padding: 0 10px;
+				line-height: 60px;  
+			}
+			tr:nth-child(even) {
+				background-color: lighten($gris_claro, 30%);
+			}
+			tr.active {
+				background: $azul;
+				color: #fff;
+			}
+		}
+
+		.btn-chico.arriba {position: absolute; right: 0; top: 0;}
+		.btn-chico.abajo {position: absolute; right: 0; bottom: -10px;}
+
+		.ayuda & {
+			border: 1px solid $gris_claro;
+			td {
+				border-bottom: 1px solid $gris_claro;
+				height: 59px !important;
+				line-height: 59px !important;
+			}
+			tr:nth-child(even) {
+				background-color: transparent;
+			}
+			tr.active {
+				background: $azul_ayuda;
+				color: #000;
+			}
+		}
+	}
+}
+
 .marcador {
 	width: 5px;
 	height: 230px;

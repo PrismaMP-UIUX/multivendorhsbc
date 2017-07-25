@@ -78,3 +78,12 @@ $(function() {
       input.prop("checked", !input.prop("checked"));
   });
 });
+
+
+// grupo de botones tipo check o radio
+$('.btn-inputs label').click( function(){
+  $(this).addClass('active');
+  $(this).siblings().removeClass('active');
+
+  $('#continuar').show();
+})
