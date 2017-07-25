@@ -191,12 +191,12 @@ body {
 // Tipografías
 // --------------------------------------------------
 
-@font-face { font-family: 'BanelcoLight'; src: url('../fonts/banelco/banelcobeau-light-webfont.ttf'); }
-@font-face { font-family: 'BanelcoRegular'; src: url('../fonts/banelco/banelcobeau-reg-webfont.ttf'); }
-@font-face { font-family: 'BanelcoSemiBold'; src: url('../fonts/banelco/banelcobeau-sebold-webfont.ttf'); }
-@font-face { font-family: 'BanelcoBold'; src: url('../fonts/banelco/banelcobeau-bold-webfont.ttf'); }
+@font-face { font-family: 'BanelcoLight'; src: url('../font/banelco/banelcobeau-light-webfont.ttf'); }
+@font-face { font-family: 'BanelcoRegular'; src: url('../font/banelco/banelcobeau-reg-webfont.ttf'); }
+@font-face { font-family: 'BanelcoSemiBold'; src: url('../font/banelco/banelcobeau-sebold-webfont.ttf'); }
+@font-face { font-family: 'BanelcoBold'; src: url('../font/banelco/banelcobeau-bold-webfont.ttf'); }
 
-@font-face { font-family: 'Ubuntu Mono'; src: url('../fonts/ubuntumono/UbuntuMono-Regular.ttf'); }
+@font-face { font-family: 'Ubuntu Mono'; src: url('../font/ubuntumono/UbuntuMono-Regular.ttf'); }
 
 $font-light:              "BanelcoLight", Arial, Helvetica, sans-serif;
 $font-regular:            "BanelcoRegular", Arial, Helvetica, sans-serif;

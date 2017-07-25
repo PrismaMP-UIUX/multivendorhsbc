@@ -12,27 +12,27 @@
 				<input type="text" maxlength="3" id="cuotas">
 			</div>
 
-			<a href="" class="btn fijo-100 btn-chico azul ">1 cuota</a>
-			<a href="" class="btn fijo-100 btn-chico azul ">3 cuotas</a><br>
-			<a href="" class="btn fijo-100 btn-chico azul ">6 cuotas</a>
-			<a href="" class="btn fijo-100 btn-chico azul ">9 cuotas</a><br>
-			<a href="" class="btn fijo-100 btn-chico azul ">12 cuotas</a>
-			<a href="" class="btn fijo-100 btn-chico azul ">18 cuotas</a><br>
-			<a href="" class="btn fijo-100 btn-chico azul ">24 cuotas</a>
-			<a href="" class="btn fijo-100 btn-chico azul ">36 cuotas</a>
+			<a class="btn fijo-100 btn-chico azul "><span>1</span> cuota</a>
+			<a class="btn fijo-100 btn-chico azul "><span>3</span> cuotas</a><br>
+			<a class="btn fijo-100 btn-chico azul "><span>6</span> cuotas</a>
+			<a class="btn fijo-100 btn-chico azul "><span>9</span> cuotas</a><br>
+			<a class="btn fijo-100 btn-chico azul "><span>12</span> cuotas</a>
+			<a class="btn fijo-100 btn-chico azul "><span>18</span> cuotas</a><br>
+			<a class="btn fijo-100 btn-chico azul "><span>24</span> cuotas</a>
+			<a class="btn fijo-100 btn-chico azul "><span>36</span> cuotas</a>
 		</div>
 
-		<div class="inline mg-l-30" style="width: 420px;">
-			<a href="" class="btn fijo-70 azul ">1</a>
-			<a href="" class="btn fijo-70 azul ">2</a>
-			<a href="" class="btn fijo-70 azul ">3</a><br>
-			<a href="" class="btn fijo-70 azul ">4</a>
-			<a href="" class="btn fijo-70 azul ">5</a>
-			<a href="" class="btn fijo-70 azul ">6</a><br>
-			<a href="" class="btn fijo-70 azul ">7</a>
-			<a href="" class="btn fijo-70 azul ">8</a>
-			<a href="" class="btn fijo-70 azul ">9</a><br>
-			<a href="" class="btn block azul mg-r-10">0</a>
+		<div id="extraccion_cuotas_tecl" class="inline mg-l-30" style="width: 420px;">
+			<a class="btn fijo-70 azul ">1</a>
+			<a class="btn fijo-70 azul ">2</a>
+			<a class="btn fijo-70 azul ">3</a><br>
+			<a class="btn fijo-70 azul ">4</a>
+			<a class="btn fijo-70 azul ">5</a>
+			<a class="btn fijo-70 azul ">6</a><br>
+			<a class="btn fijo-70 azul ">7</a>
+			<a class="btn fijo-70 azul ">8</a>
+			<a class="btn fijo-70 azul ">9</a><br>
+			<a class="btn block azul mg-r-10">0</a>
 		</div>
 			
 		<hr class="piemodal">
@@ -44,5 +44,16 @@
 </div>
 
 <script type="text/javascript">
-	alescribir("cuotas","borrar");
+	alescribir("cuotas","borrar"); 
+	$('#extraccion_cuotas a').click(function(){
+		var ecVal = $(this).children("span").text();
+		$("#cuotas").val(ecVal);
+		alescribir("cuotas","borrar"); 
+	});
+	$(' #extraccion_cuotas_tecl a').click(function(){
+	   	var valu = $(this).text();
+		var inpu = $("#cuotas");
+		inpu.val(inpu.val() + valu);
+		return false;
+	});
 </script>

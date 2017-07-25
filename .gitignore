@@ -5,3 +5,4 @@ dist/
 *.scssc
 *.lock
 config.json
+prepros-6.config
