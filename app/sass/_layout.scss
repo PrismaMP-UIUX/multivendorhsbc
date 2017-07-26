@@ -88,6 +88,9 @@ body { margin: 0px; overflow: hidden; }
 		background: rgba(0, 0, 0, 0.9);
 	}
 }
+.modal_error {
+	width: 630px;
+}
 
 // Modal Content
 .content-modal {
@@ -361,9 +364,9 @@ $color-ticket-ayuda: invert($color-ticket);
 }
 
 
-.transferencia_agendados {
+.tabla_select {
 	position: relative;
-    width: 800px;
+    width: 100%;
 	.tabla {
 		width: calc(100% - 100px);
 		height: 300px; 

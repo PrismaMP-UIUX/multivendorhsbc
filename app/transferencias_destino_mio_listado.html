@@ -11,35 +11,15 @@
 			<div class="tabla mg-b-10">
 				<table>
 					<tr>
-						<td class="bold small_11">Alias1</td>
+						<td class="bold small_11">Sueldo</td>
 						<td class="bold small_11">CA $ 12346789090</td>
 					</tr>
 					<tr>
-						<td class="bold small_11">helvaci</td>
+						<td class="bold small_11">Compartida</td>
 						<td class="bold small_11">CA us$ 12346789090</td>
 					</tr>
 					<tr>
-						<td class="bold small_11">pia</td>
-						<td class="bold small_11">CA us$ 12346789090</td>
-					</tr>
-					<tr>
-						<td class="bold small_11">Alias2</td>
-						<td class="bold small_11">CA us$ 12346789090</td>
-					</tr>
-					<tr>
-						<td class="bold small_11">Ines</td>
-						<td class="bold small_11">CA $ 12346789090</td>
-					</tr>
-					<tr>
-						<td class="bold small_11">dacal</td>
-						<td class="bold small_11">CA us$ 12346789090</td>
-					</tr>
-					<tr>
-						<td class="bold small_11">padre</td>
-						<td class="bold small_11">CA us$ 12346789090</td>
-					</tr>
-					<tr>
-						<td class="bold small_11">manito</td>
+						<td class="bold small_11">Ahorros</td>
 						<td class="bold small_11">CA us$ 12346789090</td>
 					</tr>
 				</table>
@@ -62,20 +42,19 @@
 	// botones scroll
 	$('a.abajo').click( function() {
 		var scrollPosition = $('.tabla').scrollTop();
-		$('.tabla').animate({scrollTop: scrollPosition + 300 });
+		$('.tabla').animate({scrollTop: scrollPosition + 180 });
 	});
 	$('a.arriba').click( function() {
 		var scrollPosition = $('.tabla').scrollTop();
-		$('.tabla').animate({scrollTop: scrollPosition - 300 });
+		$('.tabla').animate({scrollTop: scrollPosition - 180 });
 	});
 
 	// si hay 5 o menos movimientos, ocultar flechas y ensanchar tabla
 	var tableHeight = $('table').height();
-	if (tableHeight <= 300) { 
+	if (tableHeight <= 180) { 
 		$('table + .right').hide();
 		$('.tabla').css('width', '100%');
 	}
-
 
 	// seleccionar fila
 	$('tr').click( function(){

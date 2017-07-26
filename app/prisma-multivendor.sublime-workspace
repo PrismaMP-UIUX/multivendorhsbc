@@ -1,0 +1,1022 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"style	Attr"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"backgo",
+				"background: "
+			],
+			[
+				"bor",
+				"border-color: "
+			],
+			[
+				"border",
+				"border-radius: "
+			],
+			[
+				"marg",
+				"margin-right: "
+			],
+			[
+				"w",
+				"width: "
+			],
+			[
+				"t",
+				"top: "
+			],
+			[
+				"pad",
+				"padding: "
+			],
+			[
+				"over",
+				"overflow-x: "
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"font",
+				"font-size: "
+			],
+			[
+				"mar",
+				"margin-top: "
+			],
+			[
+				"bord",
+				"border-color: "
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"whi",
+				"white-space: "
+			],
+			[
+				"paddin",
+				"padding-top: "
+			],
+			[
+				"margin",
+				"margin-top: "
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"p",
+				"position: "
+			],
+			[
+				"margi",
+				"margin-top: "
+			],
+			[
+				"ligh",
+				"lighten	Sass-function"
+			],
+			[
+				"text",
+				"text-decoration: "
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"ma",
+				"margin: "
+			],
+			[
+				"magi",
+				"margin-bottom: "
+			],
+			[
+				"tra",
+				"transform: "
+			],
+			[
+				"bra",
+				"brand-secondary"
+			],
+			[
+				"fon",
+				"font-size: "
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"tran",
+				"transition: "
+			],
+			[
+				"padd",
+				"padding-left: "
+			],
+			[
+				"estado-",
+				"estado-saldo"
+			],
+			[
+				"pa",
+				"padding: "
+			],
+			[
+				"co",
+				"contain"
+			],
+			[
+				"bac",
+				"background-size: "
+			],
+			[
+				"background",
+				"background: "
+			],
+			[
+				"back",
+				"background: "
+			],
+			[
+				"m",
+				"margin: "
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"font-",
+				"font-weight: "
+			],
+			[
+				"tex",
+				"text-align: "
+			],
+			[
+				"btn-s",
+				"btn-switch"
+			],
+			[
+				"li",
+				"lighten	Sass-function"
+			],
+			[
+				"min",
+				"min-width: "
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"per",
+				"personas"
+			],
+			[
+				"por",
+				"portal"
+			],
+			[
+				"pro",
+				"Profesionales"
+			],
+			[
+				"defa",
+				"default-font-family"
+			],
+			[
+				"brand-pr",
+				"brand-primary-dark"
+			],
+			[
+				"brand",
+				"brand-gray"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"default",
+				"default-text-color"
+			],
+			[
+				"la",
+				"label	Tag"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"feed",
+				"feedback-bg"
+			],
+			[
+				"margin-t",
+				"margin-right"
+			],
+			[
+				"bode",
+				"border-radius"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"brand-p",
+				"brand-primary-light"
+			],
+			[
+				"stud",
+				"study-detail-radius"
+			],
+			[
+				"defau",
+				"default-font-family"
+			],
+			[
+				"brand-prim",
+				"brand-primary-dark"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"headi",
+				"headings-font-family"
+			],
+			[
+				"study",
+				"study-detail-date-color"
+			],
+			[
+				"inher",
+				"inherit"
+			],
+			[
+				"brand-",
+				"brand-primary-dark"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"head",
+				"headings-font-family"
+			],
+			[
+				"stu",
+				"study-list-title-font"
+			],
+			[
+				"brand-gray",
+				"brand-gray-dark"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"section-",
+				"section-title-font"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"im",
+				"img"
+			],
+			[
+				"serif",
+				"serif-font-name"
+			],
+			[
+				"hei",
+				"line-height"
+			],
+			[
+				"btn-pri",
+				"btn-print-disabled"
+			],
+			[
+				"regis",
+				"register-terms-bg"
+			],
+			[
+				"boder",
+				"border-color"
+			],
+			[
+				"btn-pr",
+				"btn-primary-bg"
+			],
+			[
+				"brand-gray-ligt",
+				"brand-gray-lighter"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"step-nu",
+				"step-number-color"
+			],
+			[
+				"ps",
+				"ps-login-presentation"
+			],
+			[
+				"brand-pri",
+				"brand-primary-light"
+			],
+			[
+				"ba",
+				"background: "
+			],
+			[
+				"fec",
+				"fechaIni"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"time",
+				"timeline"
+			],
+			[
+				"v",
+				"vertical-align: "
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"max",
+				"max-width: "
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"fot",
+				"font-family: "
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"font-s",
+				"font-size: "
+			],
+			[
+				"bot",
+				"both"
+			],
+			[
+				"bacground",
+				"background-color: "
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"pan",
+				"panel"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"close",
+				"closed"
+			],
+			[
+				"par",
+				"parent"
+			],
+			[
+				"click",
+				"click-heading"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"wi",
+				"wizard-steps"
+			],
+			[
+				"app-",
+				"app-section"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"col",
+				"collapsed"
+			],
+			[
+				"pane",
+				"panel-heading"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"oca",
+				"oca-back"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 335.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 398.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app"
+	],
+	"file_history":
+	[
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultasaldo_ayuda.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultamovimientos.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_motivo.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_confirmacion.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/sass/_layout.scss",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_importe.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_importe_ingresar.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_destino_confirmar.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/sass/_variables.scss",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_origen.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_ticket.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_motivo_referencia.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_destino_cbu.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_importe_confirmar.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_destino_mio.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_destino_agenda.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/transferencias_destino.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/sass/_elementosdeformulario.scss",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion3.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/js/init.js",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion3_confirmar.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_anses.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/sass/_particularidades.scss",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/sass/_botones.scss",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/sass/_iconos.scss",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/_partials/int_consulta_arriba.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/_partials/scripts.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion3_cuotas.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/cambioclave1.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/config.json",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/sass/_typografia.scss",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/loop.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion3_cuenta.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultasaldo.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/_demo.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/_demo2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/_partials/int_consulta_abajo.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/_partials/int_timeout.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/cambioclave2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/cambioclave3.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/cambioclave_error1.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/cambioclave_error2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/claves.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultacbu.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultacbulimpia.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultasaldo_sincuenta.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultasaldo_sincuentamodal.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/consultasaldo_sinpapel.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/error_clavebloqueada.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/error_generico.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/error_limites.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/error_sincuentas.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/error_sinfondos.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/error_tarjetainhabilitada.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/errores.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion2_sugeridos.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion_cuenta.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/extraccion_importemenor.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idpos1.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idpos2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idpos3.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idposalfa1.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idposalfa2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idposalfa3.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idposexperto1.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idposexperto2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/idposexperto3.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/index.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_link.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_sindinero.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_sindinero2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_sindinerosinpapel.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_sindinerosinpapel2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_sinpapel.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/inicio_sinpapel2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/login.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/login2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/login3.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/login_pinforzado.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/mau1.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/mau2.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/prepros.cfg",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/ticket.html",
+		"/home/julia/desarrollo/prisma/multivendorhsbc/app/_demo_iconos.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/03-conciliacion-detalle.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/06-facturacion-detalle.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/07-cobranzas.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/08-entregas-recuento.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/global.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/02-estado-cuenta.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/05-notificaciones-listado.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/06-facturacion.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/08-recuento.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/modules/recuento.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/bootstrap/_theme.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/bootstrap/_navs.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/bootstrap/_variables.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/icons.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/000-demo.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/_bootstrap.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/_style.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/utilities.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/04-comprobantes.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/04-comprobantes-detalle.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/status-list.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/modules/notificaciones.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/header-nav.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/01-login.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/modules/estado-cuenta.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/00-menu-header.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/js/global.js",
+		"/home/julia/desarrollo/gire/agentes-maqueta/05-notificaciones-alerts.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/modules/comprobantes.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/forms.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/04-1-comprobantes.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/05-2-notificaciones-listado.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/04-2-comprobantes-detalle.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/bootstrap/_close.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/bootstrap/_modals.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/01-login-modals.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/main.html",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/bootstrap/_breadcrumbs.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/sass/custom/modules/login.scss",
+		"/home/julia/desarrollo/gire/agentes-maqueta/01-login-errores.html",
+		"/home/julia/Descargas/account.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 80.0,
+		"where_history":
+		[
+			"/home/julia/desarrollo/prisma/multivendorhsbc/app",
+			"/home/julia/desarrollo/gire/agentes-maqueta/sass",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".php",
+			"vertical-align: middle",
+			"#extraccion",
+			"signopesos",
+			"confirmar",
+			"extend",
+			"Banelco",
+			".php",
+			".click",
+			"panel",
+			"status",
+			"list",
+			"list-group-item-header",
+			".list-group-item-header",
+			"03-conciliacion-detalle.html",
+			"07-cobranzas-resumen.html",
+			"<article class=\"panel panel-cobranza size-1",
+			"<article class=\"panel panel-cobranza size-1\"",
+			".btn",
+			"discl",
+			".panel",
+			"btn",
+			".full",
+			".table",
+			"table",
+			"ver más",
+			"btn",
+			"doc",
+			"file",
+			"label",
+			"-15",
+			"\n	main.has-topmenu {\n		margin-top: 50px;\n	}",
+			"tab",
+			"tabs",
+			":before ",
+			".lineal-",
+			"lineal-proce",
+			"lineal",
+			"panel",
+			"comproban",
+			"140px",
+			"default",
+			".default",
+			".label",
+			"label",
+			"list-gro",
+			"input-border",
+			"alert",
+			"close",
+			"modal",
+			"media",
+			"max-w",
+			"text",
+			"btn-def",
+			"panel",
+			"grid",
+			"row",
+			"shadow",
+			"border",
+			"radius",
+			"muted",
+			"font",
+			"info",
+			"breadcr",
+			"table",
+			"space",
+			"popover",
+			"button",
+			"80",
+			"media",
+			"type",
+			"h5",
+			"panel",
+			"modal",
+			"button",
+			"}\n.",
+			"'ptsans-",
+			"form",
+			"state",
+			"lighten",
+			"light",
+			"state",
+			"error",
+			"help",
+			"error",
+			"button",
+			"default",
+			".fs0",
+			".mls",
+			"32px",
+			"btn",
+			"link",
+			"pop",
+			"pin",
+			"mls\"> prisma-",
+			"dest",
+			"desh",
+			"cog",
+			"ciego",
+			"touch",
+			"cajero",
+			"i class=\"prisma-",
+			"\">\n            \n            </span>\n            <span class=\"mls\">",
+			"span class=\"prisma-",
+			"button",
+			"none",
+			"$color",
+			"theme",
+			"radius",
+			"media",
+			"min-",
+			"shadow",
+			"form",
+			"link",
+			"form",
+			"box-siz",
+			"finalizar",
+			"siguiente",
+			"mail",
+			"e-ma",
+			"correo elec",
+			"correo ele",
+			"ci-user",
+			"user",
+			".ci-",
+			"compart",
+			"shared",
+			"acepto"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".html",
+			"list-group-item-header click",
+			"08-entregas.html",
+			"07-cobranzas.html",
+			"<article class=\"panel panel-cobranza size-1 panel-click",
+			"<article class=\"panel panel-cobranza size-1\" onclick=\"location.href='07-cobranzas-resumen.html';\"",
+			" ",
+			"@mixin lineal-",
+			"}\n&.",
+			"'../fonts/pt-sans/ptsans-",
+			"mls\"> prisma ",
+			"i class=\"prisma ",
+			"\"></i>\n            <span class=\"mls\">",
+			"i class=\"prisma-",
+			"\n.ci-",
+			"ps-bio-subtitle",
+			"@bio",
+			"psi",
+			"soho-medium",
+			"soho-light",
+			"ubuntu-r-webfont",
+			"../fonts/orono/",
+			"$",
+			"{ .b",
+			"ps-register",
+			"@h6",
+			"@h5",
+			"@h4",
+			"@h3",
+			"@h2",
+			"sans-font-name",
+			"isEditingCustomWork",
+			"data",
+			"</i>\n",
+			"\"> ",
+			"<i class=\"runrun-",
+			"icons-font-path",
+			"text-font-path",
+			"'Raleway'",
+			"('#{$",
+			"</label>",
+			"control-label",
+			"Solución",
+			"lineal lineal",
+			"",
+			"jenkins",
+			"<?php echo get_stylesheet_directory_uri() ?>/review-2015/images/",
+			"href=\"../descargas",
+			"href=\"../files/",
+			"resources",
+			"icon icon-info-circled",
+			"icon",
+			"",
+			"class=\"icon icon-",
+			"               { &:before { ",
+			"",
+			"icon",
+			"index",
+			"",
+			"href=\"../",
+			".indexFit",
+			"bitgenia",
+			"closeCard\"",
+			"subtitle\" data-lang-key=\"txt_servicios-brindados\">Servicios brindados",
+			"brindados</p>\n								<ul class=\"listBullets\"",
+			"-\"",
+			"- =",
+			"",
+			".carousel",
+			"4C3A84"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 94.0
+	},
+	"pinned_build_system": "",
+	"project": "prisma-multivendor.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/desarrollo/wissen.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
