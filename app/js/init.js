@@ -8,7 +8,8 @@ var $slider;
   	};
     $(".owl-carousel").owlCarousel({
       items: 1,
-      autoplay: true,
+      autoplay: true, 
+      autoplayTimeout: 6000, 
       nav: true,
       dots: true, 
       navText: [
