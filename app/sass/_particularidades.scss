@@ -1,5 +1,6 @@
 // inicio.html
 	#inicio_extraccion { position: relative; margin: 0 auto; right: -20px; }
+	#inicio_extraccion { position: static; }
 	#inicio_opnoextraccion { position: relative; margin: 0 auto; left: -20px; }
 	#consultas_selectordecuenta { top: 0px; right: -15px;
 		.ayuda & {top: -10px; right: -10px;}
@@ -14,6 +15,7 @@
 	.ayuda .oculto {display: none;}
 
 	#inicio_cuentas { left: 550px; }
+	#inicio_cuentas { position:static; }
 
 	#extraccion_cuotas {
 		width: 340px;
