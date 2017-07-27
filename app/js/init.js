@@ -2,7 +2,7 @@ var $slider;
 (function($){
   $(function(){
     dropdown_init(null,1);
-	$slider =  $('#loop .slider').bxSlider({slideWidth: 975, nextSelector: '#slider-next', prevSelector: '#slider-prev', nextText: '', prevText: ''});
+	$slider =  $('#loop .slider').bxSlider({slideWidth: 975, nextSelector: '#slider-next', prevSelector: '#slider-prev', nextText: '', prevText: '', pause:6000});
 	if($slider[0]){
 		$slider.startAuto();
 	}

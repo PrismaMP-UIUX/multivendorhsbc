@@ -468,12 +468,17 @@ $color-ticket-ayuda: invert($color-ticket);
 	bottom: 5px !important; 
 }
 .slider-navs { 
-	position: absolute; 
-	top: 50%; 
-	width: 100%; 
+	position: absolute;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	top: 0px;
+	height: 100%;
+
 	> i {
-		height: 40px;
-		width: 40px;
+		height: 70px;
+		width: 70px;
 		display: block;
 		text-align: center;
 		line-height: 40px;
@@ -483,6 +488,9 @@ $color-ticket-ayuda: invert($color-ticket);
 		font-size: 20px;
 		border-radius: 50%;
 		opacity: .6;
+		display: flex;
+		align-items: center;
+		justify-content: center;    
 
 		&#slider-next { 
 			float: right; 
