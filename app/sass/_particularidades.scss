@@ -31,5 +31,16 @@
 		max-width: none;
 	    width: 920px;
 	    left: 25px;
-	    height: 470px;
+	    max-height: 470px;
+	    margin-top: 27px;
+	}
+	#transferencias_monto {
+		&.signopesos:before { left: 20px !important; }
+		&.signodolar:before { left: 10px !important; }
+		&.signopesos, &.signodolar { 
+			input {
+				padding-left: 55px;
+			}
+		}
+		.borrar { margin-right: 10px; }
 	}

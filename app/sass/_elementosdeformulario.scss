@@ -450,24 +450,62 @@ ul.pasos {
     margin-bottom: 1em;
 
     > li {
-	    margin-right: 6px;
+	    //margin-right: 6px;
 	    float: left;
 		
 		> a {
 		    text-decoration: none;
 		    font-family: $font-medium;
-		    padding: .3em .6em;
-		    border-radius: 6px;
+		    padding: .3em .2em .3em 1.2em;
+		    //border-radius: 6px;
 		    background: lighten($azul, 20);
 		    color: #fff;
+		    position: relative;
+
+		    &:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: -4px;
+				left: 0px;
+				height: 0;
+				z-index: 9;
+				border-left: 24px solid #fff;
+				border-top: 28px solid transparent;
+				border-bottom: 28px solid transparent;
+			}
+		    &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 100%;
+				height: 0;
+				z-index: 10;
+				border-left: 20px solid lighten($azul, 20);
+				border-top: 24px solid transparent;
+				border-bottom: 24px solid transparent;
+		    }
+		}
+		&:first-child > a{
+			border-radius: 4px 0 0 4px;
+			padding: .3em .2em .3em .6em;
+			&:before { display: none; }
+		}
+		&:last-child > a{
+			border-radius: 0 4px 4px 0;
+			padding: .3em .6em .3em 1.2em;
+			&:after { display: none; }
 		}
 		&.active a {
 			background: $azul;
 			color: #fff;
+			&:after { border-left-color: $azul; }
 		}
 		&.disabled a {
 		    background: #eee;
 			color: $gris_masclaro;
+			&:after { border-left-color: #eee; }
 		}
 	}
 	&:after {
@@ -476,14 +514,37 @@ ul.pasos {
 	    display: block;
 	}
 
-
-
 	.ayuda & {
 		> li {
 			> a {
 				background: #000;
 				color: $azul_ayuda;
 				border: 2px solid $azul_ayuda;
+				border-left-color: transparent;
+				border-right-color: transparent;
+				&:before {
+					left: -3px;
+				}
+				&:after {
+					-ms-transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+					border: none;
+					left: calc(100% - 18px);
+					height: 35px;
+					width: 35px;
+					top: 5px;
+					border-top: 3px solid $azul_ayuda;
+					border-right: 3px solid $azul_ayuda;
+					box-shadow: 3px -3px 0px 2px #111;
+					border-radius: 2px;
+				}
+			}
+			&:first-child > a {
+				border-left-color: $azul_ayuda;
+			}
+			&:last-child > a {
+				border-right-color: $azul_ayuda;
 			}
 			&.active a {
 				background: $azul_ayuda;
@@ -494,13 +555,47 @@ ul.pasos {
 				background: #000;
 				color: #818181;
 				border-color: transparent;
+				&:after {
+					border-color: transparent;
+				}
 			}
+			+ li > a:before { border-left-color: #000; }
+			&.active + li > a:before { border-left-color: $azul_ayuda; }
+			&.disabled + li > a:before { border-left-color: #000; }
 		}	
 	}
 }
 
-.btn-inputs {
+
+.btn-inputs	input {
+	display: none;
+}
+.btn-group.btn-inputs {
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
 	input {
 		display: none;
+	}
+
+	label.btn {
+		margin-left: 0;
+		margin-right: 2px;
+		border-radius: 0;
+		float: left;
+		&:first-child {
+			border-radius: 5px 0 0 5px;
+		}
+		&:last-child {
+			border-radius: 0 5px 5px 0;
+		}
+	}
+
+	.ayuda & {
+		label.btn + label.btn {
+			margin-left: -4px;
+		}
 	}
 }

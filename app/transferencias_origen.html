@@ -13,11 +13,11 @@
 <!-- Contenido de la página -->
 <div class="content"><div class="iconback"><i class="prisma inicio"></i></div>
 
-	<div class="centradovertical">
+	<div>
 
 		<div id="transferencias" class="panel">
 			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Transferencias</h5>
-			<ul class="pasos">
+			<ul class="pasos mg-t-20">
 				<li class="active"><a href="transferencias_origen.html">1. Origen</a></li>
 				<li class="disabled"><a href="transferencias_destino.html">2. Destino</a></li>
 				<li class="disabled"><a href="transferencias_importe.html">3. Importe</a></li>
@@ -25,17 +25,37 @@
 				<li class="disabled"><a href="transferencias_confirmacion.html">5. Confirmación</a></li>
 			</ul>
 
-			<p class="mg-t-50">Seleccioná la cuenta desde cuál transferir</p>
-			<div class="btn-group btn-inputs">
-				<label class="btn azul">
-					<input type="radio" name="options" id="ca"> Caja de ahorro
-				</label>
-				<label class="btn azul">
-					<input type="radio" name="options" id="ce"> Cuenta especial
-				</label>
-				<label class="btn azul">
-					<input type="radio" name="options" id="cc"> Cuenta corriente
-				</label>
+			<p class="mg-t-40">Seleccioná la cuenta desde cuál transferir</p>
+			<div class="left" style="width: 35%;">
+				<div id="tipo" class="dropdown btn gris mg-t-30 mg-l-5">
+					<div class="contenedor">
+						<div indice="1" data-dd="data1"><i class="prisma cuenta"></i> Caja de ahorro</div>
+						<div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Cuenta corriente</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabla_select right mg-t-30" style="width: 64%;">
+				<div id="cuentas" class="tabla tabla-x4 mg-b-10">
+					<table>
+						<tr>
+							<td class="bold small_11">Sueldo</td>
+							<td class="bold small_11">CA $ 12346789090</td>
+						</tr>
+						<tr>
+							<td class="bold small_11">Compartida</td>
+							<td class="bold small_11">CA us$ 12346789090</td>
+						</tr>
+						<tr>
+							<td class="bold small_11">Ahorros</td>
+							<td class="bold small_11">CA us$ 12346789090</td>
+						</tr>
+					</table>
+					<div class="right">
+						<a href="#" class="btn-chico azul arriba">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
+						<a href="#" class="btn-chico azul abajo">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -53,5 +73,31 @@
 
 <!-- Javascript -->
   @@include('_partials/scripts.html')
+
+  <script type="text/javascript">
+	// botones scroll
+	$('a.abajo').click( function() {
+		var scrollPosition = $('.tabla').scrollTop();
+		$('.tabla').animate({scrollTop: scrollPosition + 240 });
+	});
+	$('a.arriba').click( function() {
+		var scrollPosition = $('.tabla').scrollTop();
+		$('.tabla').animate({scrollTop: scrollPosition - 240 });
+	});
+
+	// si hay 5 o menos movimientos, ocultar flechas y ensanchar tabla
+	var tableHeight = $('table').height();
+	if (tableHeight <= 240) { 
+		$('table + .right').hide();
+		$('.tabla').css('width', '100%');
+	}
+
+	// seleccionar fila
+	$('tr').click( function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		$('#continuar').show();
+	})
+</script>
 </body>
 </html>

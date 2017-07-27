@@ -91,6 +91,9 @@ body { margin: 0px; overflow: hidden; }
 .modal_error {
 	width: 630px;
 }
+.modal_error-sm {
+	width: 600px;;
+}
 
 // Modal Content
 .content-modal {
@@ -408,6 +411,12 @@ $color-ticket-ayuda: invert($color-ticket);
 				color: #000;
 			}
 		}
+	}
+	.tabla-x3 {
+		height: 180px;
+	}
+	.tabla-x4 {
+		height: 240px;
 	}
 }
 

@@ -7,20 +7,27 @@
 		<div class="close"><a href="transferencias_destino.html"><i class="prisma cerrar"></i> </a></div>
 		<h5 class="titulo mg-b-30">Seleccioná la cuenta destino</h5>
 
-		<div class="btn-group btn-inputs">
-			<div class="inline" style="width: 400px;">
-				<!-- Si hay más de una cuenta en alguno de los tipos, se cambia a un modal con una tabla que lista -->
-				<a href="transferencias_destino_mio_listado.html" class="btn azul block">
-					<input type="radio" name="options" id="ca"> Caja de ahorro
-				</a>
-				<label class="btn azul block">
-					<input type="radio" name="options" id="ce"> Cuenta especial
-				</label>
-				<label class="btn azul block">
-					<input type="radio" name="options" id="cc"> Cuenta corriente
-				</label>
+		<div class="tabla_select" style="width: 800px;">
+			<div class="tabla mg-b-10">
+				<table>
+					<tr>
+						<td class="bold small_11">Sueldo</td>
+						<td class="bold small_11">CA $ 12346789090</td>
+					</tr>
+					<tr>
+						<td class="bold small_11">Compartida</td>
+						<td class="bold small_11">CA us$ 12346789090</td>
+					</tr>
+					<tr>
+						<td class="bold small_11">Ahorros</td>
+						<td class="bold small_11">CA us$ 12346789090</td>
+					</tr>
+				</table>
+				<div class="right">
+					<a href="#" class="btn-chico azul arriba">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
+					<a href="#" class="btn-chico azul abajo">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
+				</div>
 			</div>
-			<div class="inline" style="width: 400px;"></div>
 		</div>
 
 		<hr class="piemodal">
@@ -32,10 +39,26 @@
 </div>
 
 <script type="text/javascript">
-	$('.btn-inputs label').click( function(){
-	  $(this).addClass('active');
-	  $(this).siblings().removeClass('active');
+	// botones scroll
+	$('a.abajo').click( function() {
+		var scrollPosition = $('.tabla').scrollTop();
+		$('.tabla').animate({scrollTop: scrollPosition + 180 });
+	});
+	$('a.arriba').click( function() {
+		var scrollPosition = $('.tabla').scrollTop();
+		$('.tabla').animate({scrollTop: scrollPosition - 180 });
+	});
 
-	  $('#continuar').show();
+	// si hay 5 o menos movimientos, ocultar flechas y ensanchar tabla
+	var tableHeight = $('table').height();
+	if (tableHeight <= 180) { 
+		$('table + .right').hide();
+		$('.tabla').css('width', '100%');
+	}
+
+	// seleccionar fila
+	$('tr').click( function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
 	})
 </script>
