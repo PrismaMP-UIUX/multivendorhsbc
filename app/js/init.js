@@ -2,10 +2,22 @@ var $slider;
 (function($){
   $(function(){
     dropdown_init(null,1);
-	$slider =  $('#loop .slider').bxSlider({slideWidth: 975, nextSelector: '#slider-next', prevSelector: '#slider-prev', nextText: '', prevText: '', pause:6000});
-	if($slider[0]){
-		$slider.startAuto();
-	}
+  	$slider =  $('#loop .slider').bxSlider({slideWidth: 975, nextSelector: '#slider-next', prevSelector: '#slider-prev', nextText: '', prevText: '', pause:6000, touchEnabled: true});
+  	if($slider[0]){
+  		$slider.startAuto();
+  	};
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      autoplay: true,
+      nav: true,
+      dots: true, 
+      navText: [
+          "<i id='slider-prev' class='prisma izquierda'></i>",
+          '<i id="slider-next" class="prisma derecha"></i>'
+      ],
+      loop: true
+    });
+
     alescribir("extraccion","borrar");      
     alescribir("extraccion","continuar");   
 
