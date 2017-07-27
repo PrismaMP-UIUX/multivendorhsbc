@@ -4,7 +4,7 @@ body { margin: 0px; overflow: hidden; }
 
 // Ubicación de los floats
 .right {float: right;}
-.left {float: left;}
+.left {float: left;} 
 .oculto {display: none;}
 .block {display:inline-block;}
 .inline {display: inline;}
@@ -14,6 +14,16 @@ body { margin: 0px; overflow: hidden; }
 .centradovertical {
 	position: absolute; top: 0px; width: 100%; height: 100%;
 	display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-align-items: center; -ms-flex-align: center; align-items: center;}
+.justify-around { 
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+.justify-center { 
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: center;
+}
 
 // Tamaño de la pantalla
 .draw {
