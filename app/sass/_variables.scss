@@ -221,8 +221,13 @@ $tabla_de_fuentes:(
 	h3	2.2	0.3	7	$font-regular,
 	h2	2.5	0.28	10	$font-light,
 	h1	3	0.22	15	$font-light
-	);
+	); 
 
+@for $tam from 1 through 1000 {
+	.font_#{$tam}, .font_#{$tam} { 
+	    font-size: ($tam * $font-size-base) * 0.01;
+	};
+} 
 
 %todos {
 	letter-spacing: -0.5px;
