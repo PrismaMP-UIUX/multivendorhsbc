@@ -24,7 +24,9 @@ body { margin: 0px; overflow: hidden; }
 	-webkit-justify-content: space-around;
 	justify-content: center;
 }
-
+.text-align-center {
+	text-align: center;
+}
 // Tamaño de la pantalla
 .draw {
 	width: $ancho_draw; 
@@ -453,7 +455,16 @@ $color-ticket-ayuda: invert($color-ticket);
 .idpos { @extend .mg-b-20;}
 .btidpositiva { @extend .mg-b-0; }
 
+.clavealfa, .btclavealfa {
+	white-space: nowrap;
+	@extend .alinear-centro; 
+}
+ 
+.btclavealfa { @extend .mg-b-0; }
 
+.clavealfa .secure {
+	-webkit-text-security: disc;
+}
 /* Barras de últimos movimientos */
 ::-webkit-scrollbar {
 	width: 5px;

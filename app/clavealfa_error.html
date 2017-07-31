@@ -1,0 +1,52 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma clave"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo text-align-center"><span class="azul"><i class="prisma clave"></i> |</span> Nueva clave</h5>
+			<p class="alinear-centro rojo">
+				<i class="prisma informacion"></i>
+				Ingresaste una secuencia incorrecta
+			</p>
+			<p class="alinear-centro">Ingresala nuevamente seleccionando el boton que contenga la letra</p>
+			<p class="alinear-centro font_70 mg-t-20">Clave</p>
+			<div class="clavealfa">
+				<div class="carga" style="width: 100px;"><span class="flash animated infinite">_</span>__</div>  
+			</div>
+			<div id="notita" class="notita pulse animated infinite centradovertical" style="width: 200px;/* display: none; */height: 100%;top: -10px;right: 130px;text-align: left;">
+				<p class="font_60 light naranja"><i><i class="prisma advertencia"></i> En caso de ingresarla incorrectamente, tu clave será inhabilitada</i></p>
+			</div>
+			<div class="btidpositiva centrado">
+				<a href="#" class="btn fijo-50 azul">KXP</a>
+				<a href="#" class="btn fijo-50 azul">HDQ</a>
+				<a href="#" class="btn fijo-50 azul">NJA</a>
+				<a href="#" class="btn fijo-50 azul">VUS</a><br>
+				<a href="#" class="btn fijo-50 azul">IOL</a>
+				<a href="#" class="btn fijo-50 azul">YCF</a>
+				<a href="#" class="btn fijo-50 azul">ZBM</a>
+				<a href="#" class="btn fijo-50 azul">WGE</a>
+			</div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer"> 
+	<a href="loop.html" class="btn rojo"><i class="prisma salir"></i> Salir</a> 
+</div>
+
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+</body>
+</html>
