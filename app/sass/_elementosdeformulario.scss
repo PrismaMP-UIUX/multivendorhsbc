@@ -88,6 +88,37 @@ input {
 		    padding: 5px 135px 5px 60px;
 		}
 	}
+
+	&.boton {
+	    display: inline-block;
+	    width: auto;
+	    text-decoration: none;
+	    input {
+		    display: inline;
+		    width: auto;
+		    padding: 0px 15px;
+		    height: 74px;
+		    font-size: 2em;
+		}
+		.btn {
+		    margin: -9px 0 5px -6px;
+    		border-radius: 0 5px 5px 0;
+
+    		.ayuda & { margin-top: -11px; }
+		}
+		&.warning {
+			padding: 0;
+			input {
+				border-color: $rojo;
+				color: $rojo;
+
+				.ayuda & {
+					border-color: $rojo_ayuda;
+					color: $rojo_ayuda;
+				}
+			} 
+		}
+	}
 }
 
 
@@ -156,6 +187,11 @@ input {
 		line-height: 72px;
 		> span {
 			padding: 0 70px 0 28px;
+			width: calc(100% - 80px);
+			display: block;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 	.contenedor {
@@ -434,8 +470,12 @@ label.check {
 				}
 				&:after {
 					background: $azul_ayuda;
-					top: 7px;
-					left: 9px;
+					top: 1px;
+					left: 3px;
+					width: 31px;
+					height: 31px;
+					line-height: 32px;
+					text-align: center;
 				}
 			}
 		}

@@ -43,7 +43,9 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  vertical-align: middle;
+  vertical-align: baseline !important;
+  position: relative;
+  top: 2px;
 
   &.cardhole-out:before {
     content: "\e93f";

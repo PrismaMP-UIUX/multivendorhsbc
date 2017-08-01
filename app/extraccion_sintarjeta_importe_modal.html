@@ -1,0 +1,56 @@
+@@include('extraccion_sintarjeta.html')
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="extraccion_sintarjeta_dni_ingresado.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Ingresá el importe</h5>
+		
+		<div class="left" style="width: 370px;">
+			<!-- Cambiar la clase "signopesos" o "signodolar" según la moneda elegida antes -->
+			<div id="transferencias_monto" class="containerdeinput mg-b-20 signopesos">
+				<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('importe')"><i class="prisma borrar"></i> Borrar</a>
+				<input type="text" maxlength="22" id="importe">
+			</div>
+			<p class="font_139 mg-t-20">
+				<label class="radio" for="pesos"><input id="pesos" type="radio" name="gender" value="pesos" checked> Pesos</label>
+  				<label class="radio mg-t-20" for="dolares"><input id="dolares" type="radio" name="gender" value="dolares"> Dólares</label>
+  			</p>
+		</div>
+
+		<div class="inline mg-l-30" style="width: 420px;">
+			<a href="" class="btn fijo-70 azul ">1</a>
+			<a href="" class="btn fijo-70 azul ">2</a>
+			<a href="" class="btn fijo-70 azul ">3</a><br>
+			<a href="" class="btn fijo-70 azul ">4</a>
+			<a href="" class="btn fijo-70 azul ">5</a>
+			<a href="" class="btn fijo-70 azul ">6</a><br>
+			<a href="" class="btn fijo-70 azul ">7</a>
+			<a href="" class="btn fijo-70 azul ">8</a>
+			<a href="" class="btn fijo-70 azul ">9</a><br>
+			<a href="" class="btn azul block">0</a>
+		</div>
+			
+		<hr class="piemodal">
+		<p class="alinear-derecha">
+			<a href="extraccion_sintarjeta_dni_ingresado.html" class="btn gris mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+			<a href="extraccion_sintarjeta_importe_ingresado.html" class="btn verde confirmar"><i class="prisma confirmar"></i> Listo</a>
+		</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	alescribir("importe","borrar");
+
+	$('input[type=radio]').change(function() {
+		var inputMonto = $('.containerdeinput');
+	    if($('#pesos').is(":checked")){
+	        $(inputMonto).removeClass('signodolar');
+	        $(inputMonto).addClass('signopesos');
+	    }
+	     if($('#dolares').is(":checked")){
+	    	$(inputMonto).removeClass('signopesos');
+	        $(inputMonto).addClass('signodolar');
+	    }
+	});
+</script>

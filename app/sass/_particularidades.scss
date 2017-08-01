@@ -39,10 +39,16 @@
 	#transferencias_monto {
 		&.signopesos:before { left: 20px !important; }
 		&.signodolar:before { left: 10px !important; }
-		&.signopesos, &.signodolar { 
-			input {
-				padding-left: 55px;
-			}
-		}
+		&.signopesos input { padding-left: 40px; }
+		&.signodolar input { padding-left: 55px; }
 		.borrar { margin-right: 10px; }
+	}
+
+	#operaciones_sintarjeta {
+		width: 700px;
+		left: 135px;
+	}
+	#extraccion_sintarjeta {
+		width: 780px;
+		left: 95px;
 	}

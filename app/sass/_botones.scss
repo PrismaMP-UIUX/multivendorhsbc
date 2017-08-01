@@ -312,3 +312,9 @@ a.waves-effect .waves-ripple {
 		display: none !important;
 	}
 }
+
+// para agregar texto a igual altura que un boton 
+.btn-falso {
+    line-height: 74px;
+    display: inline-block;
+}
