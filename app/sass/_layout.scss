@@ -33,6 +33,9 @@ body { margin: 0px; overflow: hidden; }
 .text-align-center {
 	text-align: center;
 }
+.deshabilitado {
+	opacity: .3;
+}
 // Tamaño de la pantalla
 .draw {
 	width: $ancho_draw; 
@@ -615,6 +618,10 @@ body#offline {
 	#funciones i { font-size: 3em; line-height: 60px; }
 }
 
+
+.fondo_rojo {
+	color: #fff;
+}
 
 // Ayuda
 .ayuda {

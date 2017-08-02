@@ -1,0 +1,63 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+
+
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div id="extraccion_sintarjeta" class="panel">
+			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Extracción sin tarjeta</h5>
+			<p class="mg-t-10">1. Seleccioná el tipo y número de documento</p>
+			<div id="tipo" class="dropdown btn gris mg-r-15">
+				<div class="contenedor">
+					<div indice="1" data-dd="data1">DNI</div>
+					<div indice="2" data-dd="data2">LE</div>
+					<div indice="3" data-dd="data3">LC</div>
+				</div>
+			</div>			
+			<a href="extraccion_sintarjeta_dni_modal.html" class="containerdeinput boton">
+				<input type="text" size="16" placeholder="Número" value="30.015.399">
+				<span class="btn azul">Ingresar</span>
+			</a>
+			
+			<div>
+				<p class="mg-t-20">2. Ingresá el importe</p>
+				<a href="extraccion_sintarjeta_importe_modal.html" class="containerdeinput boton">
+					<input type="text" size="12">
+					<span class="btn azul">Ingresar</span>
+				</a>
+			</div>
+
+			<div class="deshabilitado">
+				<p class="mg-t-20">1. Ingresá la clave de la orden de extracción (6 dígitos)</p>
+				<div class="containerdeinput boton">
+					<input type="password" size="6" disabled="">
+					<span class="btn azul">Ingresar</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="retire_dinero.html" class="btn verde right" style="display: none"><i class="prisma extraccion"></i> Extraer</a>
+</div>
+
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+</body>
+</html>

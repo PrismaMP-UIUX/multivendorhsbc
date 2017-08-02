@@ -11,14 +11,17 @@
 			<div class="tabla mg-b-10">
 				<table>
 					<tr>
+						<td><label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label></td>
 						<td class="bold font_55">Sueldo</td>
 						<td class="bold font_55">CA $ 12346789090</td>
 					</tr>
 					<tr>
+						<td><label class="radio"><input type="radio" name="cuenta" id="2" value="2"></label></td>
 						<td class="bold font_55">Compartida</td>
 						<td class="bold font_55">CA us$ 12346789090</td>
 					</tr>
 					<tr>
+						<td><label class="radio"><input type="radio" name="cuenta" id="3" value="3"></label></td>
 						<td class="bold font_55">Ahorros</td>
 						<td class="bold font_55">CA us$ 12346789090</td>
 					</tr>
@@ -53,6 +56,7 @@
 	var tableHeight = $('table').height();
 	if (tableHeight <= 180) { 
 		$('table + .right').hide();
+		$('.tabla').css('height', 'auto');
 		$('.tabla').css('width', '100%');
 	}
 
@@ -60,5 +64,6 @@
 	$('tr').click( function(){
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
+		$(this).find('td input[type=radio]').prop( "checked", true );
 	})
 </script>
