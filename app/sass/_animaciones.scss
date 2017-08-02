@@ -2,9 +2,15 @@
 	position: absolute;
 	top: 38px;
 	left: 30px;
-}
+} 
 
-
+//Delay function
+@for $del from 1 through 1000 {
+	.delay_#{$del} { 
+	    -webkit-animation-delay:$del*0.1s; 
+	    animation-delay:$del*0.1s;
+	};
+} 
 
 // !
 //  * animate.css -http://daneden.me/animate
@@ -126,6 +132,64 @@
 	-webkit-animation-name: flash;
 	animation-name: flash;
 }
+
+@-webkit-keyframes heightZero {
+	1% {
+		-webkit-transform: scaleY(1);
+		-o-transform: scaleY(1);
+		-ms-transform: scaleY(1);
+		transform: scaleY(1); 	
+	}
+	99% {
+		-webkit-transform: scaleY(0);
+		-o-transform: scaleY(0);
+		-ms-transform: scaleY(0);
+		transform: scaleY(0);	
+	}
+	100% {
+		display: none;
+		-webkit-transform: scaleY(0);
+		-o-transform: scaleY(0);
+		-ms-transform: scaleY(0);
+		transform: scaleY(0);
+		height: 0px;	
+		padding: 0px;
+		margin: 0px; 
+	}
+}
+
+@keyframes heightZero {
+	1% {
+		-webkit-transform: scaleY(1);
+			-o-transform: scaleY(1);
+			-ms-transform: scaleY(1);
+			transform: scaleY(1); 
+	}
+	99% {
+		-webkit-transform: scaleY(0);
+			-o-transform: scaleY(0);
+			-ms-transform: scaleY(0);
+			transform: scaleY(0);
+	}
+	100% {
+		display: none;
+		-webkit-transform: scaleY(0);
+		-o-transform: scaleY(0);
+		-ms-transform: scaleY(0);
+		transform: scaleY(0);
+		height: 0px;	
+		padding: 0px; 
+	}
+}
+
+.heightZero {
+	-webkit-animation-name: heightZero;
+	animation-name: heightZero;
+	-webkit-animation-duration: 0.1s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards; 
+}
+
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
@@ -3159,6 +3223,80 @@
 	animation-name: slideInLeft;
 }
 
+@-webkit-keyframes slideInLeftB {
+	0% {
+		opacity: 0;
+		height: 0px;
+		padding: 0px;
+		margin: 0px;
+		-webkit-transform: translate3d(-200%, 0, 0);
+		transform: translate3d(-200%, 0, 0);
+		
+		
+	}
+	10% {
+		height: 30px;
+		padding: 22px 28px;
+		margin: 0px 5px 14px;
+		-webkit-transform: translate3d(-200%, 0, 0);
+		transform: translate3d(-200%, 0, 0);	
+	}
+	70% {
+		-webkit-transform: translate3d(5%, 0, 0);
+		transform: translate3d(5%, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		height: 30px;
+		padding: 22px 28px;
+		margin: 0px 5px 14px;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		
+	}
+}
+
+@keyframes slideInLeftB {
+	0% {
+		opacity: 0;
+		height: 0px;
+		padding: 0px;
+		margin: 0px;
+		-webkit-transform: translate3d(0,-200%, 0);
+		transform: translate3d(0,-200%, 0);
+		
+		
+	}
+	10% {
+		height: 30px;
+		padding: 22px 28px;
+		margin: 0px 5px 14px;
+		-webkit-transform: translate3d(0,-200%, 0);
+		transform: translate3d(0,-200%, 0);	
+	}
+	70% {
+		-webkit-transform: translate3d( 0, 5%,0);
+		transform: translate3d( 0, 5%,0);
+	}
+	100% {
+		opacity: 1;
+		height: 30px;
+		padding: 22px 28px;
+		margin: 0px 5px 14px;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		
+	}
+}
+
+.slideInLeftB {
+	-webkit-animation-name: slideInLeftB;
+	animation-name: slideInLeftB;
+	animation-fill-mode: forwards;
+	animation-duration:1s;
+	animation-timing-function: ease-out;
+}
+
 @-webkit-keyframes slideInRight {
 	from {
 		-webkit-transform: translate3d(100%, 0, 0);
@@ -3308,7 +3446,9 @@
 		transform: translate3d(100%, 0, 0);
 	}
 }
-
+.positionAbsolute {
+	position: absolute;
+}
 .slideOutRight {
 	-webkit-animation-name: slideOutRight;
 	animation-name: slideOutRight;
@@ -3344,3 +3484,4 @@
 	-webkit-animation-name: slideOutUp;
 	animation-name: slideOutUp;
 }
+ 

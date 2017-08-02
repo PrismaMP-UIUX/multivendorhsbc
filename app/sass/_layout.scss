@@ -5,6 +5,7 @@ body { margin: 0px; overflow: hidden; }
 // Ubicación de los floats
 .right {float: right;}
 .left {float: left;} 
+.leftZero {left:0px}
 .oculto {display: none;}
 .block {display:inline-block;}
 .inline {display: inline;}
@@ -23,6 +24,11 @@ body { margin: 0px; overflow: hidden; }
 	display: flex;
 	-webkit-justify-content: space-around;
 	justify-content: center;
+}
+.flexVerticalAlign {
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
 }
 .text-align-center {
 	text-align: center;
@@ -215,6 +221,11 @@ $color-ticket-ayuda: invert($color-ticket);
 		}
 		::after {
 			display: none;
+		}
+	}
+	p {
+		i {
+			letter-spacing: 5px;
 		}
 	}
 }

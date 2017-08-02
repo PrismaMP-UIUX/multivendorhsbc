@@ -22,8 +22,28 @@ var $slider;
     alescribir("extraccion","borrar");      
     alescribir("extraccion","continuar");   
 
+    //Inicio - más operaciones
+    jQuery.fn.fadeThenSlideToggle = function(speed, easing, callback) {
+      if (this.is(":hidden")) {
+        return this.slideDown(speed, easing).fadeTo(speed, 1, easing, callback);
+      } else {
+        return this.fadeTo(speed, 0, easing).slideUp(speed, easing, callback);
+      }
+    };
+    $("#masOp").click(function(){
+      $("#inicio_opnoextraccion").css("min-width","330px");
+      $(this).fadeThenSlideToggle(300);      
+      $(".adde") 
+        .children() 
+          .addClass("slideInLeftB animated")  
+    });    
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+//Últimos movimientos
+if ($(".ultimosmovimientos tr").length < 5) {
+  $(".ultimosmovimientos-botones").hide();    
+}
 
 $("body").on("keypress",function(e){
   key= window.event? event.keyCode: e.keyCode;
