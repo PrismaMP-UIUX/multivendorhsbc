@@ -63,4 +63,7 @@
 #consultasaldo_sincuentamodal .ayuda .oculto { display: none !important; }
 
 // error_generico
-#error_generico .error_generico { height: 250px }
+#error_generico .error_generico { height: 250px; }
+
+// inicio_link
+#inicio_link .dropdown.gris { max-width: 285px; }
