@@ -50,6 +50,22 @@
 
 	{ width: 100px; }
 
+#clavealfa_generacion_1 .fix,
+#clavealfa_generacion_2 .fix,
+#clavealfa_generacion_3 .fix,
+#clavealfa_generacion_4 .fix,
+#clavealfa_confirmar_1 .fix,
+#clavealfa_confirmar_2 .fix,
+#clavealfa_confirmar_3 .fix,
+#clavealfa_confirmar_4 .fix,
+#clavealfa_listo .fix,
+#clavealfa_error .fix		
+	{ 
+		width: 120px;
+		display: block;
+		margin: 0 auto;
+	}
+
 // clavealfa_error
 #clavealfa_error .notita.animated { width: 150px; height: 100%; top:0px; text-align: left; }
 
@@ -67,3 +83,23 @@
 
 // inicio_link
 #inicio_link .dropdown.gris { max-width: 285px; }
+
+// extraccion
+#extraccion .containerdeinput.signopesos input, 
+#extraccion2 .containerdeinput.signopesos input,
+#extraccion2_sugeridos .containerdeinput.signopesos input,
+#extraccion2_timeout .containerdeinput.signopesos input,
+#extraccion3 .containerdeinput.signopesos input,
+#extraccion3_confirmar .containerdeinput.signopesos input,
+#extraccion3_cuenta .containerdeinput.signopesos input,
+#extraccion3_cuotas .containerdeinput.signopesos input,
+#extraccion_importemenor .containerdeinput.signopesos input,
+#extraccion_sintarjeta .containerdeinput.signopesos input,
+#extraccion_sintarjeta_clave_ingresado .containerdeinput.signopesos input,
+#extraccion_sintarjeta_clave_modal .containerdeinput.signopesos input,
+#extraccion_sintarjeta_dni_ingresado .containerdeinput.signopesos input,
+#extraccion_sintarjeta_dni_modal .containerdeinput.signopesos input,
+#extraccion_sintarjeta_error .containerdeinput.signopesos input,
+#extraccion_sintarjeta_importe_ingresado .containerdeinput.signopesos input,
+#extraccion_sintarjeta_importe_modal .containerdeinput.signopesos input
+	{ padding-left: 45px; }

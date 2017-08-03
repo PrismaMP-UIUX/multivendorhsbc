@@ -36,7 +36,12 @@ var $slider;
       $(".adde") 
         .children() 
           .addClass("slideInLeftB animated")  
-    });     
+    });    
+
+    // Consulta
+    $(".saldosDisponibles .tfila .btn-chico").click(function(){
+      $(this).parent().next().children(".disponibles").delay(800).fadeIn();
+    }); 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 

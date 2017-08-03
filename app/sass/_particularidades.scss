@@ -67,3 +67,32 @@
 		width: 780px;
 		left: 95px;
 	}
+// Consultas
+.saldosDisponibles{ 
+	.tfila {
+		display: flex;
+
+		& > div {
+			width: 38%;
+			display: flex;
+			flex-direction: row;
+			align-items: center;    
+
+			&:first-of-type {
+				text-align: right;
+
+				p {
+					width: 100%;
+					padding-right: 20px;
+				}
+			} 
+
+			&:nth-of-type(2) {
+				width: 24%;
+			}
+		}
+	}
+	& > div:last-of-type {
+		margin-top: 15px;
+	}			
+} 
