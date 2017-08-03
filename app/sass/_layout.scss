@@ -37,6 +37,25 @@ body { margin: 0px; overflow: hidden; }
 .deshabilitado {
 	opacity: .3;
 }
+
+//Columnas Flex
+.flex {
+	display: flex;
+
+	&.dosCol {
+		& > div { 
+			left: 0px !important;
+			right: 0px !important;
+			width: auto !important;
+		}
+		& > .col-left:first-of-type {
+			margin-right:30px !important; 
+		}
+		& > .col-right:last-of-type {
+			margin-left:30px !important;
+		}
+	}
+}
 // Tamaño de la pantalla
 .draw {
 	width: $ancho_draw; 
