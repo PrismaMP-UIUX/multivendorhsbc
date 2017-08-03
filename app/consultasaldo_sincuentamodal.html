@@ -8,7 +8,7 @@
 @@include('_partials/brandbar.html')
 
 <!-- Contenido de la página -->
-<div class="content"><div class="iconback">%</div>
+<div class="content" id="consultasaldo_sincuentamodal"><div class="iconback">%</div>
 
 	<div id="consultas" class="panel-sinfondo centrado"> <!-- Este div se cierra en cada uno -->
 		<h5 class="titulo"><span class="azul">% |</span> Consulta</h5>
@@ -37,12 +37,7 @@
 					<div class="altofijo"><p class="font_61">Monto máximo diario<br>que puede extrar</p></div>
 					<div class="altofijo"><p class="font_61">Monto máximo diario<br>para efectuar pagos</p></div>
 					<div class="altofijo"><p class="font_61">Monto máximo diario<br>disponible para realizar compras</p></div>
-				</div>
-				<style>
-					.notita {width: 180px;}
-					.ayuda .notita {display: none;}
-					.ayuda .oculto {display: none !important;}
-				</style>
+				</div> 
 				<div class="notita">
 					<p class="font_70 light"><i>% Presioná el botón ayuda para conocer qué es cada importe</i></p>
 					<a id="bt_ayuda" href="#" class="btn-chico">% Ayuda</a>
@@ -68,7 +63,7 @@
 					</div>
 				</div>
 				<hr class="piemodal">
-				<div class="block" style="width: 100%">
+				<div class="block fix">
 					<a href="inicio.html" class="btn naranja mg-t-10 left"><i class="prisma inicio"></i> Volver a inicio</a>&nbsp;
 				</div>
 			</div>

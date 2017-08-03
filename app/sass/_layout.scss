@@ -3,6 +3,7 @@
 body { margin: 0px; overflow: hidden; }
 
 // Ubicación de los floats
+.clearfix { clear: both }
 .right {float: right;}
 .left {float: left;} 
 .leftZero {left:0px}

@@ -1,0 +1,66 @@
+// idpos1, idpos2, idpos3
+#idpos1 .carga.inline,
+#idpos2 .carga.inline, 
+#idpos3 .carga.inline 
+	
+	{ width: 134px; }
+
+// idposalfa1, idposalfa2, idposalfa3
+#idposalfa1 .carga,
+#idposalfa2 .carga,
+#idposalfa3 .carga 
+	
+	{ width: 100px; }
+
+// idposexperto1, idposexperto2, idposexperto3
+#idposexperto1 .carga,
+#idposexperto2 .carga,
+#idposexperto3 .carga 
+	
+	{ width: 100px; }
+
+// cambioclave1, cambioclave2, cambioclave3, cambioclave_error1, cambioclave_error2
+#cambioclave1 .notita.animated,
+#cambioclave2 .notita.animated,
+#cambioclave3 .notita.animated,
+#cambioclave_error1 .notita.animated,
+#cambioclave_error2 .notita.animated 
+	
+	{ width: 200px; }
+
+#cambioclave1 .containerdeinput.pin,
+#cambioclave2 .containerdeinput.pin,
+#cambioclave3 .containerdeinput.pin,
+#cambioclave_error1 .containerdeinput.pin,
+#cambioclave_error2 .containerdeinput.pin 
+	
+	{ width: 220px; }
+
+// clavealfa_generacion_1, clavealfa_generacion_2, clavealfa_generacion_3, clavealfa_generacion_4, clavealfa_confirmar_1, clavealfa_confirmar_2, clavealfa_confirmar_3, clavealfa_confirmar_4, clavealfa_listo, clavealfa_error
+#clavealfa_generacion_1 .carga,
+#clavealfa_generacion_2 .carga,
+#clavealfa_generacion_3 .carga,
+#clavealfa_generacion_4 .carga,
+#clavealfa_confirmar_1 .carga,
+#clavealfa_confirmar_2 .carga,
+#clavealfa_confirmar_3 .carga,
+#clavealfa_confirmar_4 .carga,
+#clavealfa_listo .carga,
+#clavealfa_error .carga
+
+	{ width: 100px; }
+
+// clavealfa_error
+#clavealfa_error .notita.animated { width: 150px; height: 100%; top:0px; text-align: left; }
+
+// consultacbu
+#idConsultas #confirmacion  { width: 100%; }
+
+// consultasaldo_sincuentamodal
+#consultasaldo_sincuentamodal #notice .fix { width: 100%; }
+#consultasaldo_sincuentamodal .notita { width: 180px; }
+#consultasaldo_sincuentamodal .ayuda .notita { display: none; }	
+#consultasaldo_sincuentamodal .ayuda .oculto { display: none !important; }
+
+// error_generico
+#error_generico .error_generico { height: 250px }

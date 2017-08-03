@@ -36,7 +36,7 @@ var $slider;
       $(".adde") 
         .children() 
           .addClass("slideInLeftB animated")  
-    });    
+    });     
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
