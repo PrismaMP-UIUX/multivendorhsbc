@@ -23,16 +23,14 @@
 	}
 
 // clavealfa_error
-#clavealfa_error .notita.animated { width: 150px; height: 100%; top:0px; text-align: left; }
+.clavealfa_f.notita.animated { width: 150px; height: 100%; top:0px; text-align: left; }
 
 // consultacbu
 #confirmacion_f.content-modal  { width: 100%; }
 
 // consultasaldo_sincuentamodal
-#consultasaldo_sincuentamodal #notice .fix { width: 100%; }
-#consultasaldo_sincuentamodal .notita { width: 180px; }
-#consultasaldo_sincuentamodal .ayuda .notita { display: none; }	
-#consultasaldo_sincuentamodal .ayuda .oculto { display: none !important; }
+.consultasaldo_sincuentamodal_f#notice .fix { width: 100%; }
+.consultasaldo_sincuentamodal_f.notita { width: 180px; } 
 
 // error_generico
 #error_generico .error_generico { height: 250px; }
