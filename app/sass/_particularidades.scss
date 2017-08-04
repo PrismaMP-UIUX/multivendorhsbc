@@ -87,8 +87,12 @@
 				}
 			} 
 
-			&:nth-of-type(2) {
-				width: 24%;
+			& + div {
+				width: 62%;
+
+				p {
+					margin-right: 10px;
+				}
 			}
 		}
 	}
