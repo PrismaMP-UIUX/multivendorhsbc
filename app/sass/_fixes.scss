@@ -2,18 +2,10 @@
 .idpos_f .carga.inline { width: 134px; }
 
 // idposalfa1, idposalfa2, idposalfa3
-#idposalfa1 .carga,
-#idposalfa2 .carga,
-#idposalfa3 .carga 
-	
-	{ width: 100px; }
+.idposalfa_f .carga { width: 100px; }
 
 // idposexperto1, idposexperto2, idposexperto3
-#idposexperto1 .carga,
-#idposexperto2 .carga,
-#idposexperto3 .carga 
-	
-	{ width: 100px; }
+.idposexperto_f .carga  { width: 100px; }
 
 // cambioclave1, cambioclave2, cambioclave3, cambioclave_error1, cambioclave_error2
 #cambioclave1 .notita.animated,
