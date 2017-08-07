@@ -9,12 +9,17 @@
 	}
 
 // idposexperto1, idposexperto2, idposexperto3
-.idposexperto_f .carga  { width: 100px; }
+.idposexperto_f .carga  
+	{
+		width: 100px;
+		line-height: 1.488;
+	}
 
 // cambioclave1, cambioclave2, cambioclave3, cambioclave_error1, cambioclave_error2
 .cambiodeclave_f.notita.animated { width: 200px; }
 
 .cambiodeclave_f.containerdeinput.pin { width: 220px; }
+.cambiodeclave_f.containerdeinput i { line-height: 2; }
 
 // clavealfa_generacion_1, clavealfa_generacion_2, clavealfa_generacion_3, clavealfa_generacion_4, clavealfa_confirmar_1, clavealfa_confirmar_2, clavealfa_confirmar_3, clavealfa_confirmar_4, clavealfa_listo, clavealfa_error
 .clavealfa_f.carga 
@@ -63,3 +68,6 @@ input#extraccion.extraccion_f { padding-left: 45px; }
 .transferencias_f.borrar.btn-chico {
 	right: 1px;
 }
+
+// login
+.login_f.containerdeinput i { line-height: 2; }
