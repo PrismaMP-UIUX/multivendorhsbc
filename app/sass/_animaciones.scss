@@ -3225,7 +3225,7 @@
 
 @-webkit-keyframes slideInLeftB {
 	0% {
-		opacity: 0;
+		// opacity: 0;
 		height: 0px;
 		padding: 0px;
 		margin: 0px;
@@ -3246,7 +3246,7 @@
 		transform: translate3d(5%, 0, 0);
 	}
 	100% {
-		opacity: 1;
+		// opacity: 1;
 		height: 30px;
 		padding: 22px 28px;
 		margin: 0px 5px 14px;
@@ -3273,11 +3273,7 @@
 		margin: 0px 5px 14px;
 		-webkit-transform: translate3d(0,-200%, 0);
 		transform: translate3d(0,-200%, 0);	
-	}
-	70% {
-		-webkit-transform: translate3d( 0, 5%,0);
-		transform: translate3d( 0, 5%,0);
-	}
+	} 
 	100% {
 		opacity: 1;
 		height: 30px;
@@ -3293,7 +3289,7 @@
 	-webkit-animation-name: slideInLeftB;
 	animation-name: slideInLeftB;
 	animation-fill-mode: forwards;
-	animation-duration:1s;
+	animation-duration:.5s;
 	animation-timing-function: ease-out;
 }
 

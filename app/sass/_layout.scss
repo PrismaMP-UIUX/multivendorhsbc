@@ -78,6 +78,27 @@ body { margin: 0px; overflow: hidden; }
 	float: left;
 }
 
+// z-index
+.z-9999 {
+	z-index: 9999;
+}
+.z-9998 {
+	z-index: 9998;
+}
+.z-9997 {
+	z-index: 9997;
+}
+.z-9996 {
+	z-index: 9996;
+}
+.z-9995 {
+	z-index: 9995;
+}
+
+.posR {
+	position: relative;
+}
+
 // Fondos
 .brandbar, .footer, .panel {
 	.bnlc & { background-color: #fff; }

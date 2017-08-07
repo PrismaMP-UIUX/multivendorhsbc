@@ -32,9 +32,8 @@ var $slider;
     };
     $("#masOp").click(function(){
       $("#inicio_opnoextraccion").css("min-width","330px");
-      $(this).fadeThenSlideToggle(300);      
-      $(".adde") 
-        .children() 
+      $(this).slideUp(400).fadeOut(500);      
+      $(".adde > a")  
           .addClass("slideInLeftB animated")  
     });    
 
