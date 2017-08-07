@@ -330,13 +330,13 @@ $checkbox_selector: $checkbox_binario / 2.2 ;
 
 
 .idpos, .clavealfa {
-	@extend .mg-b-20;
+
 	.inline {
 		@extend .light;
 		@extend .h4;
 		@extend .gris_claro;
 		display: inline-block;
-		margin-bottom: -12px;
+		margin-bottom: -16px;
 	}
 	.carga {
 		height: 60px;
@@ -348,6 +348,7 @@ $checkbox_selector: $checkbox_binario / 2.2 ;
 		@extend .alinear-centro;
 		padding: 0px 10px;
 		letter-spacing: 0.2em;
+		margin-bottom: 0px;
 	}
 }
 

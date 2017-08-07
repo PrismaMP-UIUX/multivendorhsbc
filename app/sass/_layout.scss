@@ -492,10 +492,9 @@ $color-ticket-ayuda: invert($color-ticket);
 .idpos, .btidpositiva {
 	white-space: nowrap;
 	@extend .alinear-centro;
-	@extend .mg-t-20;
+	@extend .mg-t-15;
 }
-
-.idpos { @extend .mg-b-20;}
+ 
 .btidpositiva { @extend .mg-b-0; }
 
 .clavealfa, .btclavealfa {
