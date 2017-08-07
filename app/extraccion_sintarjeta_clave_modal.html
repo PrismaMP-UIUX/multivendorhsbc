@@ -8,7 +8,8 @@
 		
 		<div class="left" style="width: 370px;">
 			<div class="containerdeinput mg-b-20 extraccion_sintarjeta_clave_modal_f">
-				<input type="password" maxlength="6">
+				<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('extraccion')"><i class="prisma borrar"></i> Borrar</a>
+				<input type="password" maxlength="6" id="extraccion" class="extraccion_f">
 			</div>
 		</div> 
 		<div class="inline mg-l-30" style="width: 420px;">
@@ -31,3 +32,11 @@
 		</p>
 	</div>
 </div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("extraccion","borrar");		
+	alescribir("extraccion","continuar");		
+</script>

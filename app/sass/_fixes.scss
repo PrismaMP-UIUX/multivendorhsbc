@@ -54,6 +54,14 @@
 
 // extraccion y extraccion sin tarjeta
 input#extraccion.extraccion_f { padding-left: 45px; }
+.extraccion_sintarjeta_clave_modal_f { margin:0px; padding: 0px; }
+.extraccion_sintarjeta_clave_modal_f .btn.borrar { right: -10px; }
+.extraccion_sintarjeta_clave_modal_f input#extraccion.extraccion_f 
+	{ 
+		width:100%; 
+		padding-left: 10px; 
+		margin: 0px; 
+	}
 
 .extraccion_f.borrar.btn-chico {
 	right: -3px;
