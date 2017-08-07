@@ -2,7 +2,11 @@
 .idpos_f .carga.inline { width: 134px; }
 
 // idposalfa1, idposalfa2, idposalfa3
-.idposalfa_f .carga { width: 100px; }
+.idposalfa_f .carga 
+	{
+		width: 100px;
+		line-height: 1.488;
+	}
 
 // idposexperto1, idposexperto2, idposexperto3
 .idposexperto_f .carga  { width: 100px; }
@@ -13,7 +17,11 @@
 .cambiodeclave_f.containerdeinput.pin { width: 220px; }
 
 // clavealfa_generacion_1, clavealfa_generacion_2, clavealfa_generacion_3, clavealfa_generacion_4, clavealfa_confirmar_1, clavealfa_confirmar_2, clavealfa_confirmar_3, clavealfa_confirmar_4, clavealfa_listo, clavealfa_error
-.clavealfa_f.carga { width: 100px; }
+.clavealfa_f.carga 
+	{
+		width: 100px;
+		line-height: 1.488;
+	}
 
 .clavealfa_f.font_55 		
 	{ 
