@@ -433,6 +433,9 @@ $color-ticket-ayuda: invert($color-ticket);
 				padding: 0 10px;
 				line-height: 60px;  
 			}
+			tr {
+				width: 100%;
+			}
 			tr:nth-child(odd) {
 				background-color: lighten($gris_claro, 20%);
 			}

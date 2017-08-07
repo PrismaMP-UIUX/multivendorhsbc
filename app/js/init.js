@@ -57,6 +57,11 @@ var $slider;
       $(this).closest(".dropdownContainer").siblings("p.azul").addClass("oculto");
     }); 
 
+    //Inicio link
+    $(".consultasaldo_link_intermedia_f .dropdown .contenedor div").click(function(){
+      $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
+    });  
+
     //Focus en inputs,poner aquí
     $(".extraccion_sintarjeta_clave_modal_f.containerdeinput input").focus();
   }); // end of document ready

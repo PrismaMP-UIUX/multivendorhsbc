@@ -38,17 +38,17 @@
 			<div class="tabla_select right mg-t-30" style="width: 64%;">
 				<div id="cuentas" class="tabla tabla-x4 mg-b-10">
 					<table>
-						<tr>
+						<tr class="waves-effect">
 							<td><label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label></td>
 							<td class="bold font_55">Sueldo</td>
 							<td class="bold font_55">CA $ 12346789090</td>
 						</tr>
-						<tr>
+						<tr class="waves-effect">
 							<td><label class="radio"><input type="radio" name="cuenta" id="2" value="2"></label></td>
 							<td class="bold font_55">Compartida</td>
 							<td class="bold font_55">CA us$ 12346789090</td>
 						</tr>
-						<tr>
+						<tr class="waves-effect">
 							<td><label class="radio"><input type="radio" name="cuenta" id="3" value="3"></label></td>
 							<td class="bold font_55">Ahorros</td>
 							<td class="bold font_55">CA us$ 12346789090</td>
@@ -102,7 +102,7 @@
 		$(this).siblings().removeClass('active');
 		$(this).find('td input[type=radio]').prop( "checked", true );
 		$('#continuar').show();
-	})
+	}) 
 </script>
 </body>
 </html>
