@@ -42,6 +42,23 @@ var $slider;
     $(".saldosDisponibles .tfila .btn-chico").click(function(){
       $(this).next().delay(800).fadeIn();
     }); 
+    $("#bt_ayuda").click(function(){
+      $(".ayudaContainer").removeClass("oculto");
+    });
+    $(".ayudaContainer .close").click(function(){
+      $(".ayudaContainer").addClass("oculto");
+    }); 
+
+    //Inicio link
+    $("#inicio_cuentas .dropdown .contenedor div").click(function(){
+      $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
+    }); 
+    $("#inicio_cuentas .dropdownContainer:nth-of-type(2) .dropdown .contenedor div").click(function(){
+      $(this).closest(".dropdownContainer").siblings("p.azul").addClass("oculto");
+    }); 
+
+    //Focus en inputs,poner aquí
+    $(".extraccion_sintarjeta_clave_modal_f.containerdeinput input").focus();
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 

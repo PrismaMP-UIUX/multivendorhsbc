@@ -30,7 +30,8 @@
 
 		<div id="inicio_cuentas" class="panel col-right">
 			<h5 class="titulo"><span class="azul"><i class="prisma saldo"></i> |</span> Saldo</h5>
-			<div>
+			<p class="azul font_80 alinear-centro">Seleccione la cuenta <br> para consultar el saldo</p>
+			<div class="dropdownContainer">
 				<div class="inicio_link fix dropdown btn gris mg-t-10 mg-l-10" id="tipo">
 					<div class="contenedor">
 						<div indice="1" data-dd="tipo1">Caja de ahorro</div>
@@ -38,18 +39,20 @@
 					</div>
 				</div>
 			</div> 
-			<div>
+			<div class="dropdownContainer oculto">
 				<div class="inicio_link fix dropdown btn gris mg-b-30 mg-l-10" id="numeroCuenta">
 					<div class="contenedor">
 						<div indice="1" data-dd="tipo1">$ 321-123456/1</div>
 						<div indice="2" data-dd="tipo2">$ 321-123456/1</div>
 					</div>
 				</div>
-			</div> 
-
-			<p class="font_140"><span class="azul"><i class="prisma saldo"></i></span> Saldo: <b>$14.000</b></p>
-			<p class="mg-b-20"><span class="azul"><i class="prisma disponible"></i></span> Disponible:
-			<b>$2.500</b></p><a class="btn azul"><i class="prisma imprimir"></i> Imprimir</a>
+			</div>  
+			<div class="oculto">
+				<p class="font_140"><span class="azul"><i class="prisma saldo"></i></span> Saldo: <b>$14.000</b></p>
+				<p class="mg-b-20"><span class="azul"><i class="prisma disponible"></i></span> Disponible:
+				<b>$2.500</b></p>
+				<a class="btn azul inicio_link_f"><i class="prisma imprimir"></i> Imprimir</a>
+			</div>
 		</div>
 
 	</div>
