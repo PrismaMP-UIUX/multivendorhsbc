@@ -1,0 +1,129 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content" id="idConsultas"><div class="iconback"><i class="prisma consultas"></i></div>
+
+	<div id="consultas_selectordecuenta" class="panel-sinfondo">
+		<a class="btn azul block" href="transferencias_ultimas_realizadas.html">Nueva transferencia</a>
+	</div>
+
+	<div id="ultimas_transferencias" class="panel-sinfondo centrado"> <!-- Este div se cierra en cada uno -->
+		<h5 class="titulo"><span class="azul"><i class="prisma consultas"></i> |</span> Últimas transferencias</h5>
+		<div class="tabs">
+			<div class="botones">
+				<a href="transferencias_ultimas_realizadas.html" class="waves-effect selected"><i class="prisma consulta-saldo"></i> Realizadas</a>
+				<a href="transferencias_ultimas_recibidas.html" class="waves-effect"><i class="prisma consulta-movimientos"></i> Recibidas</a> 
+			</div> 
+			<div class="contenido saldosDisponibles">
+				<div class="tabla_select">
+					<div class="tabla mg-b-10">
+						<table>
+							<tr>
+								<th class="bold">Fecha</th>
+								<th class="bold">Origen</th>
+								<th class="bold">Destino</th>
+								<th class="bold">Importe</th>
+							</tr>
+							<tr>
+								<td class="font_55">Hoy</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$50.000</td>
+							</tr> 
+							<tr>
+								<td class="font_55">07/07/15</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$5.000</td>
+							</tr> 
+							<tr>
+								<td class="font_55">Hoy</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$500</td>
+							</tr> 
+							<tr>
+								<td class="font_55">07/07/15</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$50</td>
+							</tr> 
+							<tr>
+								<td class="font_55">Hoy</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$5</td>
+							</tr> 
+							<tr>
+								<td class="font_55">Hoy</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$100.000.000</td>
+							</tr> 
+							<tr>
+								<td class="font_55">Hoy</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$100.000.000</td>
+							</tr> 
+							<tr>
+								<td class="font_55">Hoy</td>
+								<td class="font_55">CA3345</td>
+								<td class="font_55">12346789090000</td>
+								<td class="font_55">$100.000.000</td>
+							</tr> 
+						</table>
+						<div class="right">
+							<a href="#" class="btn-chico azul arriba waves-effect">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
+							<a href="#" class="btn-chico azul abajo waves-effect">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div> <!-- div ultimas_transferencias -->
+
+	
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a> 
+	
+</div>
+
+<!-- Javascript -->
+@@include('_partials/scripts.html')
+
+<script type="text/javascript">
+	// botones scroll
+	$('a.abajo').click( function() {
+		var scrollPosition = $('.tabla').scrollTop();
+		$('.tabla').animate({scrollTop: scrollPosition + 300 });
+	});
+	$('a.arriba').click( function() {
+		var scrollPosition = $('.tabla').scrollTop();
+		$('.tabla').animate({scrollTop: scrollPosition - 300 });
+	});
+
+	// si hay 5 o menos movimientos, ocultar flechas y ensanchar tabla
+	var tableHeight = $('table').height();
+	if (tableHeight <= 300) { 
+		$('table + .right').hide();
+		$('.tabla').css('height', 'auto');
+		$('.tabla').css('width', '100%');
+	} 
+</script>
+
+</body>
+</html> 	
