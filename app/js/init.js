@@ -32,9 +32,9 @@ var $slider;
     };
     $("#masOp").click(function(){
       $("#inicio_opnoextraccion").css("min-width","330px");
-      $(this).slideUp(400).fadeOut(500);      
+      $(this).addClass("heightZero animated");      
       $(".adde > a")  
-          .addClass("slideInLeftB animated")  
+          .addClass("open animated")  
     });    
 
     // Consulta

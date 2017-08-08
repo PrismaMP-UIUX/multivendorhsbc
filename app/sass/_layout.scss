@@ -79,25 +79,11 @@ body { margin: 0px; overflow: hidden; }
 }
 
 // z-index
-.z-9999 {
-	z-index: 9999;
-}
-.z-9998 {
-	z-index: 9998;
-}
-.z-9997 {
-	z-index: 9997;
-}
-.z-9996 {
-	z-index: 9996;
-}
-.z-9995 {
-	z-index: 9995;
-}
-
-.posR {
-	position: relative;
-}
+@for $i from 1 through 10 {
+	.z_#{$i} { 
+	    z-index: $i !important;
+	};
+}  
 
 // Fondos
 .brandbar, .footer, .panel {
@@ -403,7 +389,7 @@ $color-ticket-ayuda: invert($color-ticket);
 			text-align: right;
 		}
 		tr:nth-child(odd) {
-			background-color: lighten($gris_claro, 30%);
+			background-color: #ddd;
 		}
 		tr:nth-child(even) {
 			background-color: #f5f5f5;
@@ -458,7 +444,7 @@ $color-ticket-ayuda: invert($color-ticket);
 				width: 100%;
 			}
 			tr:nth-child(odd) {
-				background-color: lighten($gris_claro, 20%);
+				background-color: #ddd;
 			}
 			tr:nth-child(even) {
 				background-color: #f5f5f5;
@@ -513,7 +499,7 @@ $color-ticket-ayuda: invert($color-ticket);
 .idpos, .btidpositiva {
 	white-space: nowrap;
 	@extend .alinear-centro;
-	@extend .mg-t-15;
+	@extend .mg-t-20;
 }
  
 .btidpositiva { @extend .mg-b-0; }
