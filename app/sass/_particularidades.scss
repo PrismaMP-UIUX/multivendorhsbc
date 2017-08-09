@@ -81,10 +81,19 @@
 		top: 60px; 
 		.ayuda {top: 80px; }
 	}
+	#ut_nueva_transferencia {
+		top: 22px;
+		right: 15px;
+		display: block;
+		position: absolute;
+	} 
 	#ultimas_transferencias {
-		top: 20px;
-	}
-	#ultimas_transferencias {
+		width: 100%;
+
+		h5.titulo {
+			margin-bottom: 20px;
+		}
+
 		table {
 			tr {
 				cursor: auto;
@@ -110,6 +119,11 @@
 					}
 				}
 			}
+		}
+		.saldosDisponibles {
+			position: relative;
+			margin: 0px;
+			width: 92%;
 		}
 	}
 

@@ -26,6 +26,10 @@
 	{
 		width: 100px;
 		line-height: 1.488;
+
+		.ayuda & {
+			line-height: 1.1em;
+		}
 	}
 
 .clavealfa_f.font_55 		
@@ -36,7 +40,18 @@
 	}
 
 // clavealfa_error
-.clavealfa_f.notita.animated { width: 150px; height: 100%; top:0px; text-align: left; }
+.clavealfa_f.notita.animated  
+	{ 
+		width: 150px; 
+		height: 100%; 
+		top:0px; 
+		text-align: left; 
+
+		.ayuda & {
+			width: 230px;
+			top: 24px;
+		}
+	}	
 
 // consultacbu
 #confirmacion_f.content-modal  { width: 100%; }
