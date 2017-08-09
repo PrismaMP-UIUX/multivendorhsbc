@@ -6,6 +6,10 @@
 	{
 		width: 100px;
 		line-height: 1.488;
+
+		.ayuda & {
+			line-height: 1.1em;
+		}
 	}
 
 // idposexperto1, idposexperto2, idposexperto3
@@ -13,6 +17,10 @@
 	{
 		width: 100px;
 		line-height: 1.488;
+
+		.ayuda & {
+			line-height: 1.1em;
+		}
 	}
 
 // cambioclave1, cambioclave2, cambioclave3, cambioclave_error1, cambioclave_error2
@@ -93,7 +101,17 @@ input#extraccion.extraccion_f { padding-left: 45px; }
 }
 
 // login
-.login_f.containerdeinput i { line-height: 2; }
+.login_f.containerdeinput i 
+	{
+		line-height: 2;
+
+		.ayuda & {
+			line-height: 1;
+		}
+	}
+div.login_f.flexVerticalAlign.justify-center { margin-left:10px; display: inline-flex; }
+div.login_f.col_left { width: 200px; }
 
 // consultasaldo_link_intermedia_f
 .consultasaldo_link_intermedia_f .btn.dropdown { width:400px; }
+ 

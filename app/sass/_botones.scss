@@ -25,6 +25,10 @@ $brd-ayuda: 3px; //borde de la ayuda
 	.ayuda & {
 		padding: ($pad-bt-tb - $brd-ayuda) ($pad-bt-lr - $brd-ayuda);
 		border: solid $brd-ayuda $ayuda;
+
+		&:not(.btn-chico) i {
+			font-size: 0.85em;
+		}
 	}
 	// boton en bloque para otro importe o que ocupe todo, btingresa y bt otro importe
 	&.block {
@@ -72,7 +76,12 @@ $brd-ayuda: 3px; //borde de la ayuda
 	font-size: 1.5em;
 	height: 30px;
 	.ayuda & {
-		padding: 14px 15px 2px 15px; //($pad-btchico-tb - $brd-ayuda) ($pad-btchico-lr - $brd-ayuda ) ($pad-btchico-tb - $brd-ayuda * 2);
+		//padding: 14px 15px 2px 15px; ($pad-btchico-tb - $brd-ayuda) ($pad-btchico-lr - $brd-ayuda ) ($pad-btchico-tb - $brd-ayuda * 2);
+		padding:8px;
+
+		& i {
+			font-size: 0.9em;
+		}
 	}
 	p & {font-size: 0.8em;}
 }

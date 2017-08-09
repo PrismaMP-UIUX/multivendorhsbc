@@ -56,10 +56,18 @@ var $slider;
       $(this).closest(".dropdownContainer").siblings("p.azul").addClass("oculto");
     }); 
 
-    //Inicio link
+    //Consulta saldo
     $(".consultasaldo_link_intermedia_f .dropdown .contenedor div").click(function(){
       $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
     });  
+
+    //Cierre de cuentas
+    $("#cierre_de_cuentas .dropdown .contenedor div").click(function(){
+      $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
+    }); 
+    $("#numeroCuenta .contenedor div").click(function(){
+      $("#siguiente").removeClass("oculto"); 
+    }); 
 
     //Focus en inputs,poner aquí
     $(".extraccion_sintarjeta_clave_modal_f.containerdeinput input").focus();

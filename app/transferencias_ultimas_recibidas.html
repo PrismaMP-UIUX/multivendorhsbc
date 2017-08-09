@@ -11,23 +11,23 @@
 <div class="content"><div class="iconback"><i class="prisma consultas"></i></div>
 	<div class="centradovertical"> 
 		<div id="ultimas_transferencias" class="panel centrado"> <!-- Este div se cierra en cada uno -->
-			<a id="ut_nueva_transferencia" class="btn azul block" href="transferencias_ultimas_realizadas.html">Nueva transferencia</a>
-			<h5 class="titulo"><span class="azul"><i class="prisma ">#</i> |</span> transferencias</h5>
+			<a id="ut_nueva_transferencia" class="btn azul block" href="transferencias_origen.html">Nueva transferencia</a>
+			<h5 class="titulo"><span class="azul"><i class="prisma ">%</i> |</span> transferencias</h5>
 			<div class="tabs">
 				<div class="botones">
-					<a href="transferencias_ultimas_realizadas.html" class="waves-effect"><i class="prisma ">#</i> Realizadas</a>
-					<a href="transferencias_ultimas_recibidas.html" class="waves-effect selected"><i class="prisma ">#</i> Recibidas</a> 
+					<a href="transferencias_ultimas_realizadas.html" class="waves-effect"><i class="prisma ">%</i> Realizadas</a>
+					<a href="transferencias_ultimas_recibidas.html" class="waves-effect selected"><i class="prisma ">%</i> Recibidas</a> 
 				</div> 
 				<div class="contenido saldosDisponibles">
+					<div class="t-header">
+						<div class="bold">Fecha</div>
+						<div class="bold">Origen</div>
+						<div class="bold">Destino</div>
+						<div class="bold">Importe</div>
+					</div>
 					<div class="tabla_select">
 						<div class="tabla mg-b-10">
-							<table>
-								<tr>
-									<th class="bold">Fecha</th>
-									<th class="bold">Origen</th>
-									<th class="bold">Destino</th>
-									<th class="bold">Importe</th>
-								</tr>
+							<table> 
 								<tr>
 									<td class="font_55">Hoy</td>
 									<td class="font_55">CA3345</td>
@@ -81,6 +81,9 @@
 		$('.tabla').css('height', 'auto');
 		$('.tabla').css('width', '100%');
 	} 
+
+	var tWidth = $(".tabla_select > .tabla").width();
+		$(".t-header").width(tWidth);
 </script>
 
 </body>

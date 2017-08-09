@@ -16,6 +16,7 @@
 				margin: 0px; 
 				-webkit-transform: translateY(-400%);
 				transform: translateY(-400%);
+				border: 0px;
 
 				& > div {
 					-webkit-transform: translateY(-200%);
@@ -42,7 +43,11 @@
 						-webkit-transform: translateY(0%);
 						transform: translateY(0%); 
 					}
-				}
+
+					.ayuda & {
+						border: 3px solid;
+					}
+				} 
 				&:nth-of-type(1) {
 					transition-delay: 0s;
 
@@ -93,37 +98,95 @@
 		h5.titulo {
 			margin-bottom: 20px;
 		}
+		
+		
+		.saldosDisponibles {
+			position: relative;
+			margin: 0px;
+			width: 92%;
+			
+			& > div:last-of-type {
+				margin-top: 0px;
+			}
 
-		table {
-			tr {
-				cursor: auto;
+			.tabla_select {
+				.tabla {
+					height: 250px;
 
-				th, td {
+					table {
+						tr {
+							cursor: auto;
+
+							th, td {
+								display: inline-block;
+								text-align: left;
+								padding: 5px 10px;
+								cursor: auto;
+
+								&:nth-of-type(1) {
+									width: calc(20% - 20px);
+								}
+								&:nth-of-type(2) {
+									width: calc(20% - 20px);
+								}
+								&:nth-of-type(3) {
+									width: calc(35% - 20px);
+								}
+								&:nth-of-type(4){
+									width: calc(24% - 20px);
+									text-align: right;
+								}
+							}
+						}
+						tr:nth-child(odd) {
+							background-color: #ddd;
+
+							.ayuda & {
+								color: #000;
+							}
+						}
+						tr:nth-child(even) {
+							background-color: #f5f5f5;
+						}
+					}
+				}
+			}
+
+			.t-header {
+				background-color: transparent;
+				margin-bottom: 10px;  
+
+				div {
 					display: inline-block;
 					text-align: left;
 					padding: 5px 10px;
 					cursor: auto;
+					letter-spacing: -0.5px;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					margin: initial;
+					font-weight: 500;
+					font-style: normal;
+					color: #777;
+					font-size: 1.815em;
+					font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
+					line-height: 1.2705em;    
 
 					&:nth-of-type(1) {
 						width: calc(20% - 20px);
 					}
 					&:nth-of-type(2) {
-						width: calc(15% - 20px);
+						width: calc(20% - 20px);
 					}
 					&:nth-of-type(3) {
 						width: calc(35% - 20px);
 					}
 					&:nth-of-type(4){
-						width: calc(24% - 20px);
+						width: calc(23% - 20px);
 						text-align: right;
 					}
 				}
 			}
-		}
-		.saldosDisponibles {
-			position: relative;
-			margin: 0px;
-			width: 92%;
 		}
 	}
 
@@ -133,6 +196,7 @@
 
 	#inicio_cuentas { left: 550px; }
 	#inicio_cuentas { position:static; margin:auto; }
+	#masOp.heightZero { border: 0px; }
 	
 	#extraccion_cuotas {
 		width: 340px;
@@ -150,8 +214,11 @@
 		max-width: none;
 	    width: 920px;
 	    left: 25px;
-	    max-height: 470px;
-	    margin-top: 27px;
+	    max-height: 470px; 
+
+	    .ayuda & {
+	    	max-height: none;
+	    }
 	}
 	#transferencias_monto {
 		&.signopesos:before { left: 20px !important; }
@@ -218,3 +285,31 @@
 	width:405px;
 	margin-left: 5px;
 }
+
+// cierre de cuentas
+#cierre_de_cuentas {
+	text-align: center;
+	
+	p {
+		margin-bottom:40px;
+	}
+	.dropdownContainer {
+		display: block;
+		width: 100%;
+
+		&.oculto {
+			display: none;
+		}
+		
+		.dropdown {
+			margin-left: auto !important;
+			margin-right: auto !important;
+			width: 300px;
+			display: block;
+		}	
+	}
+} 
+#siguiente.oculto {
+	display:none;
+}
+
