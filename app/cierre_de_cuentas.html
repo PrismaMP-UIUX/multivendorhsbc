@@ -1,0 +1,50 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content" id="cambioclave1"><div class="iconback"><i class="prisma cambio-de-clave"></i></div>
+
+	<div class="centradovertical">
+		<div class="centrado panel" id="cierre_de_cuentas">
+			<h5 class="titulo"><span class="azul"><!-- <i class="prisma transferencia"></i> -->% |</span> Cierre de cuentas</h5>
+			<p class="alinear-centro">Seleccione la cuenta que desea cerrar</p>
+			<div class="dropdownContainer">
+				<div class="fix dropdown btn gris mg-t-10 mg-l-10" id="tipo">
+					<div class="contenedor">
+						<div indice="1" data-dd="tipo1">Caja de ahorro</div>
+						<div indice="2" data-dd="tipo2">Cuenta corriente</div>
+					</div>
+				</div>
+			</div> 
+			<div class="dropdownContainer oculto">
+				<div class="fix dropdown btn gris mg-b-30 mg-l-10" id="numeroCuenta">
+					<div class="contenedor">
+						<div indice="1" data-dd="tipo1">$ 321-123456/1</div>
+						<div indice="2" data-dd="tipo2">$ 321-123456/1</div>
+					</div>
+				</div>
+			</div>  
+		</div>
+	</div> 
+</div><!-- /Contenido de la página -->
+
+
+<!-- Footer -->
+<div class="footer">
+	<!-- <a href="inicio.html" class="btn naranja">% Volver a inicio</a> -->
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="ticket.html" id="siguiente" class="btn azul right oculto">Siguiente <i class="prisma continuar"></i></a>
+</div>
+
+
+<!-- Javascript -->
+@@include('_partials/scripts.html') 
+ 
+</body>
+</html>
