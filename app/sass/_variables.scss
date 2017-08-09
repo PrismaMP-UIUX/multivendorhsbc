@@ -399,3 +399,52 @@ $tabla_de_imagenes:(
 		}
 	}	
 }
+
+
+// Alerts animados
+// --------------------------------------------
+
+@mixin alert_animado ($color, $color_ayuda) {
+	display: inline-block;
+    padding: 2px 10px;
+	background-color: $color;
+	color: #fff;
+	font-size: 1.6em;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: alert-pulse;
+	animation-name: alert-pulse;
+	box-shadow: 0 0 0 3px $color;
+
+	@-webkit-keyframes alert-pulse {
+		50% { box-shadow: 0 0 0 0px transparent; }
+	}
+	@keyframes alert-pulse {
+		50% { box-shadow: 0 0 0 0px transparent; }
+	}
+
+	.ayuda & {
+		background: transparent;
+		color: $color_ayuda;
+		padding: 6px 16px;
+		border: 2px solid $color_ayuda;
+		-webkit-animation-name: alert-pulse_ayuda;
+		animation-name: alert-pulse_ayuda;
+		box-shadow: 0 0 0 3px $color_ayuda; 
+
+		@-webkit-keyframes alert-pulse_ayuda {
+			50% { box-shadow: 0 0 0 0px transparent; }
+		}
+		@keyframes alert-pulse {
+			50% { box-shadow: 0 0 0 0px transparent; }
+		}
+	}
+}
+
+.warning-animated.naranja { @include alert_animado($naranja, $naranja_ayuda); }
+.warning-animated.rojo { @include alert_animado($rojo, $rojo_ayuda); }
+.warning-animated.amarillo { @include alert_animado($amarillo, $amarillo_ayuda); }
