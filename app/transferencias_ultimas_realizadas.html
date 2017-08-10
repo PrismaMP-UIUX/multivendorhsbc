@@ -75,8 +75,9 @@
 									<td class="font_55">CA3345</td>
 									<td class="font_55">12346789090000</td>
 									<td class="font_55">$100.000.000</td>
-								</tr> 
+								</tr>  
 							</table>
+							<div class="fade-shadow"></div>
 							<div class="right">
 								<a href="#" class="btn-chico azul arriba waves-effect">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
 								<a href="#" class="btn-chico azul abajo waves-effect">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
@@ -112,14 +113,15 @@
 
 	// si hay 5 o menos movimientos, ocultar flechas y ensanchar tabla
 	var tableHeight = $('table').height();
+		 
 	if (tableHeight <= 300) { 
-		$('table + .right').hide();
+		$('.tabla .right').hide(); 
 		$('.tabla').css('height', 'auto');
 		$('.tabla').css('width', '100%');
 	} 
 
 	var tWidth = $(".tabla_select > .tabla").width();
-		$(".t-header").width(tWidth);
+	$(".t-header").width(tWidth); 
 </script>
 
 </body>

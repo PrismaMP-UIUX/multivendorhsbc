@@ -101,10 +101,8 @@ input#extraccion.extraccion_f { padding-left: 45px; }
 }
 
 // login
-<<<<<<< HEAD
 .login_f.containerdeinput i { line-height: 2; }
-.ayuda .login_f.containerdeinput i { line-height: 1.65; }
-=======
+.ayuda .login_f.containerdeinput i { line-height: 1.65; } 
 .login_f.containerdeinput i 
 	{
 		line-height: 2;
@@ -114,8 +112,7 @@ input#extraccion.extraccion_f { padding-left: 45px; }
 		}
 	}
 div.login_f.flexVerticalAlign.justify-center { margin-left:10px; display: inline-flex; }
-div.login_f.col_left { width: 200px; }
->>>>>>> a9814ead6eb14a02048ac0b33717a2b7064f61e2
+div.login_f.col_left { width: 200px; } 
 
 // consultasaldo_link_intermedia_f
 .consultasaldo_link_intermedia_f .btn.dropdown { width:400px; }

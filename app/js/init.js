@@ -90,8 +90,27 @@ $("body").on("keypress",function(e){
   }
 });
 
+
+//Saca el shadow de las tablas al llegar al bottom
+$(document).ready(function(){
+  $('.tabla').bind('scroll',chk_scroll); 
+  function chk_scroll(e) {
+      var elem = $(e.currentTarget);
+      if (elem[0].scrollHeight - elem.scrollTop() == elem.outerHeight())  {
+          $(".fade-shadow").fadeOut(10);
+      } else {
+        $(".fade-shadow").fadeIn(10);
+      }
+  }  
+});
+
+
 function ayudavisual(){
   $("body").toggleClass("bnlc ayuda");
+  if ($("#ultimas_transferencias").length > 0) {
+      var tWidth = $(".tabla_select > .tabla").width();
+      $(".t-header").width(tWidth); 
+  }
   /*setTimeout(function(){
       changeWidth();
   }, 200);*/
