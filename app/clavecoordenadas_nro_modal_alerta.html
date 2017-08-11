@@ -4,17 +4,18 @@
 <div class="fondomodal"></div>
 <div class="centradovertical">
 	<div class="content-modal panel bounceIn animated centrado">
-		<div class="close"><a href="clavecoordenadas.html"><i class="prisma cerrar"></i> </a></div>
-		<h5 class="titulo mg-b-30">Ingresá el documento</h5>
+		<div class="close"><a href="clavecoordenadas_dni_ingresado.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Ingresá el número de serie</h5>
 
 		<div class="left clavecoordenadas_modal_f">
 			<div class="containerdeinput mg-b-20">
-				<a class="btn-chico naranja borrar clavecoordenadas_f" id="borrar" onclick="limpiarPass('doc')"><i class="prisma borrar"></i> Borrar</a>
-				<input type="text" maxlength="22" id="doc">
+				<a class="btn-chico naranja borrar clavecoordenadas_f" id="borrar" onclick="limpiarPass('nro')"><i class="prisma borrar"></i> Borrar</a>
+				<input type="text" maxlength="12" id="nro">
 			</div>
+			<p class="naranja"><i class="prisma informacion"></i> El número de la tarjeta de coordenadas debe ser de 12 dígitos.</p>
 		</div>
 
-		<div class="left mg-l-30 clavecoordenadas_modal_f">
+		<div class="left clavecoordenadas_modal_f mg-l-30">
 			<a href="" class="btn fijo-70 azul ">1</a>
 			<a href="" class="btn fijo-70 azul ">2</a>
 			<a href="" class="btn fijo-70 azul ">3</a><br>
@@ -29,12 +30,12 @@
 			
 		<hr class="piemodal">
 		<p class="alinear-derecha">
-			<a href="clavecoordenadas.html" class="btn gris mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
-			<a href="clavecoordenadas_dni_ingresado.html" class="btn verde confirmar"><i class="prisma confirmar"></i> Listo</a>
+			<a href="clavecoordenadas_dni_ingresado.html" class="btn gris mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+			<a href="clavecoordenadas_nro_ingresado.html" class="btn verde confirmar"><i class="prisma confirmar"></i> Listo</a>
 		</p>
 	</div>
 </div>
 
 <script type="text/javascript">
-	alescribir("doc","borrar");
+	alescribir("nro","borrar");
 </script>

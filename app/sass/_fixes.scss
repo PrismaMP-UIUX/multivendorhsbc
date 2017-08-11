@@ -94,7 +94,13 @@ input#extraccion.extraccion_f { padding-left: 45px; }
 .clavecoordenadas_f.borrar.btn-chico {
 	right: -3px;
 }
+.clavecoordenadas_modal_f.left {
+	width: 370px;
 
+	&+& {
+		width: 420px;
+	}
+}
 // transferencias 
 .transferencias_f.borrar.btn-chico {
 	right: 1px;
