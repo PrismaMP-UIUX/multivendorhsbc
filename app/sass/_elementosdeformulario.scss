@@ -124,6 +124,20 @@ input {
 
 // Loadings
 
+@-webkit-keyframes esperaLoop {
+	0% {
+		opacity:0.5;
+		-webkit-transform:  translate(-150%,0px)  ;
+	}
+	50% {
+		opacity:1;
+		-webkit-transform:  translate(0,0px)  ;
+	}
+	100% {
+		opacity:0.5;
+		-webkit-transform:  translate(200%,0px)  ;
+	}
+}
 @keyframes esperaLoop {
 	0% {
 		opacity:0.5;
@@ -155,6 +169,9 @@ input {
 		animation: esperaLoop linear 1.5s;
 		animation-iteration-count: infinite;
 		transform-origin: 50% 50%;
+		-webkit-animation: esperaLoop linear 1.5s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
 	}
 }
 
