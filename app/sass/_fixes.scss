@@ -68,6 +68,15 @@
 .consultasaldo_sincuentamodal_f#notice .fix { width: 100%; }
 .consultasaldo_sincuentamodal_f.notita { width: 180px; } 
 
+// consultamovimientos
+#consultas.consultamovimientos_f 
+	{
+		top:40px;
+
+		.ayuda & {
+			top: 20px;
+		}
+	}
 // error_generico
 #error_generico .error_generico { height: 250px; }
 
@@ -105,6 +114,7 @@ input#extraccion.extraccion_f { padding-left: 45px; }
 .transferencias_f.borrar.btn-chico {
 	right: 1px;
 }
+.transferencias_f.nota{ font-style: italic; } 
 
 // login
 .login_f.containerdeinput i { line-height: 2; }

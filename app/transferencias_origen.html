@@ -36,34 +36,59 @@
 			</div>
 
 			<div class="tabla_select right mg-t-30" style="width: 64%;">
-				<div id="cuentas" class="tabla tabla-x4 mg-b-10">
+				<div id="cuentas" class="tabla">
 					<table>
 						<tr class="waves-effect">
-							<td><label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label></td> 
-							<td class="bold font_55">CA $ 12346789090</td>
+							<td class="collumn-1">
+								<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+							</td>
+							<td class="bold font_55 collumn-11">
+								<span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+							</td>
 						</tr>
 						<tr class="waves-effect">
-							<td><label class="radio"><input type="radio" name="cuenta" id="2" value="2"></label></td> 
-							<td class="bold font_55">CA us$ 12346789090</td>
+							<td class="collumn-1">
+								<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+							</td>
+							<td class="bold font_55 collumn-11">
+								<span>CA us$ 12346789090</span>
+							</td>
 						</tr>
 						<tr class="waves-effect">
-							<td><label class="radio"><input type="radio" name="cuenta" id="3" value="3"></label></td> 
-							<td class="bold font_55">CA us$ 12346789090</td>
+							<td class="collumn-1">
+								<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+							</td>
+							<td class="bold font_55 collumn-11">
+								<span>CA us$ 12346789090</span>
+							</td>
 						</tr>
 						<tr class="waves-effect">
-							<td><label class="radio"><input type="radio" name="cuenta" id="3" value="3"></label></td> 
-							<td class="bold font_55">CA us$ 12346789090</td>
+							<td class="collumn-1">
+								<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+							</td>
+							<td class="bold font_55 collumn-11">
+								<span>CA us$ 12346789090</span>
+							</td>
 						</tr>
 						<tr class="waves-effect">
-							<td><label class="radio"><input type="radio" name="cuenta" id="3" value="3"></label></td> 
-							<td class="bold font_55">CA us$ 12346789090</td>
+							<td class="collumn-1">
+								<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+							</td>
+							<td class="bold font_55 collumn-11">
+								<span>CA us$ 12346789090</span>
+							</td>
 						</tr>
 						<tr class="waves-effect">
-							<td><label class="radio"><input type="radio" name="cuenta" id="3" value="3"></label></td> 
-							<td class="bold font_55">CA us$ 12346789090</td>
+							<td class="collumn-1">
+								<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+							</td>
+							<td class="bold font_55 collumn-11">
+								<span>CA us$ 12346789090</span>
+							</td>
 						</tr>
 					</table>
 					<div class="fade-shadow"></div>
+					<div class="tableScrollBlocker"></div>
 					<div class="right">
 						<a href="#" class="btn-chico azul arriba">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
 						<a href="#" class="btn-chico azul abajo">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
@@ -87,25 +112,7 @@
 <!-- Javascript -->
   @@include('_partials/scripts.html')
 
-  <script type="text/javascript">
-	// botones scroll
-	$('a.abajo').click( function() {
-		var scrollPosition = $('.tabla').scrollTop();
-		$('.tabla').animate({scrollTop: scrollPosition + 240 });
-	});
-	$('a.arriba').click( function() {
-		var scrollPosition = $('.tabla').scrollTop();
-		$('.tabla').animate({scrollTop: scrollPosition - 240 });
-	});
-
-	// si hay 5 o menos movimientos, ocultar flechas y ensanchar tabla
-	var tableHeight = $('table').height();
-	if (tableHeight <= 240) { 
-		$('table + .right').hide();
-		$('.tabla').css('height', 'auto');
-		$('.tabla').css('width', '100%');
-	}
-
+<script type="text/javascript"> 
 	// seleccionar fila
 	$('tr').click( function(){
 		$(this).addClass('active');

@@ -71,6 +71,8 @@ var $slider;
 
     //Focus en inputs,poner aquí
     $(".extraccion_sintarjeta_clave_modal_f.containerdeinput input").focus();
+
+      
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -104,9 +106,19 @@ jQuery(function($) {
 
 function ayudavisual(){
   $("body").toggleClass("bnlc ayuda");
-  if ($("#ultimas_transferencias").length > 0) {
+  if ($(".t-header").length > 0) {
       var tWidth = $(".tabla_select > .tabla").width();
       $(".t-header").width(tWidth); 
+
+      //pos t-head items 
+      var tHeadPosA = []; 
+        $(".tabla_select > .tabla tr:first-of-type td").each(function(){
+          tHeadPosA.push($(this).position());
+
+        });
+        for (i = 0; i <= $(".t-header div").length; i++) { 
+          $(".t-header div:nth-of-type(" + [i + 1]  + ")").css("left", tHeadPosA[i].left + "px");  
+        }
   }
   /*setTimeout(function(){
       changeWidth();
