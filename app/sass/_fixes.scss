@@ -85,7 +85,12 @@
 .inicio_link_f.oculto { display:none; }
 
 // extraccion y extraccion sin tarjeta
-input#extraccion.extraccion_f { padding-left: 45px; }
+input#extraccion.extraccion_f 
+	{
+		.signopesos & {
+			padding-left: 45px;
+		} 
+	}
 .extraccion_sintarjeta_clave_modal_f { margin:0px; padding: 0px; }
 .extraccion_sintarjeta_clave_modal_f .btn.borrar { right: -10px; }
 .extraccion_sintarjeta_clave_modal_f input#extraccion.extraccion_f 
