@@ -391,18 +391,7 @@ $color-ticket-ayuda: invert($color-ticket);
 						display: flex;
 						align-items: center;
 						padding-top: 0px;
-						padding-bottom: 0px;
-
-						@for $i from 1 through 12 {
-							$var: percentage($i / 12);
-
-							&.collumn-#{$i} {
-								width: $var;
-							}
-							& {
-								width: $var;
-							}  
-						}
+						padding-bottom: 0px; 
 
 						& > * {  
 							white-space: nowrap;
@@ -490,7 +479,41 @@ $color-ticket-ayuda: invert($color-ticket);
 		height: 240px;
 	}
 }
+td {
+	@for $i from 1 through 36 {
+		$var: percentage($i / 36);
 
+		&.collumn-#{$i} {
+			width: $var;
+		}
+		& {
+			width: $var;
+		}  
+	}
+}
+.t-header {
+	background-color: transparent;
+	margin-bottom: 10px;  
+	position: relative;
+	height: 45px;
+
+	td {
+		display: inline-block;
+		text-align: left;
+		padding: 5px 10px;
+		cursor: auto;
+		letter-spacing: -0.5px;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		margin: initial;
+		font-weight: 500;
+		font-style: normal;
+		color: #777;
+		font-size: 1.815em;
+		font-family: "BanelcoBold", Arial, Helvetica, sans-serif; 
+		padding: 0px;
+	}
+}
 .marcador {
 	width: 5px;
 	height: 230px;

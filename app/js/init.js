@@ -92,18 +92,6 @@ $("body").on("keypress",function(e){
   }
 });
 
-
-
-jQuery(function($) {
-    $('.tabla').on('scroll', function() {
-        if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-            $(".fade-shadow").fadeOut(10);
-        } else {
-          $(".fade-shadow").fadeIn(10);
-        }
-    })
-});
-
 function ayudavisual(){
   $("body").toggleClass("bnlc ayuda");
   if ($(".t-header").length > 0) {
