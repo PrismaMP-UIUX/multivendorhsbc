@@ -61,10 +61,7 @@ var $slider;
       $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
     });  
 
-    //Cierre de cuentas
-    $("#cierre_de_cuentas .dropdown .contenedor div").click(function(){
-      $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
-    }); 
+    //Cierre de cuentas 
     $("#numeroCuenta .contenedor div").click(function(){
       $("#siguiente").removeClass("oculto"); 
     }); 

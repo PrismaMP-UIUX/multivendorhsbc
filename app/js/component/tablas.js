@@ -34,8 +34,10 @@ $(document).ready(function(){
 		$('.tabla .right').hide(); 
 		$('.tabla').css('height', 'auto');
 		$('.tabla').css('width', '100%');
+		$('.t-header').css('width', '100%');
 		$('.fade-shadow').css('width', '100%');
 		$('.tableScrollBlocker').css('width', '100%');
 		$(".fade-shadow").remove();
+		$(".tableScrollBlocker").remove();
 	};   
 })
