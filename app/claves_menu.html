@@ -7,15 +7,13 @@
 <!-- Brandbar -->
 @@include('_partials/brandbar.html')
 
-
-
-
 <!-- Contenido de la página -->
-<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+<div class="content" id="clavecoordenadas"><div class="iconback"><i class="prisma clave"></i></div>
 
 	<div class="centradovertical">
-		<div id="extraccion_sintarjeta" class="panel centrado">
-			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Extracción sin tarjeta</h5>
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma clave"></i> |</span> Asociar tarjeta de coordenadas</h5>
+			
 			<p class="mg-t-10">1. Seleccioná el tipo y número de documento</p>
 			<div id="tipo" class="dropdown btn gris mg-r-15">
 				<div class="contenedor">
@@ -24,36 +22,28 @@
 					<div indice="3" data-dd="data3">LC</div>
 				</div>
 			</div>
-			<a href="extraccion_sintarjeta_dni_modal.html" class="containerdeinput boton">
+			<a href="clavecoordenadas_dni_modal.html" class="containerdeinput boton">
 				<input type="text" size="16" placeholder="Número">
 				<span class="btn azul">Ingresar</span>
 			</a>
 			
 			<div class="deshabilitado">
-				<p class="mg-t-20">2. Ingresá el importe</p>
+				<p class="mg-t-20">2. Ingresá el número de serie de tu tarjeta de coordenadas</p>
+				<div id="clavecoordenadas_ej_nroserie"></div>
 				<div class="containerdeinput boton">
-					<input type="text" size="12" disabled="">
-					<a class="btn azul">Ingresar</a>
-				</div>
-			</div>
-
-			<div class="deshabilitado">
-				<p class="mg-t-20">1. Ingresá la clave de la orden de extracción (6 dígitos)</p>
-				<div class="containerdeinput boton">
-					<input type="password" size="6" disabled="">
+					<input type="text" size="16" disabled="">
 					<a class="btn azul">Ingresar</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	
 
 </div><!-- /Contenido de la página -->
 
 <!-- Footer -->
-<div class="footer">
-	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="transferencias_destino.html" class="btn verde right" style="display: none"><i class="prisma extraccion"></i> Extraer</a>
+<div class="footer"> 
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo"><i class="prisma salir"></i> Salir</a>
 </div>
 
 

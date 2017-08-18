@@ -22,6 +22,8 @@ $brd-ayuda: 3px; //borde de la ayuda
 	line-height: 1.1em;
 	font-family: $font-medium;
 	text-align: center;	
+	white-space: nowrap;
+	
 	.ayuda & {
 		padding: ($pad-bt-tb - $brd-ayuda) ($pad-bt-lr - $brd-ayuda);
 		border: solid $brd-ayuda $ayuda;

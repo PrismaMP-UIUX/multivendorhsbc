@@ -100,27 +100,7 @@
 		right: 15px;
 		display: block;
 		position: absolute;
-	} 
-	.transferencias_destino_agenda {
-		table {
-			tr {
-				cursor: auto;
-
-				td { 
-
-					&:nth-of-type(1) {
-						width: calc(6% - 20px);
-					}
-					&:nth-of-type(2) {
-						width: calc(34% - 20px);
-					}
-					&:nth-of-type(3) {
-						width: calc(35% - 20px);
-					} 
-				}
-			}
-		}
-	}
+	}  
 	#ultimas_transferencias {
 		width: 100%;
 
@@ -188,8 +168,7 @@
 
 	#transferencias {
 		max-width: none;
-	    width: 920px;
-	    left: 25px;
+	    width: 920px; 
 	    max-height: 470px; 
 
 	    .ayuda & {
@@ -205,12 +184,10 @@
 	}
 
 	#operaciones_sintarjeta {
-		width: 700px;
-		left: 135px;
+		width: 700px; 
 	}
 	#extraccion_sintarjeta {
-		width: 780px;
-		left: 95px;
+		width: 780px; 
 	}
 
 	#clavecoordenadas_ej_nroserie {
