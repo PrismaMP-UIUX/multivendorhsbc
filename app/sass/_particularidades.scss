@@ -260,8 +260,7 @@
 		
 		.dropdown {
 			margin-left: auto !important;
-			margin-right: auto !important;
-			width: 300px;
+			margin-right: auto !important; 
 			display: block;
 		}	
 	}
@@ -270,3 +269,122 @@
 	display:none;
 }
 
+// claves 
+.claves {
+	display: flex; 
+	justify-content: center;
+	
+	.btn { 
+		display: flex;
+		justify-content: center;  
+
+		i {
+			top: 0px;
+		}
+	}
+
+	&.claves_menu {
+	 	flex-flow: wrap;
+	 	-webkit-flex-flow: wrap;
+	 	align-items: center; 
+
+		.btn {  
+			width: 32%;  
+			padding: 22px 0px;
+			flex-direction: column;
+
+			i {  
+				margin-right: 0px !important;
+			}
+			span {
+				margin: 10px 0;
+				font-size: 0.8em;
+			}
+
+			&.azul {
+				height:160px;
+
+				i {
+					font-size: 3em; 
+				}
+			}
+
+			&.gris {
+				height: 80px;
+
+				i {
+					font-size: 1.8em; 
+				}
+			}
+		}
+	}
+	&.claves_token {
+		flex-flow: column;
+		-webkit-flex-flow: column; 
+
+		i {
+			font-size: 1em;
+		} 
+	}
+	&.claves_otras_claves {  
+		.owl-nav {
+			display: flex; 
+			height: 100%;
+			width: 100%;
+			top: 0px;
+			justify-content: space-between;
+			align-items: center;
+
+			& > * {
+				position: absolute;
+				height: 100%;
+				top: 0px;
+				background-color:transparent;    
+
+				i {
+					.ayuda & {
+						font-size: 2em;
+					}
+				}
+			}    
+		}
+		.owl-stage {
+			display: flex;
+		    align-items: center;
+		}
+		.claves_otras_claves_slide { 
+			width: 670px;
+			margin: 0 auto;
+			display: flex; 
+		    flex-flow: wrap; 
+		    justify-content: center;
+
+			.btn {
+				justify-content: center;
+				width: 30%;
+				min-width: 250px;
+				margin: 2%;
+				display: flex;
+				align-items: center;
+				height: 100px;
+				white-space: normal;
+				padding-top: 0px;
+				padding-bottom: 0px;
+				float: left;
+
+				.ayuda & {
+					line-height: 1;	
+				}
+			}
+
+			&:before, &:after {
+				content:" ";
+				display: block;
+				clear: both;
+			}
+		} 
+	}
+	.ayuda .panel & {
+		max-width: 824px;
+	}
+}

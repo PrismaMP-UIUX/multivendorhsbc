@@ -6,7 +6,7 @@ var $slider;
   	if($slider[0]){
   		$slider.startAuto();
   	};
-    $(".owl-carousel").owlCarousel({
+    $(".idleLoop").owlCarousel({
       items: 1,
       autoplay: true, 
       autoplayTimeout: 6000, 
@@ -16,8 +16,8 @@ var $slider;
           "<i id='slider-prev' class='prisma izquierda'></i>",
           '<i id="slider-next" class="prisma derecha"></i>'
       ],
-      loop: true
-    });
+      loop: true 
+    }); 
 
     alescribir("extraccion","borrar");      
     alescribir("extraccion","continuar");   
