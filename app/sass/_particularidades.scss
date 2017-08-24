@@ -272,8 +272,8 @@
 // claves 
 .claves {
 	display: flex; 
-	justify-content: center;
-	
+	justify-content: center; 
+
 	.btn { 
 		display: flex;
 		justify-content: center;  
@@ -281,7 +281,7 @@
 		i {
 			top: 0px;
 		}
-	}
+	} 
 
 	&.claves_menu {
 	 	flex-flow: wrap;
@@ -315,6 +315,9 @@
 				i {
 					font-size: 1.8em; 
 				}
+			}
+			.ayuda & {
+				width: 30%;  
 			}
 		}
 	}
@@ -383,8 +386,48 @@
 				clear: both;
 			}
 		} 
+	} 
+	#clavecoordenadas_ej_nroserie {
+		background: #eee url(../img/tarjeta_coordenadas.png) no-repeat left top;
+		background-size: cover;
+		width: 300px;
+		height: 200px;
+		float: left;
+		margin: 10px 20px 0 0;
 	}
-	.ayuda .panel & {
-		max-width: 824px;
+	.bm_generacion, .bt_generacion {
+		& > div { 
+			#banelcoMovil_generacion {
+				background: #eee url(../img/login.png) no-repeat left top;
+			    background-size: cover;
+			    width: auto;
+			    height: 236px;
+			    background-position: center; 
+			}
+		}
+		& > .col-left {
+			width: 450px !important;
+			text-align: center;
+		}
+		& > .col-right {
+			width: 220px !important;
+
+		    .containerdeinput.pin {
+		    	width: 220px;
+
+			    input {
+			        padding-right: 8px;	
+			    }
+			}
+		}
+	} 
+	.bt_generacion {
+		& > .col-right { 
+		    .containerdeinput.pin { 
+			    input {
+			        text-align: center;
+			    }
+			}
+		}
 	}
 }

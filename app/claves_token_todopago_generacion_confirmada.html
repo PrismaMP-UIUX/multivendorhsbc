@@ -1,0 +1,41 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content" id="cambioclave_error1"><div class="iconback"><i class="prisma cambio-de-clave"></i></div>
+
+	<div class="centradovertical">
+		<div class="centrado panel animated bounceIn">
+			<h5 class="titulo"><span class="azul"><i class="prisma "></i> %<!--|--></span> Clave de Todo Pago</h5>
+			
+			<p class="alinear-centro mg-t-25 mg-b-10"><span class="verde">Tu clave de Todo Pago fue establecida con éxito.</p> 
+			<p class="font_75">Guardá tu ticket para completar la asociación al servicio desde tu dispositivo móvil.</p>
+		</div>
+	</div> 
+
+</div><!-- /Contenido de la página -->
+
+
+<!-- Footer -->
+<div class="footer">
+	<!-- <a href="inicio.html" class="btn naranja">% Volver a inicio</a> -->
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo"><i class="prisma salir"></i> Salir</a>
+	<a href="claves_menu.html" class="btn azul right" id="otratarjeta"><i class="prisma clave"></i> Claves</a> 
+</div>
+
+
+<!-- Javascript -->
+@@include('_partials/scripts.html')
+<script type="text/javascript">
+	alescribir("password1","siguiente");
+	alescribir("password1","notita");	
+</script>
+</body>
+</html>

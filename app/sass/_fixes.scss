@@ -138,3 +138,64 @@ div.login_f.col_left { width: 200px; }
 // consultasaldo_link_intermedia_f
 .consultasaldo_link_intermedia_f .btn.dropdown { width:400px; }
  
+ // claves
+.claves_f.left {
+	width: 370px;
+
+	& + & {
+		width: 420px; 
+	}  
+	.containerdeinput.claves_f + & {
+		width: 420px; 
+		margin: 0 auto;
+		float: none;
+	}
+	p.area {
+		position: absolute;
+		top: 18px;
+		left: 15px;
+		font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
+		font-size: 1.65em;
+	}
+	input#numerotelefono {
+		padding-left:85px; 
+	    width: calc(100% - 224px);
+		padding-right: 140px;
+	}
+}
+.containerdeinput.claves_f {
+	width: 420px; 
+	margin: 0 auto; 
+
+	input#doc {
+		padding-left: 65px;
+		width: calc(100% - 204px);
+		padding-right: 140px;
+
+		&.cuil {
+			padding-left: 8px;
+			width: calc(100% - 148px);
+		}
+
+		.ayuda & {
+			padding-left: 80px; 
+			width: calc(100% - 230px);
+		    padding-right: 149px;
+		}
+	}
+	.docu {
+		position: absolute;
+		top: 18px;
+		left: 15px;
+		font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
+		font-size: 1.65em;
+		opacity: 0.7;
+
+		.ayuda & {
+			top: 16px;
+		}
+	}
+}
+#borrar.claves_f.btn-chico {
+	right: -3px;
+}
