@@ -289,20 +289,29 @@
 	 	align-items: center; 
 
 		.btn {  
-			width: 32%;  
+			width: 29%;
 			padding: 22px 0px;
 			flex-direction: column;
+			margin: 0% 2% 4% 2%;
 
 			i {  
 				margin-right: 0px !important;
 			}
 			span {
-				margin: 10px 0;
+				margin: 10px auto;
 				font-size: 0.8em;
+				display: block;
+				max-width: 215px;
+				white-space: normal;
 			}
 
 			&.azul {
 				height:160px;
+				margin-top: 2%;
+
+				.ayuda & {
+					margin-top: 0px;
+				}
 
 				i {
 					font-size: 3em; 
@@ -318,6 +327,7 @@
 			}
 			.ayuda & {
 				width: 30%;  
+				margin: 0% 1% 1% 0%;
 			}
 		}
 	}
@@ -328,6 +338,10 @@
 		i {
 			font-size: 1em;
 		} 
+
+		.btn.gris {
+			margin-bottom: 8%;
+		}
 	}
 	&.claves_otras_claves {  
 		.owl-nav {
@@ -336,15 +350,27 @@
 			width: 100%;
 			top: 0px;
 			justify-content: space-between;
-			align-items: center;
+			align-items: center; 
 
 			& > * {
 				position: absolute;
 				height: 100%;
 				top: 0px;
-				background-color:transparent;    
+				background-color:transparent;   
+				top: 10px; 
 
 				i {
+					font-size: 1.5em;
+					/* display: block; */
+					width: 75px;
+					height: 75px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 50%;
+					background-color: #333;
+					color: white;
+
 					.ayuda & {
 						font-size: 2em;
 					}
@@ -406,8 +432,7 @@
 			}
 		}
 		& > .col-left {
-			width: 450px !important;
-			text-align: center;
+			width: 650px !important; 
 		}
 		& > .col-right {
 			width: 220px !important;

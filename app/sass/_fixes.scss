@@ -158,8 +158,8 @@ div.login_f.col_left { width: 200px; }
 		font-size: 1.65em;
 	}
 	input#numerotelefono {
-		padding-left:85px; 
-	    width: calc(100% - 224px);
+		padding-left: 85px;
+		width: calc(100% - 205px);
 		padding-right: 140px;
 	}
 }
@@ -198,4 +198,7 @@ div.login_f.col_left { width: 200px; }
 }
 #borrar.claves_f.btn-chico {
 	right: -3px;
+}
+.movil #borrar.claves_f.btn-chico {
+	right: -21px;
 }
