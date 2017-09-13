@@ -13,12 +13,21 @@
 	<div class="centradovertical">
 		<div class="centrado panel" id="cierre_de_cuentas">
 			<h5 class="titulo"><span class="azul"><!-- <i class="prisma transferencia"></i> -->% |</span> Cierre de cuentas</h5>
-			<p class="alinear-centro">Seleccione la cuenta que desea cerrar</p> 
+			<p>¿Qué cuenta querés cerrar?</p> 
 			<div class="dropdownContainer">
-				<div class="fix dropdown btn gris mg-b-30 mg-l-10" id="numeroCuenta">
+				<div class="fix dropdown btn gris mg-t-20 mg-l-10" id="numeroCuenta">
 					<div class="contenedor">
 						<div indice="1" data-dd="tipo1">CA $ 123-4567890123/1</div>
 						<div indice="2" data-dd="tipo2">CC $ 123-4567890123/1</div>
+						<div indice="3" data-dd="tipo3">CC $ 123-4567890123/1</div>
+						<div indice="4" data-dd="tipo4">CC $ 123-4567890123/1</div>
+						<div indice="5" data-dd="tipo5">CC $ 123-4567890123/1</div>
+						<div indice="6" data-dd="tipo6">CC $ 123-4567890123/1</div>
+						<div indice="7" data-dd="tipo7">CC $ 123-4567890123/1</div>  
+						<div indice="4" data-dd="tipo4">CC $ 123-4567890123/1</div>
+						<div indice="5" data-dd="tipo5">CC $ 123-4567890123/1</div>
+						<div indice="6" data-dd="tipo6">CC $ 123-4567890123/1</div>
+						<div indice="7" data-dd="tipo7">CC $ 123-4567890123/1</div>  
 					</div>
 				</div>
 			</div>  
@@ -34,9 +43,20 @@
 	<a href="ticket.html" id="siguiente" class="btn azul right oculto">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
-
 <!-- Javascript -->
-@@include('_partials/scripts.html') 
+@@include('_partials/scripts.html')
+
+<script>
+	$('#numeroCuenta').click(function(){ 
+		var childs = $('#numeroCuenta > .contenedor').children().length; 
+		if(childs > 6) {
+			var resto = (childs - 6) * 62;
+			$('#numeroCuenta > .contenedor').css("top", -78 - resto + "px")
+		
+		}
+	});
+</script>
+
  
 </body>
 </html>

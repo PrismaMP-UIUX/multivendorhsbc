@@ -1,0 +1,42 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma mas"></i> |</span> Más operaciones</h5>
+			<p>Solo podés realizar una operación:</p>
+			<a href="cierre_de_cuentas.html" class="btn mg-l-0 azul mg-t-20">Cierre de cuentas</a>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="extraccion2.html" class="btn azul right continuar" id="continuar">Continuar <i class="prisma continuar"></i></a>
+	<a href="extraccion3_cuenta.html" class="right mg-r-10">% extracción link/anses</a>
+</div>
+
+<style type="text/css">
+	
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("extraccion","borrar");		
+	alescribir("extraccion","continuar");		
+</script>
+</body>
+</html>

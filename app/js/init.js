@@ -39,7 +39,7 @@ var $slider;
 
     // Consulta
     $(".saldosDisponibles .tfila .btn-chico").click(function(){
-      $(this).next().delay(800).fadeIn();
+      $(this).next().delay(800).fadeIn(); 
     }); 
     $("#bt_ayuda").click(function(){
       $(".ayudaContainer").removeClass("oculto");

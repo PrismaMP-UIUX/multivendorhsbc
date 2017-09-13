@@ -154,7 +154,7 @@ $tabla_de_colores:(
 		&.#{nth($color,1)} {
 			background: transparentize( nth($color,2) , 0.9);
 			color: darken(nth($color,2), 20%);
-			box-shadow: 0 2px 8px nth($color,4);
+			box-shadow: 0 4px 0px nth($color,4);
 			// &:hover{
 			// 	background: transparentize( nth($color,2) , 0.8);
 			// }

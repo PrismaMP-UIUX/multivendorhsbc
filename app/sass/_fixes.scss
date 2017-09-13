@@ -120,6 +120,19 @@ input#extraccion.extraccion_f
 	right: 1px;
 }
 .transferencias_f.nota{ font-style: italic; } 
+.transferencias_f.concepto {
+	display: flex;
+	-webkit-flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+
+    a {
+    	width: 200px;
+    	margin: 1%;
+    	display: flex;
+		justify-content: center;
+    }
+}
 
 // login
 .login_f.containerdeinput i { line-height: 2; }
@@ -201,4 +214,7 @@ div.login_f.col_left { width: 200px; }
 }
 .movil #borrar.claves_f.btn-chico {
 	right: -21px;
+}
+a.blanco_f {
+	background: linear-gradient(to bottom, #f8f8f8, #eee) !important;
 }

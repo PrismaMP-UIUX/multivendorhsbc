@@ -14,15 +14,15 @@ function dropdown_init(textDefault, preselect) {
 
 	// cuando hago click en el boton del dropdown
 	$('.dropdown').click(function(){
-		clickea(this.id);
+		clickea(this.id); 
 	});
 	function clickea(idHtml){
-		if(open==false){
+		if(open==false){ 
 			$('#'+idHtml+' > .contenedor').addClass("active"); //$('div',$('#'+idHtml+' > div')).fadeToggle(300);
 			$('#'+idHtml).addClass("active");
 			if((textDefault!=null || textDefault!=undefined) && textDefault.lenght>0){
 				$('#'+idHtml+' span span').html(textDefault);
-			}
+			} 
 			open = true;
 		}
 	}

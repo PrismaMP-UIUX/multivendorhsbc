@@ -37,6 +37,10 @@ input {
 	@extend .mg-t-10;
 	@extend .mg-b-10;
 
+	.content-modal & {
+		margin-top: 0px !important;
+	}
+
 	// iconos
 	.iconoseninput {
 		border: solid 2px $gris;

@@ -1,0 +1,54 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content" id="clavecoordenadas"><div class="iconback"><i class="prisma clave"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado" style="max-width: 625px;">
+			<h5 class="titulo"><span class="azul"><i class="prisma "></i> % |</span>  Clave Fisca ñahsdñklñkjas  lasd lakjlsdfh lakjhdfdl AFIP</h5>
+			
+			<p class="mg-t-25">3. Confirmá tu clave de AFIP (8 dígitos aasdsadasassddz)</p>  
+			<div>
+				<div class="col_left">
+					<div class="imagen login" style="height: 200px"></div>
+					<p class="font_70 mg-t-10">Usá el teclado físico del cajero</p>
+				</div>
+				<div class="col_right">
+					<div class="containerdeinput mg-l-0 pin centrado deshabilitado" style="margin-top: 0px !important;">
+						<div class="key"><i class="prisma clave"></i></div><!-- Llave que pasa por arriba -->
+						<input type="password" maxlength="8" id="afip1" disabled value="12345678">
+					</div>
+					<div class="containerdeinput mg-l-0 pin centrado ">
+						<div class="key"><i class="prisma clave"></i></div><!-- Llave que pasa por arriba -->
+						<input type="password" maxlength="8" id="afip2" >
+					</div> 
+					<p class="font_70 mg-t-10">No podés usar caracteres repetidos o secuencias numéricas ascendentes ni descendentes</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer"> 
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo"><i class="prisma salir"></i> Salir</a>
+	<a href="claves_fiscal_afip_generacion_confirmada.html" id="siguiente" class="btn verde right"><i class="prisma confirmar"></i> Confimar</a>
+</div>
+
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+  <script type="text/javascript">
+  	alescribir("afip2","siguiente");  
+  </script>
+</body>
+</html>

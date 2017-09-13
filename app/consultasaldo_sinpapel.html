@@ -11,7 +11,7 @@
 							<p class="font_90"><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p>
 						</div>					
 						<div class="altofijo">
-							<p class="font_140"><b>$45.000</b></p>
+							<p class="font_140 num"><b>$ 45.000</b></p>
 							<p class="font_69 disponibles">(2.500 disponibles para hoy)</p>
 						</div> 
 					</div>
@@ -20,7 +20,7 @@
 							<p><span class="azul"><i class="prisma limite-pagos"></i></span> Límite de pagos:</p>
 						</div>				
 						<div class="altofijo">
-							<p id="limpagos" class="font_140 oculto"><b>$2.500</b></p>
+							<p id="limpagos" class="font_140 num oculto"><b>$2.500</b></p>
 							<a href="#" id="bt_limpagos" class="btn-chico azul waves-effect">% Mostrar</a>
 							<p class="font_69 disponibles oculto">(2.500 disponibles para hoy)</p>
 						</div> 
@@ -30,7 +30,7 @@
 							<p><span class="azul"><i class="prisma limite-compra"></i></span> Límite de compras:</p>
 						</div>				
 						<div class="altofijo">
-							<p id="limcompras" class="font_140 oculto"><b>$2.500</b></p>
+							<p id="limcompras" class="font_140 num oculto"><b>$2.500</b></p>
 							<a href="#" id="bt_limcompras" class="btn-chico azul waves-effect">% Mostrar</a>
 							<p class="font_69 disponibles oculto">(2.500 disponibles para hoy)</p>
 						</div> 
@@ -57,4 +57,15 @@
 	hideandshow("#bt_limpagos", "#bt_limpagos", "#limpagos");
 	hideandshow("#bt_limcompras", "#bt_limcompras", "#limcompras");
 	hideandshow("#bt_ayuda", ".notita", "#ayuda");
+
+	$(document).ready(function(){
+		$(".num").each(function(){
+			var saldo = $(this).text().length;
+
+			if(saldo >= 12) {
+				$(".num").toggleClass("font_100 font_140")
+			} 
+		});
+		
+	});
 </script>

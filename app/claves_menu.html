@@ -11,34 +11,44 @@
 <div class="content" id="clavecoordenadas"><div class="iconback"><i class="prisma clave"></i></div>
 
 	<div class="centradovertical">
-		<div class="panel centrado">
+		<div class="panel centrado"> 
+
 			<h5 class="titulo"><span class="azul"><i class="prisma clave"></i> |</span> Claves</h5>
 			 
 			<div class="claves_menu claves">
-				<a href="cambioclave1.html" class="btn azul">
-					<i class="prisma">%</i>
-					<span>Clave de Cajero</span>
-				</a>
-				<a href="claves_home_banking_generacion.html" class="btn azul">
-					<i class="prisma">%</i>
-					<span>Clave de Home Banking</span>
-				</a>
-				<a href="claves_banca_telefonica_generacion_ingresar.html" class="btn azul">
-					<i class="prisma">%</i>
-					<span>Clave Banca Telefónica</span>
-				</a>
-				<a href="clavecoordenadas.html" class="btn gris">
-					<i class="prisma">%</i>
-					<span>Clave de Coordenadas</span>
-				</a>
-				<a href="claves_token.html" class="btn gris">
-					<i class="prisma">%</i>
-					<span>Tokens</span>
-				</a>
-				<a href="claves_otras_claves.html" class="btn gris">
-					<i class="prisma">%</i>
-					<span>Otras Claves</span>
-				</a>
+				<div>
+					<a href="cambioclave1.html" class="btn azul">
+						<i class="prisma">%</i>
+						<span>Clave de Cajero</span>
+					</a>
+				</div>
+				<div class="claves_otras_claves claves owl-carousel">  
+
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
+						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
+					</a>      
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
+						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
+					</a> 
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
+						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
+					</a> 
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
+						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
+					</a> 
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
+						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
+					</a> 
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
+						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
+					</a>     
+
+					<!-- Mas claves -->
+					<a href="claves_mas_claves.html" class="btn azul otras_claves_option mas_claves">
+						<span><i class="prisma">%</i> Más claves</span>
+					</a>          
+	    
+				</div>
 			</div>
 		</div>
 	</div>
@@ -54,5 +64,9 @@
 
 <!-- Javascript -->
   @@include('_partials/scripts.html')
+
+ <script>
+ 	cuenta();
+ </script>
 </body>
 </html>
