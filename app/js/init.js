@@ -35,18 +35,7 @@ var $slider;
       $(this).addClass("heightZero animated");      
       $(".adde > a")  
           .addClass("open animated")  
-    });    
-
-    // Consulta
-    $(".saldosDisponibles .tfila .btn-chico").click(function(){
-      $(this).next().delay(800).fadeIn(); 
-    }); 
-    $("#bt_ayuda").click(function(){
-      $(".ayudaContainer").removeClass("oculto");
-    });
-    $(".ayudaContainer .close").click(function(){
-      $(".ayudaContainer").addClass("oculto");
-    }); 
+    });     
 
     //Inicio link
     $("#inicio_cuentas .dropdown .contenedor div").click(function(){

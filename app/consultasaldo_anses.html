@@ -1,0 +1,60 @@
+@@include('_partials/int_consulta_arriba.html')
+
+		<div class="tabs">
+			<div class="botones">
+				<a href="consultasaldo.html" class="waves-effect selected"><i class="prisma consulta-saldo"></i> Saldos y disponibles</a>
+				<a href="consultamovimientos.html" class="waves-effect"><i class="prisma consulta-movimientos"></i> Últimos Movimientos</a>
+				<a href="consultacbu.html" class="waves-effect"><i class="prisma consulta-cbu"></i> CBU</a>
+			</div> 
+			<div class="contenido saldosDisponibles">
+				<div class="mg-b-25">
+					<div class="flex align-center" style="height: 62px;">
+						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p>
+						<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
+						<p class="font_69 left disponibles">($ 999999999 disponibles para hoy)</p>	
+					</div> 
+				</div>
+				<div class="oculto">
+					<p class="mg-b-20 light font_69"><span class="azul"><i class="prisma saldo"></i></span> <strong>Saldo</strong>: Dinero total en tu cuenta.</p>
+				</div>
+				<div class="clearfix"> 
+					<a href="espera.html" class="left btn btn-chico azul mg-l-0"><i class="prisma imprimir"></i> Imprimir saldo</a>
+					<a class="btn-chico waves-effect right" id="bt_ayuda"><i class="prisma informacion"></i> Ayuda</a>
+				</div>
+			</div>
+		</div>
+	
+	</div> <!-- div consultas -->
+
+@@include('_partials/int_consulta_abajo.html')
+
+<script> 
+	$("#bt_ayuda").click(function(){
+	  $(".ayudaContainer").removeClass("oculto");
+	});
+	$(".ayudaContainer .close").click(function(){
+	  $(".ayudaContainer").addClass("oculto");
+	}); 
+
+
+	$(document).ready(function(){
+		$(".num").each(function(){
+			var saldo = $(this).text().length; 
+
+			if(saldo >= 12) {
+				$(".num").toggleClass("font_100 font_140")
+			} 
+		}); 
+	});
+</script> 
+
+<!-- modal ayuda -->
+<div class="ayudaContainer oculto">
+	<div class="fondomodal"></div>
+	<div class="centradovertical">
+		<div class="content-modal panel centrado">
+			<div class="close"><a href=""><i class="prisma cerrar"></i></a></div>
+			<p class="mg-b-20"><span class="azul"><i class="prisma saldo"></i></span> <strong>Saldo</strong><br> Dinero total en tu cuenta.</p> 
+		</div>
+	</div>
+</div>

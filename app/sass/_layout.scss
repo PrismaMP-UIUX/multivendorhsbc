@@ -200,7 +200,7 @@ $padding-panel: 22px 27px;
 .panel, .panel-sinfondo {
 	padding: $padding-panel;
 	position: absolute;
-	max-width: ($ancho_draw - 200px) ;
+	max-width: ($ancho_draw - 144px) ;
 	.ayuda & {
 		max-width: initial;
 	}

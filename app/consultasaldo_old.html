@@ -1,0 +1,80 @@
+@@include('_partials/int_consulta_arriba.html')
+
+		<div class="tabs">
+			<div class="botones">
+				<a href="consultasaldo.html" class="waves-effect selected"><i class="prisma consulta-saldo"></i> Saldos y disponibles</a>
+				<a href="consultamovimientos.html" class="waves-effect"><i class="prisma consulta-movimientos"></i> Últimos Movimientos</a>
+				<a href="consultacbu.html" class="waves-effect"><i class="prisma consulta-cbu"></i> CBU</a>
+			</div> 
+			<div class="contenido saldosDisponibles">
+				<div class="ttable">
+					<div class="tfila">
+						<div class="altofijo">
+							<p class="font_90"><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p>
+						</div>					
+						<div class="altofijo">
+							<p class="font_140 num"><b>$ 999999999,99</b></p>
+							<p class="font_69 disponibles">(2.500 disponibles para hoy)</p>
+						</div> 
+					</div>
+					<div class="tfila">
+						<div class="altofijo">
+							<p><span class="azul"><i class="prisma limite-pagos"></i></span> Límite de pagos:</p>
+						</div>				
+						<div class="altofijo">
+							<p id="limpagos" class="font_140 oculto num"><b>$ 2500,99</b></p>
+							<a href="#" id="bt_limpagos" class="btn-chico azul waves-effect">% Mostrar</a>
+							<p class="font_69 disponibles oculto">(2.500 disponibles para hoy)</p>
+						</div> 
+					</div>
+					<div class="tfila">
+						<div class="altofijo">
+							<p><span class="azul"><i class="prisma limite-compra"></i></span> Límite de compras:</p>
+						</div>				
+						<div class="altofijo">
+							<p id="limcompras" class="font_140 oculto num"><b>$ 2500,99</b></p>
+							<a href="#" id="bt_limcompras" class="btn-chico azul waves-effect">% Mostrar</a>
+							<p class="font_69 disponibles oculto">(2.5000 disponibles para hoy)</p>
+						</div> 
+					</div>
+				</div>
+				<div class="clearfix">
+					<a class="btn-chico left waves-effect" id="bt_ayuda"><i class="prisma informacion"></i> Ayuda</a>
+					<a href="espera.html" class="btn btn-chico azul mg-l-0 right"><i class="prisma imprimir"></i> Imprimir</a>
+				</div>
+			</div>
+		</div>
+	
+	</div> <!-- div consultas -->
+
+@@include('_partials/int_consulta_abajo.html')
+
+<script>
+	hideandshow("#bt_limpagos", "#bt_limpagos", "#limpagos");
+	hideandshow("#bt_limcompras", "#bt_limcompras", "#limcompras");
+	hideandshow("#bt_ayuda", ".notita", "#ayuda");
+
+	$(document).ready(function(){
+		$(".num").each(function(){
+			var saldo = $(this).text().length;
+
+			if(saldo >= 12) {
+				$(".num").toggleClass("font_100 font_140")
+			} 
+		});
+		
+	});
+</script>
+
+<!-- modal ayuda -->
+<div class="ayudaContainer oculto">
+	<div class="fondomodal"></div>
+	<div class="centradovertical">
+		<div class="content-modal panel centrado">
+			<div class="close"><a href=""><i class="prisma cerrar"></i></a></div>
+			<p class="mg-b-20"><span class="azul"><i class="prisma saldo"></i></span> <strong>Saldo</strong><br> Dinero total en tu cuenta.</p>
+			<p class="mg-b-20"><span class="azul"><i class="prisma limite-pagos"></i></span> <strong>Límite de pagos</strong><br> Monto máximo diario para efectuar pagos.</p>
+			<p class="mg-b-20"><span class="azul"><i class="prisma limite-compra"></i></span> <strong>Límite de compras</strong><br> Monto máximo diario disponible para realizar compras</p>
+		</div>
+	</div>
+</div>

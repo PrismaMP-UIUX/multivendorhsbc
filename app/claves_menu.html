@@ -15,33 +15,30 @@
 
 			<h5 class="titulo"><span class="azul"><i class="prisma clave"></i> |</span> Claves</h5>
 			 
-			<div class="claves_menu claves">
-				<div>
-					<a href="cambioclave1.html" class="btn azul">
+			<div class="claves">
+				<div class="left">
+					<a href="cambioclave1.html" class="btn azul btn-principal">
 						<i class="prisma">%</i>
-						<span>Clave de Cajero</span>
+						<span class="mg-t-20">Clave de Cajero</span>
 					</a>
 				</div>
-				<div class="claves_otras_claves claves owl-carousel">  
+				<div class="claves_otras_claves right">  
 
-					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
-						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option"s>
+						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA DE COORDENADAS</span></span>
 					</a>      
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA HSBC</span></span>
+					</a>
 					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
-						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
-					</a> 
-					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
-						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
-					</a> 
-					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
-						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
-					</a> 
-					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
-						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
-					</a> 
-					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
-						<span><i class="prisma">%</i> Tarjeta de coordenadas</span>
-					</a>     
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE FISCAL ICBC</span></span>
+					</a>  
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA CASLA</span></span>
+					</a>  
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA CASLA</span></span>
+					</a>       
 
 					<!-- Mas claves -->
 					<a href="claves_mas_claves.html" class="btn azul otras_claves_option mas_claves">
@@ -67,6 +64,31 @@
 
  <script>
  	cuenta();
+
+ 	// Mayúsculas y minúsculas 
+ 	$(".btn-text").each(function() {
+ 		var btnText = $(this).text();  
+
+ 		// Reset todo a minúsculas
+ 		var lowercase = btnText.toLowerCase();
+
+ 		// Capitalizar primer letra
+ 		String.prototype.ucfirst = function() {
+ 		    return this.charAt(0).toUpperCase() + this.substr(1);
+ 		} 
+ 		$(this).text(lowercase.ucfirst());
+ 		var btnTextNew = $(this).text(); 
+
+ 		// Palabras o siglas específicas a mayúsculas
+ 		var btnTextFinal = btnTextNew;     
+ 	    var diccionario = ['hsbc', 'icbc', 'afip', 'agip', 'anses'];
+ 	    
+ 	    for (var i = 0; i < diccionario.length; i++) {
+ 	        if (lowercase.indexOf(diccionario[i]) != -1) { 
+ 	            $(this).text(btnTextFinal.replace(diccionario[i],diccionario[i].toUpperCase())); 
+ 	        }
+ 	    } 
+ 	});
  </script>
 </body>
 </html>

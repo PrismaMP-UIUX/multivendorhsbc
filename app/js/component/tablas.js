@@ -40,4 +40,16 @@ $(document).ready(function(){
 		$(".fade-shadow").remove();
 		$(".tableScrollBlocker").remove();
 	};   
+	
+	$('tr').click(function(){
+		if($(this).find('td input[type="radio"]').val()){
+			SSFramework.initTimeout();
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+			$(this).find('td input[type=radio]').prop( "checked", true );
+			var num=$(this).find('td input[type=radio]').val();
+			Vars.set('cta_index',num);
+            States.handleEvent('ev_ssfw_checked_cta');
+		}
+	});
 })
