@@ -1,468 +1,2167 @@
-<!-- Header -->
 @@include('_partials/head.html')
-
 <style type="text/css">
-    body {
-        background: #fff;
-        color: #333;
-        padding: 1em;
-        font-family: sans-serif;
-        overflow: auto;
-    }
-    .glyph {
-        width: calc(100% / 3);
-        float: left;
-        height: 4em;
-    }
-    .glyph .prisma {
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 2em;
-        width: 1.5em;
-    }
-    .glyph .mls {
-        color: #666;
-        font-size: .8em;
-    }
+	body { overflow: auto; background-color: #fff; font-family: sans-serif; margin: 20px; }
+	.bgc1 { font-size: 2em; }
+  .mvm.mtn.fgc1 { display: none; }
+	.glyph { width: 250px; float: left; height: 4em; }
+	.glyph .prisma { font-size: 2em; display: inline-block; width: 1.8em; text-align: center; }
+	.mls { color: #666; font-size: .8em; }
+	.fs0, .mbl { display: none; }
+	.bgc1 { clear: both; font-size: .5em; }
 </style>
-<p>Font Name:Prisma <small>(Glyphs: 109)</small></p>
-<div class="list">
-    <div class="glyph">
-            <i class="prisma cardhole-out"></i>
-            <span class="mls"> cardhole-out</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cardhole-in"></i>
-            <span class="mls"> cardhole-in</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma si-no"></i>
-            <span class="mls"> si-no</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cajero-touch"></i>
-            <span class="mls"> cajero-touch</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma accion-pagar"></i>
-            <span class="mls"> accion-pagar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma tarjeta90"></i>
-            <span class="mls"> tarjeta90</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma transaccion"></i>
-            <span class="mls"> transaccion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma ingrese-tarjeta"></i>
-            <span class="mls"> ingrese-tarjeta</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma retire-tarjeta"></i>
-            <span class="mls"> retire-tarjeta</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma arriba"></i>
-            <span class="mls"> arriba</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma abajo"></i>
-            <span class="mls"> abajo</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma izquierda"></i>
-            <span class="mls"> izquierda</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma adelanto"></i>
-            <span class="mls"> adelanto</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma amigos"></i>
-            <span class="mls"> amigos</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma consulta-cbu"></i>
-            <span class="mls"> consulta-cbu</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma derecha"></i>
-            <span class="mls"> derecha</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cpp"></i>
-            <span class="mls"> cpp</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma advertencia"></i>
-            <span class="mls"> advertencia</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma agregar"></i>
-            <span class="mls"> agregar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma archivar"></i>
-            <span class="mls"> archivar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma banco"></i>
-            <span class="mls"> banco</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma billetera"></i>
-            <span class="mls"> billetera</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma bloqueado"></i>
-            <span class="mls"> bloqueado</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma buscar"></i>
-            <span class="mls"> buscar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cajero-notouch"></i>
-            <span class="mls"> cajero-notouch</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cambio-de-clave"></i>
-            <span class="mls"> cambio-de-clave</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cerrar"></i>
-            <span class="mls"> cerrar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma carro"></i>
-            <span class="mls"> carro</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cbu"></i>
-            <span class="mls"> cbu</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma no-videntes"></i>
-            <span class="mls"> no-videntes</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma clave-mobile"></i>
-            <span class="mls"> clave-mobile</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma configuracion"></i>
-            <span class="mls"> configuracion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma compras"></i>
-            <span class="mls"> compras</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma comprobante"></i>
-            <span class="mls"> comprobante</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma consulta-saldo"></i>
-            <span class="mls"> consulta-saldo</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma consulta-movimientos"></i>
-            <span class="mls"> consulta-movimientos</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma consultas"></i>
-            <span class="mls"> consultas</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cuenta"></i>
-            <span class="mls"> cuenta</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma deposito"></i>
-            <span class="mls"> deposito</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma deposito-cta-propia"></i>
-            <span class="mls"> deposito-cta-propia</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma deposito-cta-terceros"></i>
-            <span class="mls"> deposito-cta-terceros</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma deposito-efectivo"></i>
-            <span class="mls"> deposito-efectivo</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma desbloqueado"></i>
-            <span class="mls"> desbloqueado</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma borrar"></i>
-            <span class="mls"> borrar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma desplegable"></i>
-            <span class="mls"> desplegable</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cuenta-destacada"></i>
-            <span class="mls"> cuenta-destacada</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma disponible"></i>
-            <span class="mls"> disponible</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma dolares"></i>
-            <span class="mls"> dolares</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma donacion"></i>
-            <span class="mls"> donacion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma editar"></i>
-            <span class="mls"> editar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma eliminar"></i>
-            <span class="mls"> eliminar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma empresa"></i>
-            <span class="mls"> empresa</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma en-auto"></i>
-            <span class="mls"> en-auto</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma en-pie"></i>
-            <span class="mls"> en-pie</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma entrar"></i>
-            <span class="mls"> entrar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma envio-recepcion"></i>
-            <span class="mls"> envio-recepcion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma cancelar"></i>
-            <span class="mls"> cancelar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma euros"></i>
-            <span class="mls"> euros</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma confirmar"></i>
-            <span class="mls"> confirmar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma extraccion"></i>
-            <span class="mls"> extraccion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma factura"></i>
-            <span class="mls"> factura</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma favorito"></i>
-            <span class="mls"> favorito</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma fecha"></i>
-            <span class="mls"> fecha</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma flujo"></i>
-            <span class="mls"> flujo</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma giftcard"></i>
-            <span class="mls"> giftcard</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma giftcard2"></i>
-            <span class="mls"> giftcard2</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma guardar"></i>
-            <span class="mls"> guardar</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma hombre"></i>
-            <span class="mls"> hombre</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma imprimir"></i>
-            <span class="mls"> imprimir</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma informacion"></i>
-            <span class="mls"> informacion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma inicio"></i>
-            <span class="mls"> inicio</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma internet"></i>
-            <span class="mls"> internet</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma limite-compra"></i>
-            <span class="mls"> limite-compra</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma limite-extraccion"></i>
-            <span class="mls"> limite-extraccion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma limite-pagos"></i>
-            <span class="mls"> limite-pagos</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma mail"></i>
-            <span class="mls"> mail</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma mas-opciones"></i>
-            <span class="mls"> mas-opciones</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma mas"></i>
-            <span class="mls"> mas</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma menos"></i>
-            <span class="mls"> menos</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma mensaje"></i>
-            <span class="mls"> mensaje</span>
-       </div>
-        <div class="glyph">
-            <i class="prisma mujer"></i>
-            <span class="mls"> mujer</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma negocio"></i>
-            <span class="mls"> negocio</span>
-       </div>
-        <div class="glyph">
-            <i class="prisma pagos"></i>
-            <span class="mls"> pagos</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma pesos"></i>
-            <span class="mls"> pesos</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma clave"></i>
-            <span class="mls"> clave</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma recarga-tel"></i>
-            <span class="mls"> recarga-tel</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma reconocimiento-billete"></i>
-            <span class="mls"> reconocimiento-billete</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma regalo"></i>
-            <span class="mls"> regalo</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma saldo"></i>
-            <span class="mls"> saldo</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma salir"></i>
-            <span class="mls"> salir</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma sin-tarjeta"></i>
-            <span class="mls"> sin-tarjeta</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma tarjeta"></i>
-            <span class="mls"> tarjeta</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma tiempo"></i>
-            <span class="mls"> tiempo</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma total"></i>
-            <span class="mls"> total</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma touch"></i>
-            <span class="mls"> touch</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma transferencia"></i>
-            <span class="mls"> transferencia</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma transferencia-cta-propia"></i>
-            <span class="mls"> transferencia-cta-propia</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma ubicacion"></i>
-            <span class="mls"> ubicacion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma no-ubicacion"></i>
-            <span class="mls"> no-ubicacion</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma ultimos-movimientos"></i>
-            <span class="mls"> ultimos-movimientos</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma banelcomovil"></i>
-            <span class="mls"> banelcomovil</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma extracash"></i>
-            <span class="mls"> extracash</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma facebook"></i>
-            <span class="mls"> facebook</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma pagomiscuentas"></i>
-            <span class="mls"> pagomiscuentas</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma banelco"></i>
-            <span class="mls"> banelco</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma redcirrus"></i>
-            <span class="mls"> redcirrus</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma todopago"></i>
-            <span class="mls"> todopago</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma twitter"></i>
-            <span class="mls"> twitter</span>
-        </div>
-        <div class="glyph">
-            <i class="prisma visa"></i>
-            <span class="mls"> visa</span>
-        </div>
+<div class="bgc1 clearfix">
+		<h1 class="mhmm mvm"><span class="fgc1">Font Name:</span> prisma <small class="fgc1">(Glyphs:&nbsp;132)</small></h1>
 </div>
+<div class="clearfix mhl ptl">
+		<h1 class="mvm mtn fgc1">Grid Size: Unknown</h1>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma accion-pagar">
+
+						</span>
+						<span class="mls"> accion-pagar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e914" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe914;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma deposito-efectivo">
+
+						</span>
+						<span class="mls"> deposito-efectivo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e911" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe911;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma envio-recepcion">
+
+						</span>
+						<span class="mls"> envio-recepcion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e912" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe912;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma deposito">
+
+						</span>
+						<span class="mls"> deposito</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e913" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe913;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma transaccion">
+
+						</span>
+						<span class="mls"> transaccion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e910" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe910;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma transferencia">
+
+						</span>
+						<span class="mls"> transferencia</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e90f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe90f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma tam">
+
+						</span>
+						<span class="mls"> tam</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e90d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe90d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma desplegable">
+
+						</span>
+						<span class="mls"> desplegable</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e90e" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe90e;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cajero-touch">
+
+						</span>
+						<span class="mls"> cajero-touch</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e900" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe900;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma confirmar">
+
+						</span>
+						<span class="mls"> confirmar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e901" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe901;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cancelar">
+
+						</span>
+						<span class="mls"> cancelar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e902" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe902;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-cajero">
+
+						</span>
+						<span class="mls"> clave-cajero</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e903" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe903;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma homebanking">
+
+						</span>
+						<span class="mls"> homebanking</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e904" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe904;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-homebanking">
+
+						</span>
+						<span class="mls"> clave-homebanking</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e905" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe905;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma token-generico">
+
+						</span>
+						<span class="mls"> token-generico</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e906" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe906;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-terminal">
+
+						</span>
+						<span class="mls"> clave-terminal</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e907" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe907;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-banelco">
+
+						</span>
+						<span class="mls"> clave-banelco</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e908" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe908;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-coordenadas">
+
+						</span>
+						<span class="mls"> clave-coordenadas</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e909" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe909;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-canales">
+
+						</span>
+						<span class="mls"> clave-canales</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e90a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe90a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-transferencias">
+
+						</span>
+						<span class="mls"> clave-transferencias</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e90b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe90b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma banelco">
+
+						</span>
+						<span class="mls"> banelco</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e90c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe90c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma redcirrus">
+
+						</span>
+						<span class="mls"> redcirrus</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e915" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe915;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma extracash">
+
+						</span>
+						<span class="mls"> extracash</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e916" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe916;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma visa">
+
+						</span>
+						<span class="mls"> visa</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e917" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe917;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma pagomiscuentas">
+
+						</span>
+						<span class="mls"> pagomiscuentas</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e918" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe918;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma banelcomovil">
+
+						</span>
+						<span class="mls"> banelcomovil</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e919" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe919;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma todopago">
+
+						</span>
+						<span class="mls"> todopago</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e91a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe91a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma facebook">
+
+						</span>
+						<span class="mls"> facebook</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e91b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe91b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma twitter">
+
+						</span>
+						<span class="mls"> twitter</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e91c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe91c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma afip">
+
+						</span>
+						<span class="mls"> afip</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e91d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe91d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma ba">
+
+						</span>
+						<span class="mls"> ba</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e91e" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe91e;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma token">
+
+						</span>
+						<span class="mls"> token</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e91f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe91f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma terminal">
+
+						</span>
+						<span class="mls"> terminal</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e920" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe920;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma mano">
+
+						</span>
+						<span class="mls"> mano</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e921" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe921;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma ojo">
+
+						</span>
+						<span class="mls"> ojo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e922" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe922;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma mas-opciones-horizontal">
+
+						</span>
+						<span class="mls"> mas-opciones-horizontal</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e923" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe923;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma debin">
+
+						</span>
+						<span class="mls"> debin</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e924" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe924;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma inicio">
+
+						</span>
+						<span class="mls"> inicio</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e925" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe925;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma eliminar">
+
+						</span>
+						<span class="mls"> eliminar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e926" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe926;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma borrar">
+
+						</span>
+						<span class="mls"> borrar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e927" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe927;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma editar">
+
+						</span>
+						<span class="mls"> editar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e928" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe928;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma imprimir">
+
+						</span>
+						<span class="mls"> imprimir</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e929" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe929;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma buscar">
+
+						</span>
+						<span class="mls"> buscar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e92a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe92a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma izquierda">
+
+						</span>
+						<span class="mls"> izquierda</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e92b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe92b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma derecha">
+
+						</span>
+						<span class="mls"> derecha</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e92c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe92c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma salir">
+
+						</span>
+						<span class="mls"> salir</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e92d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe92d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma entrar">
+
+						</span>
+						<span class="mls"> entrar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e92e" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe92e;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma guardar">
+
+						</span>
+						<span class="mls"> guardar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e92f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe92f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave">
+
+						</span>
+						<span class="mls"> clave</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e930" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe930;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma mas-opciones">
+
+						</span>
+						<span class="mls"> mas-opciones</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e931" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe931;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma fecha">
+
+						</span>
+						<span class="mls"> fecha</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e932" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe932;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma configuracion">
+
+						</span>
+						<span class="mls"> configuracion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e933" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe933;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma advertencia">
+
+						</span>
+						<span class="mls"> advertencia</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e934" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe934;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cerrar">
+
+						</span>
+						<span class="mls"> cerrar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e935" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe935;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma mas">
+
+						</span>
+						<span class="mls"> mas</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e936" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe936;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma menos">
+
+						</span>
+						<span class="mls"> menos</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e937" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe937;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma informacion">
+
+						</span>
+						<span class="mls"> informacion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e938" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe938;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma internet">
+
+						</span>
+						<span class="mls"> internet</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e939" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe939;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma favorito">
+
+						</span>
+						<span class="mls"> favorito</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e93a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe93a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma total">
+
+						</span>
+						<span class="mls"> total</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e93b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe93b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma tiempo">
+
+						</span>
+						<span class="mls"> tiempo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e93c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe93c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma no-videntes">
+
+						</span>
+						<span class="mls"> no-videntes</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e93d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe93d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma en-pie">
+
+						</span>
+						<span class="mls"> en-pie</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e93e" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe93e;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cambio-de-clave">
+
+						</span>
+						<span class="mls"> cambio-de-clave</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e93f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe93f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma compras">
+
+						</span>
+						<span class="mls"> compras</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e940" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe940;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma bloqueado">
+
+						</span>
+						<span class="mls"> bloqueado</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e941" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe941;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma desbloqueado">
+
+						</span>
+						<span class="mls"> desbloqueado</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e942" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe942;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma ubicacion">
+
+						</span>
+						<span class="mls"> ubicacion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e943" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe943;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma no-ubicacion">
+
+						</span>
+						<span class="mls"> no-ubicacion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e944" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe944;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma flujo">
+
+						</span>
+						<span class="mls"> flujo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e945" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe945;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma hombre">
+
+						</span>
+						<span class="mls"> hombre</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e946" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe946;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma mujer">
+
+						</span>
+						<span class="mls"> mujer</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e947" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe947;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma amigos">
+
+						</span>
+						<span class="mls"> amigos</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e948" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe948;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma error">
+
+						</span>
+						<span class="mls"> error</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e949" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe949;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma comprobante">
+
+						</span>
+						<span class="mls"> comprobante</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e94a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe94a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma tarjeta">
+
+						</span>
+						<span class="mls"> tarjeta</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e94b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe94b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma sin-tarjeta">
+
+						</span>
+						<span class="mls"> sin-tarjeta</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e94c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe94c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma pagar">
+
+						</span>
+						<span class="mls"> pagar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e94d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe94d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma usuario-ok">
+
+						</span>
+						<span class="mls"> usuario-ok</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e94e" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe94e;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cuenta-destacada">
+
+						</span>
+						<span class="mls"> cuenta-destacada</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e94f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe94f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma agregar">
+
+						</span>
+						<span class="mls"> agregar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e950" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe950;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma transferencia-cta-propia">
+
+						</span>
+						<span class="mls"> transferencia-cta-propia</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e951" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe951;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cajero-notouch">
+
+						</span>
+						<span class="mls"> cajero-notouch</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e952" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe952;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma negocio">
+
+						</span>
+						<span class="mls"> negocio</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e953" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe953;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma saldo">
+
+						</span>
+						<span class="mls"> saldo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e954" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe954;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma consulta-saldo">
+
+						</span>
+						<span class="mls"> consulta-saldo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e955" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe955;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma disponible">
+
+						</span>
+						<span class="mls"> disponible</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e956" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe956;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma ultimos-movimientos">
+
+						</span>
+						<span class="mls"> ultimos-movimientos</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e957" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe957;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma consulta-movimientos">
+
+						</span>
+						<span class="mls"> consulta-movimientos</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e958" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe958;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma mail">
+
+						</span>
+						<span class="mls"> mail</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e959" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe959;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cbu">
+
+						</span>
+						<span class="mls"> cbu</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e95a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe95a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma consulta-cbu">
+
+						</span>
+						<span class="mls"> consulta-cbu</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e95b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe95b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cuenta">
+
+						</span>
+						<span class="mls"> cuenta</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e95c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe95c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma billetera">
+
+						</span>
+						<span class="mls"> billetera</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e95d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe95d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma billete">
+
+						</span>
+						<span class="mls"> billete</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e95e" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe95e;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma pesos">
+
+						</span>
+						<span class="mls"> pesos</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e95f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe95f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma dolares">
+
+						</span>
+						<span class="mls"> dolares</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e960" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe960;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma euros">
+
+						</span>
+						<span class="mls"> euros</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e961" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe961;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma adelanto">
+
+						</span>
+						<span class="mls"> adelanto</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e962" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe962;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma reconocimiento-billete">
+
+						</span>
+						<span class="mls"> reconocimiento-billete</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e963" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe963;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma transferencia-envio">
+
+						</span>
+						<span class="mls"> transferencia-envio</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e964" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe964;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma ransferencia-recepción">
+
+						</span>
+						<span class="mls"> ransferencia-recepción</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e965" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe965;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma deposito-cta-propia">
+
+						</span>
+						<span class="mls"> deposito-cta-propia</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e966" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe966;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma deposito-cta-terceros">
+
+						</span>
+						<span class="mls"> deposito-cta-terceros</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e967" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe967;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma limite-compra">
+
+						</span>
+						<span class="mls"> limite-compra</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e968" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe968;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma limite-pagos">
+
+						</span>
+						<span class="mls"> limite-pagos</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e969" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe969;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma clave-mobile">
+
+						</span>
+						<span class="mls"> clave-mobile</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e96a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe96a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma recarga-tel">
+
+						</span>
+						<span class="mls"> recarga-tel</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e96b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe96b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma giftcard">
+
+						</span>
+						<span class="mls"> giftcard</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e96c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe96c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma tarjeta-coordenadas">
+
+						</span>
+						<span class="mls"> tarjeta-coordenadas</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e96d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe96d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma extraccion">
+
+						</span>
+						<span class="mls"> extraccion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e96f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe96f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma consultas">
+
+						</span>
+						<span class="mls"> consultas</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e970" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe970;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma si-no">
+
+						</span>
+						<span class="mls"> si-no</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e971" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe971;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma empresa">
+
+						</span>
+						<span class="mls"> empresa</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e972" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe972;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma en-auto">
+
+						</span>
+						<span class="mls"> en-auto</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e973" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe973;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma banco">
+
+						</span>
+						<span class="mls"> banco</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e974" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe974;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma factura">
+
+						</span>
+						<span class="mls"> factura</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e975" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe975;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma donacion">
+
+						</span>
+						<span class="mls"> donacion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e976" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe976;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cpp">
+
+						</span>
+						<span class="mls"> cpp</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e977" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe977;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma giftcard2">
+
+						</span>
+						<span class="mls"> giftcard2</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e978" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe978;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma regalo">
+
+						</span>
+						<span class="mls"> regalo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e979" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe979;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma carro">
+
+						</span>
+						<span class="mls"> carro</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e97a" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe97a;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma limite-extraccion">
+
+						</span>
+						<span class="mls"> limite-extraccion</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e97b" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe97b;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma retire-tarjeta">
+
+						</span>
+						<span class="mls"> retire-tarjeta</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e97c" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe97c;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma ingrese-tarjeta">
+
+						</span>
+						<span class="mls"> ingrese-tarjeta</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e97d" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe97d;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cardhole-out">
+
+						</span>
+						<span class="mls"> cardhole-out</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e97e" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe97e;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma cardhole-in">
+
+						</span>
+						<span class="mls"> cardhole-in</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e97f" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe97f;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma tarjeta90">
+
+						</span>
+						<span class="mls"> tarjeta90</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e980" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe980;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma arriba">
+
+						</span>
+						<span class="mls"> arriba</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e981" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe981;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma abajo">
+
+						</span>
+						<span class="mls"> abajo</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e982" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe982;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma touch">
+
+						</span>
+						<span class="mls"> touch</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e983" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe983;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma mensaje">
+
+						</span>
+						<span class="mls"> mensaje</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e984" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe984;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+		<div class="glyph fs1">
+				<div class="clearfix bshadow0 pbs">
+						<span class="prisma archivar">
+
+						</span>
+						<span class="mls"> archivar</span>
+				</div>
+				<fieldset class="fs0 size1of1 clearfix hidden-false">
+						<input type="text" readonly value="e985" class="unit size1of2" />
+						<input type="text" maxlength="1" readonly value="&#xe985;" class="unitRight size1of2 talign-right" />
+				</fieldset>
+				<div class="fs0 bshadow0 clearfix hidden-true">
+						<span class="unit pvs fgc1">liga: </span>
+						<input type="text" readonly value="" class="liga unitRight" />
+				</div>
+		</div>
+</div>
+
+<!--[if gt IE 8]><!-->
+<div class="mhl clearfix mbl">
+		<h1>Font Test Drive</h1>
+		<label>
+				Font Size: <input id="fontSize" type="number" class="textbox0 mbm"
+				min="8" value="48" />
+				px
+		</label>
+		<input id="testText" type="text" class="phl size1of1 mvl"
+		placeholder="Type some text to test..." value=""/>
+		<div id="testDrive" class="prisma">&nbsp;
+		</div>
+</div>
+<!--<![endif]-->
+<div class="bgc1 clearfix">
+		<p class="mhl">Generated by <a href="https://icomoon.io/app">IcoMoon</a></p>
+</div>
+
+<script src="demo-files/demo.js"></script>
 </body>
 </html>
