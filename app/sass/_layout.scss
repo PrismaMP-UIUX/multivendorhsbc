@@ -25,6 +25,7 @@ body { margin: 0px; overflow: hidden; }
 }
 .deshabilitado {
 	opacity: .3;
+	pointer-events: none;
 }
 
 //Flex
@@ -68,6 +69,18 @@ body { margin: 0px; overflow: hidden; }
 	-webkit-align-items: center;
 	align-items: center;
 }
+// Blocker
+.relative {
+	position: relative;
+}
+.blocker {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
 // Tamaño de la pantalla
 .draw {
 	width: $ancho_draw; 
@@ -96,6 +109,15 @@ body { margin: 0px; overflow: hidden; }
 	    z-index: $i !important;
 	};
 }  
+
+// generales
+.capitalizados {
+	display: inline-block !important;
+	
+	&::first-letter {
+		text-transform: uppercase;
+	}
+}
 
 // Fondos
 .brandbar, .footer, .panel {

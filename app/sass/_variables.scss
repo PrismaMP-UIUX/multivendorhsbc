@@ -387,7 +387,9 @@ $tabla_de_imagenes:(
 	sin_fondos,
 	error_limites,
 	tarjeta_coordenadas,
-	error_en_pin
+	error_en_pin,
+	tarjeta,
+	cancelar_operación_sin_tarjeta
 	);
 
 .imagen {

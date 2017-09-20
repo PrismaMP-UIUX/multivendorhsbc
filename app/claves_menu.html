@@ -26,18 +26,36 @@
 
 					<a href="clavecoordenadas.html" class="btn gris otras_claves_option"s>
 						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA DE COORDENADAS</span></span>
+					</a>  
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option"s>
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE PAGO MIS CUENTAS</span></span>
 					</a>      
 					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
-						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA HSBC</span></span>
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE BANELCOMOVIL</span></span>
 					</a>
 					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">
-						<span><i class="prisma">%</i> <span class="btn-text">CLAVE FISCAL ICBC</span></span>
+						<span><i class="prisma">%</i> <span class="btn-text">CANALES ICBC AUTOMATICOS</span></span>
 					</a>  
 					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
-						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA CASLA</span></span>
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE BANCA MOVIL</span></span>
 					</a>  
 					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
-						<span><i class="prisma">%</i> <span class="btn-text">ASOCIACIÓN TARJETA CASLA</span></span>
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE ACCESO HOME BANKING</span></span>
+					</a>   
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE BANCA TELEFONICA</span></span>
+					</a>   
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">ICBC MOBILE BANKING</span></span>
+					</a>   
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE ACCESO HOME BANKING</span></span>
+					</a>   
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">HSBC EN TU CELULAR</span></span>
+					</a>   
+					<a href="clavecoordenadas.html" class="btn gris otras_claves_option">     
+						<span><i class="prisma">%</i> <span class="btn-text">CLAVE FRANCES</span></span>
 					</a>       
 
 					<!-- Mas claves -->
@@ -62,33 +80,56 @@
 <!-- Javascript -->
   @@include('_partials/scripts.html')
 
- <script>
- 	cuenta();
+<script src="js/component/diccionario.js"></script>
+<script>
+	cuenta();
 
- 	// Mayúsculas y minúsculas 
- 	$(".btn-text").each(function() {
- 		var btnText = $(this).text();  
+	// Mayúsculas y minúsculas 
+	$(".btn-text").each(function() {
+		var btnText = $(this).text();  
 
- 		// Reset todo a minúsculas
- 		var lowercase = btnText.toLowerCase();
+		// Reset todo a minúsculas
+		var lowercase = btnText.toLowerCase();
 
- 		// Capitalizar primer letra
- 		String.prototype.ucfirst = function() {
- 		    return this.charAt(0).toUpperCase() + this.substr(1);
- 		} 
- 		$(this).text(lowercase.ucfirst());
- 		var btnTextNew = $(this).text(); 
+		// Capitalizar primer letra
+		String.prototype.ucfirst = function() {
+		    return this.charAt(0).toUpperCase() + this.substr(1);
+		} 
+		$(this).text(lowercase.ucfirst());
+		var btnTextNew = $(this).text(); 
+		var btnTextFinal = btnTextNew;     
 
- 		// Palabras o siglas específicas a mayúsculas
- 		var btnTextFinal = btnTextNew;     
- 	    var diccionario = ['hsbc', 'icbc', 'afip', 'agip', 'anses'];
- 	    
- 	    for (var i = 0; i < diccionario.length; i++) {
- 	        if (lowercase.indexOf(diccionario[i]) != -1) { 
- 	            $(this).text(btnTextFinal.replace(diccionario[i],diccionario[i].toUpperCase())); 
- 	        }
- 	    } 
- 	});
- </script>
+		// Textos destacados con la primer letra en mayúscula
+		for (var i = 0, l = txtDestacados.length; i < l; i++) {
+			if ($(this).html().indexOf(txtDestacados[i]) !== -1) {
+			  var mystring = txtDestacados[i];
+			  var firstChar = mystring.substring( 0, 1 ); 
+			  var tail = txtDestacados[i].substring( 1 ); 
+			  var mystring = firstChar.toUpperCase() + tail;  
+			  var arr = $(this).html().indexOf(txtDestacados[i]);
+			  $(this).text(btnTextFinal.replace(txtDestacados[i],mystring)); 
+
+			  console.log(mystring)
+			}
+		}  
+		
+
+		// Nombres propios en capitalizados
+	    for (var i = 0, l = nombresPropios.length; i < l; i++) {
+	      if ($(this).html().indexOf(nombresPropios[i]) !== -1) {
+	        var newValue = $(this).html().replace(nombresPropios[i], 
+	            '<span style="text-transform: capitalize;">' + nombresPropios[i] + '</span>');
+	        $(this).html(newValue);
+	      }
+	    } 
+	    
+	    // Siglas específicas a mayúsculas
+	    for (var i = 0; i < siglas.length; i++) {
+	        if (lowercase.indexOf(siglas[i]) != -1) { 
+	            $(this).text(btnTextFinal.replace(siglas[i],siglas[i].toUpperCase())); 
+	        }
+	    } 
+	});
+</script>
 </body>
 </html>

@@ -5,14 +5,18 @@
 <div class="centradovertical">
 	<div class="content-modal panel bounceIn animated centrado">
 		<div class="close"><a href="claves_movil_dni_generacion.html"><i class="prisma cerrar"></i> </a></div>
-		<h5 class="titulo mg-b-30">Ingresá el número de celular</h5>
+		<h5 class="titulo mg-b-30">Ingresá el código de área</h5>
 
-		<div class="left claves_f movil">
+		<div class="left claves_f">
 			<div class="containerdeinput mg-b-20">
-				<p class="area">0354</p> 
-				<a class="btn-chico naranja borrar claves_f" id="borrar" onclick="limpiarPass('numerotelefono')"><i class="prisma borrar"></i> Borrar</a>
-				<input type="text" maxlength="22" id="numerotelefono">
-			</div> 
+				<a class="btn-chico naranja borrar claves_f" id="borrar" onclick="limpiarPass('area')"><i class="prisma borrar"></i> Borrar</a>
+				<input type="text" maxlength="3" id="area">
+			</div>
+			<div>
+				<p>Ejemplo:</p>
+				<p>011 - Capital Federal</p>
+				<p>0351 - Córdoba Federal</p>
+			</div>
 		</div>
 
 		<div class="left mg-l-30 claves_f">
@@ -29,11 +33,11 @@
 		</div>
 			
 		<hr class="piemodal">
-		<a href="claves_movil_dni_generacion_telefoniamodal_area.html" class="btn gris mg-r-10"><i class="prisma izquierda"></i> Anterior</a>
-		<a href="claves_movil_dni_generacion_dnitipoNOingresado.html" class="btn azul confirmar right"><i class="prisma confirmar"></i> Listo</a>
+		<a href="claves_movil_dni_generacion.html" class="btn gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
+		<a  href="claves_movil_dni_generacion_telefoniamodal_numero.html" class="btn azul confirmar right">Continuar <i class="prisma derecha"></i></a>
 	</div>
 </div> 
 
 <script type="text/javascript">
-	alescribir("numerotelefono","borrar");
+	alescribir("area","borrar");
 </script>
