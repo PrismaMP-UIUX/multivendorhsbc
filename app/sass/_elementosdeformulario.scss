@@ -1,4 +1,4 @@
-	
+
 // Definición de elementos del formulario
 // --------------------------------------------------
 
@@ -33,7 +33,7 @@ input {
 
 .containerdeinput {
 	width: calc(100% - 8px);
-	position: relative; 
+	position: relative;
 	@extend .mg-t-10;
 	@extend .mg-b-10;
 
@@ -54,7 +54,7 @@ input {
 		z-index: 1;
 	}
 	// icono de la llave
-	.key {    
+	.key {
 		@extend .iconoseninput;
 	}
 	&.pin {
@@ -69,7 +69,7 @@ input {
 			// 	text-align: center;
 			// }
 		}
-	} 
+	}
 	&.deshabilitado { opacity: 0.3;}
 	&.signopesos::before {
 		content: "$";
@@ -120,7 +120,7 @@ input {
 					border-color: $rojo_ayuda;
 					color: $rojo_ayuda;
 				}
-			} 
+			}
 		}
 	}
 }
@@ -180,7 +180,7 @@ input {
 }
 
 // Dropdown
-.btn.dropdown { 
+.btn.dropdown {
 	height: 74px !important;
 	padding: 0;//0 70px 0 28px;
 	white-space: nowrap;
@@ -245,7 +245,7 @@ input {
 			//font-family: $font-bold;
 			color: darken($gris, 30%);
 			text-shadow: 0 0 1px #000;
-		}	
+		}
 	}
 
 	.ayuda & {
@@ -277,7 +277,7 @@ input {
 		}
 	}
 
-	&.btn-chico { 
+	&.btn-chico {
 		height: 52px !important;
 		//padding: 0 70px 0 26px;
 		&:after { top: 16px; }
@@ -285,7 +285,7 @@ input {
 			line-height: 52px;
 		}
 		.contenedor { top: -52px; }
-		
+
 		.ayuda & {
 			&:after { top: 10px; }
 			.contenedor { top: -48px; }
@@ -293,7 +293,7 @@ input {
 		}
 	}
 }
-	
+
 
 $checkbox_binario: 230px;
 $checkbox_selector: $checkbox_binario / 2.2 ;
@@ -376,7 +376,7 @@ $checkbox_selector: $checkbox_binario / 2.2 ;
 
 label.radio {
 	display: block;
-	
+
 	input {
 		width: 30px;
 		height: 30px;
@@ -421,7 +421,7 @@ label.radio {
 
 			&:before {
 				border: 3px solid #999;
-				background: #000; 
+				background: #000;
 			}
 			&:checked {
 				&:before {
@@ -439,7 +439,7 @@ label.radio {
 
 label.check {
 	display: block;
-	
+
 	input {
 		width: 30px;
 		height: 30px;
@@ -466,8 +466,8 @@ label.check {
 				background: $azul;
 			}
 			&:after {
-				font-family: 'Prisma' !important;
-    			content: "\e933";
+				font-family: 'prisma' !important;
+    		content: "\e901";
 				display: block;
 				position: absolute;
 				top: 2px;
@@ -484,7 +484,7 @@ label.check {
 
 			&:before {
 				border: 3px solid #999;
-				background: #000; 
+				background: #000;
 			}
 			&:checked {
 				&:before {
@@ -514,7 +514,7 @@ ul.pasos {
     > li {
 	    //margin-right: 6px;
 	    float: left;
-		
+
 		> a {
 		    text-decoration: none;
 		    font-family: $font-medium;
@@ -624,7 +624,7 @@ ul.pasos {
 			+ li > a:before { border-left-color: #000; }
 			&.active + li > a:before { border-left-color: $azul_ayuda; }
 			&.disabled + li > a:before { border-left-color: #000; }
-		}	
+		}
 	}
 }
 
