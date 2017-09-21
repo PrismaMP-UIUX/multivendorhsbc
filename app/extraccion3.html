@@ -21,10 +21,13 @@
 	  			</p>
 			</div>
 
-			<div class="inline mg-l-30" style="width: 420px;">
-				<div class="mg-b-10 containerdeinput signopesos">
-					<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('extraccion')"><i class="prisma borrar"></i> Borrar</a>
-					<input type="text" maxlength="6" id="extraccion" class="extraccion_f">
+			<div class="inline mg-l-30" style="width: 420px;"> 
+				<div class="containerdeinput-conBorrar"> 
+					<div>
+						<p class="mg-r-10 block moneda signopesos"></p>
+						<input type="text" maxlength="22" class="mg-r-10 block" id="extraccion">
+					</div>
+					<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('doc')"><i class="prisma borrar"></i> Borrar</a>
 				</div>
 				<a href="" class="btn fijo-70 azul ">1</a>
 				<a href="" class="btn fijo-70 azul ">2</a>
@@ -60,7 +63,7 @@
 	alescribir("extraccion","continuar");
 
 	$('input[type=radio]').change(function() {
-		var inputMonto = $('.containerdeinput');
+		var inputMonto = $('.containerdeinput-conBorrar .moneda');
 	    if($('#pesos').is(":checked")){
 	        $(inputMonto).removeClass('signodolar');
 	        $(inputMonto).addClass('signopesos');

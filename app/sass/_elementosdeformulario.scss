@@ -13,123 +13,76 @@ input {
 	.ayuda & {
 		background-color: $ayuda_oscuro;
 		border: solid 2px $gris_claro;
-	}
-	&#extraccion {
-		width: 405px;
-    	margin-left: 5px;
-	}
+	} 
 	&:focus { outline: none;}
 }
 
 // Input del pin
 .containerdeinput::before, input {
 	color: $gris;
-	background-color: $blanco;
-	.ayuda & {
-		color: #fff;
-		background-color: $ayuda_oscuro;
-	}
+	background-color: $blanco; 
 }
-
-.containerdeinput {
-	width: calc(100% - 8px);
-	position: relative;
-	@extend .mg-t-10;
-	@extend .mg-b-10;
-
-	.content-modal & {
-		margin-top: 0px !important;
-	}
-
-	// iconos
-	.iconoseninput {
-		border: solid 2px $gris;
-		position: absolute;
-		width: 62px;
-		height: 62px;
-		text-align: center;
-		font-size: $font-size-inputs-icon;
-		color: $gris;
-		line-height: 44pt;
-		z-index: 1;
-	}
-	// icono de la llave
-	.key {
-		@extend .iconoseninput;
-	}
-	&.pin {
-		width: 289px;
-		@extend .centrado;
-		@extend .alinear-centro;
-		input {
-			margin-left: 64px;
-			width: calc(100% - 75px);
-			font-size: $font-size-input-pass;
-			// &[type="password"] {
-			// 	text-align: center;
-			// }
-		}
-	}
-	&.deshabilitado { opacity: 0.3;}
-	&.signopesos::before {
-		content: "$";
-		position: absolute;
-		left: 30px;
-		top: 18px;
-	}
-	&.signodolar::before {
-		content: "u$s";
-		position: absolute;
-		left: 20px;
-		top: 18px;
-	}
-
-	&.signopesos,
-	&.signodolar {
-		input {
-		    box-sizing: border-box;
-		    height: 68px;
-		    padding: 5px 135px 5px 60px;
-		}
-	}
-
-	&.boton {
-	    display: inline-block;
-	    width: auto;
-	    text-decoration: none;
-	    input {
-		    display: inline;
-		    width: auto;
-		    padding: 0px 15px;
-		    height: 74px;
-		    font-size: 2em;
-		}
-		.btn {
-		    margin: -9px 0 5px -6px;
-    		border-radius: 0 5px 5px 0;
-
-    		.ayuda & { margin-top: -11px; }
-		}
-		&.warning {
-			padding: 0;
-			input {
-				border-color: $rojo;
-				color: $rojo;
-
-				.ayuda & {
-					border-color: $rojo_ayuda;
-					color: $rojo_ayuda;
-				}
-			}
-		}
-	}
-}
-
-
-
-
 
 .containerdeinput-conBorrar {
+	width: calc(100% - 30px);
+	position: relative;
+	border: solid 2px #777;
+	padding: 8px;
+	display: flex;
+	align-items: center;  
+	justify-content: space-between;
+	@extend .mg-b-20;
+	
+	& > div {
+		display: flex;
+		align-items: center;
+		max-width: calc(100% - 120px);
+
+		& > p {
+			font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
+			font-size: 1.65em;
+			margin: 0;  
+		}
+		input {
+			border:0;
+			padding-left: 0; 
+			height: auto;
+			min-height: 44px; 
+			flex-grow: 1;
+			
+		} 
+	}
+	.borrar.btn-chico { 
+	    display: block;
+	    position: absolute;
+	    margin: 0;
+	    top: 5px;
+	    right: 5px; 
+	}
+	&.deshabilitado { opacity: 0.3;}
+	.signopesos::before {
+		content: "$";
+		display: inline-block;
+		width: 15px;
+		font-size: 1em;
+	}
+	.signodolar::before {
+		content: "u$s";
+		display: inline-block;
+		width: 40px;
+		font-size: 1em;
+	} 
+	&::before, input {
+		color: #777;
+		background-color: #fff;
+	}
+}
+
+
+
+
+
+.containerdeinput {
 	width: calc(100% - 8px);
 	position: relative; 
 	@extend .mg-t-10;
