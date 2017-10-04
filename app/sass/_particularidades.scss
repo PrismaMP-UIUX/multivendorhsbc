@@ -5,15 +5,15 @@
 
 		&.leftZero {
 			left: 0px;
-		} 
+		}
 		a.oculto {
 			display: none;
 		}
-		.adde {  
+		.adde {
 			a {
 				height: 0px;
 				padding: 0px;
-				margin: 0px; 
+				margin: 0px;
 				-webkit-transform: translateY(-400%);
 				transform: translateY(-400%);
 				border: 0px;
@@ -25,7 +25,7 @@
 				}
 
 				&.open {
-					transition: 
+					transition:
 					    0.4s 0.4s height,
 					    0.4s 0.4s padding,
 					    0.4s 0.4s margin,
@@ -35,19 +35,19 @@
 					// opacity: 1;
 					height: 30px;
 					padding: 22px 28px;
-					margin: 0px 5px 14px; 
+					margin: 0px 5px 14px;
 					-webkit-transform: translateY(0%);
 					transform: translateY(0%);
 
 					& > div {
 						-webkit-transform: translateY(0%);
-						transform: translateY(0%); 
+						transform: translateY(0%);
 					}
 
 					.ayuda & {
 						border: 3px solid;
 					}
-				} 
+				}
 				&:nth-of-type(1) {
 					transition-delay: 0s;
 
@@ -76,23 +76,19 @@
 						transition-delay: 0.6s;
 					}
 				}
-			}			
+			}
 		}
 	}
 	#consultas_selectordecuenta { top: 0px; right: -15px;
 		.ayuda & {top: -10px; right: -10px;}
 	}
-	#consultas {
-		top: 40px; 
-		.ayuda {top: 80px; }
-	}
 	.ultimosmovimientos {
 		table {
-			tr { 
-				 td:last-of-type {  
-					justify-content: flex-end; 
+			tr {
+				 td:last-of-type {
+					justify-content: flex-end;
 				}
-			} 
+			}
 		}
 	}
 	#ut_nueva_transferencia {
@@ -100,40 +96,40 @@
 		right: 15px;
 		display: block;
 		position: absolute;
-	}  
+	}
 	#ultimas_transferencias {
 		width: 100%;
 
 		h5.titulo {
 			margin-bottom: 20px;
 		}
-		
-		
+
+
 		.saldosDisponibles {
 			position: relative;
 			margin: 0px;
 			width: 92%;
-			
+
 			& > div:last-of-type {
 				margin-top: 0px;
 			}
 
 			.tabla_select {
-				.tabla { 
-					table {  
+				.tabla {
+					table {
 						tr:nth-child(odd) {
 							background-color: #ddd;
 
 							.ayuda & {
 								background-color: #fff;
-								color: #000;	
+								color: #000;
 							}
 						}
 						tr:nth-child(even) {
 							background-color: #f5f5f5;
 
 							.ayuda & {
-								background-color: #000; 
+								background-color: #000;
 							}
 						}
 					}
@@ -153,7 +149,7 @@
 	#inicio_cuentas { left: 550px; }
 	#inicio_cuentas { position:static; margin:auto; }
 	#masOp.heightZero { border: 0px; }
-	
+
 	#extraccion_cuotas {
 		width: 340px;
 		vertical-align: top;
@@ -168,8 +164,8 @@
 
 	#transferencias {
 		max-width: none;
-	    width: 920px; 
-	    max-height: 470px; 
+	    width: 920px;
+	    max-height: 470px;
 
 	    .ayuda & {
 	    	max-height: none;
@@ -184,10 +180,10 @@
 	}
 
 	#operaciones_sintarjeta {
-		width: 700px; 
+		width: 700px;
 	}
 	#extraccion_sintarjeta {
-		width: 780px; 
+		width: 780px;
 	}
 
 	#clavecoordenadas_ej_nroserie {
@@ -209,7 +205,7 @@
 }
 
 // cierre de cuentas
-#cierre_de_cuentas {	
+#cierre_de_cuentas {
 	.dropdownContainer {
 		display: block;
 		width: 100%;
@@ -217,50 +213,50 @@
 		&.oculto {
 			display: none;
 		}
-		
+
 		.dropdown {
 			margin-left: auto !important;
-			margin-right: auto !important; 
+			margin-right: auto !important;
 			display: block;
-		}	
+		}
 	}
-} 
+}
 #siguiente.oculto {
 	display:none;
 }
 
-// claves 
+// claves
 .claves {
 	.btn-principal {
-		height: auto; 
+		height: auto;
 		width: 140px;
 
 		i {
-			font-size: 3em; 
-			margin-right: 0px !important; 
-			top:0; 
+			font-size: 3em;
+			margin-right: 0px !important;
+			top:0;
 			display: block;
 		}
 		span {
 			white-space: normal;
 		}
 	}
-	.claves_otras_claves {    
+	.claves_otras_claves {
 		width: 550px;
 
 		.ayuda & {
 			margin-left: 50px;
 		}
-		
+
 		&.owl-carousel {
 			width: 640px;
-		} 
+		}
 
-		.owl-nav { 
-			& > * { 
-				height: 100%;  
-				background-color:transparent;   
-				top: 10px;  
+		.owl-nav {
+			& > * {
+				height: 100%;
+				background-color:transparent;
+				top: 10px;
 
 				&.disabled {
 					opacity: 0.3;
@@ -282,31 +278,47 @@
 						font-size: 2em;
 					}
 				}
-			} 
+			}
 			.owl-prev {
 				left: 0;
 			}
 			.owl-next {
 				right: 0;
 			}
-		} 
-		.claves_otras_claves_slide {  
-			margin: 0 auto;
-			display: flex; 
-		    flex-flow: wrap; 
-		    justify-content: center;
-		} 
-		.otras_claves_option {
-			height: 60px !important;
-			justify-content: center; 
-		    height: auto; 
-		    width: 180px;
-		    margin: 0 9px 18px 9px;
-		    display: flex;
-		    align-items: center;
-		    white-space: normal; 
 		}
-	} 
+		.claves_otras_claves_slide {
+			margin: 0 auto;
+			display: flex;
+	    flex-flow: wrap;
+	    justify-content: center;
+
+		  .otras_claves_option {
+		  	height: 60px !important;
+	      height: auto;
+	      width: 180px;
+	      margin: 0 9px 18px 9px;
+	      display: flex;
+	      align-items: center;
+	      white-space: normal;
+
+	      & > span {
+	      	display: flex;
+	      	align-items: center;
+	      	justify-content: center;
+
+	      	& > span {
+	      		text-align: left;
+	      		margin-left: 10px;
+	      		font-size: 0.85em;
+	      		line-height: 18pt;
+	      	}
+	      	& > i {
+	      		font-size: 1.5em;
+	      	}
+	      }
+		  }
+		}
+	}
 	.btn {
 	    .ayuda & {
 	    	height: auto !important;
@@ -325,7 +337,7 @@
 		display: flex;
 	    justify-content: center;
 	}
-}  
+}
 .ticket > p > i {
 	margin-right:5px;
 }

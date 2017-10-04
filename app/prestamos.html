@@ -1,0 +1,45 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma banelco"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma banelco"></i> |</span> Préstamos</h5>
+			<p class="mg-b-20 font_140">Importe de préstamo: $1.000,00</p>
+			<p class="mg-b-20">1. Seleccioná la opción de financiamiento deseada:</p>
+			<p class="font_140">
+				<label class="radio  mg-t-15" for="pesos"><input id="hogar" type="radio" name="gender" value="pesos" checked> 12 cuotas de $ 102,08</label>
+				<label class="radio mg-t-15" for="dolares"><input id="auto" type="radio" name="gender" value="dolares"> 24 cuotas de $ 60,08</label>
+				<label class="radio mg-t-15" for="pesos"><input id="vida" type="radio" name="gender" value="pesos" checked> 36 cuotas de $ 48,08</label>
+				<label class="radio mg-t-15" for="dolares"><input id="x" type="radio" name="gender" value="dolares"> 48 cuotas de $ 43,08</label>
+				<label class="radio mg-t-15" for="dolares"><input id="y" type="radio" name="gender" value="dolares"> 60 cuotas de $ 40,08</label>
+			</p>
+
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="prestamos_terminos.html" class="btn azul right" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+
+	<a href="prestamos_error_sinhabilitar.html">% Sin opción</a>
+	<a href="prestamos_error_yasolicitado.html">% Ya solicitado</a>
+</div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+</body>
+</html>

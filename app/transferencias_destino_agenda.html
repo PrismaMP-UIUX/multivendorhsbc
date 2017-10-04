@@ -45,7 +45,7 @@
 						<td class="collumn-16 bold font_55">Alias1</td>
 						<td class="collumn-17 bold font_55">CA $ 12346789090</td>
 					</tr>
-				</table> 
+				</table>
 				<div class="fade-shadow"></div>
 				<div class="tableScrollBlocker"></div>
 				<div class="right">
@@ -54,18 +54,37 @@
 				</div>
 			</div>
 		</div>
+		<div class="mg-t-50">
+			<p class="font_90 transferencias_f nota">Para fines impositivos necesitamos que declares la cuenta destino:</p>
+			<div id="tipo" class="dropdown btn gris block mg-0 mg-t-15" style="width: 50%;"><span><span> Cuenta corriente propia</span></span>
+				<div class="contenedor">
+					<div indice="1" data-dd="data1" class="active"><i class="prisma cuenta"></i> Cuenta corriente propia</div>
+					<div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Cuenta corriente no propia</div>
+					<div indice="3" data-dd="data3"><i class="prisma cuenta"></i> Otra cuenta propia</div>
+					<div indice="4" data-dd="data4"><i class="prisma cuenta"></i> Otra cuenta no propia</div>
+				</div>
+			</div>
 
 		<hr class="piemodal">
 		<a href="transferencias_destino.html" class="btn gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
 		<a href="transferencias_destino_confirmar.html" class="btn right azul confirmar"><i class="prisma confirmar"></i> Listo</a>
 	</div>
-</div> 
-<script type="text/javascript"> 
+</div>
+<script type="text/javascript">
 	// seleccionar fila
 	$('tr').click( function(){
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
 		$(this).find('td input[type=radio]').prop( "checked", true );
 		$('#continuar').show();
-	}) 
+	})
+
+	$('#tipo').click(function(){
+		var childs = $('#tipo > .contenedor').children().length;
+		if(childs > 3) {
+			var resto = (childs - 3) * 62;
+			$('#tipo > .contenedor').css("top", -78 - resto + "px")
+
+		}
+	});
 </script>

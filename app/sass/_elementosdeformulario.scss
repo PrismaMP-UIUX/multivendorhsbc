@@ -13,14 +13,14 @@ input {
 	.ayuda & {
 		background-color: $ayuda_oscuro;
 		border: solid 2px $gris_claro;
-	} 
+	}
 	&:focus { outline: none;}
 }
 
 // Input del pin
 .containerdeinput::before, input {
 	color: $gris;
-	background-color: $blanco; 
+	background-color: $blanco;
 }
 
 .containerdeinput-conBorrar {
@@ -29,52 +29,62 @@ input {
 	border: solid 2px #777;
 	padding: 8px;
 	display: flex;
-	align-items: center;  
+	align-items: center;
 	justify-content: space-between;
 	@extend .mg-b-20;
-	
-	& > div {
-		display: flex;
-		align-items: center;
-		max-width: calc(100% - 120px);
 
-		& > p {
+	& > div {
+		max-width: calc(100% - 120px);
+		width: 100%;
+
+		& > .prefijo {
 			font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
 			font-size: 1.65em;
-			margin: 0;  
+			margin: 0;
+			white-space: nowrap;
+	    padding: 8px 0;
 		}
 		input {
 			border:0;
-			padding-left: 0; 
+			padding-left: 0;
 			height: auto;
-			min-height: 44px; 
-			flex-grow: 1;
-			
-		} 
+			min-height: 44px;
+
+		}
 	}
-	.borrar.btn-chico { 
-	    display: block;
+	.borrar.btn-chico {
 	    position: absolute;
 	    margin: 0;
 	    top: 5px;
-	    right: 5px; 
+	    right: 5px;
 	}
 	&.deshabilitado { opacity: 0.3;}
-	.signopesos::before {
-		content: "$";
-		display: inline-block;
-		width: 15px;
-		font-size: 1em;
+	.signopesos {
+		display: flex;
+		&::before {
+			content: "\e95f";
+			display: inline-block;
+			width: 45px;
+			font-size: 2em;
+			font-family: 'prisma' !important;
+		}
 	}
-	.signodolar::before {
-		content: "u$s";
-		display: inline-block;
-		width: 40px;
-		font-size: 1em;
-	} 
+	.signodolar {
+		display: flex;
+		&::before {
+			content: "\e960";
+			display: inline-block;
+			width: 45px;
+			font-size: 2em;
+			font-family: 'prisma' !important;
+		}
+	}
 	&::before, input {
 		color: #777;
-		background-color: #fff;
+
+		.ayuda & {
+			color: white;
+		}
 	}
 }
 
@@ -84,9 +94,15 @@ input {
 
 .containerdeinput {
 	width: calc(100% - 8px);
-	position: relative; 
+	position: relative;
 	@extend .mg-t-10;
 	@extend .mg-b-10;
+
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
 
 	.content-modal & {
 		margin-top: 0px !important;
@@ -105,7 +121,7 @@ input {
 		z-index: 1;
 	}
 	// icono de la llave
-	.key {    
+	.key {
 		@extend .iconoseninput;
 	}
 	&.pin {
@@ -120,20 +136,8 @@ input {
 			// 	text-align: center;
 			// }
 		}
-	} 
+	}
 	&.deshabilitado { opacity: 0.3;}
-	&.signopesos::before {
-		content: "$";
-		position: absolute;
-		left: 30px;
-		top: 18px;
-	}
-	&.signodolar::before {
-		content: "u$s";
-		position: absolute;
-		left: 20px;
-		top: 18px;
-	}
 
 	&.signopesos,
 	&.signodolar {
@@ -171,7 +175,7 @@ input {
 					border-color: $rojo_ayuda;
 					color: $rojo_ayuda;
 				}
-			} 
+			}
 		}
 	}
 }
@@ -658,6 +662,13 @@ ul.pasos {
 					border-radius: 2px;
 				}
 			}
+			li.active a::after {
+			    border-top: 26px solid transparent;
+	        border-bottom: 26px solid transparent;
+	        border-left: 26px solid #6aa5d9;
+	        left: calc(100% - -1px);
+	        top: -2px;
+			}
 			&:first-child > a {
 				border-left-color: $azul_ayuda;
 			}
@@ -680,6 +691,12 @@ ul.pasos {
 			+ li > a:before { border-left-color: #000; }
 			&.active + li > a:before { border-left-color: $azul_ayuda; }
 			&.disabled + li > a:before { border-left-color: #000; }
+			&.active a::after {
+		    border-left-color: #000;
+			}
+		}
+		script {
+			& + li > a:before { border-left-color: #000; }
 		}
 	}
 }

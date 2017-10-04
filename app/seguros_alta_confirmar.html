@@ -1,0 +1,37 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content" id="extraccion3"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma banelco"></i> |</span> Seguros</h5>
+			<p class="font_140">2. Seleccioná el paquete</p>
+			<p class="mg-t-20 font_140">
+				<label class="radio  mg-t-15" for="pesos"><input id="hogar" type="radio" name="gender" value="pesos" checked> Clásico</label>
+				<label class="radio mg-t-15" for="dolares"><input id="auto" type="radio" name="gender" value="dolares"> Seguro Premium</label>
+			</p>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="ticket.html" class="btn verde right"><i class="prisma confirmar"></i> Confirmar</a>
+</div>
+
+<!-- Javascript -->
+<?php   include 'assets/scripts.html';  ?>
+<script src="js/component/inputListenerBotones.js"></script>
+</body>
+</html>

@@ -7,16 +7,16 @@
 		<div class="close"><a href="transferencias_destino.html"><i class="prisma cerrar"></i> </a></div>
 		<h5 class="titulo mg-b-30">Ingresá el CBU de destino</h5>
 
-		<div class="containerdeinput mg-b-20" style="width: calc(100% - 15px);">
+		<div class="containerdeinput mg-b-10" style="width: calc(100% - 15px);">
 			<a class="btn-chico naranja borrar mg-r-0 transferencias_f" id="borrar" onclick="limpiarPass('cbu')"><i class="prisma cerrar"></i> Borrar todo</a>
 			<input type="text" maxlength="22" id="cbu" style="font-size: 2em;">
 		</div>
-		
-		<div class="left" style="width: 370px;">
 
-			<p class="mg-t-15 mg-b-50">
+		<div class="left" style="width: 370px;">
+			<p class="cbu-counter mg-b-20"><i class="prisma advertencia"></i> El CBU debe ser de 22 dígitos (<span>0</span> / 22)</p>
+			<p class="mg-t-15 mg-b-30">
 				<label class="check">
-					<input id="pesos" type="checkbox"> Agregar CBU a mi agenda
+					<input id="pesos" type="checkbox"> Agregar a mi agenda
 				</label>
 			</p>
 			<p class="mg-t-15 font_90 transferencias_f nota">Para fines impositivos necesitamos que declares la cuenta destino:</p>
@@ -40,11 +40,11 @@
 			<a href="" class="btn fijo-70 azul ">6</a><br>
 			<a href="" class="btn fijo-70 azul ">7</a>
 			<a href="" class="btn fijo-70 azul ">8</a>
-			<a href="" class="btn fijo-70 azul ">9</a><br> 
+			<a href="" class="btn fijo-70 azul ">9</a><br>
 			<a class="btn fijo-70 azul naranja " id="borrarUno"><i class="prisma borrar"></i></a>
-			<a href="" class="btn fijo-210 azul ">0</a> 
+			<a href="" class="btn fijo-210 azul ">0</a>
 		</div>
-			
+
 		<hr class="piemodal">
 		<a href="transferencias_destino.html" class="btn gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
 		<a href="transferencias_destino_confirmar.html" class="btn right azul confirmar"><i class="prisma confirmar"></i> Listo</a>
@@ -55,10 +55,40 @@
 
 <script type="text/javascript">
 	alescribir("cbu","borrar");
-	$("#borrarUno").click(function(){  
+	$("#borrarUno").click(function(){
 		$("#cbu").val(
 		    function(index, value){
 		        return value.substr(0, value.length - 1);
 		})
+		cbuFunction()
 	});
+	$('#cbu').bind('keyup', function(){
+	    cbuFunction()
+	});
+
+	function cbuFunction() {
+		var cbuLength = $("#cbu").val().length;
+
+		if ( cbuLength < 20 ) {
+			$(".cbu-counter").removeClass("naranja").removeClass("verde");
+		} else if ( cbuLength >= 20 && cbuLength <= 21) {
+			$(".cbu-counter").removeClass("verde").removeClass("pulse animated infinite").addClass("naranja");
+		};
+
+		if ( cbuLength == 22 ) {
+			$(".cbu-counter").removeClass("naranja");
+			$(".cbu-counter").addClass("verde");
+
+			$('#cbu').bind('keyup', function(){
+			    $(".cbu-counter").addClass("pulse animated infinite");
+			});
+		};
+
+		if( cbuLength > 0 ) {
+			$(".cbu-counter").removeClass("oculto");
+		} else {
+			$(".cbu-counter").addClass("oculto");
+		}
+		$(".cbu-counter span").text(cbuLength);
+	}
 </script>

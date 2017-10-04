@@ -8,19 +8,19 @@ var $slider;
   	};
     $(".idleLoop").owlCarousel({
       items: 1,
-      autoplay: true, 
-      autoplayTimeout: 6000, 
+      autoplay: true,
+      autoplayTimeout: 6000,
       nav: true,
-      dots: true, 
+      dots: true,
       navText: [
           "<i id='slider-prev' class='prisma izquierda'></i>",
           '<i id="slider-next" class="prisma derecha"></i>'
       ],
-      loop: true 
-    }); 
+      loop: true
+    });
 
-    alescribir("extraccion","borrar");      
-    alescribir("extraccion","continuar");   
+    alescribir("extraccion","borrar");
+    alescribir("extraccion","continuar");
 
     //Inicio - más operaciones
     jQuery.fn.fadeThenSlideToggle = function(speed, easing, callback) {
@@ -32,39 +32,40 @@ var $slider;
     };
     $("#masOp").click(function(){
       $("#inicio_opnoextraccion").css("min-width","330px");
-      $(this).addClass("heightZero animated");      
-      $(".adde > a")  
-          .addClass("open animated")  
-    });     
+      $(this).addClass("heightZero animated");
+      $(".adde > a")
+          .addClass("open animated")
+    });
 
     //Inicio link
     $("#inicio_cuentas .dropdown .contenedor div").click(function(){
-      $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
-    }); 
+      $(this).closest(".dropdownContainer").next().removeClass("oculto");
+    });
     $("#inicio_cuentas .dropdownContainer:nth-of-type(2) .dropdown .contenedor div").click(function(){
       $(this).closest(".dropdownContainer").siblings("p.azul").addClass("oculto");
-    }); 
+    });
 
     //Consulta saldo
     $(".consultasaldo_link_intermedia_f .dropdown .contenedor div").click(function(){
-      $(this).closest(".dropdownContainer").next().removeClass("oculto"); 
-    });  
+      $(this).closest(".dropdownContainer").next().removeClass("oculto");
+    });
 
-    //Cierre de cuentas 
+    //Cierre de cuentas
     $("#numeroCuenta .contenedor div").click(function(){
-      $("#siguiente").removeClass("oculto"); 
-    }); 
+      $("#siguiente").removeClass("oculto");
+    });
 
     //Focus en inputs,poner aquí
     $(".extraccion_sintarjeta_clave_modal_f.containerdeinput input").focus();
 
-      
+    screenIcon();
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
 //Últimos movimientos
 if ($(".ultimosmovimientos tr").length < 5) {
-  $(".ultimosmovimientos-botones").hide();    
+  $(".ultimosmovimientos-botones").hide();
 }
 
 $("body").on("keypress",function(e){
@@ -82,16 +83,16 @@ function ayudavisual(){
   $("body").toggleClass("bnlc ayuda");
   if ($(".t-header").length > 0) {
       var tWidth = $(".tabla_select > .tabla").width();
-      $(".t-header").width(tWidth); 
+      $(".t-header").width(tWidth);
 
-      //pos t-head items 
-      var tHeadPosA = []; 
+      //pos t-head items
+      var tHeadPosA = [];
         $(".tabla_select > .tabla tr:first-of-type td").each(function(){
           tHeadPosA.push($(this).position());
 
         });
-        for (i = 0; i <= $(".t-header div").length; i++) { 
-          $(".t-header div:nth-of-type(" + [i + 1]  + ")").css("left", tHeadPosA[i].left + "px");  
+        for (i = 0; i <= $(".t-header div").length; i++) {
+          $(".t-header div:nth-of-type(" + [i + 1]  + ")").css("left", tHeadPosA[i].left + "px");
         }
   }
   /*setTimeout(function(){

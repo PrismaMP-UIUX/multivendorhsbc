@@ -1,0 +1,105 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content" id="extraccion3"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado" style="width:100%;">
+			<h5 class="titulo"><span class="azul"><i class="prisma banelco"></i> |</span> Seguros</h5>
+			<p class="font_140">3. Seleccioná la cuenta de origen</p>
+			<div class="left" style="width: 35%;">
+				<div id="tipo" class="dropdown btn gris block mg-t-30 mg-l-5">
+					<div class="contenedor">
+						<div indice="1" data-dd="	1"><i class="prisma cuenta"></i> Caja de ahorro</div>
+						<div indice="2" data-dd="	2"><i class="prisma cuenta"></i> Cuenta corriente</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tabla_select right mg-t-30" style="width: 64%;">
+				<div id="cuentas" class="tabla">
+					<table>
+						<tr class="waves-effect">
+							<td class="collumn-3">
+								<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+							</td>
+							<td class="bold font_55 collumn-33">
+								<span>CA us$ 12346789090</span>
+							</td>
+							</tr>
+							<tr class="waves-effect">
+								<td class="collumn-3">
+									<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+								</td>
+								<td class="bold font_55 collumn-33">
+									<span>CA us$ 12346789090</span>
+								</td>
+							</tr>
+							<tr class="waves-effect">
+								<td class="collumn-3">
+									<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+								</td>
+								<td class="bold font_55 collumn-33">
+									<span>CA us$ 12346789090</span>
+								</td>
+							</tr>
+							<tr class="waves-effect">
+								<td class="collumn-3">
+									<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+								</td>
+								<td class="bold font_55 collumn-33">
+									<span>CA us$ 12346789090</span>
+								</td>
+							</tr>
+							<tr class="waves-effect">
+								<td class="collumn-3">
+									<label class="radio"><input type="radio" name="cuenta" id="1" value="1"></label>
+								</td>
+								<td class="bold font_55 collumn-33">
+									<span>CA us$ 12346789090</span>
+								</td>
+							</tr>
+					</table>
+					<div class="tableScrollBlocker"></div>
+					<div class="right">
+						<a href="#" class="btn-chico azul arriba">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
+						<a href="#" class="btn-chico azul abajo">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="seguros_confirmar.html" class="btn azul right" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+
+	<a href="seguros_alta_selecciondecuenta_untipo.html" class="right">% Un tipo  de cuenta</a>
+</div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+<script type="text/javascript">
+	// seleccionar fila
+	$('tr').click( function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		$(this).find('td input[type=radio]').prop( "checked", true );
+		$('#continuar').show();
+	})
+</script>
+
+</body>
+</html>

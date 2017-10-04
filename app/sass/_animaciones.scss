@@ -1,24 +1,24 @@
 .animaciontarjeta {
 	position: absolute;
-	top: 38px;
-	left: 30px;
-} 
+	top: 29px;
+	left: 29px;
+}
 
 //Delay function
 @for $del from 1 through 1000 {
-	.delay_#{$del} { 
-	    -webkit-animation-delay:$del*0.1s; 
+	.delay_#{$del} {
+	    -webkit-animation-delay:$del*0.1s;
 	    animation-delay:$del*0.1s;
 	};
-} 
- 
+}
+
 // !
 //  * animate.css -http://daneden.me/animate
 //  * Version - 3.5.1
 //  * Licensed under the MIT license - http://opensource.org/licenses/MIT
 //  *
 //  * Copyright (c) 2016 Daniel Eden
- 
+
 
 .animated {
 	-webkit-animation-duration: 1s;
@@ -35,6 +35,11 @@
 .animated.hinge {
 	-webkit-animation-duration: 2s;
 	animation-duration: 2s;
+}
+
+.animated.tres {
+	-webkit-animation-iteration-count: 3;
+	animation-iteration-count: 3;
 }
 
 .animated.flipOutX,
@@ -138,13 +143,13 @@
 		-webkit-transform: scaleY(1);
 		-o-transform: scaleY(1);
 		-ms-transform: scaleY(1);
-		transform: scaleY(1); 	
+		transform: scaleY(1);
 	}
 	99% {
 		-webkit-transform: scaleY(0);
 		-o-transform: scaleY(0);
 		-ms-transform: scaleY(0);
-		transform: scaleY(0);	
+		transform: scaleY(0);
 	}
 	100% {
 		display: none;
@@ -152,9 +157,9 @@
 		-o-transform: scaleY(0);
 		-ms-transform: scaleY(0);
 		transform: scaleY(0);
-		height: 0px;	
+		height: 0px;
 		padding: 0px;
-		margin: 0px; 
+		margin: 0px;
 	}
 }
 
@@ -176,8 +181,8 @@
 	animation-name: heightZero;
 	-webkit-animation-duration: 0.1s;
 	animation-timing-function: linear;
-	animation-fill-mode: forwards; 
-	
+	animation-fill-mode: forwards;
+
 }
 
 
@@ -3221,15 +3226,15 @@
 		margin: 0px;
 		-webkit-transform: translate3d(-200%, 0, 0);
 		transform: translate3d(-200%, 0, 0);
-		
-		
+
+
 	}
 	10% {
 		height: 30px;
 		padding: 22px 28px;
 		margin: 0px 5px 14px;
 		-webkit-transform: translate3d(-200%, 0, 0);
-		transform: translate3d(-200%, 0, 0);	
+		transform: translate3d(-200%, 0, 0);
 	}
 	70% {
 		-webkit-transform: translate3d(5%, 0, 0);
@@ -3242,7 +3247,7 @@
 		margin: 0px 5px 14px;
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
-		
+
 	}
 }
 
@@ -3254,16 +3259,16 @@
 		margin: 0px;
 		-webkit-transform: translate3d(0,-200%, 0);
 		transform: translate3d(0,-200%, 0);
-		
-		
+
+
 	}
 	10% {
 		height: 30px;
 		padding: 22px 28px;
 		margin: 0px 5px 14px;
 		-webkit-transform: translate3d(0,-200%, 0);
-		transform: translate3d(0,-200%, 0);	
-	} 
+		transform: translate3d(0,-200%, 0);
+	}
 	100% {
 		opacity: 1;
 		height: 30px;
@@ -3271,7 +3276,7 @@
 		margin: 0px 5px 14px;
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
-		
+
 	}
 }
 
@@ -3280,7 +3285,7 @@
 	animation-name: slideInLeftB;
 	animation-fill-mode: forwards;
 	animation-duration:1s;
-	animation-timing-function: ease-out; 
+	animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes slideInRight {

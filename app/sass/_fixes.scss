@@ -2,7 +2,7 @@
 .idpos_f .carga.inline { width: 134px; }
 
 // idposalfa1, idposalfa2, idposalfa3
-.idposalfa_f .carga 
+.idposalfa_f .carga
 	{
 		width: 100px;
 		line-height: 1.488;
@@ -13,7 +13,7 @@
 	}
 
 // idposexperto1, idposexperto2, idposexperto3
-.idposexperto_f .carga  
+.idposexperto_f .carga
 	{
 		width: 100px;
 		line-height: 1.488;
@@ -26,11 +26,17 @@
 // cambioclave1, cambioclave2, cambioclave3, cambioclave_error1, cambioclave_error2
 .cambiodeclave_f.notita.animated { width: 200px; }
 
-.cambiodeclave_f.containerdeinput.pin { width: 220px; }
-.cambiodeclave_f.containerdeinput i { line-height: 2; }
+.cambiodeclave_f.containerdeinput.pin {
+	width: 250px;
+
+	.ayuda & {
+		width: 290px;
+	}
+}
+.cambiodeclave_f.containerdeinput i { line-height: 1.7; }
 
 // clavealfa_generacion_1, clavealfa_generacion_2, clavealfa_generacion_3, clavealfa_generacion_4, clavealfa_confirmar_1, clavealfa_confirmar_2, clavealfa_confirmar_3, clavealfa_confirmar_4, clavealfa_listo, clavealfa_error
-.clavealfa_f.carga 
+.clavealfa_f.carga
 	{
 		width: 100px;
 		line-height: 1.488;
@@ -40,36 +46,36 @@
 		}
 	}
 
-.clavealfa_f.font_55 		
-	{ 
+.clavealfa_f.font_55
+	{
 		width: 120px;
 		display: block;
 		margin: 0 auto;
 	}
 
 // clavealfa_error
-.clavealfa_f.notita.animated  
-	{ 
-		width: 150px; 
-		height: 100%; 
-		top:0px; 
-		text-align: left; 
+.clavealfa_f.notita.animated
+	{
+		width: 150px;
+		height: 100%;
+		top:0px;
+		text-align: left;
 
 		.ayuda & {
 			width: 230px;
 			top: 24px;
 		}
-	}	
+	}
 
 // consultacbu
 #confirmacion_f.content-modal  { width: 100%; }
 
 // consultasaldo_sincuentamodal
 .consultasaldo_sincuentamodal_f#notice .fix { width: 100%; }
-.consultasaldo_sincuentamodal_f.notita { width: 180px; } 
+.consultasaldo_sincuentamodal_f.notita { width: 180px; }
 
 // consultamovimientos
-#consultas.consultamovimientos_f 
+#consultas.consultamovimientos_f
 	{
 		top:40px;
 
@@ -85,19 +91,19 @@
 .inicio_link_f.oculto { display:none; }
 
 // extraccion y extraccion sin tarjeta
-input#extraccion.extraccion_f 
+input#extraccion.extraccion_f
 	{
 		.signopesos & {
 			padding-left: 45px;
-		} 
+		}
 	}
 .extraccion_sintarjeta_clave_modal_f { margin:0px; padding: 0px; }
 .extraccion_sintarjeta_clave_modal_f .btn.borrar { right: -10px; }
-.extraccion_sintarjeta_clave_modal_f input#extraccion.extraccion_f 
-	{ 
-		width:100%; 
-		padding-left: 10px; 
-		margin: 0px; 
+.extraccion_sintarjeta_clave_modal_f input#extraccion.extraccion_f
+	{
+		width:100%;
+		padding-left: 10px;
+		margin: 0px;
 	}
 
 .extraccion_f.borrar.btn-chico {
@@ -115,11 +121,11 @@ input#extraccion.extraccion_f
 		width: 420px;
 	}
 }
-// transferencias 
+// transferencias
 .transferencias_f.borrar.btn-chico {
 	right: 1px;
 }
-.transferencias_f.nota{ font-style: italic; } 
+.transferencias_f.nota{ font-style: italic; }
 .transferencias_f.concepto {
 	display: flex;
 	-webkit-flex-flow: wrap;
@@ -136,8 +142,8 @@ input#extraccion.extraccion_f
 
 // login
 .login_f.containerdeinput i { line-height: 2; }
-.ayuda .login_f.containerdeinput i { line-height: 1.65; } 
-.login_f.containerdeinput i 
+.ayuda .login_f.containerdeinput i { line-height: 1.65; }
+.login_f.containerdeinput i
 	{
 		line-height: 2;
 
@@ -146,20 +152,20 @@ input#extraccion.extraccion_f
 		}
 	}
 div.login_f.flexVerticalAlign.justify-center { margin-left:10px; display: inline-flex; }
-div.login_f.col_left { width: 200px; } 
+div.login_f.col_left { width: 200px; }
 
 // consultasaldo_link_intermedia_f
 .consultasaldo_link_intermedia_f .btn.dropdown { width:400px; }
- 
+
  // claves
 .claves_f.left {
 	width: 370px;
 
 	& + & {
-		width: 420px; 
-	}  
+		width: 420px;
+	}
 	.containerdeinput.claves_f + & {
-		width: 420px; 
+		width: 420px;
 		margin: 0 auto;
 		float: none;
 	}
@@ -177,8 +183,8 @@ div.login_f.col_left { width: 200px; }
 	}
 }
 .containerdeinput.claves_f {
-	width: 420px; 
-	margin: 0 auto; 
+	width: 420px;
+	margin: 0 auto;
 
 	input#doc {
 		padding-left: 65px;
@@ -191,7 +197,7 @@ div.login_f.col_left { width: 200px; }
 		}
 
 		.ayuda & {
-			padding-left: 80px; 
+			padding-left: 80px;
 			width: calc(100% - 230px);
 		    padding-right: 149px;
 		}

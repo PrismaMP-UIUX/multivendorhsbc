@@ -1,7 +1,7 @@
 // Definiciones de colores
 // --------------------------------------------
 
-$gris:						#777; 
+$gris:						#777;
 $gris_oscuro:				darken($gris, 15%);
 $gris_claro:				lighten($gris, 10%);
 $gris_masclaro:				lighten($gris, 25%);
@@ -49,11 +49,11 @@ $negro_claro:				lighten($negro, 15%);
 // --------------------------------------------
 
 // Mixins degradé lineal de arriba a abajo
-@mixin degradelinealhaciaabajo ($arriba, $abajo) { 
+@mixin degradelinealhaciaabajo ($arriba, $abajo) {
 	background: linear-gradient(to bottom, $arriba, $abajo); }
 
 // Mixins degradé radial de adentro hacia afuera + porecentajes
-@mixin degraderadialhaciaafuera ($adentro, $porcentajedentro, $afuera, $porcentajefuera) { 
+@mixin degraderadialhaciaafuera ($adentro, $porcentajedentro, $afuera, $porcentajefuera) {
 	background: radial-gradient($adentro $porcentajedentro, $afuera $porcentajefuera); }
 
 // Tabla de colores
@@ -71,9 +71,9 @@ $tabla_de_colores:(
 
 @each $color in $tabla_de_colores{
 	//.$color_* {color: $color_*}
-	.#{nth($color,1)} {color: nth($color,2)} 
-	.#{nth($color,1)}_oscuro {color: nth($color,3)} 
-	.#{nth($color,1)}_claro {color: nth($color,4)}  
+	.#{nth($color,1)} {color: nth($color,2)}
+	.#{nth($color,1)}_oscuro {color: nth($color,3)}
+	.#{nth($color,1)}_claro {color: nth($color,4)}
 
 	//.fondo_$color_* {background_color: $color_*}
 	.fondo_#{nth($color,1)} {
@@ -83,9 +83,9 @@ $tabla_de_colores:(
 			border: solid 2px nth($color,4);
 			color: nth($color,4);
 		}
-	} 
-	.fondo_#{nth($color,1)}_oscuro {background-color: nth($color,3)} 
-	.fondo_#{nth($color,1)}_claro {background-color: nth($color,4)} 
+	}
+	.fondo_#{nth($color,1)}_oscuro {background-color: nth($color,3)}
+	.fondo_#{nth($color,1)}_claro {background-color: nth($color,4)}
 
 	.degrade_#{nth($color,1)} {
 		@include degradelinealhaciaabajo(nth($color,4), nth($color,2));
@@ -120,11 +120,11 @@ $tabla_de_colores:(
 				}
 			}
 			.ayuda & {
-				border-color: #{nth($color,4)}; 
+				border-color: #{nth($color,4)};
 				color: #{nth($color,4) !important};
 				background: black !important;
 				line-height: 0.7em;
-				
+
 				&.active {
 					background: nth($color,4) !important;
 					color: #000 !important;
@@ -144,8 +144,8 @@ $tabla_de_colores:(
 		}
 		&.blanco {color: $gris_claro;}
 		@extend .btn.gris; // Default si no tiene nada
-		
-		
+
+
 	}
 	.btn-flat {
 		@extend .btn-flat.gris; // Default
@@ -174,7 +174,7 @@ body {
 // --------------------------------------------------
 
 // Mixin Sombra
-@mixin sombra ($hori, $vert, $radio, $radprop, $color, $transp) { 
+@mixin sombra ($hori, $vert, $radio, $radprop, $color, $transp) {
 	box-shadow: $hori $vert $radio  $radprop rgba($color,$transp);
 }
 .sombra, .brandbar, .footer, .draw { @include sombra(0px, 0px, 8px, 0px, #000, 0.5); }
@@ -206,9 +206,9 @@ $font-bold:               "BanelcoBold", Arial, Helvetica, sans-serif;
 $font-size-base:          1.65em;//22pt
 $font-weight:	          500;
 
-$font-size-inputs-icon:   $font-size-base * 1.2;	//ceil(($font-size-base * 1.2)); 
-$font-size-input-pass:    $font-size-base * 2;		//ceil(($font-size-base * 2)); 
-$font-size-inputs:  	  $font-size-base * 1;		//ceil(($font-size-base * 1)); 
+$font-size-inputs-icon:   $font-size-base * 1.2;	//ceil(($font-size-base * 1.2));
+$font-size-input-pass:    $font-size-base * 2;		//ceil(($font-size-base * 2));
+$font-size-inputs:  	  $font-size-base * 1;		//ceil(($font-size-base * 1));
 
 
 $tabla_de_fuentes:(
@@ -221,13 +221,13 @@ $tabla_de_fuentes:(
 	h3	2.2	0.3	7	$font-regular,
 	h2	2.5	0.28	10	$font-light,
 	h1	3	0.22	15	$font-light
-	); 
+	);
 
 @for $tam from 1 through 1000 {
-	.font_#{$tam}, .font_#{$tam} { 
+	.font_#{$tam}, .font_#{$tam} {
 	    font-size: ($tam * $font-size-base) * 0.01;
 	};
-} 
+}
 
 %todos {
 	letter-spacing: -0.5px;
@@ -244,20 +244,20 @@ a {@extend %todos}
 
 @each $tamanio in $tabla_de_fuentes{
 	$sss : $font-size-base * nth($tamanio,2);
-	#{nth($tamanio,1)}, .#{nth($tamanio,1)} { 
+	#{nth($tamanio,1)}, .#{nth($tamanio,1)} {
 		font: {
 			size: $font-size-base*nth($tamanio,2);
 			family: #{nth($tamanio,5)};
 		}
 		line-height: $font-size-base*nth($tamanio,2)*nth($tamanio,3);
 		margin-bottom: #{nth($tamanio,4)}pt;
-		@extend %todos; 
+		@extend %todos;
 	}
 	@for $tam from 1 through 1000 {
-		#{nth($tamanio,1)}.font_#{$tam}, .#{nth($tamanio,1)}.font_#{$tam} { 
+		#{nth($tamanio,1)}.font_#{$tam}, .#{nth($tamanio,1)}.font_#{$tam} {
 		    font-size: ($tam * $sss) * 0.01;
 		};
-	} 
+	}
 }
 
 
@@ -278,7 +278,7 @@ $tabla_smallybig:(
 @each $tamanio in $tabla_smallybig {
 	.big_#{nth($tamanio,1)} {font-size: nth($tamanio,2)*1em;}
 	.small_#{nth($tamanio,1)} {font-size: 1em / nth($tamanio,2);}
-} 
+}
 
 // Tamaños Layout
 // --------------------------------------------
@@ -348,13 +348,43 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
 // 	.1mg-t-#{$margen} {margin-top: #{$margen}px !important;}
 // 	.1mg-b-#{$margen} {margin-bottom: #{$margen}px !important;}
 // }
-@for $mg from 0 through 1000 {
+
+// Margenes
+// Del 1 al 9
+@for $mg from 0 through 9 {
+	// Positivos
 	.mg-#{$mg} {margin: #{$mg}px !important;}
 	.mg-l-#{$mg} {margin-left: #{$mg}px !important;}
 	.mg-r-#{$mg} {margin-right: #{$mg}px !important;}
 	.mg-t-#{$mg} {margin-top: #{$mg}px !important;}
 	.mg-b-#{$mg} {margin-bottom: #{$mg}px !important;}
-} 
+	//Negativos
+	.mg-neg-#{$mg} {margin: -#{$mg}px !important;}
+	.mg-neg-l-#{$mg} {margin-left: -#{$mg}px !important;}
+	.mg-neg-r-#{$mg} {margin-right: -#{$mg}px !important;}
+	.mg-neg-t-#{$mg} {margin-top: -#{$mg}px !important;}
+	.mg-neg-b-#{$mg} {margin-bottom: -#{$mg}px !important;}
+}
+// Del 10 al 300 iterando de a 5
+$max: 300;
+$step: 5;
+@for $margin-iterate from 1 through 300 {
+    @if $margin-iterate % 5 == 0 {
+    		// Positivos
+        .mg-#{$margin-iterate} {margin: #{$margin-iterate}px !important;}
+        .mg-l-#{$margin-iterate} {margin-left: #{$margin-iterate}px !important;}
+        .mg-r-#{$margin-iterate} {margin-right: #{$margin-iterate}px !important;}
+        .mg-t-#{$margin-iterate} {margin-top: #{$margin-iterate}px !important;}
+        .mg-b-#{$margin-iterate} {margin-bottom: #{$margin-iterate}px !important;}
+        // Negativos
+        .mg-neg-#{$margin-iterate} {margin: -#{$margin-iterate}px !important;}
+        .mg-neg-l-#{$margin-iterate} {margin-left: -#{$margin-iterate}px !important;}
+        .mg-neg-r-#{$margin-iterate} {margin-right: -#{$margin-iterate}px !important;}
+        .mg-neg-t-#{$margin-iterate} {margin-top: -#{$margin-iterate}px !important;}
+        .mg-neg-b-#{$margin-iterate} {margin-bottom: -#{$margin-iterate}px !important;}
+    }
+}
+
 
 // Imágenes
 // --------------------------------------------
@@ -395,14 +425,14 @@ $tabla_de_imagenes:(
 .imagen {
 	background-size:cover;
 	background-repeat: no-repeat;
-	background-position: center; 
+	background-position: center;
 	width: 100%;
 	height: 200px;
 	@each $imagen in $tabla_de_imagenes {
 		&.#{nth($imagen,1)}{
 			background-image: url("../img/"+nth($imagen,1)+".png");
 		}
-	}	
+	}
 }
 
 
@@ -439,7 +469,7 @@ $tabla_de_imagenes:(
 		border: 2px solid $color_ayuda;
 		-webkit-animation-name: alert-pulse_ayuda;
 		animation-name: alert-pulse_ayuda;
-		box-shadow: 0 0 0 3px $color_ayuda; 
+		box-shadow: 0 0 0 3px $color_ayuda;
 
 		@-webkit-keyframes alert-pulse_ayuda {
 			50% { box-shadow: 0 0 0 0px transparent; }

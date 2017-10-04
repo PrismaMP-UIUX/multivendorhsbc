@@ -1,0 +1,58 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content" id="extraccion3"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma banelco"></i> |</span> Seguros</h5>
+			<div class="mg-b-25">
+				<p class="mg-b-20">1. ¿Qué querés asegurar?</p>
+				<p>
+					<div id="tipodeseguros" class="dropdown btn gris mg-r-15">
+						<div class="contenedor">
+							<div indice="1" data-dd="data1" onclick="location.href = 'seguros_alta_paquete.html';" class="active">Seguro de hogar</div>
+							<div indice="2" data-dd="data1" onclick="location.href = 'seguros_alta_paquete.html';">Seguro de automóvil</div>
+							<div indice="3" data-dd="data1" onclick="location.href = 'seguros_alta_paquete.html';">Seguro de vida</div>
+							<div indice="4" data-dd="data1" onclick="location.href = 'seguros_alta_paquete.html';">Seguro 4</div>
+							<div indice="5" data-dd="data1" onclick="location.href = 'seguros_alta_paquete.html';">Seguro 5</div>
+						</div>
+					</div>
+				</p>
+			</div>
+			<div>
+				<p class="mg-b-20">2. Seleccioná tu plan</p>
+				<p>
+					<div id="paquete" class="dropdown btn gris mg-r-15">
+						<div class="contenedor">
+							<div indice="1" data-dd="data2" class="active">Clásico</div>
+							<div indice="2" data-dd="data2">Premium</div>
+						</div>
+					</div>
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="seguros_alta_selecciondecuenta.html" class="btn azul right " id="continuar">Siguiente <i class="prisma derecha"></i></a>
+</div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+</body>
+</html>
