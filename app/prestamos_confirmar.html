@@ -8,50 +8,37 @@
 @@include('_partials/brandbar.html')
 
 <!-- Contenido de la página -->
-<div class="content"><div class="iconback"><i class="prisma banelco"></i></div>
+<div class="content"><div class="iconback"><i class="prisma prestamos"></i></div>
 
 	<div class="centradovertical">
-		<div class="panel centrado" style="width:70%">
-			<h5 class="titulo"><span class="azul"><i class="prisma banelco"></i> |</span> Seguros</h5>
-			<div class="left" style="width:56%;">
-				<div class="mg-b-15">
-					<p class="font_100">Cuenta de destino:</p>
-					<p class="mg-b-15"><strong>CA u$s 1234567890123456789</strong></p>
+		<div class="panel centrado col-12">
+			<h5 class="titulo"><span class="azul"><i class="prisma prestamos"></i> |</span> Préstamos</h5>
+			<p class="font_160 mg-b-20 col-12">Importe: <strong class="font_60">$1.000,00</strong> </p>
+			<div class="col-6">
+				<div class="font_60 mg-b-50">
+					<p>Cuotas total: <strong class="font_60">$37,00</strong> </p>
+					<p>Cantidad cuotas: <strong class="font_60">12</strong> </p>
+					<p>Fecha 1er débito: <strong class="font_60">15/09/17</strong> </p>
 				</div>
-				<div class="mg-b-15">
-					<p class="font_100">Importe solicitado:</p>
-					<p class="mg-b-15"><strong>$1.000,00</strong></p>
-				</div>
-				<div class="mg-b-15">
-					<p class="font_100">TNA/CFT</p>
-					<p class="mg-b-15"><strong>22.5%</strong></p>
-				</div>
-				<div class="mg-b-15">
-					<p class="font_100">Importe 1er cuota:</p>
-					<p class="mg-b-15"><strong>$25,80</strong></p>
+				<div class="font_45">
+					<p>Intereses e impuestos: <strong>$25,80</strong> | Cuenta de destino: <strong>CA u$s 1234567890123456789</strong> | Sistema de automatización: <strong>Cuotas fijas mensuales</strong> | T.N.A.: <strong>1,00%</strong> | T.E.M.: <strong>1,00%</strong> | C.F.T.: <strong>1,00%</strong> | C.F.T. (Sin IVA): <strong>1,00%</strong></p>
 				</div>
 			</div>
-			<div class="right" style="width:44%">
-				<div class="mg-b-15">
-					<p class="font_100">Cantidad cuotas:</p>
-					<p class="mg-b-15"><strong>12</strong></p>
+			<div class="col-6" style="background-color: rgba(119, 119, 119, 0.1); padding: 15px;">
+				<p class="mg-b-25">Términos y condiciones</p>
+				<div class="mg-b-15 relative right">
+					<p class="font_70 left scrollable" style="width: calc(100% - 100px); padding-right:15px; height:155px; overflow-y: scroll;">Esta operación implicará mandato especial al banco para que efectúe en nombre del solicitante toda operación relacionada al préstamo mediante acreditación del importe del capital del mismo en su cuenta de destino. El capital e intereses serán debitados de la misma, los montos otorgados resultan adelantos en cuenta pagaderos en cuotas  Esta operación implicará mandato especial al banco para que efectúe en nombre del solicitante toda operación relacionada al préstamo mediante acreditación del importe del capital del mismo en su cuenta de destino. El capital e intereses serán debitados de la misma, los montos otorgados resultan adelantos en cuenta pagaderos en cuotas</p>
+					<div class="right" style="position: absolute; width: 100%; height: 100%;">
+						<a id="scrollUpClick" href="#" class="btn-chico azul arriba mg-0" style="position: absolute; right: 0; top: 0;">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
+						<a id="scrollDownClick" href="#" class="btn-chico azul abajo mg-0 mg-b-7" style="position: absolute; right: 0; bottom: 0;">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
+					</div>
 				</div>
-				<div class="mg-b-15">
-					<p class="font_100">Importe a acreditar:</p>
-					<p class="mg-b-15"><strong>$1.000,00</strong></p>
-				</div>
-				<div class="mg-b-15">
-					<p class="font_100">Gasto otorgado:</p>
-					<p class="mg-b-15"><strong>$343,88</strong></p>
-				</div>
-				<div class="mg-b-15">
-					<p class="font_100">Fecha 1er débito:</p>
-					<p class="mg-b-15"><strong>15/09/17</strong></p>
-				</div>
-				<div class="mg-b-15">
-					<p class="font_100">Fecha 1er débito:</p>
-					<p class="mg-b-15"><strong>15/09/17</strong></p>
-				</div>
+				<p class="block">
+					<label class="check font_55 align-center">
+						<input id="terminos" type="checkbox" style="top:0;">
+						<span class="mg-l-5">Acepto los términos y condiciones</span>
+					</label>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -70,5 +57,24 @@
 <!-- Javascript -->
 <?php   include 'assets/scripts.html';  ?>
 <script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	var ScrollableHeight = $(".scrollable").height();
+	var scrolled= 0;
+	$("#scrollUpClick").click(function(){
+    scrolled=scrolled-ScrollableHeight;
+
+    	console.log(scrolled);
+    $(".scrollable").animate({
+         scrollTop:  scrolled
+    });
+  });
+  	$("#scrollDownClick").click(function(){
+      scrolled=scrolled+ScrollableHeight;
+    	console.log(scrolled);
+      $(".scrollable").animate({
+           scrollTop:  scrolled
+      });
+    });
+</script>
 </body>
 </html>

@@ -53,11 +53,38 @@ input {
 		}
 	}
 	.borrar.btn-chico {
-	    position: absolute;
-	    margin: 0;
-	    top: 5px;
-	    right: 5px;
+	    position: relative;
+      margin: 0;
+      top: -2px;
+      right: -2px;
+
+      &.borrar {
+      	.ayuda & {
+      		@extend .max-120;
+      	}
+      }
+
+      &.scale-out {
+        -webkit-transform: scale(0) translateY(3px) !important;
+                transform: scale(0) translateY(3px) !important;
+      }
+
+      .borrarTodo {
+      	position: absolute;
+  	    width: 0;
+  	    height: 100%;
+  	    top: 0;
+  	    left: 0;
+  	    background-color: rgba(255,255,255,0.5);
+  	    -webkit-transition: width 1s ease-in; /* Safari */
+        transition: width 1s ease-in;
+
+  	    &.active {
+  	    	width: 100%;
+  	    }
+      }
 	}
+
 	&.deshabilitado { opacity: 0.3;}
 	.signopesos {
 		display: flex;

@@ -28,7 +28,16 @@ body { margin: 0px; overflow: hidden; }
 	pointer-events: none;
 }
 
-//Flex
+//Visibilidad
+.v-hidden {
+	visibility: hidden;
+}
+.v-visible {
+	visibility: visible;
+}
+
+
+//Helpers
 //Columnas Flex
 .flex {
 	display: flex;
@@ -74,9 +83,23 @@ body { margin: 0px; overflow: hidden; }
 	-webkit-align-items: center;
 	align-items: center;
 }
-// Reset padding
+// Helpers
 .padding-0 {
 	padding:0px !important;
+}
+.heightauto {
+	height: auto !important;
+}
+.align-block {
+	margin: 0 auto;
+  display: block;
+  float: none;
+}
+.space-nowrap {
+	white-space: nowrap !important;
+}
+.space-normal {
+	white-space: normal !important;
 }
 // Grid
 //----- Extends
@@ -110,17 +133,17 @@ $grid-spacing:3%;
 }
 
 //----- Columns
-.col-1   { width:(100% / 12) - ($grid-spacing * 11 / 12); }
-.col-2   { width:(100% / 6) - ($grid-spacing * 10 / 12); }
-.col-3   { width:(100% / 4) - ($grid-spacing * 9 / 12); }
-.col-4   { width:(100% / 3) - ($grid-spacing * 8 / 12); }
-.col-5   { width:(100% / 2.4) - ($grid-spacing * 7 / 12); }
-.col-6   { width:(100% / 2) - ($grid-spacing * 6 / 12); }
-.col-7   { width:(100% / 1.714285714285714) - ($grid-spacing * 5 / 12); }
-.col-8   { width:(100% / 1.5) - ($grid-spacing * 4 / 12); }
-.col-9   { width:(100% / 1.333333333333333) - ($grid-spacing * 3 / 12); }
-.col-10  { width:(100% / 1.2) - ($grid-spacing * 2 / 12); }
-.col-11  { width:(100% / 1.090909090909091) - ($grid-spacing * 1 / 12); }
+.col-1   { width:(100% / 12) - ($grid-spacing * 11 / 12) !important; }
+.col-2   { width:(100% / 6) - ($grid-spacing * 10 / 12) !important; }
+.col-3   { width:(100% / 4) - ($grid-spacing * 9 / 12) !important; }
+.col-4   { width:(100% / 3) - ($grid-spacing * 8 / 12) !important; }
+.col-5   { width:(100% / 2.4) - ($grid-spacing * 7 / 12) !important; }
+.col-6   { width:(100% / 2) - ($grid-spacing * 6 / 12) !important; }
+.col-7   { width:(100% / 1.714285714285714) - ($grid-spacing * 5 / 12) !important; }
+.col-8   { width:(100% / 1.5) - ($grid-spacing * 4 / 12) !important; }
+.col-9   { width:(100% / 1.333333333333333) - ($grid-spacing * 3 / 12) !important; }
+.col-10  { width:(100% / 1.2) - ($grid-spacing * 2 / 12) !important; }
+.col-11  { width:(100% / 1.090909090909091) - ($grid-spacing * 1 / 12) !important; }
 .col-12  { width:100%; }
 
 // Blocker

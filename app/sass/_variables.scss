@@ -385,6 +385,37 @@ $step: 5;
     }
 }
 
+// Paddings
+  // Del 1 al 9
+  @for $pd from 0 through 9 {
+    .pd-#{$pd} {padding: #{$pd}px !important;}
+    .pd-l-#{$pd} {padding-left: #{$pd}px !important;}
+    .pd-r-#{$pd} {padding-right: #{$pd}px !important;}
+    .pd-t-#{$pd} {padding-top: #{$pd}px !important;}
+    .pd-b-#{$pd} {padding-bottom: #{$pd}px !important;}
+  }
+
+  // Del 10 al 100 iterando de a 5
+  @for $padding-iterate from 1 through 100 {
+      @if $padding-iterate % 5 == 0 {
+          .pd-#{$padding-iterate} {padding: #{$padding-iterate}px !important;}
+          .pd-l-#{$padding-iterate} {padding-left: #{$padding-iterate}px !important;}
+          .pd-r-#{$padding-iterate} {padding-right: #{$padding-iterate}px !important;}
+          .pd-t-#{$padding-iterate} {padding-top: #{$padding-iterate}px !important;}
+          .pd-b-#{$padding-iterate} {padding-bottom: #{$padding-iterate}px !important;}
+      }
+  }
+
+// Limiters
+  @for $limiter-iterate from 1 through 450 {
+      @if $limiter-iterate % 5 == 0 {
+          .max-#{$limiter-iterate} {width: 100%; max-width: #{$limiter-iterate}px !important;}
+          .max-l-#{$limiter-iterate} {width: 100%; max-width: #{$limiter-iterate}px !important;}
+          .max-r-#{$limiter-iterate} {width: 100%; max-width: #{$limiter-iterate}px !important;}
+          .max-t-#{$limiter-iterate} {width: 100%; max-width: #{$limiter-iterate}px !important;}
+          .max-b-#{$limiter-iterate} {width: 100%; max-width: #{$limiter-iterate}px !important;}
+      }
+  }
 
 // Imágenes
 // --------------------------------------------
@@ -418,6 +449,7 @@ $tabla_de_imagenes:(
 	error_limites,
 	tarjeta_coordenadas,
 	error_en_pin,
+	error_tiempo,
 	tarjeta,
 	cancelar_operación_sin_tarjeta
 	);

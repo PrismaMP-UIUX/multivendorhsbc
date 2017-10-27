@@ -30,12 +30,6 @@ var $slider;
         return this.fadeTo(speed, 0, easing).slideUp(speed, easing, callback);
       }
     };
-    $("#masOp").click(function(){
-      $("#inicio_opnoextraccion").css("min-width","330px");
-      $(this).addClass("heightZero animated");
-      $(".adde > a")
-          .addClass("open animated")
-    });
 
     //Inicio link
     $("#inicio_cuentas .dropdown .contenedor div").click(function(){

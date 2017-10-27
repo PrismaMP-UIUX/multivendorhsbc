@@ -47,6 +47,18 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   position: relative;
   top: 2px;
 
+  &.seguros:before {
+    content: "\e96e";
+  }
+  &.prestamos:before {
+    content: "\e986";
+  }
+  &.pago-total:before {
+    content: "\e987";
+  }
+  &.cierre-cuenta:before {
+    content: "\e988";
+  }
   &.accion-pagar:before {
     content: "\e914";
   }

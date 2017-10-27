@@ -21,13 +21,17 @@
 	  			</p>
 			</div>
 
-			<div class="inline mg-l-30" style="width: 420px;"> 
-				<div class="containerdeinput-conBorrar"> 
+			<div class="inline mg-l-30" style="width: 420px;">
+				<div class="containerdeinput-conBorrar">
 					<div>
-						<p class="mg-r-10 block moneda signopesos"></p>
-						<input type="text" maxlength="22" class="mg-r-10 block" id="extraccion">
+						<p class="mg-r-10 block moneda signopesos block prefijo left max-45"></p>
+						<input type="text" maxlength="22" class="mg-r-10 block left max-200" id="extraccion">
 					</div>
-					<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('doc')"><i class="prisma borrar"></i> Borrar</a>
+					<a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
+						<i class="prisma borrar"></i>
+						<span>Borrar</span>
+						<div class="borrarTodo"></div>
+					</a>
 				</div>
 				<a href="" class="btn fijo-70 azul ">1</a>
 				<a href="" class="btn fijo-70 azul ">2</a>
@@ -42,7 +46,7 @@
 				<a href="" class="btn fijo-70 azul ">0</a>
 				<a href="" class="btn fijo-70 azul ">000</a>
 			</div>
-			
+
 		</div>
 	</div>
 
@@ -61,6 +65,9 @@
 <script type="text/javascript">
 	alescribir("extraccion","borrar");
 	alescribir("extraccion","continuar");
+	scaleBorrar("extraccion", "borrar");
+	deleteValue("#extraccion","#borrar");
+	borrarTodo("#extraccion");
 
 	$('input[type=radio]').change(function() {
 		var inputMonto = $('.containerdeinput-conBorrar .moneda');

@@ -5,7 +5,7 @@
 	<div class="content-modal panel bounceIn animated centrado">
 		<div class="close"><a href="extraccion3_cuenta.html"><i class="prisma cerrar"></i> </a></div>
 		<h5 class="titulo mg-b-30">Ingrese la cantidad de cuotas</h5>
-		
+
 		<div class="inline" id="extraccion_cuotas">
 			<div class="mg-b-30 mg-l-5 containerdeinput">
 				<a class="btn-chico naranja borrar extraccion_f" id="borrar" onclick="limpiarPass('cuotas')"><i class="prisma borrar"></i> Borrar</a>
@@ -34,9 +34,9 @@
 			<a class="btn fijo-70 azul ">9</a><br>
 			<a class="btn block azul mg-r-10">0</a>
 		</div>
-			
+
 		<hr class="piemodal">
-		<a href="extraccion3_cuenta.html" class="btn gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
+		<a href="extraccion3_cuenta.html" class="bt-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
 		<a href="extraccion3_confirmar.html" class="btn right azul confirmar"><i class="prisma confirmar"></i> Listo</a>
 	</div>
 </div>
@@ -55,9 +55,9 @@
 	});
 	$(' #extraccion_cuotas_tecl a').click(function(){
 	   	var valu = $(this).text();
-		var inpu = $("#cuotas"); 
+		var inpu = $("#cuotas");
 		if( inpu.val().length <= 2 ) {
-			inpu.val(inpu.val() + valu); 
+			inpu.val(inpu.val() + valu);
 		};
 		if( inpu.val().length > 0 ){
 			$("#borrar").css("display","block");
@@ -65,5 +65,5 @@
 			$("#borrar").css("display","none");
 		}
 		return false;
-	});  
+	});
 </script>

@@ -4,6 +4,28 @@
 	left: 29px;
 }
 
+// Scale Transition
+.scale-transition {
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  transition: -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+  transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63), -webkit-transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+}
+
+.scale-out {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .2s !important;
+  transition: -webkit-transform .2s !important;
+  transition: transform .2s !important;
+  transition: transform .2s, -webkit-transform .2s !important;
+}
+
+.scale-transition.scale-in {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 //Delay function
 @for $del from 1 through 1000 {
 	.delay_#{$del} {
