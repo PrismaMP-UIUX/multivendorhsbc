@@ -113,33 +113,33 @@
 			& > div:last-of-type {
 				margin-top: 0px;
 			}
+		}
+	}
 
-			.tabla_select {
-				.tabla {
-					table {
-						tr:nth-child(odd) {
-							background-color: #ddd;
+	.tabla_select {
+		.tabla {
+			table {
+				tr:nth-child(odd) {
+					background-color: #ddd;
 
-							.ayuda & {
-								background-color: #fff;
-								color: #000;
-							}
-						}
-						tr:nth-child(even) {
-							background-color: #f5f5f5;
+					.ayuda & {
+						background-color: #fff;
+						color: #000;
+					}
+				}
+				tr:nth-child(even) {
+					background-color: #f5f5f5;
 
-							.ayuda & {
-								background-color: #000;
-							}
-						}
+					.ayuda & {
+						background-color: #000;
 					}
 				}
 			}
-
-			.t-header {
-				width: calc(100% - 105px);
-			}
 		}
+	}
+
+	.t-header {
+		width: calc(100% - 105px);
 	}
 
 	#loop.panel { max-width: none; width: 975px; height: 520px; padding: 0; }
@@ -353,4 +353,46 @@
 }
 .ticket > p > i {
 	margin-right:5px;
+}
+
+.menu-jubilados-simplificado {
+	& > a.active {
+		z-index: 200;
+	}
+	.menu-jubilados-panel {
+		position: absolute;
+		bottom: 110px;
+		background-color: white;
+		z-index: 201;
+		min-width: fit-content;
+    right: 50px;
+    margin: auto;
+
+    &:after {
+    	position: absolute;
+	    content: "";
+	    width: 0;
+	    height: 0;
+	    margin: auto;
+	    left: 0;
+	    bottom: -15px;
+	    right: 150px;
+	    border-left: 15px solid transparent;
+	    border-right: 15px solid transparent;
+	    border-top: 15px solid #fff;
+    }
+	}
+}
+
+.tarjeta-credito {
+	border-radius: 10px;
+	background-color: #777;
+
+	p {
+		color: #fff;
+	}
+}
+
+.jp-card-container .jp-card .jp-card-front {
+  background: #777;
 }

@@ -1,0 +1,75 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
+			 <p class="mg-b-20">Ingresá el importe que vas a depositar</p>
+
+			 <div class="flex dosCol">
+				<div class="min-450 mg-r-10">
+					<div class="containerdeinput-conBorrar mg-0">
+						<div>
+							<p class="mg-r-10 block moneda signopesos block prefijo left max-45"></p>
+							<input type="text" class="mg-r-10 block left max-200" id="extraccion">
+						</div>
+						<a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
+							<i class="prisma borrar"></i>
+							<span>Borrar</span>
+							<div class="borrarTodo"></div>
+						</a>
+					</div>
+				</div>
+				<div>
+					<a href="" class="btn fijo-70 azul ">1</a>
+					<a href="" class="btn fijo-70 azul ">2</a>
+					<a href="" class="btn fijo-70 azul ">3</a><br>
+					<a href="" class="btn fijo-70 azul ">4</a>
+					<a href="" class="btn fijo-70 azul ">5</a>
+					<a href="" class="btn fijo-70 azul ">6</a><br>
+					<a href="" class="btn fijo-70 azul ">7</a>
+					<a href="" class="btn fijo-70 azul ">8</a>
+					<a href="" class="btn fijo-70 azul ">9</a><br>
+					<a href="" class="btn fijo-70 azul menosimportante">00</a>
+					<a href="" class="btn fijo-70 azul ">0</a>
+					<a href="" class="btn fijo-70 azul ">000</a>
+				</div>
+			 </div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="deposito_conTarjeta_4.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+<!-- <script src="js/component/inputListenerBotones.js"></script> -->
+<script type="text/javascript">
+	alescribir("extraccion","borrar");
+	alescribir("extraccion","continuar");
+	scaleBorrar("extraccion", "borrar");
+	deleteValue("#extraccion","#borrar");
+	borrarTodo("#extraccion");
+
+</script>
+</body>
+</html>

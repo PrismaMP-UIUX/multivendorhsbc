@@ -1,0 +1,50 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma inicio"></i></div>
+
+	<div class="centradovertical flex dosCol">
+
+		<div id="inicio_extraccion" class="panel col-left">
+			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Extraer</h5>
+			<div class="alinear-centro">
+				<a href="inicio_tc_extraer_fast_confirmar.html" class="btn fijo-100 azul">$100</a>
+				<a href="inicio_tc_extraer_fast_confirmar.html" class="btn fijo-100 azul">$200</a><br>
+				<a href="inicio_tc_extraer_fast_confirmar.html" class="btn fijo-100 azul">$300</a>
+				<a href="inicio_tc_extraer_fast_confirmar.html" class="btn fijo-100 azul">$500</a><br>
+				<a href="inicio_tc_extraer_fast_confirmar.html" class="btn fijo-100 azul">$1000</a>
+				<a href="inicio_tc_extraer_fast_confirmar.html" class="btn fijo-100 azul">$2000</a><br>
+				<a href="inicio_tc_extraer_otroImporte.html" class="btn block azul">Otro Importe</a>
+			</div>
+		</div>
+
+		<div id="inicio_opnoextraccion" class="panel alinear-centro col-right">
+			<a href="tc_consultar.html" class="btn block azul"><i class="prisma consultas"></i> Consultar</a>
+			<a href="tc_pagar.html" class="btn block azul"><i class="prisma accion-pagar"></i> Pagar resumen</a>
+			<!-- <a href="tc_movimientos.html" class="btn block azul"><i class="prisma banelco"></i> Movimientos de fondo</a> -->
+		</div>
+
+	</div>
+
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="loop.html" class="btn rojo"><i class="prisma salir"></i> Salir</a>
+	<a href="claves_menu.html" class="btn gris right" id="otratarjeta"><i class="prisma clave"></i> Claves</a>
+</div>
+
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+</body>
+</html>

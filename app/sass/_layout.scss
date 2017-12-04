@@ -7,7 +7,16 @@ body { margin: 0px; overflow: hidden; }
 .ayuda #botonayudavisual {left: 36%; top: 8px}
 
 // Ubicación de los floats
-.clearfix { clear: both }
+.clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.italic {
+	font-style: italic;
+}
 .right {float: right;}
 .left {float: left;}
 .leftZero {left:0px}
@@ -15,6 +24,7 @@ body { margin: 0px; overflow: hidden; }
 .block {display:inline-block;}
 .inline {display: inline;}
 .relative {position: relative;}
+.relative-important {position: relative !important}
 .absolute {position: absolute;}
 .centrado {position: relative; margin-left: auto; margin-right: auto;}
 .centradovertical {
@@ -40,7 +50,7 @@ body { margin: 0px; overflow: hidden; }
 //Helpers
 //Columnas Flex
 .flex {
-	display: flex;
+	display: flex !important;
 
 	&.dosCol {
 		& > div {
@@ -82,6 +92,9 @@ body { margin: 0px; overflow: hidden; }
 	display: flex;
 	-webkit-align-items: center;
 	align-items: center;
+}
+.flex-wrap {
+	flex-wrap: wrap;
 }
 // Helpers
 .padding-0 {
@@ -178,6 +191,12 @@ $grid-spacing:3%;
 .col_50 {
 	width: 50%;
 	float: left;
+}
+
+.col_left.mg-0, .col_right.mg-0 {
+	width: 300px;
+	@extend .mg-0;
+	vertical-align: top;
 }
 
 // z-index
@@ -812,4 +831,54 @@ body#offline {
 	}
 }
 
+// Tooltips
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bg-modal {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 102;
+  background: rgba(0, 0, 0, 0.6);
+}
 

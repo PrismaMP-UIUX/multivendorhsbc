@@ -47,6 +47,168 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   position: relative;
   top: 2px;
 
+  &.rubros_recargas:before {
+    content: "\e992";
+  }
+  &.rubros_impuestos-municipales:before {
+    content: "\e990";
+  }
+  &.rubros_planes-ahorro:before {
+    content: "\e991";
+  }
+  &.rubros_impuestos-prov:before {
+    content: "\e993";
+  }
+  &.rubros_seguridad:before {
+    content: "\e994";
+  }
+  &.rubros_cooperativas:before {
+    content: "\e995";
+  }
+  &.rubros_clubes-asociaciones .path1:before {
+    content: "\e996";
+    color: rgb(255, 255, 255);
+  }
+  &.rubros_clubes-asociaciones .path2:before {
+    content: "\e997";
+    margin-left: -0.91015625em;
+    color: rgb(255, 255, 255);
+  }
+  &.rubros_clubes-asociaciones .path3:before {
+    content: "\e998";
+    margin-left: -0.91015625em;
+    color: rgb(0, 0, 0);
+  }
+  &.rubros_clubes-asociaciones .path4:before {
+    content: "\e999";
+    margin-left: -0.91015625em;
+    color: rgb(255, 255, 255);
+  }
+  &.rubros_clubes-asociaciones .path5:before {
+    content: "\e99a";
+    margin-left: -0.91015625em;
+    color: rgb(255, 255, 255);
+  }
+  &.rubros_telefonia:before {
+    content: "\e99b";
+  }
+  &.rubros_solicitud-informe:before {
+    content: "\e99c";
+  }
+  &.rubros_cines:before {
+    content: "\e99d";
+  }
+  &.rubros_viajes-turismo:before {
+    content: "\e99e";
+  }
+  &.rubros_operadores-tv:before {
+    content: "\e99f";
+  }
+  &.rubros_seguro-vida:before {
+    content: "\e9a0";
+  }
+  &.rubros_patente:before {
+    content: "\e9a1";
+  }
+  &.rubros_servicios-correo:before {
+    content: "\e9a2";
+  }
+  &.rubros_proveedores-internet:before {
+    content: "\e9a3";
+  }
+  &.rubros_luz:before {
+    content: "\e9a4";
+  }
+  &.rubros_medicina-prepaga:before {
+    content: "\e9a5";
+  }
+  &.rubros_establecimientos-educativos:before {
+    content: "\e9a6";
+  }
+  &.rubros_tarjeta-credito:before {
+    content: "\e9a7";
+  }
+  &.rubros_barrio-privado:before {
+    content: "\e9a8";
+  }
+  &.rubros_gas:before {
+    content: "\e9a9";
+  }
+  &.rubros_emergencias-medicas:before {
+    content: "\e9aa";
+  }
+  &.rubros_consorcios:before {
+    content: "\e9ab";
+  }
+  &.rubros_agua:before {
+    content: "\e9ac";
+  }
+  &.rubros_tickets:before {
+    content: "\e9ad";
+  }
+  &.rubros_pulsos:before {
+    content: "\e9ae";
+  }
+  &.rubros_subte:before {
+    content: "\e9af";
+  }
+  &.rubros_donaciones:before {
+    content: "\e9b0";
+  }
+  &.adherir-celular .path1:before {
+    content: "\e9b1";
+    color: rgb(0, 0, 0);
+  }
+  &.adherir-celular .path2:before {
+    content: "\e9b2";
+    margin-left: -0.7001953125em;
+    color: rgb(0, 0, 0);
+  }
+  &.adherir-celular .path3:before {
+    content: "\e9b3";
+    margin-left: -0.7001953125em;
+    color: rgb(251, 251, 251);
+  }
+  &.adherir-celular .path4:before {
+    content: "\e9b4";
+    margin-left: -0.7001953125em;
+    color: rgb(0, 0, 0);
+  }
+  &.adherir-celular .path5:before {
+    content: "\e9b5";
+    margin-left: -0.7001953125em;
+    color: rgb(0, 0, 0);
+  }
+  &.cheques:before {
+    content: "\e9b6";
+  }
+  &.cpp2:before {
+    content: "\e9b7";
+  }
+  &.jubilados:before {
+    content: "\e9b8";
+  }
+  &.clave-compras:before {
+    content: "\e989";
+  }
+  &.nueva-transferencia:before {
+    content: "\e98a";
+  }
+  &.ultimas-transferencias:before {
+    content: "\e98b";
+  }
+  &.clave-alfa-id:before {
+    content: "\e98c";
+  }
+  &.limite-transferencias:before {
+    content: "\e98d";
+  }
+  &.baja-seguros:before {
+    content: "\e98e";
+  }
+  &.alta-seguros:before {
+    content: "\e98f";
+  }
   &.seguros:before {
     content: "\e96e";
   }

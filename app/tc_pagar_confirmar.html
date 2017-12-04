@@ -1,0 +1,43 @@
+@@include('tc_pagar_2.html')
+
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+  <div class="content-modal panel bounceIn animated centrado">
+    <div class="close"><a href="claves_banelco_movil_generacion_dniNOingresado.html"><i class="prisma cerrar"></i> </a></div>
+    <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma si-no"></i> |</span> Verificá los datos</h5>
+    <p class="mg-b-25 justify-center"><i class="prisma tarjeta mg-r-10 mg-t-2"></i> Visa terminada en ...1548</p>
+    <p class="mg-b-25">Pagar: <b>$1500</b>.- <a href="tc_pagar_2_otroImporte_1.html" class="btn-chico naranja mg-l-5 waves-effect mg-0"><i class="prisma editar"></i> Modificar</a></p>
+
+    <div class="mg-b-25">
+      <div class="inline p">De mi cuenta: </div>
+      <div id="cuentas" class="dropdown mg-0 mg-l-5 btn gris width-450">
+        <div class="contenedor">
+          <div indice="1" data-dd="data1"><i class="prisma cuenta"></i> Caja de ahorro</div>
+          <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Cuenta corriente</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="align-center">
+      <div id="checkboxes">
+        <input type="checkbox" value="1" id="r1"/>
+        <label class="btn" for="r1"><span class="si"><i class="prisma confirmar"></i> Si</span><span class="no"><i class="prisma cancelar"></i> No</span></label>
+      </div>
+      <div style="vertical-align: top;"><p class="mg-t-5 mg-l-10">Programar pago para el día de vencimiento</p></div>
+    </div>
+
+    <hr class="piemodal">
+    <p class="alinear-derecha">
+      <a href="inicio.html" class="btn rojo mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+      <a href="ticket.html" class="btn verde"><i class="prisma confirmar"></i> Confirmar</a>
+    </p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  alescribir("importe","borrar");
+  scaleBorrar("importe", "borrar");
+  deleteValue("#importe","#borrar");
+  borrarTodo("#importe");
+</script>

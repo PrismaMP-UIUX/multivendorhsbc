@@ -1,0 +1,55 @@
+@@include('_partials/int_consulta_arriba.html')
+
+		<div class="tabs">
+			<div class="botones">
+				<a href="tc_consultar.html" class="waves-effect"><i class="prisma consulta-saldo"></i> Saldos y disponibles</a>
+				<a href="tc_consultar_tipoDeCambio.html" class="waves-effect selected"><i class="prisma banelco"></i> Tipo de cambio</a>
+			</div>
+			<div class="panel inline saldosDisponibles relative-important" style="width: calc(100% - 54px);">
+				<div class="mg-b-25">
+
+				</div>
+				<div class="clearfix">
+					<!-- <a href="espera.html" class="left btn btn-chico azul mg-l-0"><i class="prisma imprimir"></i> Imprimir saldo</a> -->
+				</div>
+			</div>
+		</div>
+
+	</div> <!-- div consultas -->
+
+
+<!-- Javascript -->
+@@include('_partials/scripts.html')
+
+
+<script>
+	hideandshow("#bt_limpagos", "#bt_limpagos", "#limpagos");
+	hideandshow("#bt_limcompras", "#bt_limcompras", "#limcompras");
+
+	// Consulta
+	$("#bt_limpagos").click(function(){
+	  $(this).next().delay(800).fadeIn();
+	});
+	$("#bt_limcompras").click(function(){
+	  $(this).next().delay(800).fadeIn();
+	});
+	$("#bt_ayuda").click(function(){
+	  $(".ayudaContainer").removeClass("oculto");
+	});
+	$(".ayudaContainer .close").click(function(){
+	  $(".ayudaContainer").addClass("oculto");
+	});
+
+	$(document).ready(function(){
+		$(".num").each(function(){
+			var saldo = $(this).text().length;
+
+			if(saldo >= 12) {
+				$(".num").toggleClass("font_100 font_140")
+			}
+		});
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+@@include('tc_pagar_2.html')
+
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+  <div class="content-modal panel bounceIn animated centrado">
+    <div class="close"><a href="claves_banelco_movil_generacion_dniNOingresado.html"><i class="prisma cerrar"></i> </a></div>
+    <h5 class="titulo mg-b-20">Ingresá el importe con centavos</h5>
+
+    <div class="left width-450">
+
+      <div class="containerdeinput-conBorrar">
+        <div>
+          <p class="mg-r-10 block moneda signopesos block prefijo left max-45"></p>
+          <input type="text" maxlength="22" class="mg-r-10 block left max-200" id="importe">
+        </div>
+        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
+          <i class="prisma borrar"></i>
+          <span>Borrar</span>
+          <div class="borrarTodo"></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="left">
+      <a href="" class="btn fijo-70 azul ">1</a>
+      <a href="" class="btn fijo-70 azul ">2</a>
+      <a href="" class="btn fijo-70 azul ">3</a><br>
+      <a href="" class="btn fijo-70 azul ">4</a>
+      <a href="" class="btn fijo-70 azul ">5</a>
+      <a href="" class="btn fijo-70 azul ">6</a><br>
+      <a href="" class="btn fijo-70 azul ">7</a>
+      <a href="" class="btn fijo-70 azul ">8</a>
+      <a href="" class="btn fijo-70 azul ">9</a><br>
+      <a href="" class="btn fijo-70 azul ">,</a>
+      <a href="" class="btn fijo-70 azul ">0</a>
+      <a href="" class="btn fijo-70 azul ">000</a>
+    </div>
+
+    <hr class="piemodal">
+    <a href="claves_banelco_movil_generacion_dniNOingresado.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
+    <a href="tc_pagar_2_otroImporte_2.html" class="btn azul confirmar right"><i class="prisma confirmar"></i> Listo</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  alescribir("importe","borrar");
+  scaleBorrar("importe", "borrar");
+  deleteValue("#importe","#borrar");
+  borrarTodo("#importe");
+</script>

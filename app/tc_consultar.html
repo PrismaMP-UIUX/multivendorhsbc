@@ -1,0 +1,53 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma consultas"></i> |</span> Consulta de saldo</h5>
+			<p>Seleccioná el tipo de cuenta que querés consultar:</p>
+			<!-- <p>Solo podés realizar una operación:</p> -->
+			<p class="font_140">
+				<label class="radio  mg-t-15" for="pesos"><input id="hogar" type="radio" name="gender" value="pesos"> Caja de ahorro</label>
+				<label class="radio mg-t-15" for="dolares"><input id="auto" type="radio" name="gender" value="dolares"> Cuenta corriente</label>
+				<label class="radio mg-t-15" for="pesos"><input id="vida" type="radio" name="gender" value="pesos"> Cuenta crédito</label>
+				<label class="radio mg-t-15" for="dolares"><input id="x" type="radio" name="gender" value="dolares"> Cuenta recargable</label>
+			</p>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="ticket.html" class="btn azul right deshabilitado" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	$('input[type=radio]').change(function() {
+    if (this.value == 'otro_importe') {
+    	$("#continuar").addClass("deshabilitado");
+    	window.location.href = 'tc_pagar_2_otroImporte_1.html';
+    } else {
+    	$("#continuar").removeClass("deshabilitado");
+    }
+  });
+</script>
+</body>
+</html>

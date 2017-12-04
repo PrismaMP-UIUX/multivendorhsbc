@@ -1,0 +1,55 @@
+@@include('inicio_tc_extraer_otroImporte.html')
+
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+	<div id="extraccion_confirmacion" class="content-modal panel bounceIn animated centrado">
+		<h5 class="titulo"><span class="azul"><i class="prisma si-no"></i> |</span> Verificá los datos</h5>
+		<p class="mg-t-20">Monto a extraer: <b>$1500</b> <a href="inicio_tc_2.html" class="btn-chico naranja mg-l-5 waves-effect" style="vertical-align: middle;"><i class="prisma editar"></i> Modificar</a></p>
+
+
+
+
+		<div class="mg-t-20 clearfix">
+			<p class="mg-t-20 mg-r-15 left">De mi cuenta:</p>
+			<div class="dropdown btn gris mg-0 block left" id="tipo">
+				<div class="contenedor">
+					<div indice="1" data-dd="tipo1" onclick="concuotas()">Cuenta crédito</div>
+					<div indice="2" data-dd="tipo2" onclick="sincuotas()">Caja de ahorro</div>
+					<div indice="2" data-dd="tipo2" onclick="sincuotas()">Cuenta corriente</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mg-t-20 clearfix" id="cuotas">
+			<p class="mg-t-20 mg-r-15 left">Coutas: <b>1</b> <a href="inicio_tc_extraer_cuotas.html" class="btn-chico naranja mg-l-5 waves-effect" style="vertical-align: middle;"><i class="prisma editar"></i> Modificar</a></p>
+		</div>
+
+		<p class="rojo italic mg-t-20 oculto font_80" id="notaModificarCuenta"><i class="prisma advertencia"></i> Para modificar las cuotas selecciona una cuenta crédito.</p>
+
+		<!-- <div id="checkboxes" class="inline mg-t-10">
+			<input type="checkbox" value="1" id="r1"/>
+			<label class="btn" for="r1"><span class="si"><i class="prisma confirmar"></i> Si</span><span class="no"><i class="prisma cancelar"></i> No</span></label>
+		</div>
+		<div class="inline mg-t-30" style="vertical-align: top;"><p class="mg-t-5 mg-l-10">Imprimir un comprobante</p></div> -->
+
+		<hr class="piemodal">
+		<p class="alinear-derecha">
+			<a href="inicio.html" class="btn rojo mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
+			<a href="ticket.html" class="btn verde"><i class="prisma confirmar"></i> Confirmar</a>
+		</p>
+	</div>
+</div>
+
+<script>
+	function concuotas() {
+		$("#cuotas").removeClass("deshabilitado");
+		$("#cuotas").find("a").css("display", "inline-block");
+		$("#notaModificarCuenta").addClass("oculto");
+	}
+	function sincuotas() {
+		$("#cuotas").addClass("deshabilitado");
+		$("#cuotas").find("a").css("display", "none");
+		$("#notaModificarCuenta").removeClass("oculto");
+	}
+</script>

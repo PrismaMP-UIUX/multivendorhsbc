@@ -77,6 +77,7 @@ function ayudavisual(){
   $("body").toggleClass("bnlc ayuda");
   if ($(".t-header").length > 0) {
       var tWidth = $(".tabla_select > .tabla").width();
+      alert(tWidth);
       $(".t-header").width(tWidth);
 
       //pos t-head items

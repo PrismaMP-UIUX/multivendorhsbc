@@ -13,7 +13,7 @@
 
 	<div class="centradovertical flex dosCol">
 
-		<div id="inicio_extraccion" class="panel col-left">
+		<div id="inicio_extraccion" class="panel col-left plano-main">
 			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Extraer</h5>
 			<div class="alinear-centro">
 				<a href="extraccion2.html" class="btn fijo-100 azul">$100</a>
@@ -26,21 +26,12 @@
 			</div>
 		</div>
 
-		<div id="inicio_opnoextraccion" class="panel alinear-centro max-350 col-right leftZero">
-			<a href="#" id="cpProvisional" class="btn block azul space-normal heightauto animated z_10"><i class="prisma consultas"></i> Comprobante pago previsional</a>
-			<a href="consultasaldo.html" class="btn block azul animated  z_10"><i class="prisma consultas"></i> Consultar</a>
-			<div class="jubilados">
-				<a href="" class="btn block azul delay_8 z_9" >
-					<div><i class="prisma accion-pagar"></i> Pagar<!-- <div class="timer">%2min</div> --></div>
-				</a>
-				<a href="" class="btn block azul delay_9  z_8" >
-					<div><i class="prisma transferencia"></i> Transferir</div>
-				</a>
-				<a href="" class="btn block azul delay_10  z_7" >
-					<div><i class="prisma deposito"></i> Depositar</div>
-				</a>
-			</div>
-			<div class="btn block azul" id="masOp"><i class="prisma mas"></i> Más operaciones</div>
+		<div id="inicio_opnoextraccion" class="panel alinear-centro col-right">
+			<a href="consultasaldo.html" class="btn block azul"><i class="prisma consultas"></i> Consultar</a>
+			<a href="" class="btn block azul"><i class="prisma accion-pagar"></i> Pagar <!-- <div class="timer">%2min</div> --></a>
+			<a href="transferencias.html" class="btn block azul"><i class="prisma transferencia"></i> Transferir </a>
+			<a href="" class="btn block azul"><i class="prisma deposito"></i> Depositar</a>
+			<a href="mas_operaciones.html" class="btn block azul"><i class="prisma mas"></i> Más operaciones</a>
 		</div>
 
 	</div>
@@ -49,10 +40,29 @@
 </div><!-- /Contenido de la página -->
 
 <!-- Footer -->
+
 <div class="footer">
+
 	<a href="loop.html" class="btn rojo"><i class="prisma salir"></i> Salir</a>
 	<a href="claves_menu.html" class="btn gris right" id="otratarjeta"><i class="prisma clave"></i> Claves</a>
-	<div style= "max-width: 600px; float: right;">
+
+	<div class="right menu-jubilados-simplificado modal">
+		<div class="bg-modal"></div>
+		<div class="menu-jubilados-panel blanco max-360 panel content-modal">
+			<div class="close"><a href="inicio_jubilados_2.html"><i class="prisma cerrar"></i> </a></div>
+			<!-- <p class="titulo mg-b-30 mg-t-10 font_115"><b>Menú simplificado</b></p> -->
+			<p class="max-310  mg-b-30">Cerrá esta ventana para ver más opciones.</p>
+			<a href="cierre_de_cuentas.html" class="btn azul block"><i class="prisma consultas"></i> Consultar</a>
+			<a href="impresion_cpp.html" class="btn azul block"><i class="prisma cpp2"></i> CPP - Comprobantes</a>
+			<a href="cierre_de_cuentas.html" class="btn azul block"><i class="prisma seguros"></i> Seguros</a>
+		</div>
+		<a href="#!" class="btn azul tooltip plano-main">
+			<i class="prisma jubilados"></i>
+			Jubilados
+			<span class="tooltiptext">asdasdsada</span>
+		</a>
+	</div>
+	<!-- <div style= "max-width: 600px; float: right;">
 		<a href=" errores.html" class="right mg-r-10">% Accesos Directos </a>
 		<a href="error_sincuentas.html" class="right mg-r-10">% Sin cuentas</a>
 		<a href="inicio_sindinero.html" class="right mg-r-10">% Sin dinero</a>
@@ -61,19 +71,11 @@
 		<a href="inicio_anses.html" class="right mg-r-10">% Menús Anses</a>
 		<a href="inicio_link.html" class="right mg-r-10">% Menús Link</a>
 		<a href="inicio.html" class="right mg-r-10">% Normal</a>
-	</div>
+	</div> -->
 </div>
+
 
 <!-- Javascript -->
   @@include('_partials/scripts.html')
-
-  <script>
-  	$("#masOp").click(function(){
-  	  $(this).addClass("heightZero animated");
-  	  $("#cpProvisional").addClass("heightZero animated");
-  	  $(".jubilados > a")
-  	      .addClass("open animated")
-  	});
-  </script>
 </body>
 </html>

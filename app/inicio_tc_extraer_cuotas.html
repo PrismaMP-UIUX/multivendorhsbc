@@ -1,0 +1,79 @@
+@@include('inicio_tc_2.html')
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="inicio_tc_2.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Ingrese la cantidad de cuotas</h5>
+
+		<div class="left justify-center flex width-325 flex-wrap" id="extraccion_cuotas">
+			<div class="containerdeinput-conBorrar mg-0">
+			  <div>
+			    <input type="text" maxlength="22" class="mg-r-10 block left max-200" id="importe">
+			  </div>
+			  <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar" style="display: none;">
+			    <i class="prisma borrar"></i>
+			    <span>Borrar</span>
+			    <div class="borrarTodo"></div>
+			  </a>
+			</div>
+
+			<a class="btn fijo-100 btn-chico gris "><span>1</span> cuota</a>
+			<a class="btn fijo-100 btn-chico gris "><span>3</span> cuotas</a><br>
+			<a class="btn fijo-100 btn-chico gris "><span>6</span> cuotas</a>
+			<a class="btn fijo-100 btn-chico gris "><span>9</span> cuotas</a><br>
+			<a class="btn fijo-100 btn-chico gris "><span>12</span> cuotas</a>
+			<a class="btn fijo-100 btn-chico gris "><span>18</span> cuotas</a><br>
+			<a class="btn fijo-100 btn-chico gris "><span>24</span> cuotas</a>
+			<a class="btn fijo-100 btn-chico gris "><span>36</span> cuotas</a>
+		</div>
+
+		<div id="extraccion_cuotas_tecl" class="left mg-l-30 width-420">
+			<a class="btn fijo-70 azul ">1</a>
+			<a class="btn fijo-70 azul ">2</a>
+			<a class="btn fijo-70 azul ">3</a><br>
+			<a class="btn fijo-70 azul ">4</a>
+			<a class="btn fijo-70 azul ">5</a>
+			<a class="btn fijo-70 azul ">6</a><br>
+			<a class="btn fijo-70 azul ">7</a>
+			<a class="btn fijo-70 azul ">8</a>
+			<a class="btn fijo-70 azul ">9</a><br>
+			<a class="btn block azul mg-r-10">0</a>
+		</div>
+
+		<hr class="piemodal">
+		<a href="inicio_tc_2.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
+		<a href="inicio_tc_extraer_confirmar.html" class="btn right azul confirmar"><i class="prisma confirmar"></i> Listo</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	alescribir("importe","borrar");
+	scaleBorrar("importe", "borrar");
+	deleteValue("#importe","#borrar");
+	borrarTodo("#importe");
+
+	$('#extraccion_cuotas a').click(function(){
+		var ecVal = $(this).children("span").text();
+		$("#cuotas").val(ecVal);
+		if( $("#cuotas").val().length > 0 ){
+			$("#borrar").css("display","block");
+		}else{
+			$("#borrar").css("display","none");
+		}
+
+	});
+	$(' #extraccion_cuotas_tecl a').click(function(){
+	   	var valu = $(this).text();
+		var inpu = $("#cuotas");
+		if( inpu.val().length <= 2 ) {
+			inpu.val(inpu.val() + valu);
+		};
+		if( inpu.val().length > 0 ){
+			$("#borrar").css("display","block");
+		}else{
+			$("#borrar").css("display","none");
+		}
+		return false;
+	});
+</script>

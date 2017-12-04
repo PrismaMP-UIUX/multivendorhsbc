@@ -1,0 +1,70 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo mg-b-5"><span class="azul"><i class="prisma tarjeta"></i> |</span> Pagar resumen</h5>
+			<div class="clearfix">
+				<p class="mg-b-15">Tarjeta a pagar:</p>
+				<div class="gris left height-200 mg-r-30 width-350 relative tarjeta-credito">
+					<p class="absolute top-25 left-25 font_150"><b>VISA</b></p>
+					<p class="absolute bottom-25 left-25">XXXX XXXX XXXX 1654</p>
+				</div>
+				<div class="left height-200 align-center">
+			    <a href="tc_pagar_2_otroImporte_1.html" class="btn-chico naranja mg-l-5 waves-effect"><i class="prisma editar"></i> Modificar</a>
+				</div>
+			</div>
+			<div class="left mg-r-60">
+				<p class="mg-t-30 mg-b-15">¿Cómo querés pagar?</p>
+				<div class="btn-group btn-inputs">
+					<label class="btn azul active">
+						<input type="radio" name="options" id="dolar">Efectivo
+					</label>
+					<label class="btn azul">
+						<input type="radio" name="options" id="dolar">Cheques
+					</label>
+				</div>
+			</div>
+			<div class="left mg-t-50 mg-r-15">
+				<p>Importe</p>
+				<p class="font_150"><b>$ 4.000</b></p>
+			</div>
+			<div class="left mg-t-70">
+				<a href="tc_pagar_sintarjeta_5.html" class="btn-chico naranja mg-l-5 waves-effect"><i class="prisma editar"></i> Modificar</a>
+			</div>
+
+
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="tc_pagar_sintarjeta_efectivo.html" class="btn azul right"">Siguiente <i class="prisma derecha"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	$(".btn-group label").click(function(){
+		$(".containerdeinput").removeClass("deshabilitado");
+	});
+</script>
+</body>
+</html>

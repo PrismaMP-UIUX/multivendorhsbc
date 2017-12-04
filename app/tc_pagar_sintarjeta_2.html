@@ -1,0 +1,63 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma tarjeta"></i> |</span> Pagar resumen</h5>
+			<p>Elegí la tarjeta que querés pagar:</p>
+			<div id="compania" class="dropdown btn gris mg-r-15">
+				<div class="contenedor">
+					<div indice="1" data-dd="data1">Número de tarjeta</div>
+					<div indice="2" data-dd="data2">Número de cuenta</div>
+				</div>
+			</div>
+			<div class="containerdeinput boton"  onclick="location.href = 'tc_pagar_sintarjeta_3.html'">
+				<input type="text" size="16" placeholder="">
+				<span class="btn azul">Ingresar</span>
+			</div>
+
+			<div class="deshabilitado">
+				<p class="mg-t-30 mg-b-15">¿Cómo querés pagar?</p>
+				<div class="btn-group btn-inputs">
+					<label class="btn azul">
+						<input type="radio" name="options" id="dolar">Efectivo
+					</label>
+					<label class="btn azul">
+						<input type="radio" name="options" id="dolar">Cheques
+					</label>
+				</div>s
+			</div>
+
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="tc_pagar_2.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("extraccion","borrar");
+	alescribir("extraccion","continuar");
+</script>
+</body>
+</html>
