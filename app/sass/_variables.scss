@@ -442,6 +442,10 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
   // Full
   .width-full {
     width: 100% !important;
+
+    .btn.width-full {
+      width: calc(100% - 56px) !important;
+    }
   }
 
 // Heights
@@ -449,6 +453,13 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
       @if $height-iterate % 5 == 0 {
           .height-#{$height-iterate} {min-height: auto !important; max-height: auto !important; height: #{$height-iterate}px !important;}
       }
+  }
+
+// Center block
+  .center-block {
+    margin: 0 auto;
+    display: block;
+    float: none !important;
   }
 
 // Planos z-index
@@ -519,6 +530,15 @@ $step: 5;
       }
   }
 
+// Heights
+  .height-auto {
+    height: auto !important;
+  }
+  @for $heights from 1 through 450 {
+      @if $heights % 5 == 0 {
+          .height-#{$heights} {height: #{$heights}px !important;}
+      }
+  }
 // Imágenes
 // --------------------------------------------
 
@@ -547,6 +567,8 @@ $tabla_de_imagenes:(
 	retire_tarjetaticket,
 	retire_tarjetadinero,
 	retire_tarjetaticketdinero,
+  retirar_billetes_noreconocidos,
+  retirar_cheques_noreconocidos,
 	leyendo_chip,
 	sin_fondos,
 	error_limites,

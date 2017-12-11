@@ -1,0 +1,54 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma "></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+      <h5 class="titulo mg-b-5"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> Ingreso de cheques</h5>
+      <img class="width-full" src="img/cheque_placeholder.jpg" alt="">
+      <div>
+        <p class="mg-t-15">Importe</p>
+        <div class="align-center">
+          <p class="font_150 mg-r-15"><b>$ 4.000</b></p>
+          <a href="tc_pagar_2.html" class="btn-chico naranja waves-effect mg-0"><i class="prisma editar"></i> Modificar</a>
+        </div>
+      </div>
+    </div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="tc_pagar_reconocimiento_cheque_confirmar.html" class="btn azul right" id="siguiente">Siguiente <i class="prisma derecha"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	$(".btn-group label").click(function(){
+    if($(this).attr("id") == "acuenta") {
+      $("#campoimporte").removeClass("deshabilitado");
+      $("#siguiente").addClass("deshabilitado");
+    } else {
+      $("#campoimporte").addClass("deshabilitado");
+      $("#siguiente").removeClass("deshabilitado");
+    }
+  });
+</script>
+</body>
+</html>

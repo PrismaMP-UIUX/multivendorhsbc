@@ -6,18 +6,18 @@ var $slider;
   	if($slider[0]){
   		$slider.startAuto();
   	};
-    $(".idleLoop").owlCarousel({
-      items: 1,
-      autoplay: true,
-      autoplayTimeout: 6000,
-      nav: true,
-      dots: true,
-      navText: [
-          "<i id='slider-prev' class='prisma izquierda'></i>",
-          '<i id="slider-next" class="prisma derecha"></i>'
-      ],
-      loop: true
-    });
+    // $(".idleLoop").owlCarousel({
+    //   items: 1,
+    //   autoplay: true,
+    //   autoplayTimeout: 6000,
+    //   nav: true,
+    //   dots: true,
+    //   navText: [
+    //       "<i id='slider-prev' class='prisma izquierda'></i>",
+    //       '<i id="slider-next" class="prisma derecha"></i>'
+    //   ],
+    //   loop: true
+    // });
 
     alescribir("extraccion","borrar");
     alescribir("extraccion","continuar");
@@ -77,7 +77,6 @@ function ayudavisual(){
   $("body").toggleClass("bnlc ayuda");
   if ($(".t-header").length > 0) {
       var tWidth = $(".tabla_select > .tabla").width();
-      alert(tWidth);
       $(".t-header").width(tWidth);
 
       //pos t-head items

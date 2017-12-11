@@ -1,0 +1,86 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma "></i></div>
+
+  <div class="centradovertical">
+    <div class="panel centrado">
+      <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> SUBE Recarga</h5>
+      <div class="mg-b-20">
+        <p>Ingresá el número de tarjeta</p>
+        <div class="containerdeinput boton" onclick="window.location.href = 'pagar_recarga_sube_2.html'">
+          <input type="text" size="16" placeholder="">
+          <span class="btn azul">Ingresar</span>
+        </div>
+      </div>
+      <div class="mg-b-20">
+        <p>Seleccioná el importe a pagar</p>
+        <div id="monto" class="dropdown btn gris mg-0 width-350 deshabilitado">
+          <div class="contenedor">
+            <div indice="1" data-dd="data1"><i class="prisma cuenta"></i> $200</div>
+            <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> $400</div>
+            <div indice="3" data-dd="data3" class=""><i class="prisma cuenta"></i> $500</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>De mi cuenta:</p>
+        <div id="cuentas" class="dropdown btn gris mg-0 width-350 deshabilitado">
+          <div class="contenedor">
+            <div indice="1" data-dd="data1"><i class="prisma cuenta"></i> [CA $]12345678901234567811</div>
+            <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> [CA $] 12345678901234567811</div>
+            <div indice="3" data-dd="data3" class=""><i class="prisma cuenta"></i> [CA $] 45678123456</div>
+            <div indice="4" data-dd="data4" class=""><i class="prisma cuenta"></i> [CA $] 78901234567</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+  <a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+  <a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+  <a href="pagar_ingresando_codigo_asad.html" class="right"></a>
+  <a href="tc_pagar_3.html" class="btn azul right deshabilitado">Siguiente <i class="prisma derecha"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+  $(".btn-group label").click(function(){
+    $("div.deshabilitado").removeClass("deshabilitado");
+  });
+
+  $(document).ready(function(){
+
+    var card = new Card({
+        form: 'form',
+        container: '.card-wrapper',
+        width: 200,
+
+        placeholders: {
+            number: '5443 2342 2341 9843',
+            name: 'Pato Graglia',
+            expiry: '10/22',
+            cvc: '234'
+        },
+    });
+
+  });
+</script>
+</body>
+</html>

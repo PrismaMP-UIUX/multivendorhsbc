@@ -47,6 +47,15 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   position: relative;
   top: 2px;
 
+  &.jubilados:before {
+    content: "\e989";
+  }
+  &.rubros_clubes-asociaciones:before {
+    content: "\e997";
+  }
+  &.adherir-celular:before {
+    content: "\e996";
+  }
   &.rubros_recargas:before {
     content: "\e992";
   }
@@ -64,30 +73,6 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   }
   &.rubros_cooperativas:before {
     content: "\e995";
-  }
-  &.rubros_clubes-asociaciones .path1:before {
-    content: "\e996";
-    color: rgb(255, 255, 255);
-  }
-  &.rubros_clubes-asociaciones .path2:before {
-    content: "\e997";
-    margin-left: -0.91015625em;
-    color: rgb(255, 255, 255);
-  }
-  &.rubros_clubes-asociaciones .path3:before {
-    content: "\e998";
-    margin-left: -0.91015625em;
-    color: rgb(0, 0, 0);
-  }
-  &.rubros_clubes-asociaciones .path4:before {
-    content: "\e999";
-    margin-left: -0.91015625em;
-    color: rgb(255, 255, 255);
-  }
-  &.rubros_clubes-asociaciones .path5:before {
-    content: "\e99a";
-    margin-left: -0.91015625em;
-    color: rgb(255, 255, 255);
   }
   &.rubros_telefonia:before {
     content: "\e99b";
@@ -155,41 +140,14 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   &.rubros_donaciones:before {
     content: "\e9b0";
   }
-  &.adherir-celular .path1:before {
-    content: "\e9b1";
-    color: rgb(0, 0, 0);
-  }
-  &.adherir-celular .path2:before {
-    content: "\e9b2";
-    margin-left: -0.7001953125em;
-    color: rgb(0, 0, 0);
-  }
-  &.adherir-celular .path3:before {
-    content: "\e9b3";
-    margin-left: -0.7001953125em;
-    color: rgb(251, 251, 251);
-  }
-  &.adherir-celular .path4:before {
-    content: "\e9b4";
-    margin-left: -0.7001953125em;
-    color: rgb(0, 0, 0);
-  }
-  &.adherir-celular .path5:before {
-    content: "\e9b5";
-    margin-left: -0.7001953125em;
-    color: rgb(0, 0, 0);
-  }
   &.cheques:before {
     content: "\e9b6";
   }
   &.cpp2:before {
     content: "\e9b7";
   }
-  &.jubilados:before {
-    content: "\e9b8";
-  }
   &.clave-compras:before {
-    content: "\e989";
+    content: "\e9b8";
   }
   &.nueva-transferencia:before {
     content: "\e98a";

@@ -24,7 +24,7 @@ input {
 }
 
 .containerdeinput-conBorrar {
-	width: calc(100% - 30px);
+	width: calc(100% - 20px); // los 20px son por los 16px de padding (8 y 8) y los 4 de border (4 y 4)
 	position: relative;
 	border: solid 2px #777;
 	padding: 8px;
@@ -34,8 +34,7 @@ input {
 	@extend .mg-b-20;
 
 	& > div {
-		max-width: calc(100% - 120px);
-		width: 100%;
+    width: calc(100% - 125px);
 
 		& > .prefijo {
 			font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
@@ -57,12 +56,6 @@ input {
       margin: 0;
       top: -2px;
       right: -2px;
-
-      &.borrar {
-      	.ayuda & {
-      		@extend .max-120;
-      	}
-      }
 
       &.scale-out {
         -webkit-transform: scale(0) translateY(3px) !important;

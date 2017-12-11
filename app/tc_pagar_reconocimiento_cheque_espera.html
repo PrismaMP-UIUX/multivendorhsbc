@@ -1,0 +1,43 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<!-- <meta http-equiv="refresh" content="10; URL='retire_todo.html'" /> -->
+
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+	<div class="draw">
+
+		<!-- Brandbar -->
+		@@include('_partials/brandbar.html')
+
+		<div class="fondomodal"></div>
+
+
+		<!-- Contenido de la página -->
+		<div class="content centradovertical"><div class="iconback"><i class="prisma tiempo"></i></div>
+
+			<div class="content-modal panel centrado">
+				<h5 class="titulo"><span class="azul"><i class="prisma tiempo"></i> |</span> Esperá</h5>
+				<div class="col_left">
+					<div class="imagen aguarde" onclick="window.location.href='ticket.html'"></div>
+				</div>
+				<div class="col_right">
+					<p class="mg-b-20"><span class="font_73">Esperá mientras los cheques son reconocidos.</p>
+					<p><span class="font_45">Esta operación puede tardar varios segundos dependiendo de la cantidad de cheques.</p>
+						<p><a href="tc_pagar_reconocimiento_cheque_noreconocidos.html">% seguir con el flujo</a></p>
+					<div class="progress">
+						<div class="indeterminate"></div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</div><!-- /Contenido de la página -->
+
+
+		<!-- Javascript -->
+		  @@include('_partials/scripts.html')
+
+	</body>
+	</html>

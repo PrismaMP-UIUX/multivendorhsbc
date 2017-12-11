@@ -12,28 +12,38 @@
 
 	<div class="centradovertical">
 		<div class="panel centrado">
-			<h5 class="titulo mg-b-5"><span class="azul"><i class="prisma tarjeta"></i> |</span> Pagar resumen</h5>
-			<div class="clearfix">
-					<div class="card-wrapper left mg-r-30"></div>
-					<div class="left height-200 align-center">
-				    <a href="tc_pagar_sintarjeta_2.html" class="btn-chico naranja mg-l-5 waves-effect"><i class="prisma editar"></i> Modificar</a>
-					</div>
-			</div>
-			<div class="left mg-r-30">
-				<p class="mg-t-30 mg-b-15">¿Cómo querés pagar?</p>
-				<div class="btn-group btn-inputs">
-					<label class="btn azul">
-						<input type="radio" name="options" id="dolar">Efectivo
-					</label>
-					<label class="btn azul">
-						<input type="radio" name="options" id="dolar">Cheques
-					</label>
-				</div>
-			</div>
-			<div class="containerdeinput boton left mg-t-80 deshabilitado"  onclick="location.href = 'tc_pagar_sintarjeta_5.html';">
-				<input type="text" size="16" placeholder="">
-				<span class="btn azul">Ingresar</span>
-			</div>
+			<h5 class="titulo mg-b-5"><span class="azul"><i class="prisma tarjeta"></i> |</span> American Express</h5>
+	      <div>
+	        <p class="">Tarjeta a pagar:</p>
+	        <div class="align-center">
+	          <div class="justify-center align-center mg-r-30">
+	            <p class="prisma rubros_tarjeta-credito font_400 mg-r-10"></p>
+	            <div>
+	              <p><span class="font_80">Visa</span></p>
+	              <p class="font_85">XXXX XXXX XXXX 7823</p>
+	            </div>
+	          </div>
+	          <a href="tc_pagar_sintarjeta_3.html" class="btn-chico naranja waves-effect">Modificar</a>
+	        </div>
+	      </div>
+	      <div>
+	        <p class="mg-t-15 mg-b-15">¿Cómo querés pagar?</p>
+	        <div class="btn-group btn-inputs">
+	          <label class="btn azul mg-l-0">
+	            <input type="radio" name="options" id="peso">Efectivo
+	          </label>
+	          <label class="btn azul">
+	            <input type="radio" name="options" id="dolar">Cheques
+	          </label>
+	        </div>
+	      </div>
+	      <div class="deshabilitado">
+	        <p class="mg-t-15">Importe</p>
+	        <div class="containerdeinput boton" onclick="window.location.href = 'tc_pagar_sintarjeta_5.html'">
+	          <input type="text" size="16" placeholder="">
+	          <span class="btn azul">Ingresar</span>
+	        </div>
+	      </div>
 
 		</div>
 	</div>
@@ -55,21 +65,7 @@
 <script src="js/component/inputListenerBotones.js"></script>
 <script type="text/javascript">
 	$(".btn-group label").click(function(){
-		$(".containerdeinput").removeClass("deshabilitado");
-	});
-
-	$(document).ready(function(){
-	  var card = new Card({
-	      form: 'form',
-	      container: '.card-wrapper',
-
-	      placeholders: {
-	          number: '5443 2342 2341 9843',
-	          name: 'Pato Graglia',
-	          expiry: '10/22',
-	          cvc: '234'
-	      },
-	  });
+		$("div.deshabilitado").removeClass("deshabilitado");
 	});
 </script>
 </body>
