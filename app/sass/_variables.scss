@@ -520,7 +520,7 @@ $step: 5;
   }
 
 // Limiters
-  @for $limiter-iterate from 1 through 450 {
+  @for $limiter-iterate from 1 through 850 {
       @if $limiter-iterate % 5 == 0 {
           .max-#{$limiter-iterate} {width: 100%; max-width: #{$limiter-iterate}px !important;}
           .max-l-#{$limiter-iterate} {width: 100%; max-width: #{$limiter-iterate}px !important;}

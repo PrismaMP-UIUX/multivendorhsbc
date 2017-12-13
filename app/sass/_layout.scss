@@ -393,7 +393,7 @@ $color-ticket-ayuda: invert($color-ticket);
 		// ::before{
 		// 	display: none;
 		// }
-		::after {
+		&::after, &::before {
 			display: none;
 		}
 	}
@@ -895,4 +895,3 @@ body#offline {
   z-index: 102;
   background: rgba(0, 0, 0, 0.6);
 }
-
