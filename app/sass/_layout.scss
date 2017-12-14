@@ -46,6 +46,15 @@ body { margin: 0px; overflow: hidden; }
 	visibility: visible;
 }
 
+// Truncado
+
+.truncate {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+}
+
 
 //Helpers
 //Columnas Flex
@@ -393,7 +402,7 @@ $color-ticket-ayuda: invert($color-ticket);
 		// ::before{
 		// 	display: none;
 		// }
-		::after {
+		::after, &::before {
 			display: none;
 		}
 	}
