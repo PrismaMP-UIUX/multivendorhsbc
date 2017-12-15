@@ -1,0 +1,42 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado max-800">
+      <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma si-no"></i> |</span> ¿Confirmás?</h5>
+			<p>Cheques ingresados:</p>
+			<p class="mg-b-20 mg-r-15 font_120"><b>3</b> cheques por un total de <b>$6000</b><br>
+				<a href="deposito_conTarjeta_3_reconocimiento_cheque.html" class="btn-chico naranja mg-l-5 waves-effect mg-t-10">Ingresar más cheques</a>
+			</p>
+			<div class="align-center width-full mg-t-30">
+	      <div id="checkboxes">
+	        <input type="checkbox" value="1" id="r1">
+	        <label class="btn" for="r1"><span class="si"><i class="prisma confirmar"></i> Si</span><span class="no"><i class="prisma cancelar"></i> No</span></label>
+	      </div>
+	      <div style="vertical-align: top;"><p class="mg-t-5 mg-l-10">Imprimir cheques en un comprobante</p></div>
+	    </div>
+    </div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="ticket.html" class="btn verde right"><i class="prisma deposito"></i> Depositar</a>
+</div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+</body>
+</html>

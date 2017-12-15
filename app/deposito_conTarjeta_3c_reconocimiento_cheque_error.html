@@ -1,0 +1,55 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma advertencia"></i> |</span> Cheques no reconocidos</h5>
+			 <div class="clearfix">
+				<div class="imagen retirar_cheques_noreconocidos col_left  width-350">
+					<!-- <video width="350" autoplay="autoplay" loop="loop">
+					  <source src="videos/deposito-efectivo.webm" type="video/webm">
+					</video> -->
+				</div>
+				<div class="col_right mg-r-20">
+					<p class="mg-b-20">Retirá los cheques que no fueron reconocidos.</p>
+				</div>
+			 </div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="deposito_conTarjeta_3.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+	<a href="deposito_conTarjeta_4_reconocimiento_cheque.html" class="right">% Ingresar monto</a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+<script type="text/javascript">
+	// seleccionar fila
+	$('tr').click( function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		$(this).find('td input[type=radio]').prop( "checked", true );
+		$('#continuar').show();
+	})
+</script>
+</body>
+</html>
