@@ -1,36 +1,45 @@
-@@include('tc_pagar_reconocimiento_cheque_ingresarmonto_3.html')
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
 
+<div class="draw">
 
-<div class="fondomodal"></div>
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma si-no"></i></div>
+
 <div class="centradovertical">
-  <div class="content-modal panel bounceIn animated centrado">
-    <div class="close"><a href="tc_pagar_reconocimiento_cheque.html"><i class="prisma cerrar"></i> </a></div>
+  <div class="panel centrado">
     <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma si-no"></i> |</span> ¿Confirmás?</h5>
-    <p class="mg-b-20"><i class="prisma tarjeta mg-r-10 mg-t-2"></i> Visa terminada en ...1548</p>
 
+    <p class="mg-b-20 font_120"><i class="prisma tarjeta mg-r-10 mg-t-2"></i> Visa terminada en ...1548</p>
 
-    <div class="left"><p>Cheques ingresados:</p><p class="mg-b-20 mg-r-15 font_120"><b>3</b> cheques por un total de <b>$1500</b></p><div class="mg-b-25">
-
-    </div></div><div class="left height-115 align-center"> <a href="tc_pagar_reconocimiento_efectivo.html" class="btn-chico azul mg-l-5 waves-effect mg-0">Ingresar más cheques</a></div>
-    <div class="align-center width-full">
+    <p>Cheques ingresados:</p>
+    <p class="mg-b-20 mg-r-15 font_120"><b>3</b> cheques por un total de <b>$6000</b><br>
+      <a href="tc_pagar_reconocimiento_cheque.html" class="btn-chico azul mg-l-5 waves-effect mg-t-10">Ingresar más cheques</a>
+    </p>
+    <div class="align-center width-full mg-t-30">
       <div id="checkboxes">
         <input type="checkbox" value="1" id="r1">
         <label class="btn" for="r1"><span class="si"><i class="prisma confirmar"></i> Si</span><span class="no"><i class="prisma cancelar"></i> No</span></label>
       </div>
       <div style="vertical-align: top;"><p class="mg-t-5 mg-l-10">Imprimir cheques en un comprobante</p></div>
     </div>
-
-    <hr class="piemodal">
-    <p class="alinear-derecha">
-      <a href="tc_pagar_reconocimiento_cheque.html" class="btn rojo mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
-      <a href="ticket.html" class="btn verde"><i class="prisma confirmar"></i> Confirmar</a>
-    </p>
   </div>
 </div>
 
-<script type="text/javascript">
-  alescribir("importe","borrar");
-  scaleBorrar("importe", "borrar");
-  deleteValue("#importe","#borrar");
-  borrarTodo("#importe");
-</script>
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+<a href="ticket.html" class="btn verde right"><i class="prisma tarjeta"></i> Pagar</a>
+</div>
+
+<!-- Javascript -->
+@@include('_partials/scripts.html')
+</body>
+</html>

@@ -1,34 +1,45 @@
-@@include('tc_pagar_reconocimiento_efectivo.html')
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
 
+<div class="draw">
 
-<div class="fondomodal"></div>
-<div class="centradovertical">
-  <div class="content-modal panel bounceIn animated centrado">
-    <div class="close"><a href="tc_pagar_reconocimiento_efectivo.html"><i class="prisma cerrar"></i> </a></div>
-    <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma si-no"></i> |</span> ¿Confirmás?</h5>
-    <p class="mg-b-25"><i class="prisma tarjeta mg-r-10 mg-t-2"></i> Visa terminada en ...1548</p>
-    <p>Billetes ingresados</p>
-    <div class="flex flex-wrap clearfix pd-t-20 pd-b-20">
-      <p class="width-350 left font_110 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $10 x </span><b>2</b></p>
-      <p class="width-350 left font_110 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $20 x </span><b>1</b></p>
-      <p class="width-350 left font_110 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $50 x </span><b>10</b></p>
-      <p class="width-350 left font_110 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $100 x </span><b>3</b></p>
-      <p class="width-350 left font_110 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $200 x </span><b>6</b></p>
-      <p class="width-350 left font_110 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $500 x </span><b>10</b></p>
-    </div>
-    <p class="mg-b-25 font_120">Total ingresado: <b>$1500</b>.- <a href="tc_pagar_reconocimiento_efectivo.html" class="btn naranja mg-l-5 waves-effect mg-0">Ingresar más billetes</a></p>
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
 
-    <hr class="piemodal">
-    <p class="alinear-derecha">
-      <a href="tc_pagar_reconocimiento_efectivo.html" class="btn rojo mg-r-10"><i class="prisma cancelar"></i> Cancelar</a>
-      <a href="ticket.html" class="btn verde"><i class="prisma confirmar"></i> Confirmar</a>
-    </p>
-  </div>
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado max-750">
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma si-no"></i> |</span> ¿Confirmás?</h5>
+       <p class="mg-b-25 font_120"><i class="prisma tarjeta mg-r-10 mg-t-2"></i> Visa terminada en ...1548</p>
+			 <p>Billetes ingresados:</p>
+			 <div class="flex flex-wrap clearfix pd-t-20 pd-b-40">
+				 <p class="width-350 left font_120 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $10 x </span><b>2</b></p>
+				 <p class="width-350 left font_120 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $20 x </span><b>1</b></p>
+				 <p class="width-350 left font_120 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $50 x </span><b>10</b></p>
+				 <p class="width-350 left font_120 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $100 x </span><b>3</b></p>
+				 <p class="width-350 left font_120 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $200 x </span><b>6</b></p>
+				 <p class="width-350 left font_120 align-center"><i class="prisma billete font_80 mg-r-10"></i><span class="mg-r-10"> $500 x </span><b>10</b></p>
+			 </div>
+			 <p class="mg-b-25 font_130">
+				 Total ingresado: <b class="mg-r-20">$1500</b>
+				 <a href="tc_pagar_reconocimiento_efectivo.html" class="btn btn-chico azul mg-l-5 waves-effect mg-0">Ingresar más billetes</a>
+			 </p>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="ticket.html" class="btn verde right"><i class="prisma tarjeta"></i> Pagar</a>
 </div>
 
-<script type="text/javascript">
-  alescribir("importe","borrar");
-  scaleBorrar("importe", "borrar");
-  deleteValue("#importe","#borrar");
-  borrarTodo("#importe");
-</script>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+</body>
+</html>
