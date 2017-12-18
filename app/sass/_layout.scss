@@ -538,12 +538,13 @@ $color-ticket-ayuda: invert($color-ticket);
 						}
 					}
 
-					td {
+					td, th {
 						height: 60px;
 						display: flex;
 						align-items: center;
 						padding-top: 0px;
 						padding-bottom: 0px;
+						width: 100%;
 
 						& > * {
 							white-space: nowrap;
@@ -645,7 +646,6 @@ td {
 }
 .t-header {
 	background-color: transparent;
-	margin-bottom: 10px;
 	position: relative;
 	height: 45px;
 
@@ -664,6 +664,12 @@ td {
 		font-size: 1.815em;
 		font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
 		padding: 0px;
+
+		> span {
+			font-weight: bold;
+			font-size: 0.66em;
+			padding: 0 10px;
+		}
 	}
 }
 .marcador {

@@ -1,0 +1,34 @@
+@@include('cajeros_1.html')
+
+
+<div class="fondomodal"></div>
+<div class="centradovertical inc">
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="cajeros_1.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Banco Galicia</h5>
+		<p class="font_120">Av. 25 de Mayo n° 1810</p>
+		<p>Comodoro Rivadavia</p>
+
+		<p class="mg-t-20">Distancia: <strong>2kms</strong>
+
+		<div class="mg-t-40 font_50">
+			<p><i class="prisma saldo width-25 block"></i> Actualmente sin dinero</p>
+			<!--<p class="azul bold"><i class="prisma saldo width-25 block"></i> Con dinero</p>-->
+			<p><i class="prisma no-videntes width-25 block"></i> No apto para no videntes</p>
+			<!--<p class="azul bold"><i class="prisma no-videntes width-25 block"></i> Apto para no videntes</p>-->
+			<!--<p><i class="prisma deposito width-25 block"></i> Acepta depósitos</p>-->
+			<p class="azul bold"><i class="prisma deposito width-25 block"></i> Acepta depósitos</p>
+		</div>
+		<hr class="piemodal">
+		<a href="cajeros_1.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
+		<a href="cajeros_3_ticket.html" class="btn right azul confirmar"><i class="prisma confirmar"></i> Imprimir</a>
+</div>
+<script type="text/javascript">
+	// seleccionar fila
+	$('tr').click( function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		$(this).find('td input[type=radio]').prop( "checked", true );
+		$('#continuar').show();
+	})
+</script>
