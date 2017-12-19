@@ -198,6 +198,18 @@
 		float: left;
 	}
 
+// cuentas: depositos
+#cuentas {
+	tr {
+		td:first-child {
+    	width: 10%;
+		}
+		td:nth-child(2) {
+		  width: 90%;
+		}
+	}
+}
+
 // extraccion
 #extraccionInput {
 	width:405px;
@@ -222,7 +234,7 @@
 	}
 }
 
-#cajeros {
+#cajeros_cercanos {
 	tr {
 		th:first-child,
 		td:first-child {

@@ -11,7 +11,7 @@
 <div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
 
 	<div class="centradovertical">
-		<div id="cajeros" class="panel centrado">
+		<div id="cajeros_cercanos" class="panel centrado">
 			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma cajero-notouch"></i> |</span> Cajeros cercanos</h5>
 			<p class="mg-b-20">Elegí un cajero para ver más detalles</p>
 
@@ -25,7 +25,7 @@
 			<div class="tabla_select width-800">
 				<div class="tabla">
 					<table>
-							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+							<tr class="waves-effect" onclick="location.href='cajeros_cercanos_2_detalle.html'">
 								<td class="bold font_55"><span>Banco Galicia</span></td>
 								<td class="bold font_55"><span>100 mts</span></td>
 								<td>
@@ -34,7 +34,7 @@
 									<i class="prisma deposito"></i>
 								</td>
 							</tr>
-							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+							<tr class="waves-effect" onclick="location.href='cajeros_cercanos_2_detalle.html'">
 								<td class="bold font_55"><span>Banco Macro</span></td>
 								<td class="bold font_55"><span>500 mts</span></td>
 								<td>
@@ -43,7 +43,7 @@
 									<i class="prisma deposito deshabilitado"></i>
 								</td>
 							</tr>
-							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+							<tr class="waves-effect" onclick="location.href='cajeros_cercanos_2_detalle.html'">
 								<td class="bold font_55"><span>Banco Santander</span></td>
 								<td class="bold font_55"><span>1,2 km</span></td>
 								<td>
@@ -52,7 +52,7 @@
 									<i class="prisma deposito deshabilitado"></i>
 								</td>
 							</tr>
-									<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+									<tr class="waves-effect" onclick="location.href='cajeros_cercanos_2_detalle.html'">
 										<td class="bold font_55"><span>Banco Galicia</span></td>
 										<td class="bold font_55"><span>2 km</span></td>
 										<td>
@@ -61,7 +61,7 @@
 											<i class="prisma deposito"></i>
 										</td>
 									</tr>
-							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+							<tr class="waves-effect" onclick="location.href='cajeros_cercanos_2_detalle.html'">
 								<td class="bold font_55"><span>Banco Comafi</span></td>
 								<td class="bold font_55"><span>1,2 km</span></td>
 								<td>
@@ -89,27 +89,8 @@
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
 </div>
 
-<style type="text/css">
-#cajeros tr th:first-child,
-#cajeros tr td:first-child {
-    width: 370%;
-}
-#cajeros tr th:nth-child(2),
-#cajeros tr td:nth-child(2) {
-    width: 140%;
-}
-</style>
 <!-- Javascript -->
-  @@include('_partials/scripts.html')
+@@include('_partials/scripts.html')
 
-<script type="text/javascript">
-	// seleccionar fila
-	$('tr').click( function(){
-		$(this).addClass('active');
-		$(this).siblings().removeClass('active');
-		$(this).find('td input[type=radio]').prop( "checked", true );
-		$('#continuar').show();
-	})
-</script>
 </body>
 </html>
