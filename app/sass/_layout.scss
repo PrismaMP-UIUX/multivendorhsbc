@@ -22,8 +22,10 @@ body { margin: 0px; overflow: hidden; }
 .leftZero {left:0px}
 .oculto {display: none;}
 .block {display:inline-block;}
+.block-block { display: block !important; }
 .inline {display: inline;}
 .relative {position: relative;}
+.absolute {position: absolute !important; }
 .relative-important {position: relative !important}
 .absolute {position: absolute !important}
 .centrado {position: relative; margin-left: auto; margin-right: auto;}
@@ -54,7 +56,9 @@ body { margin: 0px; overflow: hidden; }
   text-overflow: ellipsis;
   padding: 0 10px;
 }
-
+.no-truncate {
+	text-overflow: unset !important;
+}
 
 //Helpers
 //Columnas Flex
@@ -90,12 +94,21 @@ body { margin: 0px; overflow: hidden; }
 }
 .justify-center {
 	display: flex;
-	-webkit-justify-content: space-around;
+	-webkit-justify-content: center;
 	justify-content: center;
+}
+.justify-start {
+	display: flex;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
 }
 .align-center {
 	display: flex !important;
 	align-items: center;
+}
+.align-start {
+	display: flex !important;
+	align-items: flex-start  !important;
 }
 .flexVerticalAlign {
 	display: flex;
@@ -629,6 +642,11 @@ $color-ticket-ayuda: invert($color-ticket);
 	}
 	.tabla-x4 {
 		height: 240px;
+	}
+	&.tabla-2 {
+		.tabla {
+			height: 270px;
+		}
 	}
 }
 td {

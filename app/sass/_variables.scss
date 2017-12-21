@@ -421,12 +421,12 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
   }
 
 // Width
-  @for $limiter-iterate from 1 through 450 {
+  @for $limiter-iterate from 1 through 880 {
       @if $limiter-iterate % 5 == 0 {
           .width-#{$limiter-iterate} {width: #{$limiter-iterate}px !important;}
       }
   }
-  @for $limiter-iterate-cincuenta from 350 through 800 {
+  @for $limiter-iterate-cincuenta from 350 through 880 {
       @if $limiter-iterate-cincuenta % 50 == 0 {
           .width-#{$limiter-iterate-cincuenta} {width: #{$limiter-iterate-cincuenta}px !important;}
       }
@@ -453,6 +453,14 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
       @if $height-iterate % 5 == 0 {
           .height-#{$height-iterate} {min-height: auto !important; max-height: auto !important; height: #{$height-iterate}px !important;}
       }
+  }
+  // Full
+  .height-full {
+    height: 100% !important;
+
+    &.btn {
+      height: calc(100% - 44px) !important;
+    }
   }
 
 // Center block

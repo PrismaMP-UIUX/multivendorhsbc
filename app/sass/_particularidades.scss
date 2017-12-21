@@ -406,52 +406,107 @@
 }
 
 .todos_los_rubros {
+	margin-left:60px;
+
+	.ayuda & {
+		@extend .width-850;
+	}
 	.owl-nav {
-		position: absolute;
-	  right: -130px;
-	  bottom: 0;
-	  height: 100%;
-	  width: 90px;
-
-	    .owl-prev {
-		     position: absolute;
-		     top: 20px;
-		     transform: rotate(90deg);
-		     background-color: #777;
-		     .ayuda & {
-		     	background-color: #fff;
-
-		     	i {
-		     		color: #111111;
-		     	}
-		     }
-
-		     i {
-		     	top: 0;
-		     }
-	  	}
-	    .owl-next {
-		     position: absolute;
-		     bottom: 30px;
-		     top: auto;
-		     transform: rotate(90deg);
-		     background-color: #777;
-		     .ayuda & {
-		     	background-color: #fff;
-
-		     	i {
-		     		color: #111111;
-		     	}
-		     }
-
-		     i {
-		     	top: 0;
-	    	 }
+		i {
+			font-size: 1.5em;
+	    width: 55px;
+	    height: 55px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    border-radius: 50%;
+	    background-color: #777;
+	    color: white;
+		}
+    .owl-prev, .owl-next  {
+    	 height: 100%;
+	     top: 0;
+	     border-radius: 0;
+	     opacity:1;
   	}
+  	.owl-prev{
+	     background: linear-gradient(to left, transparent , #fff);
+	     left: -75px;
+	     &.disabled {
+	     	 @extend .deshabilitado;
+	     }
+	     .ayuda & {
+	     		background: transparent;
+	     }
+  	}
+  	.owl-next {
+	     background: linear-gradient(to right, transparent , #fff);
+	     right: 0;
+	     &.disabled {
+	     	 @extend .deshabilitado;
+	     }
+	     .ayuda & {
+	     		right: -75px;
+					background: transparent;
+	     }
+  	}
+	 //    .owl-next {
+		//      position: absolute;
+		//      bottom: 30px;
+		//      top: auto;
+		//      transform: rotate(90deg);
+		//      background-color: #777;
+		//      .ayuda & {
+		//      	background-color: #fff;
+
+		//      	i {
+		//      		color: #111111;
+		//      	}
+		//      }
+
+		//      i {
+		//      	top: 0;
+	 //    	 }
+  // 	}
+  // }
+  // &.empresas {
+  // 	.owl-nav {
+  // 		right: 0px;
+  // 	}
   }
-  &.empresas {
-  	.owl-nav {
-  		right: 0px;
-  	}
+	&.empresas {
+		.owl-nav {
+	  	.owl-prev{
+		     background: transparent;
+		     // left: -75px;
+		     // .ayuda & {
+		     // 		background: transparent;
+		     // }
+	  	}
+	  	.owl-next {
+		     background: transparent;
+
+		     &.disabled {
+		     	 display: flex;
+		     	 @extend .deshabilitado;
+		     }
+		    //  right: 0;
+		    //  .ayuda & {
+		    //  		right: -75px;
+						// background: transparent;
+		    //  }
+	  	}
+	  }
+	}
+}
+.detalle-cheque {
+	overflow: hidden;
+  position: relative;
+  height: 250px;
+
+  img {
+  	position: absolute;
+    right: 0;
+    top: 0;
   }
 }
