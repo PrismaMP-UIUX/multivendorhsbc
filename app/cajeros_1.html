@@ -1,0 +1,115 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div id="cajeros" class="panel centrado">
+			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma cajero-notouch"></i> |</span> Cajeros cercanos</h5>
+			<p class="mg-b-20">Elegí un cajero para ver más detalles</p>
+
+			<table class="t-header">
+				<tr class="flex">
+					<td><span>Banco</span></td>
+					<td><span>Distancia</span></td>
+					<td><span>Detalles</span></td>
+				</tr>
+			</table>
+			<div class="tabla_select width-800">
+				<div class="tabla">
+					<table>
+							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+								<td class="bold font_55"><span>Banco Galicia</span></td>
+								<td class="bold font_55"><span>100 mts</span></td>
+								<td>
+									<i class="prisma saldo deshabilitado"></i>
+									<i class="prisma no-videntes deshabilitado"></i>
+									<i class="prisma deposito"></i>
+								</td>
+							</tr>
+							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+								<td class="bold font_55"><span>Banco Macro</span></td>
+								<td class="bold font_55"><span>500 mts</span></td>
+								<td>
+									<i class="prisma saldo"></i>
+									<i class="prisma no-videntes deshabilitado"></i>
+									<i class="prisma deposito deshabilitado"></i>
+								</td>
+							</tr>
+							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+								<td class="bold font_55"><span>Banco Santander</span></td>
+								<td class="bold font_55"><span>1,2 km</span></td>
+								<td>
+									<i class="prisma saldo deshabilitado"></i>
+									<i class="prisma no-videntes"></i>
+									<i class="prisma deposito deshabilitado"></i>
+								</td>
+							</tr>
+									<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+										<td class="bold font_55"><span>Banco Galicia</span></td>
+										<td class="bold font_55"><span>2 km</span></td>
+										<td>
+											<i class="prisma saldo"></i>
+											<i class="prisma no-videntes deshabilitado"></i>
+											<i class="prisma deposito"></i>
+										</td>
+									</tr>
+							<tr class="waves-effect" onclick="location.href='cajeros_2_modal.html'">
+								<td class="bold font_55"><span>Banco Comafi</span></td>
+								<td class="bold font_55"><span>1,2 km</span></td>
+								<td>
+									<i class="prisma saldo"></i>
+									<i class="prisma no-videntes"></i>
+									<i class="prisma deposito"></i>
+								</td>
+							</tr>
+					</table>
+					<div class="tableScrollBlocker"></div>
+					<div class="right">
+						<a href="#" class="btn-chico azul arriba">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
+						<a href="#" class="btn-chico azul abajo">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+</div>
+
+<style type="text/css">
+#cajeros tr th:first-child,
+#cajeros tr td:first-child {
+    width: 370%;
+}
+#cajeros tr th:nth-child(2),
+#cajeros tr td:nth-child(2) {
+    width: 140%;
+}
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+<script type="text/javascript">
+	// seleccionar fila
+	$('tr').click( function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		$(this).find('td input[type=radio]').prop( "checked", true );
+		$('#continuar').show();
+	})
+</script>
+</body>
+</html>

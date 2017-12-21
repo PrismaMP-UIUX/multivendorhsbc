@@ -180,7 +180,7 @@
 	}
 
 	#operaciones_sintarjeta {
-		width: 700px;
+		width: 800px;
 	}
 	#extraccion_sintarjeta {
 		width: 780px;
@@ -218,6 +218,19 @@
 			margin-left: auto !important;
 			margin-right: auto !important;
 			display: block;
+		}
+	}
+}
+
+#cajeros {
+	tr {
+		th:first-child,
+		td:first-child {
+    	width: 370%;
+		}
+		th:nth-child(2),
+		td:nth-child(2) {
+		  width: 140%;
 		}
 	}
 }
