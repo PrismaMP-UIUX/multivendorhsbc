@@ -431,11 +431,8 @@
 }
 
 .todos_los_rubros {
-	margin-left:60px;
+	margin: auto;
 
-	.ayuda & {
-		@extend .width-850;
-	}
 	.owl-nav {
 		i {
 			font-size: 1.5em;
@@ -456,9 +453,9 @@
   	}
   	.owl-prev{
 	     background: linear-gradient(to left, transparent , #fff);
-	     left: -75px;
+	     left: 0;
 	     &.disabled {
-	     	 @extend .deshabilitado;
+	     	 @extend .oculto;
 	     }
 	     .ayuda & {
 	     		background: transparent;
@@ -468,10 +465,9 @@
 	     background: linear-gradient(to right, transparent , #fff);
 	     right: 0;
 	     &.disabled {
-	     	 @extend .deshabilitado;
+	     	 @extend .oculto;
 	     }
 	     .ayuda & {
-	     		right: -75px;
 					background: transparent;
 	     }
   	}
