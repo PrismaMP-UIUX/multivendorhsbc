@@ -527,6 +527,7 @@ $color-ticket-ayuda: invert($color-ticket);
 		width: calc(100% - 100px);
 		height: 240px;
 		overflow-y: auto;
+		overflow-x: hidden;
 		table {
 			width: 100%;
 			display: block;
