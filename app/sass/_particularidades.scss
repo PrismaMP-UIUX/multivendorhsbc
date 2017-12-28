@@ -234,18 +234,6 @@
 	}
 }
 
-#cajeros_cercanos {
-	tr {
-		th:first-child,
-		td:first-child {
-    	width: 370%;
-		}
-		th:nth-child(2),
-		td:nth-child(2) {
-		  width: 140%;
-		}
-	}
-}
 #siguiente.oculto {
 	display:none;
 }
