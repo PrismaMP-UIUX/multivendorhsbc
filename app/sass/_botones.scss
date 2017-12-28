@@ -73,6 +73,13 @@ $brd-ayuda: 3px; //borde de la ayuda
 	p & {font-size: 1em;}
 	i.prisma {
 		@extend .mg-r-5;
+
+    &.mg-0 {
+      @extend .mg-t-0;
+      @extend .mg-r-0;
+      @extend .mg-b-0;
+      @extend .mg-l-0;
+    }
 	}
 }
 

@@ -12,12 +12,30 @@
 
 	<div class="centradovertical">
 		<div class="panel centrado">
-			<h5 class="titulo"><span class="azul"><i class="prisma mensaje"></i> |</span> Mensajes</h5>
+			<h5 class="titulo"><span class="azul"><i class="prisma mensaje"></i> |</span> Enviar documentación</h5>
 
-			<a class="btn azul block">Pedir estado de cuenta</a>
-			<a class="btn azul block">Pedir boletas de depósito</a>
-			<a class="btn azul block">Pedir libreta de cheques</a>
-			<a href="mensajes_2_documentacion.html" class="btn azul block">Enviar documentación</a>
+			<div>
+			 <div class="col_left width-460 mg-0 mg-r-10">
+		 	  <div class="mg-b-25">
+ 	 				<p>¿Qué querés asegurar?</p>
+ 	 				<p>
+ 	 					<div id="motivomensaje" class="dropdown btn gris mg-0">
+ 	 						<div class="contenedor">
+ 	 							<div indice="1" data-dd="data1" onclick="habilitar()" class="active">Motivo de envío</div>
+ 	 							<div indice="2" data-dd="data1" onclick="habilitar()">Pedir estado de cuentavil</div>
+ 	 							<div indice="3" data-dd="data1" onclick="habilitar()">Pedir boletas de depósito</div>
+ 	 							<div indice="4" data-dd="data1" onclick="habilitar()">Pedir libreta de cheques</div>
+ 	 							<div indice="5" data-dd="data1" onclick="habilitar()">Enviar documentación</div>
+ 	 						</div>
+ 	 					</div>
+ 	 				</p>
+ 	 			</div>
+				<p class="mg-b-15">1. Retirá un sobre</p>
+				<p class="mg-b-15">2. Introducí los documentos que desees enviar al banco<br> <span class="font_50">No introduzcas efectivo o cheques</span></p>
+				<p class="mg-b-15">3. Cerrá el sobre y depositalo</p>
+			 </div>
+			 <div class="imagen sobre_documentos col_right mg-0 width-350 height-320"></div>
+			</div>
 		</div>
 	</div>
 
@@ -27,12 +45,11 @@
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="ticket.html" class="right mg-r-10">% Ticket</a>
 </div>
 
-<style type="text/css">
-
-</style>
 <!-- Javascript -->
   @@include('_partials/scripts.html')
+
 </body>
 </html>

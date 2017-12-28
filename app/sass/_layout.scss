@@ -585,6 +585,10 @@ $color-ticket-ayuda: invert($color-ticket);
 					.ayuda & {
 						background-color: #fff;
 						color: #000;
+
+						p {
+							color: #000 !important;
+						}
 					}
 				}
 				tr:nth-child(even) {
@@ -596,7 +600,15 @@ $color-ticket-ayuda: invert($color-ticket);
 				}
 				tr.active {
 					background: $azul;
-					color: #fff;
+					color: #fff !important;
+
+					p {
+						color: #fff !important;
+
+						.ayuda & {
+							color: #6aa5d9 !important;
+						}
+					}
 				}
 			}
 		}
@@ -656,10 +668,10 @@ td {
 		$var: percentage($i / 36);
 
 		&.collumn-#{$i} {
-			width: $var;
+			width: $var !important;
 		}
 		& {
-			width: $var;
+			width: $var !important;
 		}
 	}
 }

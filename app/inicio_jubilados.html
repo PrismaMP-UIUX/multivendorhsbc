@@ -77,5 +77,18 @@
 
 <!-- Javascript -->
   @@include('_partials/scripts.html')
+
+<script>
+	$(".menu-jubilados-panel").click(function(e){
+	    e.stopPropagation();
+	});
+	$("#inicio_extraccion").click(function(e){
+	    e.stopPropagation();
+	});
+
+	$(document).click(function(){
+	     window.location.href='inicio_jubilados_2.html'
+	});
+</script>
 </body>
 </html>
