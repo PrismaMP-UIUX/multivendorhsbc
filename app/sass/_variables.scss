@@ -160,6 +160,17 @@ $tabla_de_colores:(
 			// }
 		}
 	}
+  .btn-border {
+    border: 4px #4d93d2 solid !important;
+    color: #4d93d2;
+    background: #fff;
+    padding: 18px 28px !important;
+    box-shadow: 0 4px 0 #27659c;
+
+    .ayuda & {
+      color: #6aa5d9 !important;
+    }
+  }
 }
 
 body {
