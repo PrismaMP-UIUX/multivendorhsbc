@@ -1,96 +1,47 @@
-<!-- Header -->
-@@include('_partials/head.html')
-<body class="bnlc"><!-- ayuda / bnlc -->
+@@include('pagar_tc_3.html')
 
-<div class="draw">
 
-<!-- Brandbar -->
-@@include('_partials/brandbar.html')
+<div class="fondomodal"></div>
+<div class="centradovertical">
+  <div class="content-modal panel bounceIn animated centrado">
+    <div class="close"><a href="pagar_tc_3.html"><i class="prisma cerrar"></i> </a></div>
+    <h5 class="titulo mg-b-30">Ingresá el importe   <span class="hide-on-help">que querés pagar</span></h5>
 
-<!-- Contenido de la página -->
-<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
-
-	<div class="centradovertical">
-		<div class="panel centrado">
-      <h5 class="titulo mg-b-5"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> Pagar resumen</h5>
-      <div class="clearfix">
-        <div class="left">
-          <p class="">Tarjeta a pagar:</p>
-          <div class="height-75 align-center">
-            <div class="justify-center align-center mg-r-50">
-              <p class="prisma rubros_tarjeta-credito font_400 mg-r-10"></p>
-              <div>
-                <p>Visa terminada en... 1654</p>
-                <p><b>Titular: Justiniano Lisandro Lewandwoski</b></p>
-              </div>
-            </div>
-          </div>
+    <div class="left width-420">
+      <div class="containerdeinput-conBorrar">
+        <div>
+          <input type="text" maxlength="22" class="mg-r-10 block left max-250" id="monto">
         </div>
-        <div class="left">
-          <p class="">Saldo:</p>
-          <div class="height-75">
-            <p class="width-full"><b>$ 2.450,65 </b></p>
-            <p class="width-full"><b>U$D 50,33</b></p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p class="mg-t-15 mg-b-15">¿Cómo querés pagar?</p>
-        <div class="btn-group btn-inputs">
-          <label class="btn azul mg-l-0">
-            <input type="radio" name="options" id="peso">Desde una cuenta
-          </label>
-          <label class="btn azul">
-            <input type="radio" name="options" id="dolar">En efectivo
-          </label>
-        </div>
-      </div>
-      <div class="deshabilitado">
-        <p class="mg-t-15">Importe</p>
-        <div class="containerdeinput boton" onclick="window.location.href = 'pagar_tc_5.html'">
-          <input type="text" size="16" placeholder="">
-          <span class="btn azul">Ingresar</span>
-        </div>
+        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
+          <i class="prisma borrar"></i>
+          <span>Borrar</span>
+          <div class="borrarTodo"></div>
+        </a>
       </div>
     </div>
-	</div>
 
-</div><!-- /Contenido de la página -->
+    <div class="left mg-l-30">
+      <a href="" class="btn fijo-70 azul ">1</a>
+      <a href="" class="btn fijo-70 azul ">2</a>
+      <a href="" class="btn fijo-70 azul ">3</a><br>
+      <a href="" class="btn fijo-70 azul ">4</a>
+      <a href="" class="btn fijo-70 azul ">5</a>
+      <a href="" class="btn fijo-70 azul ">6</a><br>
+      <a href="" class="btn fijo-70 azul ">7</a>
+      <a href="" class="btn fijo-70 azul ">8</a>
+      <a href="" class="btn fijo-70 azul ">9</a><br>
+      <a href="" class="btn azul block">0</a>
+    </div>
 
-<!-- Footer -->
-<div class="footer">
-	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
-	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-  <a href="pagar_tc_6.html" class="btn azul right">Siguiente <i class="prisma derecha"></i></a>
+    <hr class="piemodal">
+    <a href="pagar_tc_3.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
+    <a  href="pagar_tc_5.html" class="btn azul confirmar right">Siguiente <i class="prisma derecha"></i></a>
+  </div>
 </div>
 
-<style type="text/css">
-
-</style>
-<!-- Javascript -->
-  @@include('_partials/scripts.html')
-<script src="js/component/inputListenerBotones.js"></script>
 <script type="text/javascript">
-	$(".btn-group label").click(function(){
-    $("div.deshabilitado").removeClass("deshabilitado");
-  });
-
-  $(document).ready(function(){
-
-    var card = new Card({
-        form: 'form',
-        container: '.card-wrapper',
-        width: 200,
-
-        placeholders: {
-            number: '5443 2342 2341 9843',
-            name: 'Pato Graglia',
-            expiry: '10/22',
-            cvc: '234'
-        },
-    });
-
-  });
+  alescribir("monto","borrar");
+  scaleBorrar("monto", "borrar");
+  deleteValue("#monto","#borrar");
+  borrarTodo("#monto");
 </script>
-</body>
-</html>

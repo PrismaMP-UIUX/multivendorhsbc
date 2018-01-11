@@ -1,51 +1,76 @@
-@@include('pagar_tc_4.html')
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
 
+<div class="draw">
 
-<div class="fondomodal"></div>
-<div class="centradovertical">
-  <div class="content-modal panel bounceIn animated centrado">
-    <div class="close"><a href="pagar_tc_4.html"><i class="prisma cerrar"></i> </a></div>
-    <h5 class="titulo mg-b-20">Ingresá el importe con centavos</h5>
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
 
-    <div class="left width-450 mg-r-10">
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma consultas"></i></div>
+  <div class="centradovertical">
+    <div class="panel centrado width-full">
+      <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma cpp2"></i> |</span> American Express</h5>
 
-      <div class="containerdeinput-conBorrar">
-        <div>
-          <p class="mg-r-10 block moneda signopesos block prefijo left max-45"></p>
-          <input type="text" maxlength="22" class="mg-r-10 block left max-200" id="importe">
+      <div class="mg-b-10">
+        <p>Destinatario:</p>
+        <a href="pagar_tc_2.html" class="containerdeinput boton">
+          <input type="text" size="16" class="width-405" placeholder="4540 4504 04504 04504">
+          <span class="btn naranja"><i class="prisma editar"></i> Modificar</span>
+        </a>
+      </div>
+
+      <div class="mg-b-50">
+        <label class="check font_55 align-center">
+          <input id="terminos" type="checkbox" style="top:0;">
+          <p class="mg-b-0 mg-l-5">Antes de pagar quiero confirmar quien es el titular de esta tarjeta</p>
+        </label>
+      </div>
+
+      <div>
+        <p>Forma de pago:</p>
+        <div class="btn-group btn-inputs">
+          <label class="btn azul mg-l-0 active">
+            <input type="radio" name="options" id="cuenta" value="cuenta">Debitar de mi cuenta
+          </label>
+          <label class="btn azul">
+            <input type="radio" name="options" id="efectivo">Pagar en efectivo
+          </label>
         </div>
-        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
-          <i class="prisma borrar"></i>
-          <span>Borrar</span>
-          <div class="borrarTodo"></div>
+      </div>
+      <div id="importe">
+        <a href="pagar_tc_4.html" class="containerdeinput boton">
+          <input type="text" size="16" class="width-405" placeholder="$5400">
+          <span class="btn naranja"><i class="prisma editar"></i> Modificar</span>
         </a>
       </div>
     </div>
-
-    <div class="left">
-      <a href="" class="btn fijo-70 azul ">1</a>
-      <a href="" class="btn fijo-70 azul ">2</a>
-      <a href="" class="btn fijo-70 azul ">3</a><br>
-      <a href="" class="btn fijo-70 azul ">4</a>
-      <a href="" class="btn fijo-70 azul ">5</a>
-      <a href="" class="btn fijo-70 azul ">6</a><br>
-      <a href="" class="btn fijo-70 azul ">7</a>
-      <a href="" class="btn fijo-70 azul ">8</a>
-      <a href="" class="btn fijo-70 azul ">9</a><br>
-      <a href="" class="btn fijo-70 azul ">,</a>
-      <a href="" class="btn fijo-70 azul ">0</a>
-      <a href="" class="btn fijo-70 azul ">000</a>
-    </div>
-
-    <hr class="piemodal">
-    <a href="pagar_tc_4.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
-    <a href="pagar_tc_6.html" class="btn azul confirmar right"><i class="prisma confirmar"></i> Listo</a>
   </div>
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+  <a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+  <a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+  <a href="pagar_tc_confirmar.html" class="btn azul right" id="siguiente">Siguiente <i class="prisma derecha"></i></a>
+  <a href="tc_pagar_reconocimiento_efectivo.html" class="right width-200">% Si es efectivo el botón "siguiente" lleva al flujo de reconocimiento.</a>
+
 </div>
 
+<!-- Javascript -->
+@@include('_partials/scripts.html')
+
 <script type="text/javascript">
-  alescribir("importe","borrar");
-  scaleBorrar("importe", "borrar");
-  deleteValue("#importe","#borrar");
-  borrarTodo("#importe");
+  $('input[type=radio]').change(function() {
+    if (this.value == 'cuenta') {
+      $("#importe").removeClass("deshabilitado");
+    }
+    else {
+      $("#importe").addClass("deshabilitado");
+      $("#siguiente").removeClass("deshabilitado");
+    }
+  });
 </script>
+</body>
+</html>
