@@ -10,9 +10,12 @@
 				<div class="mg-b-25">
 					<div class="flex align-center height-65">
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p>
-						<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
-						<p class="font_69 left disponibles">($ 999999999 disponibles para hoy)</p>
-						<a href="espera.html" class="left btn btn-chico azul mg-l-10"><i class="prisma imprimir mg-0"></i></a>
+						<a href="#" id="bt_limsaldo" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
+						<div id="limpagos" class="flex align-center" style="display: none !important">
+							<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
+							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
+							<a href="espera.html" class="left btn btn-chico azul mg-l-10"><i class="prisma imprimir mg-0"></i></a>
+						</div>
 					</div>
 					<div class="flex align-center height-65">
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma limite-pagos"></i></span> Límite de pagos:</p>
@@ -45,11 +48,15 @@
 @@include('_partials/int_consulta_abajo.html')
 
 <script>
+	hideandshow("#bt_limsaldo", "#bt_limsaldo", "#limsaldo");
 	hideandshow("#bt_limpagos", "#bt_limpagos", "#limpagos");
 	hideandshow("#bt_limcompras", "#bt_limcompras", "#limcompras");
 	hideandshow("#bt_ayuda", ".notita", "#ayuda");
 
 	// Consulta
+	$("#bt_limsaldo").click(function(){
+	  $(this).next().delay(800).fadeIn();
+	});
 	$("#bt_limpagos").click(function(){
 	  $(this).next().delay(800).fadeIn();
 	});

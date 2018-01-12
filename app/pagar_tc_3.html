@@ -24,7 +24,7 @@
       <div class="mg-b-50">
         <label class="check font_55 align-center">
           <input id="terminos" type="checkbox" style="top:0;">
-          <p class="mg-b-0 mg-l-5">Antes de pagar quiero confirmar quien es el titular de esta tarjeta</p>
+          <p class="mg-b-0 mg-l-5">Antes de pagar quiero confirmar quién es el titular de esta tarjeta</p>
         </label>
       </div>
 
@@ -39,7 +39,7 @@
           </label>
         </div>
       </div>
-      <div class="deshabilitado" id="importe">
+      <div class="oculto" id="importe">
         <a href="pagar_tc_4.html" class="containerdeinput boton">
           <input type="text" size="16" class="width-405" placeholder="Importe en efectivo">
           <span class="btn azul">Ingresar importe</span>
@@ -54,7 +54,7 @@
   <a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
   <a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
   <a href="pagar_tc_confirmar.html" class="btn azul right deshabilitado" id="siguiente">Siguiente <i class="prisma derecha"></i></a>
-  <p class="right">Si es efectivo el boton "siguiente" lleva al flujo de reconocimiento.</p>
+  <p class="right width-350 font_80">Si es efectivo el boton "siguiente" lleva al flujo de reconocimiento.</p>
 
 </div>
 
@@ -65,10 +65,10 @@
   $('input[type=radio]').change(function() {
     if (this.value == 'cuenta') {
       $("#siguiente").addClass("deshabilitado");
-      $("#importe").removeClass("deshabilitado");
+      $("#importe").removeClass("oculto");
     }
     else {
-      $("#importe").addClass("deshabilitado");
+      $("#importe").addClass("oculto");
       $("#siguiente").removeClass("deshabilitado");
     }
   });
