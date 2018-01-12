@@ -18,5 +18,13 @@
 <!-- Javascript -->
 @@include('scripts.html')
 
+<script type="text/javascript">
+  $('input[type=checkbox]').change(function() {
+    var este = $(this);
+    $("#mesanterior").toggleClass("oculto");
+    $("tr:not(.solocompras)").toggleClass("oculto");
+  });
+</script>
+
 </body>
 </html>

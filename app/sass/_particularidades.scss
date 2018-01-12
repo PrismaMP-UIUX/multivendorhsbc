@@ -198,6 +198,12 @@
 		float: left;
 	}
 
+// Panel consultas
+.consultas-panel {
+	position: relative;
+  width: calc(100% - 54px);
+}
+
 // cuentas: depositos
 #cuentas {
 	tr {

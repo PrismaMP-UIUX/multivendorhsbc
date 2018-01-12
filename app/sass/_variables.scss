@@ -100,6 +100,9 @@ $tabla_de_colores:(
 			transition: all .03s linear;
 			height: 30px;
 			color: white;
+      &.oculto {
+        display: none !important;
+      }
 			&:active {
 				box-shadow: 0 1px 0 nth($color,3);
 				transform: translateY(3px);
@@ -603,6 +606,7 @@ $tabla_de_imagenes:(
 	error_en_pin,
 	error_tiempo,
 	error_prestamo_no_habilitado,
+  error_prestamo_ya_solicitado,
 	tarjeta,
 	cancelar_operación_sin_tarjeta,
   sobre_cheque,

@@ -546,6 +546,10 @@ $color-ticket-ayuda: invert($color-ticket);
 					height: 60px;
 					display: flex;
 
+					&.oculto {
+						display: none !important;
+					}
+
 					.ayuda &.active {
 						& > td {
 							color: #6aa5d9;

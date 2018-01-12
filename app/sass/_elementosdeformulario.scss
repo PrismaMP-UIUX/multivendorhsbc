@@ -35,6 +35,7 @@ input {
 
 	& > div {
     width: calc(100% - 125px);
+    display: flex;
 
 		& > .prefijo {
 			font-family: "BanelcoBold", Arial, Helvetica, sans-serif;
