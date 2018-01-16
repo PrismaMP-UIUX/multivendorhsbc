@@ -487,6 +487,9 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
       height: calc(100% - 44px) !important;
     }
   }
+  .height-auto {
+    height: auto !important;
+  }
 
 // Center block
   .center-block {

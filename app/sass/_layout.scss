@@ -7,6 +7,7 @@ body { margin: 0px; overflow: hidden; }
 	@extend .btn;
 	@extend .btn-border;
 
+	background: rgba(119, 119, 119, 0.1);
 	border: 4px #aaa solid !important;
 	box-shadow: 0 4px 0 #888;
 	padding: 14px 20px !important;
