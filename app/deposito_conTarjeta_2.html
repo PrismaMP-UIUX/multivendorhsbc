@@ -13,7 +13,7 @@
 	<div class="centradovertical">
 		<div class="panel centrado">
 			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
-			<p class="mg-b-20">Seleccioná tu cuenta a la cual vas a depositar.</p>
+			<p class="mg-b-20">Seleccioná tu cuenta en la cual vas a depositar.</p>
 
 			<div class="tabla_select tabla_select max-850">
 				<div id="cuentas" class="tabla">
@@ -83,8 +83,7 @@
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="deposito_conTarjeta_3.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
-	<a href="deposito_conTarjeta_3_reconocimiento_cheque.html" class="right">% Reconocimiento cheque</a>
+	<a href="deposito_conTarjeta_3.html" class="btn azul right deshabilitado" id="sig">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
 <style type="text/css">
@@ -99,8 +98,18 @@
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
 		$(this).find('td input[type=radio]').prop( "checked", true );
-		$('#continuar').show();
+		$('#sig').removeClass("deshabilitado");
 	})
+
+	// Query navegation
+	var queries = {};
+	$.each(window.location.search.substr(1).split('&'),function(c,q){
+		var i = q.split('=');
+		queries[i[0].toString()] = i[1].toString();
+	});
+	if (queries.flujo == "cheque"){
+	   $('#sig').attr("href", "deposito_conTarjeta_3_reconocimiento_cheque.html");
+	}
 </script>
 </body>
 </html>

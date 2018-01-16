@@ -19,6 +19,7 @@
 			<div class="width-420 left">
 				<div class="containerdeinput-conBorrar">
 					<div>
+						<p class="mg-r-10 block moneda signopesos block prefijo left"></p>
 						<input type="text" maxlength="22" class="mg-r-10 block" id="montoprestamo">
 					</div>
 					<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('doc')"><i class="prisma borrar"></i> Borrar</a>
@@ -56,6 +57,11 @@
   @@include('_partials/scripts.html')
 <script>
 	alescribir("montoprestamo","borrar");
+	alescribir("montoprestamo","continuar");
+	scaleBorrar("montoprestamo", "borrar");
+	deleteValue("#montoprestamo","#borrar");
+	borrarTodo("#montoprestamo");
+
 </script>
 </body>
 </html>

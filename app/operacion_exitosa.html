@@ -1,50 +1,66 @@
 <!-- Header -->
 @@include('_partials/head.html')
-<!-- <meta http-equiv="refresh" content="10; URL='inicio.html'" /> -->
-
 <body class="bnlc"><!-- ayuda / bnlc -->
 
-	<div class="draw">
+<div class="draw">
 
-		<!-- Brandbar -->
-		@@include('_partials/brandbar.html')
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
 
-		<div class="fondomodal"></div>
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
 
-		<!-- Contenido de la página -->
-		<div class="content"><div class="iconback"><i class="prisma confirmar"></i></div>
-
-			<div class="centradovertical">
-				<div class="content-modal panel centrado">
+	<div class="centradovertical">
+		<div class="panel centrado">
 					<h5 class="titulo"><span class="azul"><i class="prisma comprobante"></i> |</span> Operación exitosa</h5>
-					<div class="col_left">
-						<div class="imagen operacion_exitosa" onclick="window.location.href='ticket.html'"></div>
+			 <div class="clearfix">
+				<div class="imagen col_left">
+					<div class="imagen operacion_exitosa"></div>
+				</div>
+				<div class="col_right width-400 mg-r-20">
+					<div class="clearfix">
+						<p class="light left mg-r-10"><i class="prisma mg-r-5 cajero-notouch"></i>Cajero:</p>
+						<p class="azul left"><b>Virrey Del Pino 2522</b><br><span class="font_50">S1ARB014</span></p>
 					</div>
-					<div class="col_right">
-						<div class="width-full clearfix">
-							<p class="light left mg-r-10 font_80"><i class="prisma mg-r-5 cajero-notouch"></i>Cajero:</p>
-							<p class="azul left font_80 max-210"><b>Virrey Del Pino 2522</b><br><span class="font_50">S1ARB014</span></p>
-						</div>
-						<div class="width-full clearfix">
-							<p class="light left mg-r-10 font_80"><i class="prisma mg-r-5 fecha"></i>Fecha:</p>
-							<p class="azul left font_80 max-210"><b>29/09/2016</b></p>
-						</div>
-						<div class="width-full clearfix">
-							<p class="light left mg-r-10 font_80"><i class="prisma mg-r-5 tiempo"></i>Hora:</p>
-							<p class="azul left font_80 max-210"><b>11:26</b></p>
-						</div>
-						<div class="width-full clearfix">
-							<p class="light left mg-r-10 font_80"><i class="prisma mg-r-5 transaccion"></i>Transacción:</p>
-							<p class="azul left font_80 max-160"><b>9810</b></p>
-						</div>
+					<div class="clearfix">
+						<p class="light left mg-r-10"><i class="prisma mg-r-5 fecha"></i>Fecha:</p>
+						<p class="azul left"><b>29/09/2016</b></p>
+					</div>
+					<div class="clearfix">
+						<p class="light left mg-r-10"><i class="prisma mg-r-5 tiempo"></i>Hora:</p>
+						<p class="azul left"><b>11:26</b></p>
+					</div>
+					<div class="clearfix">
+						<p class="light left mg-r-10"><i class="prisma mg-r-5 transaccion"></i>Transacción:</p>
+						<p class="azul left"><b>9810</b></p>
 					</div>
 				</div>
-			</div>
+			 </div>
+		</div>
+	</div>
 
-		</div><!-- /Contenido de la página -->
+</div><!-- /Contenido de la página -->
 
-		<!-- Javascript -->
-		  @@include('_partials/scripts.html')
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+</div>
 
-	</body>
-	</html>
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+<!-- <script src="js/component/inputListenerBotones.js"></script> -->
+<script type="text/javascript">
+	alescribir("extraccion","borrar");
+	alescribir("extraccion","continuar");
+	scaleBorrar("extraccion", "borrar");
+	deleteValue("#extraccion","#borrar");
+	borrarTodo("#extraccion");
+
+</script>
+</body>
+</html>

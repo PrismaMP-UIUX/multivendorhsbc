@@ -29,11 +29,9 @@
  	 					</div>
  	 				</p>
  	 			</div>
-				<div class="deshabilitado" id="instrucciones">
-					<p class="mg-b-15">1. Retirá un sobre</p>
-					<p class="mg-b-15">2. Introducí los documentos que desees enviar al banco<br> <span class="font_50 naranja italic"><i class="prisma advertencia"></i> No introduzcas efectivo o cheques</span></p>
-					<p class="mg-b-15">3. Cerrá el sobre e introducilo en la ranura</p>
-				</div>
+				<p class="mg-b-15">1. Retirá un sobre</p>
+				<p class="mg-b-15">2. Introducí los documentos que desees enviar al banco<br> <span class="font_50 naranja italic"><i class="prisma advertencia"></i> No introduzcas efectivo o cheques</span></p>
+				<p class="mg-b-15">3. Cerrá el sobre e introducilo en la ranura</p>
 			 </div>
 			 <div class="imagen sobre_documentos col_right mg-0 width-350 height-320"></div>
 			</div>
@@ -46,17 +44,11 @@
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="ticket.html" class="right mg-r-10 oculto" id="tick">% Ticket</a>
+	<a href="ticket.html" class="right mg-r-10">% Ticket</a>
 </div>
 
 <!-- Javascript -->
   @@include('_partials/scripts.html')
-  <script>
-  	function habilitar() {
-  		$("#instrucciones").removeClass("deshabilitado");
-  		$("#tick").removeClass("oculto");
-  	}
-  </script>
 
 </body>
 </html>

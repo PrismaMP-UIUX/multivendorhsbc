@@ -237,10 +237,16 @@ $tabla_de_fuentes:(
 	h1	3	0.22	15	$font-light
 	);
 
+// Tamaños de fuentes
 @for $tam from 1 through 1000 {
 	.font_#{$tam}, .font_#{$tam} {
 	    font-size: ($tam * $font-size-base) * 0.01 !important;
 	};
+}
+@for $fontsize from 10 through 52 {
+    @if $fontsize % 2 == 0 {
+        .font-#{$fontsize} {font-size: #{$fontsize}px !important;}
+    }
 }
 
 %todos {
