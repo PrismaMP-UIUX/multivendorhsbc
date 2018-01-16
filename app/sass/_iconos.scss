@@ -47,6 +47,9 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   position: relative;
   top: 2px;
 
+  &.rubros_generico:before {
+    content: "\e998";
+  }
   &.jubilados:before {
     content: "\e989";
   }
