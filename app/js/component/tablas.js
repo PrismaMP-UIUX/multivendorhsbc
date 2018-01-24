@@ -3,20 +3,33 @@ $(document).ready(function(){
 	var tableH = $('.tabla').height(),
 		tableW = $('.tabla').width(),
 		trH = $('.tabla tr').height(),
-		trL = $('.tabla tr').length,
-		numOfTrVisible = tableH / trH;
+		numOfTrVisible = tableH / trH,
+		trL = $('.tabla tr').length;
+	var datalenght;
+	datavalue();
+
+	function datavalue() {
+		var esteData = $(".tabla_select").data("tabla-scroll");
+		if (esteData == undefined) {
+			datalenght = 4;
+		} else {
+			datalenght = esteData;
+		}
+	};
+	console.log(datalenght);
+
 
 	// scroll con botones
-	$('a.abajo').click( function() {
+	$('a.abajo').click( function(filas) {
 		var scrollPosition = $('.tabla').scrollTop();
 		if ($('.tabla').scrollTop() + $('.tabla').innerHeight() < $('.tabla')[0].scrollHeight) {
-			$('.tabla').animate({scrollTop: scrollPosition + (trH) }, 50, 'linear');
+			$('.tabla').animate({scrollTop: scrollPosition + (trH * datalenght) }, 50, 'linear');
 		}
 	});
-	$('a.arriba').click( function() {
+	$('a.arriba').click( function(filas) {
 		var scrollPosition = $('.tabla').scrollTop();
 		if (scrollPosition != 0) {
-			$('.tabla').animate({scrollTop: scrollPosition - (trH) }, 50, 'linear');
+			$('.tabla').animate({scrollTop: scrollPosition - (trH * datalenght) }, 50, 'linear');
 		}
 	});
 
