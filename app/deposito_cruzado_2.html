@@ -66,9 +66,8 @@
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="seguros_confirmar.html" class="btn azul right" id="continuar">Siguiente <i class="prisma derecha"></i></a>
-
-	<a href="seguros_alta_selecciondecuenta_untipo.html" class="right">% Un tipo  de cuenta</a>
+	<a href="deposito_cruzado_3_admin_atm.html" class="btn azul deshabilitado right" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+	<a href="deposito_cruzado_3_otro_banco.html" class="right">% A otro banco</a>
 </div>
 
 <!-- Javascript -->
@@ -80,7 +79,7 @@
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
 		$(this).find('td input[type=radio]').prop( "checked", true );
-		$('#continuar').show();
+		$('.deshabilitado').removeClass("deshabilitado");
 	})
 </script>
 
