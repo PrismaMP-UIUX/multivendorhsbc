@@ -30,7 +30,7 @@
 				<p><strong class="font_73">Cuenta corriente</strong></p>
 			</div>
 
-			<div class="tabla_select right mg-t-30" style="width: 70%;">
+			<div class="tabla_select right mg-t-30" style="width: 70%;" data-tabla-scroll="4">
 				<div id="cuentas" class="tabla">
 					<table>
 						<tr class="waves-effect">
@@ -81,7 +81,7 @@
 								<span>CA us$ 12346789090</span>
 							</td>
 						</tr>
-					</table> 
+					</table>
 					<div class="tableScrollBlocker"></div>
 					<div class="right">
 						<a href="#" class="btn-chico azul arriba">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
@@ -91,14 +91,14 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 </div><!-- /Contenido de la página -->
 
 <!-- Footer -->
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
-	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a> 
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
 	<a href="transferencias_destino.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
@@ -106,14 +106,14 @@
 <!-- Javascript -->
   @@include('_partials/scripts.html')
 
-<script type="text/javascript"> 
+<script type="text/javascript">
 	// seleccionar fila
 	$('tr').click( function(){
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
 		$(this).find('td input[type=radio]').prop( "checked", true );
 		$('#continuar').show();
-	}) 
+	})
 </script>
 </body>
 </html>

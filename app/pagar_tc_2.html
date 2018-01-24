@@ -44,4 +44,14 @@
   scaleBorrar("monto", "borrar");
   deleteValue("#monto","#borrar");
   borrarTodo("#monto");
+
+  var queries = {};
+  $.each(window.location.search.substr(1).split('&'),function(c,q){
+    var i = q.split('=');
+    queries[i[0].toString()] = i[1].toString();
+  });
+  if (queries.flujo == "sintarjeta"){
+     $('#formadepago').remove();
+     $('.confirmar').attr("href", "pagar_tc_3.html?flujo=sintarjeta");
+  }
 </script>

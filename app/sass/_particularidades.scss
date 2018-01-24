@@ -459,7 +459,7 @@
 	     background: linear-gradient(to right, transparent , #fff);
 	     right: 0;
 	     &.disabled {
-	     	 @extend .oculto;
+	     	 @extend .deshabilitado;
 	     }
 	     .ayuda & {
 					background: transparent;

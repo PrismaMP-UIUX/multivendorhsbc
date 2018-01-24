@@ -537,12 +537,19 @@ $color-ticket-ayuda: invert($color-ticket);
 
 .tabla_select {
 	position: relative;
-    width: 100%;
+   width: 100%;
+
 	.tabla {
 		width: calc(100% - 100px);
 		height: 240px;
 		overflow-y: auto;
 		overflow-x: hidden;
+
+		&.tresfilas {
+			height: 180px;
+		overflow-y: hidden;
+		}
+
 		table {
 			width: 100%;
 			display: block;
@@ -679,6 +686,11 @@ $color-ticket-ayuda: invert($color-ticket);
 	&.tabla-2 {
 		.tabla {
 			height: 270px;
+		}
+		.tabla table tbody tr td > * {
+			.ayuda & {
+				overflow: visible;
+			}
 		}
 	}
 }
