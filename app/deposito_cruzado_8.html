@@ -1,0 +1,75 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<!-- si es flujo efectivo -->
+	<div class="centradovertical" id="efectivo">
+		<div class="panel centrado">
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
+			 <div>
+				<div class="col_left max-400 mg-0">
+					<p class="mg-b-15">1. Retirá un sobre</p>
+					<p class="mg-b-15">2. Introducí el ticket que emite el cajero junto con los cheques a depositar</p>
+					<p class="mg-b-15">3. Cerrá el sobre y depositalo</p>
+				</div>
+				<div class="imagen sobre_cheque_ticket col_right mg-0"></div>
+			 </div>
+		</div>
+	</div>
+
+	<!-- si es flujo cheque -->
+	<div class="centradovertical" id="cheque">
+		<div class="panel centrado">
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
+			 <div>
+				<div class="col_left max-400 mg-0">
+					<p class="mg-b-15">1. Retirá un sobre</p>
+					<p class="mg-b-15">2. Introducí el ticket que emite el cajero junto con los cheques a depositar</p>
+					<p class="mg-b-15">3. Cerrá el sobre y depositalo</p>
+				</div>
+				<div class="imagen sobre_cheque_ticket col_right mg-0"></div>
+			 </div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="deposito_cruzado_ticket.html" class="right mg-r-10">% Ticket</a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+<!-- <script src="js/component/inputListenerBotones.js"></script> -->
+<script type="text/javascript">
+	// Query navegation
+	var queries = {};
+  $.each(window.location.search.substr(1).split('&'),function(c,q){
+      var i = q.split('=');
+      queries[i[0].toString()] = i[1].toString();
+  });
+  if (queries.flujo == "efectivo"){
+     $('#continuar').attr("href", "deposito_cruzado_7.html?fujo=efectivo");
+		 $('#cheque').remove();
+  } else {
+		$('#continuar').attr("href", "deposito_cruzado_7.html?fujo=cheque");
+		$('#efectivo').remove();
+	}
+</script>
+</body>
+</html>

@@ -1,48 +1,45 @@
-@@include('deposito_cruzado_4.html')
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
 
+<div class="draw">
 
-<div class="fondomodal"></div>
-<div class="centradovertical">
-  <div class="content-modal panel bounceIn animated centrado">
-    <div class="close"><a href="deposito_cruzado_4.html"><i class="prisma cerrar"></i> </a></div>
-    <h5 class="titulo mg-b-20">Ingresá el importe con centavos</h5>
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
 
-    <div class="left width-450 mg-r-10">
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
 
-      <div class="containerdeinput-conBorrar">
-        <div>
-          <input type="text" maxlength="22" class="mg-r-10 block left max-200" id="importe">
-        </div>
-        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
-          <i class="prisma borrar"></i>
-          <span>Borrar</span>
-          <div class="borrarTodo"></div>
-        </a>
-      </div>
-    </div>
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
+			<p class="mg-b-20">¿Qué vas a depositar?</p>
+			<a href="deposito_cruzado_6.html?flujo=efectivo" class="btn azul block"><i class="prisma deposito-efectivo"></i> Efectivo</a>
+			<a href="deposito_cruzado_6.html?flujo=cheque" class="btn azul block"><i class="prisma cheques"></i> Cheques</a>
+		</div>
+	</div>
 
-    <div class="left">
-      <a href="" class="btn fijo-70 azul ">1</a>
-      <a href="" class="btn fijo-70 azul ">2</a>
-      <a href="" class="btn fijo-70 azul ">3</a><br>
-      <a href="" class="btn fijo-70 azul ">4</a>
-      <a href="" class="btn fijo-70 azul ">5</a>
-      <a href="" class="btn fijo-70 azul ">6</a><br>
-      <a href="" class="btn fijo-70 azul ">7</a>
-      <a href="" class="btn fijo-70 azul ">8</a>
-      <a href="" class="btn fijo-70 azul ">9</a><br>
-      <a href="" class="btn azul block">0</a>
-    </div>
+</div><!-- /Contenido de la página -->
 
-    <hr class="piemodal">
-    <a href="deposito_cruzado_4.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
-    <a href="deposito_cruzado_6.html" class="btn azul confirmar right"><i class="prisma confirmar"></i> Listo</a>
-  </div>
+<!-- Footer -->
+<div class="footer">
+	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<div class="right">
+		<a href="deposito_cruzado_6_reconocimiento_efectivo.html">% Efectivo con reconocimiento</a><br>
+		<a href="deposito_cruzado_6_reconocimiento_cheque.html">% Cheque con reconocimiento</a><br>
+	</div>
 </div>
 
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
 <script type="text/javascript">
-  alescribir("importe","borrar");
-  scaleBorrar("importe", "borrar");
-  deleteValue("#importe","#borrar");
-  borrarTodo("#importe");
+	alescribir("extraccion","borrar");
+	alescribir("extraccion","continuar");
 </script>
+</body>
+</html>

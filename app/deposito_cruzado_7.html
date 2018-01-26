@@ -8,14 +8,17 @@
 @@include('_partials/brandbar.html')
 
 <!-- Contenido de la página -->
-<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+<div class="content"><div class="iconback"><i class="prisma deposito"></i></div>
 
 	<div class="centradovertical">
 		<div class="panel centrado">
-			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
-			<p class="mg-b-20">¿Qué vas a depositar?</p>
-			<a href="deposito_sinTarjeta_5_reconocimiento_efectivo.html" class="btn azul block"><i class="prisma deposito-efectivo"></i> Efectivo</a>
-			<a href="deposito_sinTarjeta_7.html?flujo=cheque" class="btn azul block"><i class="prisma cheques"></i> Cheques</a>
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
+
+			 <p class="mg-t-20">Importe a depositar:</p>
+			 <div class="align-center">
+					<p class="font_150 mg-r-15"><b>$ 4.000</b></p>
+					<a class="btn-chico naranja waves-effect mg-0" id="modificar"><i class="prisma editar"></i> Modificar</a>
+			 </div>
 		</div>
 	</div>
 
@@ -25,17 +28,25 @@
 <div class="footer">
 	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a class="btn azul right" id="continuar">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
-<style type="text/css">
-
-</style>
 <!-- Javascript -->
   @@include('_partials/scripts.html')
-<script src="js/component/inputListenerBotones.js"></script>
 <script type="text/javascript">
-	alescribir("extraccion","borrar");
-	alescribir("extraccion","continuar");
+	// Query navegation
+	var queries = {};
+	$.each(window.location.search.substr(1).split('&'),function(c,q){
+			var i = q.split('=');
+			queries[i[0].toString()] = i[1].toString();
+	});
+	if (queries.flujo == "efectivo"){
+		$('#modificar').attr("href", "deposito_cruzado_6.html?fujo=efectivo");
+		$('#continuar').attr("href", "deposito_cruzado_8.html?fujo=efectivo");
+	} else {
+		$('#modificar').attr("href", "deposito_cruzado_6.html?fujo=cheque");
+		$('#continuar').attr("href", "deposito_cruzado_8.html?fujo=cheque");
+	}
 </script>
 </body>
 </html>

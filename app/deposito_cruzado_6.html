@@ -8,29 +8,36 @@
 @@include('_partials/brandbar.html')
 
 <!-- Contenido de la página -->
-<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+<div class="content"><div class="iconback"><i class="prisma deposito"></i></div>
 
 	<div class="centradovertical">
 		<div class="panel centrado">
-			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
-
-			 <p class="mg-b-20">Cuenta a depositar:</p>
-			 <div class="flex dosCol">
-				 <div class="mg-r-50">
-					 <p class="font_138">María Inés Troncoso</p>
-					 <p>CA $ 12346789090</p>
-					 <p>Banco Nombre</p>
-					 <!-- Si no es un depósito a admin ATM va el CUIT/CUIL/CDI -->
-					 <p class="mg-t-20">CUIT/CUIL/CDI: 20304040901</p>
-				 </div>
-				 <a href="deposito_cruzado_3_otro_banco.html" class="btn-chico naranja"><i class="prisma editar"></i> Modificar</a>
-			 </div>
-
-			 <p class="mg-t-20">Importe:</p>
-			 <div class="align-center">
-	 			 <p class="font_150 mg-r-15"><b>$ 4.000</b></p>
-	 			 <a href="deposito_cruzado_5.html" class="btn-chico naranja waves-effect mg-0"><i class="prisma editar"></i> Modificar</a>
-	 		 </div>
+			<h5 class="titulo"><span class="azul"><i class="prisma deposito"></i> |</span> Depósitos</h5>
+			<div class="width-415 justify-center">
+				<div id="" class="containerdeinput-conBorrar" style="">
+					<div>
+				    <p id="icono-input" class="mg-r-10 block moneda block prefijo left max-45 signopesos"></p>
+						<input type="text" id="deposito" style="width: 203px;" size="" class="mg-r-10 block left max-200 component" maxlength="6" minlenght="1" placeholder="" value="">
+					</div>
+			    <a id="borrar" class="btn-chico naranja borrar mg-r-0 scale-transition scale-out">
+	          <span style="background-color: transparent;"><i class="prisma borrar"></i></span>
+		        <span class="" style="background-color: transparent;" id="borrar-txt">Borrar</span>
+		        <div class="borrarTodo"></div>
+			    </a>
+				</div>
+			</div>
+			<a href="" class="btn fijo-70 azul ">1</a>
+			<a href="" class="btn fijo-70 azul ">2</a>
+			<a href="" class="btn fijo-70 azul ">3</a><br>
+			<a href="" class="btn fijo-70 azul ">4</a>
+			<a href="" class="btn fijo-70 azul ">5</a>
+			<a href="" class="btn fijo-70 azul ">6</a><br>
+			<a href="" class="btn fijo-70 azul ">7</a>
+			<a href="" class="btn fijo-70 azul ">8</a>
+			<a href="" class="btn fijo-70 azul ">9</a><br>
+			<a href="" class="btn fijo-70 azul ">00</a>
+			<a href="" class="btn fijo-70 azul ">0</a>
+			<a href="" class="btn fijo-70 azul ">000</a>
 		</div>
 	</div>
 
@@ -40,10 +47,33 @@
 <div class="footer">
 	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="deposito_cruzado_7.html" class="btn azul right">Siguiente <i class="prisma derecha"></i></a>
+	<a href="deposito_cruzado_7.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
+<style type="text/css">
+
+</style>
 <!-- Javascript -->
   @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("deposito","continuar");
+	alescribir("deposito","borrar");
+	scaleBorrar("deposito", "borrar");
+	deleteValue("#deposito","#borrar");
+	borrarTodo("#deposito");
+
+	// Query navegation
+	var queries = {};
+  $.each(window.location.search.substr(1).split('&'),function(c,q){
+      var i = q.split('=');
+      queries[i[0].toString()] = i[1].toString();
+  });
+  if (queries.flujo == "efectivo"){
+     $('#continuar').attr("href", "deposito_cruzado_7.html?fujo=efectivo");
+  } else {
+		$('#continuar').attr("href", "deposito_cruzado_7.html?fujo=cheque");
+	}
+</script>
 </body>
 </html>
