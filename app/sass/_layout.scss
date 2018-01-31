@@ -261,6 +261,9 @@ $grid-spacing:3%;
 .text-align-left {
 	text-align: left !important;
 }
+.text-align-right {
+	text-align: right !important;
+}
 
 // Fondos
 .brandbar, .footer, .panel {
@@ -734,6 +737,10 @@ td {
 		}
 	}
 }
+.tabla_mas {
+	width: calc(100% - 100px);
+}
+
 .marcador {
 	width: 5px;
 	height: 230px;

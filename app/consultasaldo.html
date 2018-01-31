@@ -7,7 +7,7 @@
 				<a href="consultacbu.html" class="waves-effect"><i class="prisma consulta-cbu"></i> CBU</a>
 			</div>
 			<div class="panel inline saldosDisponibles consultas-panel">
-				<div class="mg-b-25">
+				<div>
 					<div class="flex align-center height-65">
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p>
 						<a href="#" id="bt_limsaldo" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
@@ -39,6 +39,16 @@
 				<div class="clearfix">
 					<!-- <a href="espera.html" class="left btn btn-chico azul mg-l-0"><i class="prisma imprimir"></i> Imprimir todo</a> -->
 					<a class="btn-chico waves-effect right" id="bt_ayuda"><i class="prisma informacion"></i> Ayuda</a>
+				</div>
+				<div id="servicioPagar" class="clearfix pd-15 fondo_amarillo_claro radius">
+					<p class="font_90 left mg-b-0">
+						<strong>Tu factura EDESUR por $2.450,65 está por vencer en 2 días.</strong><br>
+						¿Querés pagarla?
+					</p>
+					<div class="right">
+						<a id="noPagar" class="btn btn-chico mg-b-0"><i class="prisma cancelar"></i> No</a>
+						<a href="pagar_servicio_2.html" class="btn verde btn-chico mg-b-0"><i class="prisma confirmar"></i> Si</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -79,6 +89,10 @@
 			}
 		});
 	});
+
+	$("#noPagar").click(function(){
+		$("#servicioPagar").hide();
+	})
 </script>
 
 <!-- modal ayuda -->

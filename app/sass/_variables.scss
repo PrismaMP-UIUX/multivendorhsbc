@@ -29,7 +29,7 @@ $naranja_ayuda:				#e49541;
 
 $amarillo:					#BFB522;
 $amarillo_oscuro:			darken($amarillo, 15%);
-$amarillo_claro:			lighten($amarillo, 10%);
+$amarillo_claro:			#ffe768; //lighten($amarillo, 10%);
 $amarillo_ayuda:			#ffd23a;
 
 $ayuda:						#777;
@@ -418,6 +418,8 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
 	.mg-neg-t-#{$mg} {margin-top: -#{$mg}px !important;}
 	.mg-neg-b-#{$mg} {margin-bottom: -#{$mg}px !important;}
 }
+.mg-l-auto {margin-left: auto !important;}
+.mg-r-auto {margin-right: auto !important;}
 
 // Paddings
   // Del 1 al 9
@@ -582,6 +584,7 @@ $tabla_de_imagenes:(
 	aguarde,
 	clave_bloqueada,
   clave_alfa,
+	donacion,
 	ingrese_tarjeta,
 	login,
 	mas_tiempo,
@@ -598,6 +601,7 @@ $tabla_de_imagenes:(
 	error_generico,
 	error_cajero,
 	error_coordenadas,
+	error_seguros,
 	retire_tarjeta,
 	retire_dinero,
 	retire_ticket,
