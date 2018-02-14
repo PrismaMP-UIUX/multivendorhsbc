@@ -36,7 +36,7 @@
 
     <hr class="piemodal">
     <a href="deposito_sinTarjeta_4.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
-    <a href="deposito_sinTarjeta_6.html" class="btn azul confirmar right"><i class="prisma confirmar"></i> Listo</a>
+    <a href="deposito_sinTarjeta_6.html" class="btn azul confirmar right" id="listo"><i class="prisma confirmar"></i> Listo</a>
   </div>
 </div>
 
@@ -45,4 +45,14 @@
   scaleBorrar("importe", "borrar");
   deleteValue("#importe","#borrar");
   borrarTodo("#importe");
+
+  // Query navegation
+    var queries = {};
+    $.each(window.location.search.substr(1).split('&'),function(c,q){
+      var i = q.split('=');
+      queries[i[0].toString()] = i[1].toString();
+    });
+    if (queries.flujo == "cheque"){
+       $('#listo').attr("href", "deposito_sinTarjeta_6.html?flujo=cheque");
+    }
 </script>

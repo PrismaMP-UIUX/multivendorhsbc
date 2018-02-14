@@ -38,10 +38,22 @@
 <div class="footer">
 	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="deposito_sinTarjeta_7.html" class="btn azul right">Siguiente <i class="prisma derecha"></i></a>
+	<a href="deposito_sinTarjeta_7.html" class="btn azul right" id="siguiente">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
 <!-- Javascript -->
   @@include('_partials/scripts.html')
+
+  <script type="text/javascript">
+  // Query navegation
+    var queries = {};
+    $.each(window.location.search.substr(1).split('&'),function(c,q){
+      var i = q.split('=');
+      queries[i[0].toString()] = i[1].toString();
+    });
+    if (queries.flujo == "cheque"){
+       $('#siguiente').attr("href", "deposito_sinTarjeta_7.html?flujo=cheque");
+    }
+</script>
 </body>
 </html>

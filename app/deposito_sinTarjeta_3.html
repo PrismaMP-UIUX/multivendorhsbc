@@ -65,7 +65,7 @@
 	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
 	<a href="deposito_sinTarjeta_4.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
-	<a href="deposito_sinTarjeta_4_reconocimiento_efectivo.html" class="right mg-r-10">% Con Reconocimiento</a>
+	<a href="deposito_sinTarjeta_4_reconocimiento_efectivo.html" class="right mg-r-10" id="conreco">% Con Reconocimiento</a>
 </div>
 
 <style type="text/css">
@@ -93,6 +93,17 @@
 
   	}
   });
+
+	// Query navegation
+	var queries = {};
+	$.each(window.location.search.substr(1).split('&'),function(c,q){
+		var i = q.split('=');
+		queries[i[0].toString()] = i[1].toString();
+	});
+  if (queries.flujo == "cheque"){
+	   $('#conreco').attr("href", "deposito_conTarjeta_3_reconocimiento_cheque.html");
+	   $('#continuar').attr("href", "deposito_sinTarjeta_4.html?flujo=cheque");
+	}
 </script>
 </body>
 </html>

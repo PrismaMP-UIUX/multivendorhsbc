@@ -51,7 +51,7 @@
 <div class="footer">
 	<a href="operaciones_sintarjeta.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="deposito_sinTarjeta_3.html" class="btn azul right">Siguiente <i class="prisma derecha"></i></a>
+	<a href="deposito_sinTarjeta_3.html" class="btn azul right" id="sig">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
 <style type="text/css">
@@ -75,7 +75,7 @@
 		queries[i[0].toString()] = i[1].toString();
 	});
 	if (queries.flujo == "cheque"){
-	   $('#sig').attr("href", "deposito_conTarjeta_3_reconocimiento_cheque.html");
+	   $('#sig').attr("href", "deposito_sinTarjeta_3.html?flujo=cheque");
 	}
 
 </script>

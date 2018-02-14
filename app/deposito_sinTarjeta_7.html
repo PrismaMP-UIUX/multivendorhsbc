@@ -16,10 +16,10 @@
 			 <div>
 				<div class="col_left max-400 mg-0">
 					<p class="mg-b-15">1. Retirá un sobre</p>
-					<p class="mg-b-15">2. Introducí el ticket que emite el cajero junto con los cheques a depositar</p>
+					<p class="mg-b-15" id="texto">2. Introducí el ticket que emite el cajero junto con los <span>billetes</span> a depositar</p>
 					<p class="mg-b-15">3. Cerrá el sobre y depositalo</p>
 				</div>
-				<div class="imagen sobre_cheque_ticket col_right mg-0"></div>
+				<div class="imagen sobre_dinero_ticket col_right mg-0"></div>
 			 </div>
 		</div>
 	</div>
@@ -41,12 +41,16 @@
 
 <!-- <script src="js/component/inputListenerBotones.js"></script> -->
 <script type="text/javascript">
-	alescribir("extraccion","borrar");
-	alescribir("extraccion","continuar");
-	scaleBorrar("extraccion", "borrar");
-	deleteValue("#extraccion","#borrar");
-	borrarTodo("#extraccion");
-
+	// Query navegation
+	  var queries = {};
+	  $.each(window.location.search.substr(1).split('&'),function(c,q){
+	    var i = q.split('=');
+	    queries[i[0].toString()] = i[1].toString();
+	  });
+	  if (queries.flujo == "cheque"){
+	     $('#texto span').text("cheques");
+	     $(".sobre_dinero_ticket").removeClass("sobre_dinero_ticket").addClass("sobre_cheque_ticket")
+	  }
 </script>
 </body>
 </html>
