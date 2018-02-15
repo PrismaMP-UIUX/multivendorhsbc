@@ -36,6 +36,16 @@
 <script type="text/javascript">
 	alescribir("extraccion","borrar");
 	alescribir("extraccion","continuar");
+
+	// Query navegation
+	var queries = {};
+	$.each(window.location.search.substr(1).split('&'),function(c,q){
+		var i = q.split('=');
+		queries[i[0].toString()] = i[1].toString();
+	});
+	if (queries.flujo == "cheque"){
+	   $('#sig').attr("href", "deposito_conTarjeta_3_reconocimiento_cheque.html");
+	}
 </script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<!-- <meta http-equiv="refresh" content="10; URL='retire_todo.html'" /> -->
+
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+	<div class="draw">
+
+		<!-- Brandbar -->
+		@@include('_partials/brandbar.html')
+
+		<div class="fondomodal"></div>
+
+
+		<!-- Contenido de la página -->
+		<div class="content centradovertical" id="error_generico"><div class="iconback"><i class="prisma cancelar"></i></div>
+
+			<!-- <div class="iconback">%</div> -->
+
+			<div class="content-modal panel centrado">
+				<h5 class="titulo"><span class="azul"><i class="prisma cancelar"></i> |</span> Disculpá</h5>
+				<div class="col_left">
+					<div class="imagen error_cajero"></div>
+				</div>
+				<div class="col_right">
+					<p>Tu transacción no pudo ser completada o cualquier mensaje que venga.</p>
+					<p class="small_8 mg-t-10 mg-b-10">Por favor volvé a intentarlo.</p>
+				</div>
+			</div>
+
+		</div><!-- /Contenido de la página -->
+
+
+		<!-- Javascript -->
+		  @@include('_partials/scripts.html')
+
+	</body>
+	</html>
