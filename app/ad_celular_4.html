@@ -1,19 +1,20 @@
-@@include('pagar_ingresando_codigo.html')
+@@include('claves_movil_dni_generacion.html')
 
 
 <div class="fondomodal"></div>
 <div class="centradovertical">
-  <div class="content-modal panel bounceIn animated centrado">
-    <div class="close"><a href="pagar_ingresando_codigo.html"><i class="prisma cerrar"></i> </a></div>
-    <h5 class="titulo mg-b-20">Ingresá el número de pago electrónico</h5>
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="ad_celular_2.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Ingresá el número de celular</h5>
 
-    <div class="left width-450 mg-r-10">
+		<div class="left width-450 mg-r-10">
 
       <div class="containerdeinput-conBorrar">
         <div>
-          <input type="text" maxlength="22" class="mg-r-10 block left " id="importe">
+          <p class="mg-r-10 block moneda block prefijo left">011 15</p>
+          <input type="text" maxlength="22" class="mg-r-10 block left" id="importe">
         </div>
-        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
+        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar" style="display: none;">
           <i class="prisma borrar"></i>
           <span>Borrar</span>
           <div class="borrarTodo"></div>
@@ -36,10 +37,10 @@
       <a href="" class="btn fijo-70 azul ">000</a>
     </div>
 
-    <hr class="piemodal">
-    <a href="pagar_ingresando_codigo.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
-    <a href="pagar_ingresando_codigo_3.html" class="btn azul confirmar right" id="sig"><i class="prisma confirmar"></i> Listo</a>
-  </div>
+		<hr class="piemodal">
+		<a href="ad_celular_3.html" class="btn-flat gris mg-r-10"><i class="prisma izquierda"></i> Anterior</a>
+		<a href="ad_celular_5.html" class="btn azul confirmar right"><i class="prisma confirmar"></i> Listo</a>
+	</div>
 </div>
 
 <script type="text/javascript">
@@ -47,14 +48,4 @@
   scaleBorrar("importe", "borrar");
   deleteValue("#importe","#borrar");
   borrarTodo("#importe");
-
-  // Query navegation
-  var queries = {};
-  $.each(window.location.search.substr(1).split('&'),function(c,q){
-    var i = q.split('=');
-    queries[i[0].toString()] = i[1].toString();
-  });
-  if (queries.flujo == "coddoble"){
-     $('#sig').attr("href", "pagar_ingresando_cod_doble_2.html");
-  }
 </script>

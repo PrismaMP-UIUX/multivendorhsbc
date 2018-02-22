@@ -1,0 +1,52 @@
+@@include('claves_movil_dni_generacion.html')
+
+
+<div class="fondomodal"></div>
+<div class="centradovertical">
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="ad_celular_2.html"><i class="prisma cerrar"></i> </a></div>
+		<h5 class="titulo mg-b-30">Ingresá el código de área</h5>
+
+		<div class="left claves_f">
+			<div class="containerdeinput-conBorrar">
+        <div>
+          <input type="text" maxlength="22" class="mg-r-10 block left" id="numero">
+        </div>
+        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
+          <i class="prisma borrar"></i>
+          <span>Borrar</span>
+          <div class="borrarTodo"></div>
+        </a>
+      </div>
+			<div>
+				<p>Ejemplo:</p>
+				<p>011 - Capital Federal</p>
+				<p>0351 - Córdoba Federal</p>
+			</div>
+		</div>
+
+		<div class="left mg-l-30 claves_f">
+			<a href="" class="btn fijo-70 azul ">1</a>
+			<a href="" class="btn fijo-70 azul ">2</a>
+			<a href="" class="btn fijo-70 azul ">3</a><br>
+			<a href="" class="btn fijo-70 azul ">4</a>
+			<a href="" class="btn fijo-70 azul ">5</a>
+			<a href="" class="btn fijo-70 azul ">6</a><br>
+			<a href="" class="btn fijo-70 azul ">7</a>
+			<a href="" class="btn fijo-70 azul ">8</a>
+			<a href="" class="btn fijo-70 azul ">9</a><br>
+			<a href="" class="btn azul block">0</a>
+		</div>
+
+		<hr class="piemodal">
+		<a href="ad_celular_2.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
+		<a  href="ad_celular_4.html" class="btn azul confirmar right">Siguiente <i class="prisma derecha"></i></a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	alescribir("numero","borrar");
+	scaleBorrar("numero", "borrar");
+	deleteValue("#numero","#borrar");
+	borrarTodo("#numero");
+</script>
