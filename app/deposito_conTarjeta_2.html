@@ -107,8 +107,12 @@
 		var i = q.split('=');
 		queries[i[0].toString()] = i[1].toString();
 	});
+	if (queries.flujo == "efectivo"){
+	   $('.footer').append("<a href='deposito_conTarjeta_5_reconocimiento_efectivo.html' class='right'>% Seguir con efectivo  - Con reconocimiento</a>");
+	}
 	if (queries.flujo == "cheque"){
 	   $('#sig').attr("href", "deposito_conTarjeta_3_reconocimiento_cheque.html");
+	   $('.footer').append("<a href='deposito_conTarjeta_3_sobre_cheques.html' class='right'>% Seguir con cheques  - Con sobre</a>");
 	}
 </script>
 </body>

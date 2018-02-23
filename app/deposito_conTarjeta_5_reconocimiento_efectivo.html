@@ -1,0 +1,44 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma deposito"></i> |</span> Ingreso de billetes</h5>
+			 <div class="clearfix">
+				<div class="imagen col_left height-265 width-350">
+					<video width="350" autoplay="autoplay" loop="loop">
+						<source src="videos/deposito-efectivo.webm" type="video/webm">
+					</video>
+				</div>
+				<div class="col_right width-400 mg-r-20">
+					<p class="mg-b-20">Ingresá en el buzón los billetes a depositar.</p>
+					<p class="mg-b-20">Solamente se podrán ingresar hasta 50 billetes por vez.</p>
+				</div>
+			 </div>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<div class="right">
+		<a href="deposito_conTarjeta_5b_reconocimiento_efectivo_espera.html">% Espera</a>
+	</div>
+</div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+</body>
+</html>

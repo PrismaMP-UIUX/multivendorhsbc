@@ -10,8 +10,7 @@
 				<div>
 					<div class="flex align-center height-65">
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p>
-						<a href="consultasaldo_revelado.html" id="bt_limsaldo" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
-						<div id="limpagos" class="flex align-center" style="display: none !important">
+						<div id="limpagos" class="flex align-center">
 							<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
 							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
 							<a href="espera.html" class="left btn btn-chico azul mg-l-10"><i class="prisma imprimir mg-0"></i></a>
@@ -19,7 +18,7 @@
 					</div>
 					<div class="flex align-center height-65">
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma limite-pagos"></i></span> Límite de pagos:</p>
-						<a href="consultasaldo_revelado.html" id="bt_limpagos" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
+						<a href="#" id="bt_limpagos" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
 						<div id="limpagos" class="flex align-center" style="display: none !important">
 							<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
 							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
@@ -28,7 +27,7 @@
 					</div>
 					<div class="flex align-center height-65">
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma limite-compra"></i></span> Límite de compras:</p>
-						<a href="consultasaldo_revelado.html" id="bt_limcompras" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
+						<a href="#" id="bt_limcompras" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
 						<div id="limcompras" class="flex align-center" style="display: none !important">
 							<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
 							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
@@ -40,6 +39,16 @@
 					<!-- <a href="espera.html" class="left btn btn-chico azul mg-l-0"><i class="prisma imprimir"></i> Imprimir todo</a> -->
 					<a class="btn-chico waves-effect right" id="bt_ayuda"><i class="prisma informacion"></i> Ayuda</a>
 				</div>
+				<div id="servicioPagar" class="clearfix pd-15 fondo_amarillo_claro radius">
+					<p class="font_90 left mg-b-0">
+						<strong>Tu factura EDESUR por $2.450,65 está por vencer en 2 días.</strong><br>
+						¿Querés pagarla?
+					</p>
+					<div class="right">
+						<a id="noPagar" class="btn btn-chico mg-b-0"><i class="prisma cancelar"></i> No</a>
+						<a href="pagar_servicio_2.html" class="btn verde btn-chico mg-b-0"><i class="prisma confirmar"></i> Si</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -48,6 +57,27 @@
 @@include('_partials/int_consulta_abajo.html')
 
 <script>
+	hideandshow("#bt_limsaldo", "#bt_limsaldo", "#limsaldo");
+	hideandshow("#bt_limpagos", "#bt_limpagos", "#limpagos");
+	hideandshow("#bt_limcompras", "#bt_limcompras", "#limcompras");
+	hideandshow("#bt_ayuda", ".notita", "#ayuda");
+
+	// Consulta
+	$("#bt_limsaldo").click(function(){
+	  $(this).next().delay(800).fadeIn();
+	});
+	$("#bt_limpagos").click(function(){
+	  $(this).next().delay(800).fadeIn();
+	});
+	$("#bt_limcompras").click(function(){
+	  $(this).next().delay(800).fadeIn();
+	});
+	$("#bt_ayuda").click(function(){
+	  $(".ayudaContainer").removeClass("oculto");
+	});
+	$(".ayudaContainer .close").click(function(){
+	  $(".ayudaContainer").addClass("oculto");
+	});
 
 	$(document).ready(function(){
 		$(".num").each(function(){
