@@ -442,6 +442,23 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
       }
   }
 
+// Border
+	.border-full {
+		border: 1px solid #ddd;
+	}
+	.border-t {
+		border-top: 1px solid #ddd;
+	}
+	.border-b {
+		border-bottom: 1px solid #ddd;
+	}
+	.border-l {
+		border-left: 1px solid #ddd;
+	}
+	.border-r {
+		border-right: 1px solid #ddd;
+	}
+
 // Width
   @for $limiter-iterate from 1 through 880 {
       @if $limiter-iterate % 5 == 0 {
