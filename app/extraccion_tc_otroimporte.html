@@ -1,0 +1,68 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma extraccion"></i> |</span> Extraer</h5>
+			<div class="width-415 justify-center">
+				<div id="" class="containerdeinput-conBorrar" style="">
+					<div>
+				    <p id="icono-input" class="mg-r-10 block moneda block prefijo left max-45 signopesos"></p>
+						<input type="text" id="extraccion" style="width: 203px;" size="" class="mg-r-10 block left max-200 component" maxlength="6" minlenght="1" placeholder="" value="">
+					</div>
+			    <a id="borrar" class="btn-chico naranja borrar mg-r-0 scale-transition scale-out">
+	          <span style="background-color: transparent;"><i class="prisma borrar"></i></span>
+		        <span class="" style="background-color: transparent;" id="borrar-txt">Borrar</span>
+		        <div class="borrarTodo"></div>
+			    </a>
+				</div>
+			</div>
+			<a href="" class="btn fijo-70 azul ">1</a>
+			<a href="" class="btn fijo-70 azul ">2</a>
+			<a href="" class="btn fijo-70 azul ">3</a><br>
+			<a href="" class="btn fijo-70 azul ">4</a>
+			<a href="" class="btn fijo-70 azul ">5</a>
+			<a href="" class="btn fijo-70 azul ">6</a><br>
+			<a href="" class="btn fijo-70 azul ">7</a>
+			<a href="" class="btn fijo-70 azul ">8</a>
+			<a href="" class="btn fijo-70 azul ">9</a><br>
+			<a href="" class="btn fijo-70 azul ">00</a>
+			<a href="" class="btn fijo-70 azul ">0</a>
+			<a href="" class="btn fijo-70 azul ">000</a>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="inicio_tc_extraer_fast_confirmar.html" class="btn azul right continuar" id="continuar">Siguiente <i class="prisma derecha"></i></a>
+	<a href="extraccion_tc_otroimporte_cruzada.html" class="right mg-r-10">% Ir a flujo Extracción TC Cruzada</a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("extraccion","continuar");
+	alescribir("extraccion","borrar");
+	scaleBorrar("extraccion", "borrar");
+	deleteValue("#extraccion","#borrar");
+	borrarTodo("#extraccion");
+</script>
+</body>
+</html>
