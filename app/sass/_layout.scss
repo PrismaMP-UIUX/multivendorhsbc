@@ -72,6 +72,9 @@ body { margin: 0px; overflow: hidden; }
 }
 
 //Helpers
+.animation-reset {
+	animation-name: reseteado !important;
+}
 //Columnas Flex
 .flex {
 	display: flex !important;
