@@ -525,3 +525,22 @@
     top: 0;
   }
 }
+
+// Inicio de extracción
+
+#inicio_extraccion {
+	#btn-inicio {
+		width: 335px;
+	}
+}
+
+.ayuda {
+	#inicio_extraccion {
+		#btn-inicio {
+			width: 415px;
+			.col-4 {
+				width: 145px !important;
+			}
+		}
+	}
+}

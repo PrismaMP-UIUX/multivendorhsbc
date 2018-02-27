@@ -22,7 +22,7 @@
 						<div class="imagen retire_ticket" onclick="window.location.href='ticket.html'"></div>
 					</div>
 					<div class="col_right">
-						<p>Retirá tu ticket</p>
+						<p>Retirá tu ticket</p><a href="adelanto_calcular_exito.html" class="adelanto_calcular" style="display: none;">% Adelanto calcular éxito</a>
 					</div>
 				</div>
 			</div>
@@ -31,6 +31,18 @@
 
 		<!-- Javascript -->
 		  @@include('_partials/scripts.html')
+		  <script type="text/javascript">
+		  	// Query navegation
+			var queries = {};
+			$.each(window.location.search.substr(1).split('&'),function(c,q){
+			   var i = q.split('=');
+			   queries[i[0].toString()] = i[1].toString();
+			});
+			if (queries.flujo == "adelanto_calcular"){ // si el flujo es donaciÃ³n
+			   $('.adelanto_calcular').show(); // ocultar parte de redondeo
+			};
+
+		  </script>
 
 	</body>
 	</html>
