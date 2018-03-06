@@ -540,6 +540,20 @@ $color-ticket-ayuda: invert($color-ticket);
 		color: $gris_masclaro;
 		.ayuda & {color: $gris_oscuro;}
 	}
+
+	&.versucursal {
+		.bloque {
+			p {
+				color: $gris_masclaro;
+			}
+			&.sucursal > p {
+				color: $gris_oscuro;
+			}
+			&.sucursal .numero {
+				border-bottom: 2px solid $gris_oscuro;
+			}
+		}
+	}
 }
 .notitacbu {
 	position: absolute;
