@@ -651,6 +651,9 @@ $color-ticket-ayuda: invert($color-ticket);
 						background-color: #000;
 					}
 				}
+				tr.no-stripped {
+					background-color: transparent;
+				}
 				tr.active {
 					background: $azul;
 					color: #fff !important;

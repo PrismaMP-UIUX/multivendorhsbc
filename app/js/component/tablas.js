@@ -16,7 +16,6 @@ $(document).ready(function(){
 			datalenght = esteData;
 		}
 	};
-	console.log(datalenght);
 
 
 	// scroll con botones
@@ -65,4 +64,9 @@ $(document).ready(function(){
       States.handleEvent('ev_ssfw_checked_cta');
 		}
 	});
+
+	//Sacar stripped si hay 2
+	if ($(".tabla tr").length < 5) {
+		$(".tabla tr").addClass("no-stripped");
+	};
 })
