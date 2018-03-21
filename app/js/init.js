@@ -1,6 +1,18 @@
 var $slider;
 (function($){
   $(function(){
+
+    // Si no hay logo se rearma el brandbar
+    if($("#logo-container > svg").length == 0) {
+      $("#logo-container").remove();
+      $("#botonayudavisual").parent().appendTo(".brandbar");
+      $(".brandbar").children().removeClass("col-4");
+      $(".brandbar").children().addClass("col-6");
+      $(".brandbar").children().removeClass("justify-center");
+      $(".brandbar div:nth-of-type(1)").addClass("justify-start");
+      $(".brandbar div:nth-of-type(2)").addClass("justify-end");
+    }
+
     dropdown_init(null,1);
   	$slider =  $('#loop .slider').bxSlider({slideWidth: 975, nextSelector: '#slider-next', prevSelector: '#slider-prev', nextText: '', prevText: '', pause:6000, touchEnabled: true});
   	if($slider[0]){

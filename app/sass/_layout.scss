@@ -119,6 +119,11 @@ body { margin: 0px; overflow: hidden; }
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
 }
+.justify-end {
+	display: flex;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
 .align-center {
 	display: flex !important;
 	align-items: center;
@@ -197,7 +202,7 @@ $grid-spacing:3%;
 .col-1   { width:(100% / 12) - ($grid-spacing * 11 / 12) !important; }
 .col-2   { width:(100% / 6) - ($grid-spacing * 10 / 12) !important; }
 .col-3   { width:(100% / 4) - ($grid-spacing * 9 / 12) !important; }
-.col-4   { width:(100% / 3) - ($grid-spacing * 8 / 12) !important; }
+.col-4   { width: 33.33% !important; }
 .col-5   { width:(100% / 2.4) - ($grid-spacing * 7 / 12) !important; }
 .col-6   { width:(100% / 2) - ($grid-spacing * 6 / 12) !important; }
 .col-7   { width:(100% / 1.714285714285714) - ($grid-spacing * 5 / 12) !important; }
@@ -283,11 +288,11 @@ $grid-spacing:3%;
 
 // Brandbar y logos
 .brandbar {
-	width: $ancho_draw;
+	width: calc(100% - 40px);
 	height: $alto_brandbar;
 	position: relative;
 	z-index: $z-index-brandbar;
-
+	padding: 0 20px;
 	display: flex;
   justify-content: space-between;
   align-items: center;
@@ -367,6 +372,19 @@ $grid-spacing:3%;
 	}
 }
 
+// Paneles informativos
+.infopanel {
+	background-color: #f7f7f7;
+	padding: 20px;
+
+	p {
+		font-size: 20px;
+
+		.ayuda & {
+			color: #515151;
+		}
+	}
+}
 
 //Icono del fondo
 .iconback {

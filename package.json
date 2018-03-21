@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/rperrote/Maquetas",
   "dependencies": {
+    "download": "^6.2.5",
     "ejs": "^2.5.6",
     "vanilla-masker": "^1.2.0"
   },

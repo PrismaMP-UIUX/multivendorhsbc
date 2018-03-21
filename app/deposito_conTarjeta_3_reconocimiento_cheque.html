@@ -21,8 +21,12 @@
 				</div>
 				<div class="col_right width-400 mg-r-20">
 					<p class="mg-b-20">Ingresá en el buzón los cheques a depositar.</p>
-					<p class="mg-b-20">Revisá el dorso: sucursal, cuenta, firma y aclaración.</p>
-					<p>No ingreses clips ni ganchos.</p>
+					<!-- <p class="mg-b-20">Revisá el dorso: sucursal, cuenta, firma y aclaración.</p> -->
+					<!-- <p>No ingreses clips ni ganchos.</p> -->
+					<div class="infopanel">
+						<p><i class="prisma informacion"></i> Podés ingresar hasta 15 cheques.</p>
+					</div>
+					<a href="#!" class="btn btn-chico azul mg-0 mg-t-20" id="encuenta">¿Qué debo tener en cuenta?</a>
 				</div>
 			 </div>
 		</div>
@@ -41,6 +45,21 @@
 	</div>
 </div>
 
+<!-- modal ayuda -->
+<div class="ayudaContainer oculto">
+	<div class="fondomodal"></div>
+	<div class="centradovertical">
+		<div class="content-modal panel centrado max-450">
+			<div class="close"><a href=""><i class="prisma cerrar"></i></a></div>
+			<p class="naranja mg-b-20 mg-t-5"><i class="prisma advertencia"></i> Tené en cuenta lo siguiente:</p>
+			<p class="font-20 mg-b-10"><i class="prisma informacion"></i> Ingresá los cheques con el frente hacia arriba y el código numérico de 29 dígitos del lado derecho.</p>
+			<p class="font-20 mg-b-10"><i class="prisma informacion"></i> No ingreses clips ni ganchos.</p>
+			<p class="font-20 mg-b-10"><i class="prisma informacion"></i> Los cheques que ingreses deben estar firmados al dorso por el titular de la cuenta.</p>
+			<p class="font-20 mg-b-10"><i class="prisma informacion"></i> Los cheques deben estar en buen estado.</p>
+		</div>
+	</div>
+</div>
+
 <style type="text/css">
 
 </style>
@@ -54,6 +73,13 @@
 	scaleBorrar("extraccion", "borrar");
 	deleteValue("#extraccion","#borrar");
 	borrarTodo("#extraccion");
+
+	$("#encuenta").click(function(){
+		$(".ayudaContainer").removeClass("oculto");
+	});
+	$(".close").click(function(){
+		$(".ayudaContainer").addClass("oculto");
+	});
 
 </script>
 </body>
