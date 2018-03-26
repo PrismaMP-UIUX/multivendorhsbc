@@ -12,6 +12,7 @@
 
   <div class="centradovertical">
     <div class="panel centrado">
+<<<<<<< HEAD
       <h5 class="titulo mg-b-15"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> CALCULAR CARGOS</h5>
       <div class="mg-b-10">
         <p class="mg-b-10">Simular extracción de:</p>
@@ -22,6 +23,20 @@
       <div class="mg-b-20">
         <p class="left">A pagar en: <strong>1 cuota</strong></p>
           <a href="adelanto_cuotas_modificar.html" class="btn-chico naranja mg-l-15"><i class="prisma editar"></i> Modificar</a>
+=======
+      <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> CALCULAR CARGOS</h5>
+      <div class="mg-b-20">
+        <p>Simular extracción de:</p>
+        <div class="mg-t-20 mg-b-20">
+          <p class="inline font_165 mg-r-20" style="vertical-align: middle;">$ 2000,00</p>
+          <a href="adelanto_ingresar_importe.html" class="btn-chico naranja mg-0 waves-effect"><i class="prisma editar"></i> Modificar</a>
+        </div>
+        <p class="font_75">El importe elegido lo verías reflejado en tu próximo cierre de tarjeta.<br> Al elegir su pago en 1 cuota no se te aplicarían los cargos adicionales.</p>
+      </div>
+      <div class="mg-b-20">
+        <p class="left mg-t-10">A pagar en: <strong><span id="cantcuotas">1</span> <span id="spancuotas">cuotas</span></strong></p>
+        <a href="adelanto_cuotas_modificar.html" class="btn-chico naranja mg-l-15"><i class="prisma editar"></i> Modificar</a>
+>>>>>>> 744081804fbf414c8eaba6bf10a05c47dd4a0c03
       </div>
     </div>
   </div>
@@ -47,6 +62,7 @@
   });
 
   $(document).ready(function(){
+<<<<<<< HEAD
 
     var card = new Card({
         form: 'form',
@@ -61,6 +77,9 @@
         },
     });
 
+=======
+    $("#cantcuotas").text() == "1" ? $("#spancuotas").text("cuota") : $("#spancuotas").text("cuotas")
+>>>>>>> 744081804fbf414c8eaba6bf10a05c47dd4a0c03
   });
 </script>
 </body>

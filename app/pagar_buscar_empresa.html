@@ -1,0 +1,67 @@
+@@include('pagar_buscar_por_rubro.html')
+	<div class="fondomodal"></div>
+	<div class="centradovertical">
+		<div class="content-modal panel bounceIn animated panel centrado" style="max-width:none">
+			<div class="close"><a href="claves_movil_dni_generacion.html"><i class="prisma cerrar"></i> </a></div>
+			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma prestamos"></i> |</span> Patentes</h5>
+			<div class="left">
+				<div class="align-center mg-b-20">
+					<div class="containerdeinput-conBorrar mg-r-20 mg-b-0" style="height: 57px;margin-bottom: 0 !important;width: 400px;">
+						<div>
+							<input type="text" maxlength="22" class="mg-r-10 block" id="doc" placeholder="Ingresá la empresa">
+						</div>
+						<a class="btn-chico naranja borrar mg-0" id="borrar" onclick="limpiarPass('doc')" style="display: none;"><i class="prisma borrar"></i> Borrar</a>
+					</div>
+					<a href="" class="btn azul mg-0 deshabilitado"><i class="prisma buscar"></i> Buscar</a>
+				</div>
+				<p class="naranja mg-b-20"><i class="prisma advertencia"></i> Para buscar la empresa tenés que ingresar al menos 3 dígitos</p>
+				<div class="pd-20" style="background:#f0f0f0">
+					<div>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">q</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">w</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">e</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">r</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">t</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">y</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">u</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">i</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">o</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">p</a>
+					</div>
+					<div>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25 mg-l-20">a</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">s</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">d</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">f</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">g</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">h</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">j</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">k</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">l</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">ñ</a>
+					</div>
+					<div>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25 mg-l-40">z</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">x</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">c</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">v</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">b</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">n</a>
+						<a href="" class="btn fijo-70 azul width-15 mg-r-12 mg-b-25">m</a>
+						<a href="" class="btn fijo-70 azul mg-r-12 mg-b-25"><i class="prisma borrar"></i></a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<script>
+	alescribir("doc","borrar");
+	$("#doc").keyup(function(){
+		if($(this).val().length >= 3) {
+			$(".containerdeinput-conBorrar").siblings().removeClass("deshabilitado")
+		} else {
+			$(".containerdeinput-conBorrar").siblings().addClass("deshabilitado")
+		}
+	});
+</script>

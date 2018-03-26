@@ -12,18 +12,19 @@
 
   <div class="centradovertical">
     <div class="panel centrado">
-      <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> CALCULAR CARGOS</h5>
+      <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> PAGOS AFIP</h5>
       <div class="mg-b-20">
-        <p>Simular extracción de:</p>
-        <div class="containerdeinput boton" onclick="window.location.href = 'adelanto_ingresar_importe.html'">
+        <p>Número de CUIT</p>
+        <div class="containerdeinput boton" onclick="window.location.href = 'pagar_afip_2.html'">
           <input type="text" size="16" placeholder="">
           <span class="btn azul">Ingresar</span>
         </div>
-        <p class="font_75">El importe elegido lo verías reflejado en tu próximo cierre de tarjeta.<br> Al elegir su pago en 1 cuota no se te aplicarían los cargos adicionales.</p>
       </div>
       <div class="mg-b-20">
-        <p class="left mg-t-10">A pagar en: <strong><span id="cantcuotas">1</span> <span id="spancuotas">cuotas</span></strong></p>
-        <a href="adelanto_cuotas_modificar.html" class="btn-chico naranja mg-l-15"><i class="prisma editar"></i> Modificar</a>
+        <p class="mg-b-15">Período de pago</p>
+        <div class="containerdeinput" onclick="window.location.href = 'pagar_afip_2.html'">
+          <span class="btn azul">Seleccionar</span>
+        </div>
       </div>
     </div>
   </div>
@@ -33,7 +34,7 @@
 <!-- Footer -->
 <div class="footer">
   <a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-  <a href="adelanto_calcular_exito.html" class="btn verde right deshabilitado"><i class="prisma confirmar"></i> Calcular</a>
+  <a href="adelanto_calcular_exito.html" class="btn verde right deshabilitado">Calcular <i class="prisma derecha"></i></a>
   <a href="pagar_ingresando_codigo_asad.html" class="right"></a>
 </div>
 
@@ -49,7 +50,20 @@
   });
 
   $(document).ready(function(){
-    $("#cantcuotas").text() == "1" ? $("#spancuotas").text("cuota") : $("#spancuotas").text("cuotas")
+
+    var card = new Card({
+        form: 'form',
+        container: '.card-wrapper',
+        width: 200,
+
+        placeholders: {
+            number: '5443 2342 2341 9843',
+            name: 'Pato Graglia',
+            expiry: '10/22',
+            cvc: '234'
+        },
+    });
+
   });
 </script>
 </body>

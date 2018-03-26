@@ -1,0 +1,63 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma prestamos"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma banelco"></i> |</span> Ajuste de efectivo</h5>
+			<div class="mg-b-20 col-6 left">
+				<p class="mg-b-20">Ingrese el monto del valor del cartucho en múltiplos enteros</p>
+			</div>
+			<div class="width-420 left">
+				<div class="containerdeinput-conBorrar">
+					<div>
+						<p class="mg-r-10 block moneda signopesos block prefijo left"></p>
+						<input type="text" maxlength="22" class="mg-r-10 block" id="montoprestamo">
+					</div>
+					<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('doc')"><i class="prisma borrar"></i> Borrar</a>
+				</div>
+				<a href="" class="btn fijo-70 azul ">1</a>
+				<a href="" class="btn fijo-70 azul ">2</a>
+				<a href="" class="btn fijo-70 azul ">3</a><br>
+				<a href="" class="btn fijo-70 azul ">4</a>
+				<a href="" class="btn fijo-70 azul ">5</a>
+				<a href="" class="btn fijo-70 azul ">6</a><br>
+				<a href="" class="btn fijo-70 azul ">7</a>
+				<a href="" class="btn fijo-70 azul ">8</a>
+				<a href="" class="btn fijo-70 azul ">9</a><br>
+				<a href="" class="btn fijo-70 azul ">00</a>
+				<a href="" class="btn fijo-70 azul ">0</a>
+				<a href="" class="btn fijo-70 azul ">000</a>
+			</div>
+
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="operaciones_administrativas_exitosa.html" class="btn verde right" id="continuar"><i class="prisma confirmar"></i> Confirmar</a>
+</div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script>
+	alescribir("montoprestamo","borrar");
+	alescribir("montoprestamo","continuar");
+	scaleBorrar("montoprestamo", "borrar");
+	deleteValue("#montoprestamo","#borrar");
+	borrarTodo("#montoprestamo");
+
+</script>
+</body>
+</html>
