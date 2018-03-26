@@ -386,6 +386,15 @@ $grid-spacing:3%;
 	}
 }
 
+// Panel amarillo
+.fondo_amarillo_claro  {
+	.ayuda & {
+		p {
+			color: #515151;
+		}
+	}
+}
+
 //Icono del fondo
 .iconback {
 	position: absolute;
@@ -1030,7 +1039,6 @@ body#offline {
 }
 
 // Colores billetes
-
 .diezpe {color: #86310c !important;}
 .veintepe {color: #9e1734 !important;}
 .cincuentape {color: #333961 !important;}
