@@ -1,0 +1,70 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma mas"></i> |</span> Seleccioná tu producto</h5>
+			<!-- <p>Solo podés realizar una operación:</p> -->
+
+			<div class="owl-carousel todos_los_rubros empresas width-550 pd-l-75">
+				<div class="rubro-slide width-470">
+					<a href="login.html" class="btn azul block"> Producto 1</a>
+					<a href="login.html" class="btn azul block"> Producto 2</a>
+					<a href="login.html" class="btn azul block"> Producto 3</a>
+				</div>
+				<div class="rubro-slide width-470">
+					<a href="login.html" class="btn azul block"> Producto 4</a>
+					<a href="login.html" class="btn azul block"> Producto 5</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="extraccion2.html" class="btn azul right continuar" id="continuar">Continuar <i class="prisma continuar"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("extraccion","borrar");
+	alescribir("extraccion","continuar");
+
+	// seleccionar fila
+	$(".todos_los_rubros").owlCarousel({
+	  items: 1,
+	  autoplay: false,
+	  slideBy: 4,
+	  smartSpeed: 100,
+	  nav: true,
+	  dots: false,
+	  // dots: true,
+	  navText: [
+	      "<i id='slider-prev' class='prisma izquierda'></i>",
+	      '<i id="slider-next" class="prisma derecha"></i>'
+	  ],
+	  // loop: true,
+	  animateOut: 'fadeOut'
+	});
+</script>
+</body>
+</html>
