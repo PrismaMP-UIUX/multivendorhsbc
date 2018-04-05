@@ -36,6 +36,10 @@ $brd-ayuda: 3px; //borde de la ayuda
 	&.block {
 		display: block;
 	}
+	// botones fijos de 140px para el calendario
+	&.fijo-140 {
+		width: 140px;
+	}
 	// botones fijos de 100px para la home
 	&.fijo-100 {
 		width: 100px;
