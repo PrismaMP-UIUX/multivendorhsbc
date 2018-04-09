@@ -88,12 +88,23 @@ body { margin: 0px; overflow: hidden; }
 			left: 0px !important;
 			right: 0px !important;
 			width: auto !important;
+			position: relative;
 		}
 		& > .col-left:first-of-type {
 			margin-right:18px !important;
+			margin: 0 auto;
+
+			.panel {
+				position: relative;
+			}
 		}
 		& > .col-right:last-of-type {
 			margin-left:18px !important;
+			margin: 0 auto;
+
+			.panel {
+				position: relative;
+			}
 		}
 	}
 }
