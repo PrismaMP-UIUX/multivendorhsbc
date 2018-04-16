@@ -389,11 +389,16 @@ $grid-spacing:3%;
 	background-color: #f7f7f7;
 	padding: 20px;
 
+	.ayuda & {
+		background-color: #111111;
+	}
+
 	p {
 		font-size: 20px;
 
 		.ayuda & {
-			color: #515151;
+			color: #fff;
+			@extend .font-24;
 		}
 	}
 }
@@ -577,7 +582,7 @@ $color-ticket-ayuda: invert($color-ticket);
 		@extend .small_8;
 		@extend .alinear-centro;
 		color: $gris_masclaro;
-		.ayuda & {color: $gris_oscuro;}
+		.ayuda & {color: $blanco;}
 	}
 
 	&.versucursal {
