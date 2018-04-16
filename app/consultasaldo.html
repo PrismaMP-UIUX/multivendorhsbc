@@ -12,7 +12,7 @@
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma saldo"></i></span> Saldo:</p>
 						<a href="consultasaldo_revelado.html" id="bt_limsaldo" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
 						<div id="limpagos" class="flex align-center" style="display: none !important">
-							<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
+							<p class="font_110 left num mg-r-10"><b>$ 999999999,99</b></p>
 							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
 							<a href="espera.html" class="left btn btn-chico azul mg-l-10"><i class="prisma imprimir mg-0"></i></a>
 						</div>
@@ -21,7 +21,7 @@
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma limite-pagos"></i></span> Límite de pagos:</p>
 						<a href="consultasaldo_revelado.html" id="bt_limpagos" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
 						<div id="limpagos" class="flex align-center" style="display: none !important">
-							<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
+							<p class="font_110 left num mg-r-10"><b>$ 999999999,99</b></p>
 							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
 							<a href="espera.html" class="left btn btn-chico azul mg-l-10"><i class="prisma imprimir mg-0"></i></a>
 						</div>
@@ -30,7 +30,16 @@
 						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma limite-compra"></i></span> Límite de compras:</p>
 						<a href="consultasaldo_revelado.html" id="bt_limcompras" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
 						<div id="limcompras" class="flex align-center" style="display: none !important">
-							<p class="font_140 left num mg-r-10"><b>$ 999999999,99</b></p>
+							<p class="font_110 left num mg-r-10"><b>$ 999999999,99</b></p>
+							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
+							<a href="espera.html" class="left btn btn-chico azul mg-l-10"><i class="prisma imprimir mg-0"></i></a>
+						</div>
+					</div>
+					<div class="flex align-center height-65">
+						<p class="font_90 left mg-r-10"><span class="azul"><i class="prisma limite-compra"></i></span> Límite de transferencias:</p>
+						<a href="consultasaldo_revelado.html" id="bt_limtransfer" class="btn-chico azul waves-effect left"><i class="prisma ojo"></i> Mostrar</a>
+						<div id="limcompras" class="flex align-center" style="display: none !important">
+							<p class="font_110 left num mg-r-10"><b>$ 999999999,99</b></p>
 							<p class="font_69 disponibles left">($ 999999999 disponibles para hoy)</p>
 							<a href="espera.html" class="left btn btn-chico azul mg-l-10"><i class="prisma imprimir mg-0"></i></a>
 						</div>
@@ -54,7 +63,7 @@
 			var saldo = $(this).text().length;
 
 			if(saldo >= 12) {
-				$(".num").toggleClass("font_100 font_140")
+				$(".num").toggleClass("font_100 font_110")
 			}
 		});
 	});

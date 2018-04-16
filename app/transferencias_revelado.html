@@ -95,8 +95,8 @@
 				</div>
 			</div>
 			<div class="flex height-65 left mg-t-10">
-				<a href="transferencias_revelado.html" id="bt_revtransfer" class="btn-chico azul waves-effect">¿Cuál es el importe máximo para transferencias?</a>
-				<div id="revtransfer" class="flex" style="display: none !important">
+				<a href="#" id="bt_revtransfer" class="btn-chico azul waves-effect" style="display: none !important">¿Cuál es el importe máximo para transferencias?</a>
+				<div id="revtransfer" class="flex">
 					<p class="font_110 mg-r-10"><b>El importe máximo es de: $3000</b></p>
 				</div>
 			</div>
@@ -124,6 +124,13 @@
 		$(this).siblings().removeClass('active');
 		$(this).find('td input[type=radio]').prop( "checked", true );
 		$('#continuar').show();
+	});
+
+	hideandshow("#bt_revtransfer");
+
+	// Consulta
+	$("#bt_revtransfer").click(function(){
+	  $(this).next().delay(800).fadeIn();
 	});
 
 	$(document).ready(function(){
