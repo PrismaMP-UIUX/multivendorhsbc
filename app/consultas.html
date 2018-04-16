@@ -1,0 +1,79 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo"><span class="azul"><i class="prisma consultas"></i> |</span> Consultar</h5>
+			<!-- <p>Solo podés realizar una operación:</p> -->
+			<div class="mg-b-10">
+				<a href="consultasaldo_v3.html" class="btn-chico azul mg-r-10"><i class="prisma consulta-saldo"></i> Mi saldo</a>
+				<a href="consultaslimitepagos_v3.html" class="btn-chico gris mg-r-10"><i class="prisma limite-pagos"></i> Límite de pagos</a>
+				<a href="consultaslimitecompras_v3.html" class="btn-chico gris"><i class="prisma limite-compra"></i> Límite de compras</a>
+			</div>
+			<div class="mg-b-10">
+				<a href="consultasmovimientos_v3.html" class="btn-chico azul mg-r-10"><i class="prisma consulta-movimientos"></i> Mis últimos movimientos</a>
+				<a href="consultasultimascompras_v3.html" class="btn-chico gris mg-r-10"><i class="prisma compras"></i> Mis últimas compras</a>
+			</div>
+			<div>
+				<a href="consultacbu_v3.html" class="btn-chico azul mg-r-10 mg-b-0"><i class="prisma consulta-cbu"></i> Mi CBU</a>
+				<a href="cajeros_cercanos.html" class="btn-chico gris mg-r-10 mg-b-0"><i class="prisma cajero-notouch"></i> Cajeros cercanos</a>
+			</div>
+			<div class="mg-b-20 mg-t-20 pd-t-20 border-t align-center">
+				<p class="mg-r-20">De mi cuenta:</p>
+				<div id="consultas_selectordecuenta" class="inline right">
+					<div id="cuentas" class="dropdown btn gris mg-0 mg-neg-t-5">
+						<div class="contenedor">
+							<div indice="1" data-dd="data1"><i class="prisma cuenta"></i> [CA $]12345678901234567811</div>
+							<div indice="2" data-dd="data2"><i class="prisma cuenta"></i> [CA $] 12345678901234567811</div>
+							<div indice="3" data-dd="data3" class=""><i class="prisma cuenta"></i> [CA $] 45678123456</div>
+							<div indice="4" data-dd="data4" class=""><i class="prisma cuenta"></i> [CA $] 78901234567</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="align-center">
+				<p class="block mg-r-20">
+		      <label class="check font_55 align-center">
+		        <input id="terminos" type="checkbox" style="top:0;">
+		        <span class="mg-l-5">Imprimir comprobante</span>
+		      </label>
+		    </p>
+		    <div class="infopanel">
+		    	<p class="verde"><i class="prisma informacion"></i> Cuidemos el planeta ¿Realmente necesitás el ticket?</p>
+		    </div>
+			</div>
+		</div>
+
+
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="extraccion2.html" class="btn azul right continuar" id="continuar">Continuar <i class="prisma continuar"></i></a>
+</div>
+
+<style type="text/css">
+
+</style>
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	alescribir("extraccion","borrar");
+	alescribir("extraccion","continuar");
+</script>
+</body>
+</html>

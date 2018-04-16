@@ -77,6 +77,7 @@ body { margin: 0px; overflow: hidden; }
 //Helpers
 .animation-reset {
 	animation-name: reseteado !important;
+	-webkit-animation-name: reseteado !important;
 }
 //Columnas Flex
 .flex {
@@ -87,12 +88,23 @@ body { margin: 0px; overflow: hidden; }
 			left: 0px !important;
 			right: 0px !important;
 			width: auto !important;
+			position: relative;
 		}
 		& > .col-left:first-of-type {
 			margin-right:18px !important;
+			margin: 0 auto;
+
+			.panel {
+				position: relative;
+			}
 		}
 		& > .col-right:last-of-type {
 			margin-left:18px !important;
+			margin: 0 auto;
+
+			.panel {
+				position: relative;
+			}
 		}
 	}
 }
@@ -377,10 +389,24 @@ $grid-spacing:3%;
 	background-color: #f7f7f7;
 	padding: 20px;
 
+	.ayuda & {
+		background-color: #111111;
+	}
+
 	p {
 		font-size: 20px;
 
 		.ayuda & {
+			color: #fff;
+			@extend .font-24;
+		}
+	}
+}
+
+// Panel amarillo
+.fondo_amarillo_claro  {
+	.ayuda & {
+		p {
 			color: #515151;
 		}
 	}
@@ -556,7 +582,7 @@ $color-ticket-ayuda: invert($color-ticket);
 		@extend .small_8;
 		@extend .alinear-centro;
 		color: $gris_masclaro;
-		.ayuda & {color: $gris_oscuro;}
+		.ayuda & {color: $blanco;}
 	}
 
 	&.versucursal {
@@ -1030,7 +1056,6 @@ body#offline {
 }
 
 // Colores billetes
-
 .diezpe {color: #86310c !important;}
 .veintepe {color: #9e1734 !important;}
 .cincuentape {color: #333961 !important;}

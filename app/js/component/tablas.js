@@ -66,7 +66,7 @@ $(document).ready(function(){
 	});
 
 	//Sacar stripped si hay 2
-	if ($(".tabla tr").length < 5) {
+	if ($(".tabla tr").length < 4) {
 		$(".tabla tr").addClass("no-stripped");
 	};
 })

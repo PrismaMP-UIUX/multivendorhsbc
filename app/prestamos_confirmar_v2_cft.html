@@ -1,0 +1,88 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma prestamos"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado col-12">
+			<h5 class="titulo"><span class="azul"><i class="prisma prestamos"></i> |</span> Préstamos</h5>
+			<p class="font_160 mg-b-20 col-12">Importe solicitado: <strong class="font_60">$1.000,00</strong> </p>
+			<div class="pd-15 mg-b-20 clearfix" style="background-color: rgba(119, 119, 119, 0.1)">
+				<div class="relative right">
+					<div class="left scrollable height-245 pd-r-15" style="width: calc(100% - 100px); overflow-y: scroll;">
+            <div class="font_60 mg-b-5 clearfix">
+              <p class="left mg-r-15">Primer cuota: <strong class="font_60">$137,00</strong> </p>
+              <p class="left mg-r-15 width-full">Cuotas: <strong class="font_60">12</strong> </p>
+              <p class="left mg-r-15">Cuenta Destino: <strong class="font_60">CA u$s 1234567890123456789</strong> </p>
+            </div>
+            <p class="font-20">
+              <span class="space-nowrap">Intereses e impuestos: $25,80</span> |
+              <span class="space-nowrap">Sistema de amortización: SIST. AMORT. FRANCES</span> |
+              <span class="space-nowrap">Gastos de otorgamiento: 30,50%</span> |
+              <span class="space-nowrap">Primer débito: 19/02/2018%</span> |
+              <span class="space-nowrap">TNA: 32,00%</span> |
+              <span class="space-nowrap">TEM: 35,63%</span> |
+              <span class="space-nowrap">Importe a acreditar: $930,23</span> |
+              <span class="space-nowrap">CFT sin IVA: 1,00%</span>
+            </p>
+            <p class="space-nowrap">CFT con IVA: 23,00%</p>
+            <p class="mg-b-10 mg-t-15 font-20"><b>Términos y condiciones</b></p>
+            <p class="font-20">Esta operación implicará mandato especial al banco para que efectúe en nombre del solicitante toda operación relacionada al préstamo mediante acreditación del importe del capital del mismo en su cuenta de destino. El capital e intereses serán debitados de la misma, los montos otorgados resultan adelantos en cuenta pagaderos en cuotas  Esta operación implicará mandato especial al banco para que efectúe en nombre del solicitante toda operación relacionada al préstamo mediante acreditación del importe del capital del mismo en su cuenta de destino. El capital e intereses serán debitados de la misma, los montos otorgados resultan adelantos en cuenta pagaderos en cuotas</p>
+          </div>
+					<div class="right" style="position: absolute; width: 100%; height: 100%;">
+						<a id="scrollUpClick" href="#" class="btn-chico azul arriba mg-0" style="position: absolute; right: 0; top: 0;">&nbsp;<i class="prisma arriba"></i>&nbsp;</a>
+						<a id="scrollDownClick" href="#" class="btn-chico azul abajo mg-0 mg-b-7" style="position: absolute; right: 0; bottom: 0;">&nbsp;<i class="prisma abajo"></i>&nbsp;</a>
+					</div>
+				</div>
+			</div>
+      <p class="block">
+        <label class="check font_55 align-center">
+          <input id="terminos" type="checkbox" style="top:0;">
+          <span class="mg-l-5">Acepto los términos y condiciones</span>
+        </label>
+      </p>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="ticket.html" class="btn verde right"><i class="prisma confirmar"></i> Confirmar</a>
+
+	<a href="prestamos_error.html" class="right">% error en operación</a>
+</div>
+
+<!-- Javascript -->
+<?php   include 'assets/scripts.html';  ?>
+<script src="js/component/inputListenerBotones.js"></script>
+<script type="text/javascript">
+	var ScrollableHeight = $(".scrollable").height();
+	var scrolled= 0;
+	$("#scrollUpClick").click(function(){
+    scrolled=scrolled-ScrollableHeight;
+
+    	console.log(scrolled);
+    $(".scrollable").animate({
+         scrollTop:  scrolled
+    });
+  });
+  	$("#scrollDownClick").click(function(){
+      scrolled=scrolled+ScrollableHeight;
+    	console.log(scrolled);
+      $(".scrollable").animate({
+           scrollTop:  scrolled
+      });
+    });
+</script>
+</body>
+</html>
