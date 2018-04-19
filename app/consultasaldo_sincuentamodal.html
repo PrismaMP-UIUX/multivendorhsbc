@@ -1,87 +1,34 @@
 <!-- Header -->
-@@include('_partials/head.html')
-<body class="bnlc"><!-- ayuda / bnlc -->
-
-<div class="draw">
-
-<!-- Brandbar -->
-@@include('_partials/brandbar.html')
-
-<!-- Contenido de la página -->
-<div class="content" id="consultasaldo_sincuentamodal"><div class="iconback">%</div>
-
-	<div id="consultas" class="panel-sinfondo centrado"> <!-- Este div se cierra en cada uno -->
-		<h5 class="titulo"><span class="azul">% |</span> Consulta</h5>
-
-		<div class="tabs">
-			<div class="botones">
-				<a href="consultasaldo.html" class="selected">% Saldos y disponibles</a>
-				<a href="consultamovimientos.html">% Últimos Movimientos</a>
-				<a href="consultacbu.html">% CBU</a>
-			</div>
-			<div class="contenido">
-				<div class="alinear-derecha left mg-l-50 mg-t-10 mg-r-15 font_55">
-					<div class="altofijo"><p><span class="azul">%</span> Saldo:</p></div>
-					<div class="altofijo"><p><span class="azul">%</span> Disponible:</p></div>
-					<div class="altofijo"><p><span class="azul">%</span> Límite de pagos:</p></div>
-					<div class="altofijo"><p><span class="azul">%</span> Límite de compras:</p></div>
-				</div>
-				<div class="left mg-r-20">
-					<div class="altofijo"><p class="font_140"><b>$45.000</b></p></div>
-					<div class="altofijo"><p class="font_140"><b>$2.500</b></p></div>
-					<div class="altofijo"><p id="limpagos" class="font_140 oculto"><b>$2.500</b></p><a href="#" id="bt_limpagos" class="btn-chico azul">% Mostrar</a></div>
-					<div class="altofijo"><p id="limcompras" class="font_140 oculto"><b>$2.500</b></p><a href="#" id="bt_limcompras" class="btn-chico azul">% Mostrar</a></div>
-				</div>
-				<div id="ayuda" class="left oculto consultasaldo_sincuentamodal_f">
-					<div class="altofijo"><p class="font_61">Dinero total<br>en tu cuenta</p></div>
-					<div class="altofijo"><p class="font_61">Monto máximo diario<br>que puede extrar</p></div>
-					<div class="altofijo"><p class="font_61">Monto máximo diario<br>para efectuar pagos</p></div>
-					<div class="altofijo"><p class="font_61">Monto máximo diario<br>disponible para realizar compras</p></div>
-				</div>
-				<div class="consultasaldo_sincuentamodal_f notita">
-					<p class="font_70 light"><i>% Presioná el botón
-					 para conocer qué es cada importe</i></p>
-					<a id="bt_ayuda" href="#" class="btn-chico">% Ayuda</a>
-				</div>
-			</div>
-		</div>
-
-	</div> <!-- div consultas -->
-</div>
+@@include('consultasaldo.html')
 
 <div class="fondomodal"></div>
 
 <div class="centradovertical">
-	<div id="notice" class="consultasaldo_sincuentamodal_f panel centrado content-modal mg-t-30 bounceIn animated">
-		 <div class="close"><a href="#"><i class="prisma cerrar"></i> </a></div>
+	<div class="content-modal panel bounceIn animated centrado">
+		<div class="close"><a href="#"><i class="prisma cerrar"></i> </a></div>
 		 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma cancelar"></i> |</span> Disculpá</h5>
-		 <p class="mg-b-20 error-cuenta"><i class="prisma advertencia"></i> LA CUENTA C $12345678901234567811 NO PUEDE SER UTILIZADA</p>
+		 <p class="mg-b-20 naranja"><i class="prisma advertencia"></i> LA CUENTA C $12345678901234567811 NO PUEDE SER UTILIZADA</p>
 		 <div class="imagen error_generico col_left mg-0"></div>
 		 <div class="right mg-l-20">
 				<p>Seleccioná otra cuenta para operar</p>
-				<div id="cuentas" class="dropdown btn gris mg-t-20 mg-b-10 mg-l-10">
-					<div class="contenedor">
-						<div indice="1" data-dd="data1" onclick="window.location.href='consultasaldo.html'">[CA $] 12345678901234567811</div>
-						<div indice="2" data-dd="data2" onclick="window.location.href='consultasaldo.html'">[CA $] 12345678901234567811</div>
-						<div indice="3" data-dd="data3" onclick="window.location.href='consultasaldo.html'">[CA $] 45678123456</div>
-						<div indice="4" data-dd="data4" onclick="window.location.href='consultasaldo.html'">[CA $] 78901234567</div>
-					</div>
-				</div>
+				<div id="cuentas2" class="dropdown inline btn gris mg-t-10 mg-b-10 mg-l-10" style="min-width: 440px">
+			<div class="contenedor">
+				<div indice="1" data-dd="data1"><i class="prisma cuenta"></i> [CA $] 12345678901234567811</div>
+				<div indice="2" data-dd="data2"><i class="prisma cuenta"></i> [CA $] 12345678901234567811</div>
+				<div indice="3" data-dd="data3" class=""><i class="prisma cuenta"></i> [CA $] 45678123456</div>
+				<div indice="4" data-dd="data4" class=""><i class="prisma cuenta"></i> [CA $] 78901234567</div>
+			</div>
+		</div>
 		</div>
 		<hr class="piemodal">
 		<div class="block fix">
 			<a href="inicio.html" class="btn naranja mg-t-10 left"><i class="prisma inicio"></i> Volver a inicio</a>&nbsp;
 			<a href="inicio.html" class="btn azul mg-t-10 right">Continuar <i class="prisma derecha"></i></a>&nbsp;
 		</div>
-
 	</div>
 </div>
 
 
-
-
-
-@@include('_partials/int_consulta_abajo.html')
 
 <script>
 	hideandshow("#bt_limpagos", "#bt_limpagos", "#limpagos");
