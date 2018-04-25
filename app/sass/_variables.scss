@@ -485,6 +485,9 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
     &.btn {
       width: calc(100% - 56px) !important;
     }
+    &.btn-chico {
+      width: calc(100% - 30px) !important;
+    }
   }
 
   // Auto
