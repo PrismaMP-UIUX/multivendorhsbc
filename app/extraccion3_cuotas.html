@@ -4,36 +4,54 @@
 <div class="centradovertical">
 	<div class="content-modal panel bounceIn animated centrado">
 		<div class="close"><a href="extraccion3_cuenta.html"><i class="prisma cerrar"></i> </a></div>
-		<h5 class="titulo mg-b-30">Ingrese la cantidad de cuotas</h5>
+		<h5 class="titulo">Ingrese la cantidad de cuotas</h5>
 
-		<div class="inline" id="extraccion_cuotas">
-			<div class="mg-b-30 mg-l-5 containerdeinput">
-				<a class="btn-chico naranja borrar extraccion_f" id="borrar" onclick="limpiarPass('cuotas')"><i class="prisma borrar"></i> Borrar</a>
-				<input type="text" maxlength="3" id="cuotas">
-			</div>
+		<div class="modal-ingreso-datos">
+      <div>
+        <div class="containerdeinput-conBorrar">
+          <div>
+            <p class="mg-r-10 block moneda signopesos block prefijo left max-45"></p>
+            <input type="text" maxlength="22" class="mg-r-10 block left max-200" id="importe">
+          </div>
+          <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar">
+            <i class="prisma borrar"></i>
+            <span>Borrar</span>
+            <div class="borrarTodo"></div>
+          </a>
+        </div>
+        <div class="cuotas-rapidas">
+    			<a><span>1</span> cuota</a>
+    			<a><span>3</span> cuotas</a>
+    			<a><span>6</span> cuotas</a>
+    			<a><span>9</span> cuotas</a>
+    			<a><span>12</span> cuotas</a>
+    			<a><span>18</span> cuotas</a>
+    			<a><span>24</span> cuotas</a>
+    			<a><span>36</span> cuotas</a>
+    		</div>
+      </div>
 
-			<a class="btn fijo-100 btn-chico gris "><span>1</span> cuota</a>
-			<a class="btn fijo-100 btn-chico gris "><span>3</span> cuotas</a><br>
-			<a class="btn fijo-100 btn-chico gris "><span>6</span> cuotas</a>
-			<a class="btn fijo-100 btn-chico gris "><span>9</span> cuotas</a><br>
-			<a class="btn fijo-100 btn-chico gris "><span>12</span> cuotas</a>
-			<a class="btn fijo-100 btn-chico gris "><span>18</span> cuotas</a><br>
-			<a class="btn fijo-100 btn-chico gris "><span>24</span> cuotas</a>
-			<a class="btn fijo-100 btn-chico gris "><span>36</span> cuotas</a>
-		</div>
-
-		<div id="extraccion_cuotas_tecl" class="inline mg-l-30" style="width: 420px;">
-			<a class="btn fijo-70 azul ">1</a>
-			<a class="btn fijo-70 azul ">2</a>
-			<a class="btn fijo-70 azul ">3</a><br>
-			<a class="btn fijo-70 azul ">4</a>
-			<a class="btn fijo-70 azul ">5</a>
-			<a class="btn fijo-70 azul ">6</a><br>
-			<a class="btn fijo-70 azul ">7</a>
-			<a class="btn fijo-70 azul ">8</a>
-			<a class="btn fijo-70 azul ">9</a><br>
-			<a class="btn block azul mg-r-10">0</a>
-		</div>
+      <div>
+        <a href="" class="btn fijo-70 azul ">1</a>
+        <a href="" class="btn fijo-70 azul ">2</a>
+        <a href="" class="btn fijo-70 azul ">3</a><br>
+        <a href="" class="btn fijo-70 azul ">4</a>
+        <a href="" class="btn fijo-70 azul ">5</a>
+        <a href="" class="btn fijo-70 azul ">6</a><br>
+        <a href="" class="btn fijo-70 azul ">7</a>
+        <a href="" class="btn fijo-70 azul ">8</a>
+        <a href="" class="btn fijo-70 azul ">9</a><br>
+        <a href="" class="btn fijo-70 azul ">,</a>
+        <a href="" class="btn fijo-70 azul ">0</a>
+        <a href="" class="btn fijo-70 azul ">000</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      alescribir("importe","borrar");
+      scaleBorrar("importe", "borrar");
+      deleteValue("#importe","#borrar");
+      borrarTodo("#importe");
+    </script>
 
 		<hr class="piemodal">
 		<a href="extraccion3_cuenta.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>

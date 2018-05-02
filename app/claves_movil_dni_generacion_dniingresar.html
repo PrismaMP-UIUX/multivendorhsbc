@@ -5,30 +5,43 @@
 <div class="centradovertical">
 	<div class="content-modal panel bounceIn animated centrado">
 		<div class="close"><a href="claves_banelco_movil_generacion_dniNOingresado.html"><i class="prisma cerrar"></i> </a></div>
-		<h5 class="titulo mg-b-30">Ingresá el número de documento</h5>
+		<h5 class="titulo">Ingresá el número de documento</h5>
 
-		<div class="left" style="width: 450px;">
-			<div class="containerdeinput-conBorrar">
-				<div>
-					<p class="mg-r-10 block prefijo left">1</p>
-					<input type="text" maxlength="22" class="mg-r-10 block left" id="doc">
-				</div>
-				<a class="btn-chico naranja borrar" id="borrar" onclick="limpiarPass('doc')"><i class="prisma borrar"></i> Borrar</a>
-			</div>
-		</div>
+		<div class="modal-ingreso-datos">
+      <div>
+        <div class="containerdeinput-conBorrar">
+          <div>
+            <input type="text" maxlength="22" class="mg-r-10 block left" id="importe">
+          </div>
+          <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar" style="display: none;">
+            <i class="prisma borrar"></i>
+            <span>Borrar</span>
+            <div class="borrarTodo"></div>
+          </a>
+        </div>
+      </div>
 
-		<div class="left">
-			<a href="" class="btn fijo-70 azul ">1</a>
-			<a href="" class="btn fijo-70 azul ">2</a>
-			<a href="" class="btn fijo-70 azul ">3</a><br>
-			<a href="" class="btn fijo-70 azul ">4</a>
-			<a href="" class="btn fijo-70 azul ">5</a>
-			<a href="" class="btn fijo-70 azul ">6</a><br>
-			<a href="" class="btn fijo-70 azul ">7</a>
-			<a href="" class="btn fijo-70 azul ">8</a>
-			<a href="" class="btn fijo-70 azul ">9</a><br>
-			<a href="" class="btn azul block">0</a>
-		</div>
+      <div>
+        <a href="" class="btn fijo-70 azul ">1</a>
+        <a href="" class="btn fijo-70 azul ">2</a>
+        <a href="" class="btn fijo-70 azul ">3</a><br>
+        <a href="" class="btn fijo-70 azul ">4</a>
+        <a href="" class="btn fijo-70 azul ">5</a>
+        <a href="" class="btn fijo-70 azul ">6</a><br>
+        <a href="" class="btn fijo-70 azul ">7</a>
+        <a href="" class="btn fijo-70 azul ">8</a>
+        <a href="" class="btn fijo-70 azul ">9</a><br>
+        <a href="" class="btn fijo-70 azul ">,</a>
+        <a href="" class="btn fijo-70 azul ">0</a>
+        <a href="" class="btn fijo-70 azul ">000</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      alescribir("importe","borrar");
+      scaleBorrar("importe", "borrar");
+      deleteValue("#importe","#borrar");
+      borrarTodo("#importe");
+    </script>
 
 		<hr class="piemodal">
 		<a href="claves_banelco_movil_generacion_dniNOingresado.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
@@ -37,25 +50,24 @@
 </div>
 
 <script type="text/javascript">
-	alescribir("doc","borrar");
 
 	// Tamaño líquido del input
 	// Wrapear primera letra y tomar su medida
-	var charWidth = 0;
-	$(".prefijo").each(function() {
-		var text = $(this).html();
-		var first = $('<span>'+text.charAt(0)+'</span>').addClass('firstLetter');
-		$(this).html(text.substring(1)).prepend(first);
-		charWidth = $(".firstLetter").width();
-	});
+	// var charWidth = 0;
+	// $(".prefijo").each(function() {
+	// 	var text = $(this).html();
+	// 	var first = $('<span>'+text.charAt(0)+'</span>').addClass('firstLetter');
+	// 	$(this).html(text.substring(1)).prepend(first);
+	// 	charWidth = $(".firstLetter").width();
+	// });
 
-	// contar cantidad de carácteres
-	var prefijoLength = $(".prefijo").text().length;
+	// // contar cantidad de carácteres
+	// var prefijoLength = $(".prefijo").text().length;
 
-	// multiplicar por cantidad de caracteres por medida y asignarle ese tamaño al prefijo
-	$(".prefijo").width(prefijoLength * charWidth);
+	// // multiplicar por cantidad de caracteres por medida y asignarle ese tamaño al prefijo
+	// $(".prefijo").width(prefijoLength * charWidth);
 
-	// asignarle al input el resto del width
-	$(".prefijo + input").width($(".containerdeinput-conBorrar > div").width() - $(".prefijo").width() - 20);
+	// // asignarle al input el resto del width
+	// $(".prefijo + input").width($(".containerdeinput-conBorrar > div").width() - $(".prefijo").width() - 20);
 
 </script>

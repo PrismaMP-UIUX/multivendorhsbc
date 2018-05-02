@@ -216,7 +216,7 @@ $grid-spacing:3%;
 .col-3   { width:(100% / 4) - ($grid-spacing * 9 / 12) !important; }
 .col-4   { width: 33.33% !important; }
 .col-5   { width:(100% / 2.4) - ($grid-spacing * 7 / 12) !important; }
-.col-6   { width:(100% / 2) - ($grid-spacing * 6 / 12) !important; }
+.col-6   { width:(100% / 2) - ($grid-spacing * 6 / 12) !important;}
 .col-7   { width:(100% / 1.714285714285714) - ($grid-spacing * 5 / 12) !important; }
 .col-8   { width:(100% / 1.5) - ($grid-spacing * 4 / 12) !important; }
 .col-9   { width:(100% / 1.333333333333333) - ($grid-spacing * 3 / 12) !important; }
@@ -1063,3 +1063,30 @@ body#offline {
 .doscientospe {color: #2b35a5 !important;}
 .quinientospe {color: #4a7906 !important;}
 .milpe {color: #de6003 !important;}
+
+.modal-ingreso-datos {
+	@extend .clearfix;
+
+	& > div {
+		float: left;
+		width: 450px;
+
+		& + div {
+			margin-left: 10px;
+			width: 420px;
+
+		}
+	}
+	.cuotas-rapidas {
+		@extend .justify-between;
+		@extend.flex-wrap;
+
+		a {
+			width: calc(50% - 40px);
+			@extend .mg-0;
+			@extend .mg-t-15;
+			@extend .btn-chico;
+			@extend .gris;
+		}
+	}
+}
