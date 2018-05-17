@@ -7,35 +7,42 @@
 		<div class="close"><a href="claves_banelcomovil_generacion.html"><i class="prisma cerrar"></i> </a></div>
 		<h5 class="titulo mg-b-30">Ingresá el número de celular</h5>
 
-		<div class="left width-450 mg-r-10">
-
-      <div class="containerdeinput-conBorrar">
-        <div>
-          <p class="mg-r-10 block moneda block prefijo left">011 15</p>
-          <input type="text" maxlength="22" class="mg-r-10 block left" id="importe">
+		<div class="modal-ingreso-datos">
+      <div>
+        <div class="containerdeinput-conBorrar">
+          <div>
+            <p class="mg-r-10 block moneda block prefijo left">011 15</p>
+            <input type="text" maxlength="22" class="mg-r-10 block left" id="importe">
+          </div>
+          <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar" style="display: none;">
+            <i class="prisma borrar"></i>
+            <span>Borrar</span>
+            <div class="borrarTodo"></div>
+          </a>
         </div>
-        <a class="btn-chico naranja borrar scale-transition scale-out v-hidden" id="borrar" style="display: none;">
-          <i class="prisma borrar"></i>
-          <span>Borrar</span>
-          <div class="borrarTodo"></div>
-        </a>
+      </div>
+
+      <div>
+        <a href="" class="btn fijo-70 azul ">1</a>
+        <a href="" class="btn fijo-70 azul ">2</a>
+        <a href="" class="btn fijo-70 azul ">3</a><br>
+        <a href="" class="btn fijo-70 azul ">4</a>
+        <a href="" class="btn fijo-70 azul ">5</a>
+        <a href="" class="btn fijo-70 azul ">6</a><br>
+        <a href="" class="btn fijo-70 azul ">7</a>
+        <a href="" class="btn fijo-70 azul ">8</a>
+        <a href="" class="btn fijo-70 azul ">9</a><br>
+        <a href="" class="btn fijo-70 azul ">,</a>
+        <a href="" class="btn fijo-70 azul ">0</a>
+        <a href="" class="btn fijo-70 azul ">000</a>
       </div>
     </div>
-
-    <div class="left">
-      <a href="" class="btn fijo-70 azul ">1</a>
-      <a href="" class="btn fijo-70 azul ">2</a>
-      <a href="" class="btn fijo-70 azul ">3</a><br>
-      <a href="" class="btn fijo-70 azul ">4</a>
-      <a href="" class="btn fijo-70 azul ">5</a>
-      <a href="" class="btn fijo-70 azul ">6</a><br>
-      <a href="" class="btn fijo-70 azul ">7</a>
-      <a href="" class="btn fijo-70 azul ">8</a>
-      <a href="" class="btn fijo-70 azul ">9</a><br>
-      <a href="" class="btn fijo-70 azul ">,</a>
-      <a href="" class="btn fijo-70 azul ">0</a>
-      <a href="" class="btn fijo-70 azul ">000</a>
-    </div>
+    <script type="text/javascript">
+      alescribir("importe","borrar");
+      scaleBorrar("importe", "borrar");
+      deleteValue("#importe","#borrar");
+      borrarTodo("#importe");
+    </script>
 
 		<hr class="piemodal">
 		<a href="claves_banelcomovil_generacion_telefoniamodal_area.html" class="btn-flat gris mg-r-10"><i class="prisma izquierda"></i> Anterior</a>
@@ -43,9 +50,3 @@
 	</div>
 </div>
 
-<script type="text/javascript">
-  alescribir("importe","borrar");
-  scaleBorrar("importe", "borrar");
-  deleteValue("#importe","#borrar");
-  borrarTodo("#importe");
-</script>

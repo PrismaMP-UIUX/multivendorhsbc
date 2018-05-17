@@ -9,8 +9,8 @@ var $slider;
       $(".brandbar").children().removeClass("col-4");
       $(".brandbar").children().addClass("col-6");
       $(".brandbar").children().removeClass("justify-center");
-      $(".brandbar div:nth-of-type(1)").addClass("justify-start");
-      $(".brandbar div:nth-of-type(2)").addClass("justify-end");
+      $(".brandbar div:nth-of-type(1)").addClass("justify-start mg-neg-l-50");
+      $(".brandbar div:nth-of-type(2)").addClass("justify-end mg-l-75");
     }
 
     dropdown_init(null,1);
