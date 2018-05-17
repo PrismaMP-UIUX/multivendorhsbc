@@ -404,7 +404,7 @@ $z-index-contenidotimeout:  $z-index-fondotimeout + 1;
 
 // Margenes
 // Del 1 al 9
-@for $mg from 0 through 15 {
+@for $mg from 0 through 25 {
 	// Positivos
 	.mg-#{$mg} {margin: #{$mg}px !important;}
 	.mg-l-#{$mg} {margin-left: #{$mg}px !important;}

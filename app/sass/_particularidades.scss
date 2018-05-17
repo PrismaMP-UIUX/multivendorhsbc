@@ -1,4 +1,205 @@
 // inicio.html
+
+	// CSS CABEZA PARA PROPUESTAS
+	.loading {
+		animation: loading 2s linear infinite;
+		fill: white;
+	}
+	@-moz-keyframes loading { 100% { -moz-transform: rotate(360deg); } }
+	@-webkit-keyframes loading { 100% { -webkit-transform: rotate(360deg); } }
+	@keyframes loading { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+	.disponible {
+		&.oculto {
+			display: none !important;
+		}
+	}
+
+	.content-con-sidebar {
+			display: flex;
+
+			a {
+				transition: unset;
+			}
+
+			& > .panel {
+				position: static;
+			}
+			.sidebar:not(.sub) {
+				z-index:3;
+				width: 360px;
+
+				div {
+					margin-top: 0;
+					transition: margin-top linear 0.1s;
+				}
+
+				.ayuda & {
+					width: 410px;
+				}
+			}
+			& > div:not(.sidebar){
+				flex-grow: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			& > .sidebar.sub {
+				background-color: #fff;
+				position: absolute;
+				height: calc(100% - 44px);
+				z-index: 2;
+				left: 410px;
+
+				.ayuda & {
+					background-color: #111111;
+					left: 460px;
+				}
+
+				.link {
+					padding: 22px 27px;
+				}
+			}
+			.link-activo {
+				background-color: #fff !important;
+				margin-right: -27px;
+				border-radius: 5px 0px 0px 5px;
+		    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.4) !important;
+		    overflow: visible;
+				// margin-left: -28px;
+				// border-radius: 0;
+				// margin-top: -20px;
+				// padding-bottom: 30px;
+				// padding-top: 40px;
+				// justify-content: center;
+				// display: flex;
+
+				.ayuda & {
+					background-color: #111111 !important;
+					border: none;
+				}
+
+				&::after {
+					content: "";
+					width: 30px;
+					display: block;
+					position: absolute;
+					top: 0;
+					right: -20px;
+					height: 100%;
+					width: 30px;
+					background-color: #fff;
+					z-index: 99999;
+
+					.ayuda & {
+						background-color: #111;
+					}
+				}
+			}
+			a:nth-of-type(1).link-activo {
+				// margin-top: -20px;
+			}
+			a.blanco {
+				background-color: #fff !important;
+			}
+
+			.fondo-menu {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				z-index: 2;
+				background: rgba(0, 0, 0, 0.6);
+
+				&.oculto {
+					display: none;
+				}
+			}
+	}
+	.brandbar {
+		z-index: 5;
+	}
+	.footer {
+		z-index: 5;
+	}
+
+	a.btn-flat.link {
+		background-color: rgba(119,119,119,0.1);
+		color: #428ccf;
+		box-shadow: none;
+		text-align: left;
+		padding: 17px;
+
+		svg {
+			fill: #428ccf;
+		}
+	}
+
+	// Switch
+	.toggle-switch {
+	  display: flex;
+	  align-items: center;
+
+	  &__input {
+	    border: 0;
+	    clip: rect(0 0 0 0);
+	    clip-path: inset(50%);
+	    height: 1px;
+	    margin: -1px;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    width: 1px;
+	    white-space: nowrap;
+
+	    &:checked + .toggle-switch__slider {
+	       background-color: #4a9dff;
+
+	      &::before {
+	        transform: translate(26px, -50%);
+	      }
+	    }
+
+	    &:disabled + .toggle-switch__slider {
+	      opacity: 0.5;
+	      cursor: not-allowed;
+
+	      &::before {
+	        background-color: rgba(32, 37, 50, 0.14);
+	      }
+	    }
+	  }
+
+	  &__slider {
+	    box-sizing: border-box;
+	    margin: 0 9px;
+	    width: 64px;
+	    height: 43px;
+	    border-radius: 30px;
+	    background-color: rgba(32, 37, 50, 0.14);
+	    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+	    display: inline-block;
+	    position: relative;
+	    cursor: pointer;
+
+	    &::before {
+	      transition: transform 75ms ease-in-out;
+	      content: '';
+	      display: block;
+	      width: 36px;
+	      height: 38px;
+	      background-color: #fff;
+	      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25), 0 2px 8px 0 rgba(32, 37, 50, 0.16);
+	      position: absolute;
+	      border-radius: 100%;
+	      top: 21px;
+	      transform: translate(2px, -50%);
+	    }
+	  }
+	}
+
+
+// Viejo ------------------
+
 	#inicio_extraccion { position: relative; margin: 0 auto; right: -20px; }
 	#inicio_extraccion { position: static; }
 	#inicio_opnoextraccion { position: relative; margin: 0 auto; left: -20px; overflow:hidden;
