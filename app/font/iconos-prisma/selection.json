@@ -4,32 +4,83 @@
     {
       "icon": {
         "paths": [
-          "M480 96c-229.75 0-416 186.25-416 416s186.25 416 416 416c229.75 0 416-186.25 416-416v0c0-229.75-186.25-416-416-416v0zM744.32 623.68c5.203 3.273 8.61 8.984 8.61 15.49 0 3.633-1.062 7.018-2.893 9.862l0.043-0.072-36.16 55.040c-3.273 5.203-8.984 8.61-15.49 8.61-3.633 0-7.018-1.062-9.862-2.893l0.072 0.043-160-101.12v192c0 10.074-8.166 18.24-18.24 18.24v0h-62.4c-10.074 0-18.24-8.166-18.24-18.24v0-192.64l-160 101.12c-2.882 1.995-6.453 3.188-10.302 3.188-6.381 0-11.996-3.276-15.256-8.239l-0.043-0.069-34.88-55.040c-1.787-2.771-2.85-6.156-2.85-9.79 0-6.507 3.407-12.217 8.534-15.446l0.076-0.044 168.96-108.16-169.6-107.84c-5.203-3.273-8.61-8.984-8.61-15.49 0-3.633 1.062-7.018 2.893-9.862l-0.043 0.072 34.88-54.72c3.273-5.203 8.984-8.61 15.49-8.61 3.633 0 7.018 1.062 9.862 2.893l-0.072-0.043 160 101.12v-199.040c0.341-9.806 8.372-17.626 18.23-17.626 0.341 0 0.68 0.009 1.017 0.028l-0.047-0.002h64c10.074 0 18.24 8.166 18.24 18.24v0 198.4l160-101.12c2.771-1.787 6.156-2.85 9.79-2.85 6.507 0 12.217 3.407 15.446 8.534l0.044 0.076 34.88 54.72c1.787 2.771 2.85 6.156 2.85 9.79 0 6.507-3.407 12.217-8.534 15.446l-0.076 0.044-169.6 107.84z"
+          "M540.8 611.2v22.4c0 6.4-3.2 9.6-9.6 9.6h-297.6c-3.2 0-9.6-3.2-9.6-9.6v-22.4c0-6.4 3.2-9.6 9.6-9.6h294.4c6.4 0 12.8 3.2 12.8 9.6z",
+          "M540.8 502.4v22.4c0 6.4-3.2 9.6-9.6 9.6h-297.6c-6.4 0-9.6-3.2-9.6-9.6v-22.4c0-6.4 3.2-9.6 9.6-9.6h294.4c6.4-3.2 12.8 3.2 12.8 9.6z",
+          "M691.2 64h-617.6c-6.4 0-12.8 12.8-12.8 25.6v844.8c0 12.8 6.4 25.6 12.8 25.6h617.6c6.4 0 12.8-12.8 12.8-25.6v-844.8c-3.2-12.8-6.4-25.6-12.8-25.6zM640 896h-512v-771.2h512v771.2z",
+          "M534.4 390.4h-9.6c-3.2 0-6.4-3.2-6.4-6.4v-144c0-3.2 3.2-6.4 6.4-6.4h9.6c3.2 0 6.4 3.2 6.4 6.4v140.8c0 6.4-3.2 9.6-6.4 9.6z",
+          "M329.6 390.4h-9.6c-3.2 0-6.4-3.2-6.4-6.4v-144c0-3.2 3.2-6.4 6.4-6.4h9.6c3.2 0 6.4 3.2 6.4 6.4v140.8c0 6.4-3.2 9.6-6.4 9.6z",
+          "M412.8 390.4h-35.2c-6.4 0-9.6-3.2-9.6-9.6v-137.6c0-6.4 3.2-9.6 9.6-9.6h35.2c6.4 0 9.6 3.2 9.6 9.6v134.4c-0 6.4-6.4 12.8-9.6 12.8z",
+          "M476.8 390.4h-12.8c-6.4 0-9.6-3.2-9.6-9.6v-137.6c0-6.4 3.2-9.6 9.6-9.6h12.8c6.4 0 9.6 3.2 9.6 9.6v134.4c-0 6.4-3.2 12.8-9.6 12.8z",
+          "M380.8 716.8v22.4c0 6.4-3.2 9.6-9.6 9.6h-137.6c-6.4 0-9.6-3.2-9.6-9.6v-22.4c0-6.4 3.2-9.6 9.6-9.6h134.4c6.4 0 12.8 6.4 12.8 9.6z"
         ],
         "attrs": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
+          {},
           {}
         ],
-        "width": 960,
+        "width": 765,
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "Fuente_rubros_generico"
+          "accion-pagar2"
         ]
+      },
+      "attrs": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "properties": {
+        "order": 380,
+        "id": 178,
+        "name": "accion-pagar",
+        "prevSize": 32,
+        "code": 59801
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M480 96c-229.75 0-416 186.25-416 416s186.25 416 416 416c229.75 0 416-186.25 416-416v0c0-229.75-186.25-416-416-416v0zM744.32 623.68c5.203 3.273 8.61 8.984 8.61 15.49 0 3.633-1.062 7.018-2.893 9.862l0.043-0.072-36.16 55.040c-3.273 5.203-8.984 8.61-15.49 8.61-3.633 0-7.018-1.062-9.862-2.893l0.072 0.043-160-101.12v192c0 10.074-8.166 18.24-18.24 18.24v0h-62.4c-10.074 0-18.24-8.166-18.24-18.24v0-192.64l-160 101.12c-2.882 1.995-6.453 3.188-10.302 3.188-6.381 0-11.996-3.276-15.256-8.239l-0.043-0.069-34.88-55.040c-1.787-2.771-2.85-6.156-2.85-9.79 0-6.507 3.407-12.217 8.534-15.446l0.076-0.044 168.96-108.16-169.6-107.84c-5.203-3.273-8.61-8.984-8.61-15.49 0-3.633 1.062-7.018 2.893-9.862l-0.043 0.072 34.88-54.72c3.273-5.203 8.984-8.61 15.49-8.61 3.633 0 7.018 1.062 9.862 2.893l-0.072-0.043 160 101.12v-199.040c0.341-9.806 8.372-17.626 18.23-17.626 0.341 0 0.68 0.009 1.017 0.028l-0.047-0.002h64c10.074 0 18.24 8.166 18.24 18.24v0 198.4l160-101.12c2.771-1.787 6.156-2.85 9.79-2.85 6.507 0 12.217 3.407 15.446 8.534l0.044 0.076 34.88 54.72c1.787 2.771 2.85 6.156 2.85 9.79 0 6.507-3.407 12.217-8.534 15.446l-0.076 0.044-169.6 107.84z"
+        ],
+        "width": 960,
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "Fuente_rubros_generico"
+        ],
+        "grid": 0
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 335,
-        "id": 3,
+        "order": 381,
+        "id": 0,
         "name": "rubros_generico",
         "prevSize": 32,
         "code": 59800
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 0
+      "iconIdx": 1
     },
     {
       "icon": {
@@ -41,50 +92,20 @@
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 0,
         "tags": [
           "Fuente_jubilados-45"
-        ]
+        ],
+        "grid": 0
       },
       "attrs": [
         {}
       ],
       "properties": {
-        "order": 334,
-        "id": 2,
+        "order": 382,
+        "id": 1,
         "name": "jubilados",
         "prevSize": 32,
         "code": 59785
-      },
-      "setIdx": 0,
-      "setId": 1,
-      "iconIdx": 1
-    },
-    {
-      "icon": {
-        "paths": [
-          "M852.224 408.512c-37.216-37.76-112.48-113.792-156.32-156.448-11.872-11.552-28.992-18.56-46.816-18.816-9.408-0.16-18.816-0.192-28.192-0.192-9.856 0-19.744 0.032-29.6 0.032-9.28 0-18.56-0.032-27.84-0.192-5.6-0.096-14.24-2.656-19.168-5.28-27.072-14.496-54.080-21.728-81.056-21.728-27.424 0-54.848 7.488-82.304 22.432-4.256 2.336-11.776 4.544-16.64 4.608-8.832 0.128-17.632 0.16-26.464 0.16-9.856 0-19.712-0.032-29.568-0.032-9.536 0-19.072 0.032-28.608 0.192-20.352 0.32-38.72 8.256-52.8 22.080-49.408 48.576-98.112 97.824-146.944 146.944-12.352 12.416-12.416 32.448-0.16 44.928l74.88 76.448c6.272 6.4 14.56 9.6 22.848 9.6 8 0 16-2.976 22.24-8.992l59.52-57.472v328.736c0 12.448 10.112 22.56 22.56 22.56h363.776c8.48 0 15.584-4.864 19.424-11.776l1.408 2.336v-4.672c1.056-2.624 1.696-5.472 1.696-8.48v-330.976l63.616 63.744c6.24 6.272 14.464 9.408 22.656 9.408s16.352-3.104 22.592-9.344l74.912-74.784c12.512-12.448 12.736-32.48 0.352-45.024zM406.4 257.568c17.92-7.744 35.648-11.264 53.152-10.848 17.504-0.416 35.232 3.104 53.152 10.848 20.256 8.768 19.040 15.968 10.496 22.72-15.808 10.976-44.288 33.568-63.648 33.6-19.36-0.032-47.84-22.624-63.648-33.6-8.544-6.752-9.76-13.952 10.496-22.72zM626.528 776.512h-325.696v-407.68l-123.168 118.912-61.6-62.88 14.848-14.944c41.536-41.824 83.072-83.648 125.088-124.96 6.72-6.592 14.88-10.016 24.256-10.144 9.312-0.16 18.656-0.192 27.968-0.192l29.568 0.064c2.336 0 4.672-0.032 7.008-0.032l281.696 467.808v34.048zM754.432 492.064l-88-88.192v-122.272c0.128 0.128 0.352 0.16 0.48 0.288 42.272 41.12 113.792 113.344 148.896 148.896l-61.376 61.28z"
-        ],
-        "attrs": [
-          {}
-        ],
-        "width": 932,
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "grid": 0,
-        "tags": [
-          "Fuente_rubros_clubes_asoc"
-        ]
-      },
-      "attrs": [
-        {}
-      ],
-      "properties": {
-        "order": 333,
-        "id": 1,
-        "name": "rubros_clubes-asociaciones",
-        "prevSize": 32,
-        "code": 59799
       },
       "setIdx": 0,
       "setId": 1,
@@ -93,35 +114,65 @@
     {
       "icon": {
         "paths": [
+          "M852.224 408.512c-37.216-37.76-112.48-113.792-156.32-156.448-11.872-11.552-28.992-18.56-46.816-18.816-9.408-0.16-18.816-0.192-28.192-0.192-9.856 0-19.744 0.032-29.6 0.032-9.28 0-18.56-0.032-27.84-0.192-5.6-0.096-14.24-2.656-19.168-5.28-27.072-14.496-54.080-21.728-81.056-21.728-27.424 0-54.848 7.488-82.304 22.432-4.256 2.336-11.776 4.544-16.64 4.608-8.832 0.128-17.632 0.16-26.464 0.16-9.856 0-19.712-0.032-29.568-0.032-9.536 0-19.072 0.032-28.608 0.192-20.352 0.32-38.72 8.256-52.8 22.080-49.408 48.576-98.112 97.824-146.944 146.944-12.352 12.416-12.416 32.448-0.16 44.928l74.88 76.448c6.272 6.4 14.56 9.6 22.848 9.6 8 0 16-2.976 22.24-8.992l59.52-57.472v328.736c0 12.448 10.112 22.56 22.56 22.56h363.776c8.48 0 15.584-4.864 19.424-11.776l1.408 2.336v-4.672c1.056-2.624 1.696-5.472 1.696-8.48v-330.976l63.616 63.744c6.24 6.272 14.464 9.408 22.656 9.408s16.352-3.104 22.592-9.344l74.912-74.784c12.512-12.448 12.736-32.48 0.352-45.024zM406.4 257.568c17.92-7.744 35.648-11.264 53.152-10.848 17.504-0.416 35.232 3.104 53.152 10.848 20.256 8.768 19.040 15.968 10.496 22.72-15.808 10.976-44.288 33.568-63.648 33.6-19.36-0.032-47.84-22.624-63.648-33.6-8.544-6.752-9.76-13.952 10.496-22.72zM626.528 776.512h-325.696v-407.68l-123.168 118.912-61.6-62.88 14.848-14.944c41.536-41.824 83.072-83.648 125.088-124.96 6.72-6.592 14.88-10.016 24.256-10.144 9.312-0.16 18.656-0.192 27.968-0.192l29.568 0.064c2.336 0 4.672-0.032 7.008-0.032l281.696 467.808v34.048zM754.432 492.064l-88-88.192v-122.272c0.128 0.128 0.352 0.16 0.48 0.288 42.272 41.12 113.792 113.344 148.896 148.896l-61.376 61.28z"
+        ],
+        "width": 932,
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "Fuente_rubros_clubes_asoc"
+        ],
+        "grid": 0
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 383,
+        "id": 2,
+        "name": "rubros_clubes-asociaciones",
+        "prevSize": 32,
+        "code": 59799
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 3
+    },
+    {
+      "icon": {
+        "paths": [
           "M638.688 183.040h-206.688v10.304c1.28 5.696 2.048 11.584 2.048 17.664v26.080c0 6.080-0.768 11.968-2.048 17.664v11.488h143.52v510.080h-319.424v-340.608c-7.936 2.56-16.224 4.32-24.992 4.32h-26.080c-9.344 0-18.176-1.888-26.528-4.8v504.16c0 7.968 6.464 14.432 14.432 14.432h445.216c8.224 0 14.976-6.752 14.976-14.976v-741.376c0-7.968-6.464-14.432-14.432-14.432zM415.808 894.208c-24.704 0-44.64-19.936-44.64-44.64 0-24.672 19.936-44.64 44.64-44.64 24.672 0 44.64 19.968 44.64 44.64 0.032 24.736-19.936 44.64-44.64 44.64z",
           "M185.632 256.48v102.016c0 10.72 8.704 19.392 19.392 19.392h26.080c10.72 0 19.392-8.704 19.392-19.392v-102.016h102.016c10.72 0 19.392-8.704 19.392-19.392v-26.080c0-10.72-8.704-19.392-19.392-19.392h-101.984v-102.048c0-10.72-8.704-19.392-19.392-19.392h-26.112c-10.72 0-19.392 8.704-19.392 19.392v96c-1.12 9.888-4.32 3.52-5.536 6.048h-96.48c-10.72 0-19.392 8.704-19.392 19.392v26.080c0 10.688 8.704 19.392 19.392 19.392h102.016z"
         ],
+        "width": 717,
         "attrs": [
           {},
           {}
         ],
-        "width": 717,
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 0,
         "tags": [
           "Fuente_para exportar2-45"
-        ]
+        ],
+        "grid": 0
       },
       "attrs": [
         {},
         {}
       ],
       "properties": {
-        "order": 330,
-        "id": 0,
+        "order": 384,
+        "id": 3,
         "name": "adherir-celular",
         "prevSize": 32,
         "code": 59798
       },
       "setIdx": 0,
       "setId": 1,
-      "iconIdx": 3
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -156,15 +207,15 @@
         {}
       ],
       "properties": {
-        "order": 182,
-        "id": 0,
+        "order": 385,
+        "id": 4,
         "name": "rubros_recargas",
         "prevSize": 32,
         "code": 59794
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 0
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -207,15 +258,15 @@
         {}
       ],
       "properties": {
-        "order": 156,
-        "id": 1,
+        "order": 386,
+        "id": 5,
         "name": "rubros_impuestos-municipales",
         "prevSize": 32,
         "code": 59792
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 1
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -250,15 +301,15 @@
         {}
       ],
       "properties": {
-        "order": 157,
-        "id": 2,
+        "order": 387,
+        "id": 6,
         "name": "rubros_planes-ahorro",
         "prevSize": 32,
         "code": 59793
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 2
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -308,15 +359,15 @@
         {}
       ],
       "properties": {
-        "order": 159,
-        "id": 3,
+        "order": 388,
+        "id": 7,
         "name": "rubros_impuestos-prov",
         "prevSize": 32,
         "code": 59795
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 3
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -343,15 +394,15 @@
         {}
       ],
       "properties": {
-        "order": 160,
-        "id": 4,
+        "order": 389,
+        "id": 8,
         "name": "rubros_seguridad",
         "prevSize": 32,
         "code": 59796
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 4
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 9
     },
     {
       "icon": {
@@ -398,15 +449,15 @@
         {}
       ],
       "properties": {
-        "order": 161,
-        "id": 5,
+        "order": 390,
+        "id": 9,
         "name": "rubros_cooperativas",
         "prevSize": 32,
         "code": 59797
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 5
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 10
     },
     {
       "icon": {
@@ -433,15 +484,15 @@
         {}
       ],
       "properties": {
-        "order": 163,
-        "id": 7,
+        "order": 391,
+        "id": 10,
         "name": "rubros_telefonia",
         "prevSize": 32,
         "code": 59803
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 7
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 11
     },
     {
       "icon": {
@@ -480,15 +531,15 @@
         {}
       ],
       "properties": {
-        "order": 164,
-        "id": 8,
+        "order": 392,
+        "id": 11,
         "name": "rubros_solicitud-informe",
         "prevSize": 32,
         "code": 59804
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 8
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 12
     },
     {
       "icon": {
@@ -515,15 +566,15 @@
         {}
       ],
       "properties": {
-        "order": 165,
-        "id": 9,
+        "order": 393,
+        "id": 12,
         "name": "rubros_cines",
         "prevSize": 32,
         "code": 59805
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 9
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 13
     },
     {
       "icon": {
@@ -550,15 +601,15 @@
         {}
       ],
       "properties": {
-        "order": 166,
-        "id": 10,
+        "order": 394,
+        "id": 13,
         "name": "rubros_viajes-turismo",
         "prevSize": 32,
         "code": 59806
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 10
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 14
     },
     {
       "icon": {
@@ -585,15 +636,15 @@
         {}
       ],
       "properties": {
-        "order": 167,
-        "id": 11,
+        "order": 395,
+        "id": 14,
         "name": "rubros_operadores-tv",
         "prevSize": 32,
         "code": 59807
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 11
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 15
     },
     {
       "icon": {
@@ -624,15 +675,15 @@
         {}
       ],
       "properties": {
-        "order": 168,
-        "id": 12,
+        "order": 396,
+        "id": 15,
         "name": "rubros_seguro-vida",
         "prevSize": 32,
         "code": 59808
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 12
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 16
     },
     {
       "icon": {
@@ -675,15 +726,15 @@
         {}
       ],
       "properties": {
-        "order": 169,
-        "id": 13,
+        "order": 397,
+        "id": 16,
         "name": "rubros_patente",
         "prevSize": 32,
         "code": 59809
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 13
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 17
     },
     {
       "icon": {
@@ -714,15 +765,15 @@
         {}
       ],
       "properties": {
-        "order": 170,
-        "id": 14,
+        "order": 398,
+        "id": 17,
         "name": "rubros_servicios-correo",
         "prevSize": 32,
         "code": 59810
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 14
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 18
     },
     {
       "icon": {
@@ -761,15 +812,15 @@
         {}
       ],
       "properties": {
-        "order": 171,
-        "id": 15,
+        "order": 399,
+        "id": 18,
         "name": "rubros_proveedores-internet",
         "prevSize": 32,
         "code": 59811
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 15
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 19
     },
     {
       "icon": {
@@ -804,15 +855,15 @@
         {}
       ],
       "properties": {
-        "order": 172,
-        "id": 16,
+        "order": 400,
+        "id": 19,
         "name": "rubros_luz",
         "prevSize": 32,
         "code": 59812
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 16
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 20
     },
     {
       "icon": {
@@ -839,15 +890,15 @@
         {}
       ],
       "properties": {
-        "order": 173,
-        "id": 17,
+        "order": 401,
+        "id": 20,
         "name": "rubros_medicina-prepaga",
         "prevSize": 32,
         "code": 59813
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 17
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 21
     },
     {
       "icon": {
@@ -874,15 +925,15 @@
         {}
       ],
       "properties": {
-        "order": 174,
-        "id": 18,
+        "order": 402,
+        "id": 21,
         "name": "rubros_establecimientos-educativos",
         "prevSize": 32,
         "code": 59814
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 18
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 22
     },
     {
       "icon": {
@@ -909,15 +960,15 @@
         {}
       ],
       "properties": {
-        "order": 175,
-        "id": 19,
+        "order": 403,
+        "id": 22,
         "name": "rubros_tarjeta-credito",
         "prevSize": 32,
         "code": 59815
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 19
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 23
     },
     {
       "icon": {
@@ -944,15 +995,15 @@
         {}
       ],
       "properties": {
-        "order": 176,
-        "id": 20,
+        "order": 404,
+        "id": 23,
         "name": "rubros_barrio-privado",
         "prevSize": 32,
         "code": 59816
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 20
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 24
     },
     {
       "icon": {
@@ -979,15 +1030,15 @@
         {}
       ],
       "properties": {
-        "order": 177,
-        "id": 21,
+        "order": 405,
+        "id": 24,
         "name": "rubros_gas",
         "prevSize": 32,
         "code": 59817
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 21
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 25
     },
     {
       "icon": {
@@ -1018,15 +1069,15 @@
         {}
       ],
       "properties": {
-        "order": 178,
-        "id": 22,
+        "order": 406,
+        "id": 25,
         "name": "rubros_emergencias-medicas",
         "prevSize": 32,
         "code": 59818
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 22
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 26
     },
     {
       "icon": {
@@ -1053,15 +1104,15 @@
         {}
       ],
       "properties": {
-        "order": 179,
-        "id": 23,
+        "order": 407,
+        "id": 26,
         "name": "rubros_consorcios",
         "prevSize": 32,
         "code": 59819
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 23
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 27
     },
     {
       "icon": {
@@ -1088,15 +1139,15 @@
         {}
       ],
       "properties": {
-        "order": 180,
-        "id": 24,
+        "order": 408,
+        "id": 27,
         "name": "rubros_agua",
         "prevSize": 32,
         "code": 59820
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 24
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 28
     },
     {
       "icon": {
@@ -1123,15 +1174,15 @@
         {}
       ],
       "properties": {
-        "order": 181,
-        "id": 25,
+        "order": 409,
+        "id": 28,
         "name": "rubros_tickets",
         "prevSize": 32,
         "code": 59821
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 25
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 29
     },
     {
       "icon": {
@@ -1158,15 +1209,15 @@
         {}
       ],
       "properties": {
-        "order": 155,
-        "id": 26,
+        "order": 410,
+        "id": 29,
         "name": "rubros_pulsos",
         "prevSize": 32,
         "code": 59822
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 26
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 30
     },
     {
       "icon": {
@@ -1193,15 +1244,15 @@
         {}
       ],
       "properties": {
-        "order": 154,
-        "id": 27,
+        "order": 411,
+        "id": 30,
         "name": "rubros_subte",
         "prevSize": 32,
         "code": 59823
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 27
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 31
     },
     {
       "icon": {
@@ -1228,15 +1279,15 @@
         {}
       ],
       "properties": {
-        "order": 153,
-        "id": 28,
+        "order": 412,
+        "id": 31,
         "name": "rubros_donaciones",
         "prevSize": 32,
         "code": 59824
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 28
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 32
     },
     {
       "icon": {
@@ -1282,15 +1333,15 @@
         {}
       ],
       "properties": {
-        "order": 152,
-        "id": 30,
+        "order": 413,
+        "id": 32,
         "name": "cheques",
         "prevSize": 32,
         "code": 59830
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 30
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 33
     },
     {
       "icon": {
@@ -1317,15 +1368,15 @@
         {}
       ],
       "properties": {
-        "order": 151,
-        "id": 31,
+        "order": 414,
+        "id": 33,
         "name": "cpp2",
         "prevSize": 32,
         "code": 59831
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 31
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 34
     },
     {
       "icon": {
@@ -1356,15 +1407,15 @@
         {}
       ],
       "properties": {
-        "order": 142,
-        "id": 33,
+        "order": 415,
+        "id": 34,
         "name": "clave-compras",
         "prevSize": 32,
         "code": 59832
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 33
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 35
     },
     {
       "icon": {
@@ -1406,15 +1457,15 @@
         {}
       ],
       "properties": {
-        "order": 143,
-        "id": 34,
+        "order": 416,
+        "id": 35,
         "name": "nueva-transferencia",
         "prevSize": 32,
         "code": 59786
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 34
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 36
     },
     {
       "icon": {
@@ -1460,15 +1511,15 @@
         {}
       ],
       "properties": {
-        "order": 144,
-        "id": 35,
+        "order": 417,
+        "id": 36,
         "name": "ultimas-transferencias",
         "prevSize": 32,
         "code": 59787
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 35
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 37
     },
     {
       "icon": {
@@ -1498,15 +1549,15 @@
         {}
       ],
       "properties": {
-        "order": 145,
-        "id": 36,
+        "order": 418,
+        "id": 37,
         "name": "clave-alfa-id",
         "prevSize": 32,
         "code": 59788
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 36
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 38
     },
     {
       "icon": {
@@ -1544,15 +1595,15 @@
         {}
       ],
       "properties": {
-        "order": 146,
-        "id": 37,
+        "order": 419,
+        "id": 38,
         "name": "limite-transferencias",
         "prevSize": 32,
         "code": 59789
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 37
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 39
     },
     {
       "icon": {
@@ -1586,15 +1637,15 @@
         {}
       ],
       "properties": {
-        "order": 147,
-        "id": 38,
+        "order": 420,
+        "id": 39,
         "name": "baja-seguros",
         "prevSize": 32,
         "code": 59790
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 38
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 40
     },
     {
       "icon": {
@@ -1629,15 +1680,15 @@
         {}
       ],
       "properties": {
-        "order": 148,
-        "id": 39,
+        "order": 421,
+        "id": 40,
         "name": "alta-seguros",
         "prevSize": 32,
         "code": 59791
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 39
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 41
     },
     {
       "icon": {
@@ -1668,15 +1719,15 @@
         {}
       ],
       "properties": {
-        "order": 138,
-        "id": 40,
+        "order": 422,
+        "id": 41,
         "name": "seguros",
         "prevSize": 32,
         "code": 59758
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 40
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 42
     },
     {
       "icon": {
@@ -1707,15 +1758,15 @@
         {}
       ],
       "properties": {
-        "order": 139,
-        "id": 41,
+        "order": 423,
+        "id": 42,
         "name": "prestamos",
         "prevSize": 32,
         "code": 59782
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 41
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 43
     },
     {
       "icon": {
@@ -1758,15 +1809,15 @@
         {}
       ],
       "properties": {
-        "order": 140,
-        "id": 42,
+        "order": 424,
+        "id": 43,
         "name": "pago-total",
         "prevSize": 32,
         "code": 59783
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 42
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 44
     },
     {
       "icon": {
@@ -1797,58 +1848,15 @@
         {}
       ],
       "properties": {
-        "order": 141,
-        "id": 43,
+        "order": 425,
+        "id": 44,
         "name": "cierre-cuenta",
         "prevSize": 32,
         "code": 59784
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 43
-    },
-    {
-      "icon": {
-        "paths": [
-          "M88.096 832h576v96h-576v-96z",
-          "M628.768 671.456h-505.344c-32.192 0-58.304 26.112-58.304 58.304v58.304h621.984v-58.304c0-32.224-26.112-58.304-58.336-58.304z",
-          "M220.608 613.12h310.976c16 0 25.152-18.272 15.552-31.104l-93.28-124.384v-102.368c42.624-29.792 67.552-83.168 55.104-141.376-10.72-50.048-50.912-91.072-100.832-102.464-10.88-2.464-21.6-3.648-32.032-3.648-75.136 0-136.032 60.928-136.032 136.064 0 46.176 23.136 86.848 58.304 111.424v102.368l-93.28 124.384c-9.632 12.832-0.48 31.104 15.52 31.104z"
-        ],
-        "width": 752,
-        "attrs": [
-          {},
-          {},
-          {}
-        ],
-        "isMulticolor": false,
-        "isMulticolor2": false,
-        "colorPermutations": {
-          "125125125112552552551": [
-            {},
-            {},
-            {}
-          ]
-        },
-        "tags": [
-          "Fuente_para exportar-43"
-        ],
-        "grid": 0
-      },
-      "attrs": [
-        {},
-        {},
-        {}
-      ],
-      "properties": {
-        "order": 137,
-        "id": 44,
-        "name": "accion-pagar",
-        "prevSize": 32,
-        "code": 59668
-      },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 44
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 45
     },
     {
       "icon": {
@@ -1887,15 +1895,15 @@
         {}
       ],
       "properties": {
-        "order": 134,
-        "id": 45,
+        "order": 426,
+        "id": 46,
         "name": "deposito-efectivo",
         "prevSize": 32,
         "code": 59665
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 45
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 46
     },
     {
       "icon": {
@@ -1922,15 +1930,15 @@
         {}
       ],
       "properties": {
-        "order": 135,
-        "id": 46,
+        "order": 427,
+        "id": 47,
         "name": "envio-recepcion",
         "prevSize": 32,
         "code": 59666
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 46
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 47
     },
     {
       "icon": {
@@ -1965,15 +1973,15 @@
         {}
       ],
       "properties": {
-        "order": 136,
-        "id": 47,
+        "order": 428,
+        "id": 48,
         "name": "deposito",
         "prevSize": 32,
         "code": 59667
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 47
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 48
     },
     {
       "icon": {
@@ -2000,15 +2008,15 @@
         {}
       ],
       "properties": {
-        "order": 133,
-        "id": 48,
+        "order": 429,
+        "id": 49,
         "name": "transaccion",
         "prevSize": 32,
         "code": 59664
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 48
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 49
     },
     {
       "icon": {
@@ -2043,15 +2051,15 @@
         {}
       ],
       "properties": {
-        "order": 132,
-        "id": 49,
+        "order": 430,
+        "id": 50,
         "name": "transferencia",
         "prevSize": 32,
         "code": 59663
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 49
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 50
     },
     {
       "icon": {
@@ -2102,15 +2110,15 @@
         {}
       ],
       "properties": {
-        "order": 5,
-        "id": 50,
+        "order": 431,
+        "id": 51,
         "name": "tam",
         "prevSize": 32,
         "code": 59661
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 50
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 51
     },
     {
       "icon": {
@@ -2137,15 +2145,15 @@
         {}
       ],
       "properties": {
-        "order": 131,
-        "id": 51,
+        "order": 432,
+        "id": 52,
         "name": "desplegable",
         "prevSize": 32,
         "code": 59662
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 51
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 52
     },
     {
       "icon": {
@@ -2180,15 +2188,15 @@
         {}
       ],
       "properties": {
-        "order": 129,
-        "id": 52,
+        "order": 433,
+        "id": 53,
         "name": "cajero-touch",
         "prevSize": 32,
         "code": 59648
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 52
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 53
     },
     {
       "icon": {
@@ -2218,15 +2226,15 @@
         {}
       ],
       "properties": {
-        "order": 41,
-        "id": 53,
+        "order": 434,
+        "id": 54,
         "name": "confirmar",
         "prevSize": 32,
         "code": 59649
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 53
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 54
     },
     {
       "icon": {
@@ -2256,15 +2264,15 @@
         {}
       ],
       "properties": {
-        "order": 42,
-        "id": 54,
+        "order": 435,
+        "id": 55,
         "name": "cancelar",
         "prevSize": 32,
         "code": 59650
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 54
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 55
     },
     {
       "icon": {
@@ -2304,15 +2312,15 @@
         {}
       ],
       "properties": {
-        "order": 53,
-        "id": 55,
+        "order": 436,
+        "id": 56,
         "name": "clave-cajero",
         "prevSize": 32,
         "code": 59651
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 55
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 56
     },
     {
       "icon": {
@@ -2347,15 +2355,15 @@
         {}
       ],
       "properties": {
-        "order": 65,
-        "id": 56,
+        "order": 437,
+        "id": 57,
         "name": "homebanking",
         "prevSize": 32,
         "code": 59652
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 56
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 57
     },
     {
       "icon": {
@@ -2400,15 +2408,15 @@
         {}
       ],
       "properties": {
-        "order": 67,
-        "id": 57,
+        "order": 438,
+        "id": 58,
         "name": "clave-homebanking",
         "prevSize": 32,
         "code": 59653
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 57
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 58
     },
     {
       "icon": {
@@ -2463,15 +2471,15 @@
         {}
       ],
       "properties": {
-        "order": 68,
-        "id": 58,
+        "order": 439,
+        "id": 59,
         "name": "token-generico",
         "prevSize": 32,
         "code": 59654
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 58
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 59
     },
     {
       "icon": {
@@ -2506,15 +2514,15 @@
         {}
       ],
       "properties": {
-        "order": 69,
-        "id": 59,
+        "order": 440,
+        "id": 60,
         "name": "clave-terminal",
         "prevSize": 32,
         "code": 59655
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 59
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 60
     },
     {
       "icon": {
@@ -2564,15 +2572,15 @@
         {}
       ],
       "properties": {
-        "order": 72,
-        "id": 60,
+        "order": 441,
+        "id": 61,
         "name": "clave-banelco",
         "prevSize": 32,
         "code": 59656
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 60
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 61
     },
     {
       "icon": {
@@ -2647,15 +2655,15 @@
         {}
       ],
       "properties": {
-        "order": 70,
-        "id": 61,
+        "order": 442,
+        "id": 62,
         "name": "clave-coordenadas",
         "prevSize": 32,
         "code": 59657
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 61
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 62
     },
     {
       "icon": {
@@ -2695,15 +2703,15 @@
         {}
       ],
       "properties": {
-        "order": 71,
-        "id": 62,
+        "order": 443,
+        "id": 63,
         "name": "clave-canales",
         "prevSize": 32,
         "code": 59658
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 62
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 63
     },
     {
       "icon": {
@@ -2748,15 +2756,15 @@
         {}
       ],
       "properties": {
-        "order": 76,
-        "id": 63,
+        "order": 444,
+        "id": 64,
         "name": "clave-transferencias",
         "prevSize": 32,
         "code": 59659
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 63
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 64
     },
     {
       "icon": {
@@ -2801,15 +2809,15 @@
         {}
       ],
       "properties": {
-        "order": 78,
-        "id": 64,
+        "order": 445,
+        "id": 65,
         "name": "banelco",
         "prevSize": 32,
         "code": 59660
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 64
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 65
     },
     {
       "icon": {
@@ -2838,15 +2846,15 @@
         {}
       ],
       "properties": {
-        "order": 43,
-        "id": 65,
+        "order": 446,
+        "id": 66,
         "name": "redcirrus",
         "prevSize": 32,
         "code": 59669
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 65
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 66
     },
     {
       "icon": {
@@ -2916,15 +2924,15 @@
         {}
       ],
       "properties": {
-        "order": 52,
-        "id": 66,
+        "order": 447,
+        "id": 67,
         "name": "extracash",
         "prevSize": 32,
         "code": 59670
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 66
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 67
     },
     {
       "icon": {
@@ -2968,15 +2976,15 @@
         {}
       ],
       "properties": {
-        "order": 54,
-        "id": 67,
+        "order": 448,
+        "id": 68,
         "name": "visa",
         "prevSize": 32,
         "code": 59671
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 67
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 68
     },
     {
       "icon": {
@@ -3021,15 +3029,15 @@
         {}
       ],
       "properties": {
-        "order": 64,
-        "id": 68,
+        "order": 449,
+        "id": 69,
         "name": "pagomiscuentas",
         "prevSize": 32,
         "code": 59672
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 68
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 69
     },
     {
       "icon": {
@@ -3104,15 +3112,15 @@
         {}
       ],
       "properties": {
-        "order": 75,
-        "id": 69,
+        "order": 450,
+        "id": 70,
         "name": "banelcomovil",
         "prevSize": 32,
         "code": 59673
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 69
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 70
     },
     {
       "icon": {
@@ -3142,15 +3150,15 @@
         {}
       ],
       "properties": {
-        "order": 74,
-        "id": 70,
+        "order": 451,
+        "id": 71,
         "name": "todopago",
         "prevSize": 32,
         "code": 59674
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 70
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 71
     },
     {
       "icon": {
@@ -3180,15 +3188,15 @@
         {}
       ],
       "properties": {
-        "order": 73,
-        "id": 71,
+        "order": 452,
+        "id": 72,
         "name": "facebook",
         "prevSize": 32,
         "code": 59675
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 71
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 72
     },
     {
       "icon": {
@@ -3218,15 +3226,15 @@
         {}
       ],
       "properties": {
-        "order": 83,
-        "id": 72,
+        "order": 453,
+        "id": 73,
         "name": "twitter",
         "prevSize": 32,
         "code": 59676
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 72
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 73
     },
     {
       "icon": {
@@ -3271,15 +3279,15 @@
         {}
       ],
       "properties": {
-        "order": 82,
-        "id": 73,
+        "order": 454,
+        "id": 74,
         "name": "afip",
         "prevSize": 32,
         "code": 59677
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 73
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 74
     },
     {
       "icon": {
@@ -3309,15 +3317,15 @@
         {}
       ],
       "properties": {
-        "order": 81,
-        "id": 74,
+        "order": 455,
+        "id": 75,
         "name": "ba",
         "prevSize": 32,
         "code": 59678
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 74
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 75
     },
     {
       "icon": {
@@ -3367,15 +3375,15 @@
         {}
       ],
       "properties": {
-        "order": 128,
-        "id": 75,
+        "order": 456,
+        "id": 76,
         "name": "token",
         "prevSize": 32,
         "code": 59679
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 75
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 76
     },
     {
       "icon": {
@@ -3405,15 +3413,15 @@
         {}
       ],
       "properties": {
-        "order": 80,
-        "id": 76,
+        "order": 457,
+        "id": 77,
         "name": "terminal",
         "prevSize": 32,
         "code": 59680
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 76
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 77
     },
     {
       "icon": {
@@ -3443,15 +3451,15 @@
         {}
       ],
       "properties": {
-        "order": 79,
-        "id": 77,
+        "order": 458,
+        "id": 78,
         "name": "mano",
         "prevSize": 32,
         "code": 59681
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 77
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 78
     },
     {
       "icon": {
@@ -3486,15 +3494,15 @@
         {}
       ],
       "properties": {
-        "order": 44,
-        "id": 78,
+        "order": 459,
+        "id": 79,
         "name": "ojo",
         "prevSize": 32,
         "code": 59682
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 78
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 79
     },
     {
       "icon": {
@@ -3534,15 +3542,15 @@
         {}
       ],
       "properties": {
-        "order": 51,
-        "id": 79,
+        "order": 460,
+        "id": 80,
         "name": "mas-opciones-horizontal",
         "prevSize": 32,
         "code": 59683
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 79
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 80
     },
     {
       "icon": {
@@ -3587,15 +3595,15 @@
         {}
       ],
       "properties": {
-        "order": 55,
-        "id": 80,
+        "order": 461,
+        "id": 81,
         "name": "debin",
         "prevSize": 32,
         "code": 59684
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 80
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 81
     },
     {
       "icon": {
@@ -3625,15 +3633,15 @@
         {}
       ],
       "properties": {
-        "order": 63,
-        "id": 81,
+        "order": 462,
+        "id": 82,
         "name": "inicio",
         "prevSize": 32,
         "code": 59685
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 81
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 82
     },
     {
       "icon": {
@@ -3668,15 +3676,15 @@
         {}
       ],
       "properties": {
-        "order": 87,
-        "id": 82,
+        "order": 463,
+        "id": 83,
         "name": "eliminar",
         "prevSize": 32,
         "code": 59686
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 82
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 83
     },
     {
       "icon": {
@@ -3706,15 +3714,15 @@
         {}
       ],
       "properties": {
-        "order": 86,
-        "id": 83,
+        "order": 464,
+        "id": 84,
         "name": "borrar",
         "prevSize": 32,
         "code": 59687
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 83
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 84
     },
     {
       "icon": {
@@ -3749,15 +3757,15 @@
         {}
       ],
       "properties": {
-        "order": 85,
-        "id": 84,
+        "order": 465,
+        "id": 85,
         "name": "editar",
         "prevSize": 32,
         "code": 59688
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 84
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 85
     },
     {
       "icon": {
@@ -3792,15 +3800,15 @@
         {}
       ],
       "properties": {
-        "order": 84,
-        "id": 85,
+        "order": 466,
+        "id": 86,
         "name": "imprimir",
         "prevSize": 32,
         "code": 59689
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 85
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 86
     },
     {
       "icon": {
@@ -3830,15 +3838,15 @@
         {}
       ],
       "properties": {
-        "order": 108,
-        "id": 86,
+        "order": 467,
+        "id": 87,
         "name": "buscar",
         "prevSize": 32,
         "code": 59690
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 86
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 87
     },
     {
       "icon": {
@@ -3868,15 +3876,15 @@
         {}
       ],
       "properties": {
-        "order": 109,
-        "id": 87,
+        "order": 468,
+        "id": 88,
         "name": "izquierda",
         "prevSize": 32,
         "code": 59691
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 87
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 88
     },
     {
       "icon": {
@@ -3906,15 +3914,15 @@
         {}
       ],
       "properties": {
-        "order": 127,
-        "id": 88,
+        "order": 469,
+        "id": 89,
         "name": "derecha",
         "prevSize": 32,
         "code": 59692
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 88
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 89
     },
     {
       "icon": {
@@ -3949,15 +3957,15 @@
         {}
       ],
       "properties": {
-        "order": 126,
-        "id": 89,
+        "order": 470,
+        "id": 90,
         "name": "salir",
         "prevSize": 32,
         "code": 59693
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 89
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 90
     },
     {
       "icon": {
@@ -3992,15 +4000,15 @@
         {}
       ],
       "properties": {
-        "order": 125,
-        "id": 90,
+        "order": 471,
+        "id": 91,
         "name": "entrar",
         "prevSize": 32,
         "code": 59694
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 90
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 91
     },
     {
       "icon": {
@@ -4035,15 +4043,15 @@
         {}
       ],
       "properties": {
-        "order": 45,
-        "id": 91,
+        "order": 472,
+        "id": 92,
         "name": "guardar",
         "prevSize": 32,
         "code": 59695
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 91
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 92
     },
     {
       "icon": {
@@ -4073,15 +4081,15 @@
         {}
       ],
       "properties": {
-        "order": 50,
-        "id": 92,
+        "order": 473,
+        "id": 93,
         "name": "clave",
         "prevSize": 32,
         "code": 59696
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 92
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 93
     },
     {
       "icon": {
@@ -4121,15 +4129,15 @@
         {}
       ],
       "properties": {
-        "order": 56,
-        "id": 93,
+        "order": 474,
+        "id": 94,
         "name": "mas-opciones",
         "prevSize": 32,
         "code": 59697
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 93
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 94
     },
     {
       "icon": {
@@ -4164,15 +4172,15 @@
         {}
       ],
       "properties": {
-        "order": 62,
-        "id": 94,
+        "order": 475,
+        "id": 95,
         "name": "fecha",
         "prevSize": 32,
         "code": 59698
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 94
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 95
     },
     {
       "icon": {
@@ -4202,15 +4210,15 @@
         {}
       ],
       "properties": {
-        "order": 88,
-        "id": 95,
+        "order": 476,
+        "id": 96,
         "name": "configuracion",
         "prevSize": 32,
         "code": 59699
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 95
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 96
     },
     {
       "icon": {
@@ -4240,15 +4248,15 @@
         {}
       ],
       "properties": {
-        "order": 89,
-        "id": 96,
+        "order": 477,
+        "id": 97,
         "name": "advertencia",
         "prevSize": 32,
         "code": 59700
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 96
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 97
     },
     {
       "icon": {
@@ -4278,15 +4286,15 @@
         {}
       ],
       "properties": {
-        "order": 105,
-        "id": 97,
+        "order": 478,
+        "id": 98,
         "name": "cerrar",
         "prevSize": 32,
         "code": 59701
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 97
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 98
     },
     {
       "icon": {
@@ -4316,15 +4324,15 @@
         {}
       ],
       "properties": {
-        "order": 106,
-        "id": 98,
+        "order": 479,
+        "id": 99,
         "name": "mas",
         "prevSize": 32,
         "code": 59702
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 98
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 99
     },
     {
       "icon": {
@@ -4354,15 +4362,15 @@
         {}
       ],
       "properties": {
-        "order": 107,
-        "id": 99,
+        "order": 480,
+        "id": 100,
         "name": "menos",
         "prevSize": 32,
         "code": 59703
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 99
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 100
     },
     {
       "icon": {
@@ -4392,15 +4400,15 @@
         {}
       ],
       "properties": {
-        "order": 110,
-        "id": 100,
+        "order": 481,
+        "id": 101,
         "name": "informacion",
         "prevSize": 32,
         "code": 59704
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 100
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 101
     },
     {
       "icon": {
@@ -4430,15 +4438,15 @@
         {}
       ],
       "properties": {
-        "order": 122,
-        "id": 101,
+        "order": 482,
+        "id": 102,
         "name": "internet",
         "prevSize": 32,
         "code": 59705
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 101
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 102
     },
     {
       "icon": {
@@ -4468,15 +4476,15 @@
         {}
       ],
       "properties": {
-        "order": 123,
-        "id": 102,
+        "order": 483,
+        "id": 103,
         "name": "favorito",
         "prevSize": 32,
         "code": 59706
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 102
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 103
     },
     {
       "icon": {
@@ -4506,15 +4514,15 @@
         {}
       ],
       "properties": {
-        "order": 124,
-        "id": 103,
+        "order": 484,
+        "id": 104,
         "name": "total",
         "prevSize": 32,
         "code": 59707
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 103
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 104
     },
     {
       "icon": {
@@ -4549,15 +4557,15 @@
         {}
       ],
       "properties": {
-        "order": 46,
-        "id": 104,
+        "order": 485,
+        "id": 105,
         "name": "tiempo",
         "prevSize": 32,
         "code": 59708
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 104
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 105
     },
     {
       "icon": {
@@ -4592,15 +4600,15 @@
         {}
       ],
       "properties": {
-        "order": 49,
-        "id": 105,
+        "order": 486,
+        "id": 106,
         "name": "no-videntes",
         "prevSize": 32,
         "code": 59709
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 105
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 106
     },
     {
       "icon": {
@@ -4635,15 +4643,15 @@
         {}
       ],
       "properties": {
-        "order": 57,
-        "id": 106,
+        "order": 487,
+        "id": 107,
         "name": "en-pie",
         "prevSize": 32,
         "code": 59710
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 106
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 107
     },
     {
       "icon": {
@@ -4683,15 +4691,15 @@
         {}
       ],
       "properties": {
-        "order": 66,
-        "id": 107,
+        "order": 488,
+        "id": 108,
         "name": "cambio-de-clave",
         "prevSize": 32,
         "code": 59711
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 107
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 108
     },
     {
       "icon": {
@@ -4721,15 +4729,15 @@
         {}
       ],
       "properties": {
-        "order": 90,
-        "id": 108,
+        "order": 489,
+        "id": 109,
         "name": "compras",
         "prevSize": 32,
         "code": 59712
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 108
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 109
     },
     {
       "icon": {
@@ -4759,15 +4767,15 @@
         {}
       ],
       "properties": {
-        "order": 91,
-        "id": 109,
+        "order": 490,
+        "id": 110,
         "name": "bloqueado",
         "prevSize": 32,
         "code": 59713
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 109
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 110
     },
     {
       "icon": {
@@ -4797,15 +4805,15 @@
         {}
       ],
       "properties": {
-        "order": 104,
-        "id": 110,
+        "order": 491,
+        "id": 111,
         "name": "desbloqueado",
         "prevSize": 32,
         "code": 59714
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 110
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 111
     },
     {
       "icon": {
@@ -4835,15 +4843,15 @@
         {}
       ],
       "properties": {
-        "order": 103,
-        "id": 111,
+        "order": 492,
+        "id": 112,
         "name": "ubicacion",
         "prevSize": 32,
         "code": 59715
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 111
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 112
     },
     {
       "icon": {
@@ -4878,15 +4886,15 @@
         {}
       ],
       "properties": {
-        "order": 102,
-        "id": 112,
+        "order": 493,
+        "id": 113,
         "name": "no-ubicacion",
         "prevSize": 32,
         "code": 59716
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 112
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 113
     },
     {
       "icon": {
@@ -4921,15 +4929,15 @@
         {}
       ],
       "properties": {
-        "order": 111,
-        "id": 113,
+        "order": 494,
+        "id": 114,
         "name": "flujo",
         "prevSize": 32,
         "code": 59717
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 113
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 114
     },
     {
       "icon": {
@@ -4964,15 +4972,15 @@
         {}
       ],
       "properties": {
-        "order": 121,
-        "id": 114,
+        "order": 495,
+        "id": 115,
         "name": "hombre",
         "prevSize": 32,
         "code": 59718
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 114
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 115
     },
     {
       "icon": {
@@ -5007,15 +5015,15 @@
         {}
       ],
       "properties": {
-        "order": 120,
-        "id": 115,
+        "order": 496,
+        "id": 116,
         "name": "mujer",
         "prevSize": 32,
         "code": 59719
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 115
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 116
     },
     {
       "icon": {
@@ -5060,15 +5068,15 @@
         {}
       ],
       "properties": {
-        "order": 119,
-        "id": 116,
+        "order": 497,
+        "id": 117,
         "name": "amigos",
         "prevSize": 32,
         "code": 59720
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 116
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 117
     },
     {
       "icon": {
@@ -5103,15 +5111,15 @@
         {}
       ],
       "properties": {
-        "order": 47,
-        "id": 117,
+        "order": 498,
+        "id": 118,
         "name": "error",
         "prevSize": 32,
         "code": 59721
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 117
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 118
     },
     {
       "icon": {
@@ -5141,15 +5149,15 @@
         {}
       ],
       "properties": {
-        "order": 48,
-        "id": 118,
+        "order": 499,
+        "id": 119,
         "name": "comprobante",
         "prevSize": 32,
         "code": 59722
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 118
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 119
     },
     {
       "icon": {
@@ -5179,15 +5187,15 @@
         {}
       ],
       "properties": {
-        "order": 58,
-        "id": 119,
+        "order": 500,
+        "id": 120,
         "name": "tarjeta",
         "prevSize": 32,
         "code": 59723
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 119
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 120
     },
     {
       "icon": {
@@ -5221,15 +5229,15 @@
         {}
       ],
       "properties": {
-        "order": 60,
-        "id": 120,
+        "order": 501,
+        "id": 121,
         "name": "sin-tarjeta",
         "prevSize": 32,
         "code": 59724
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 120
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 121
     },
     {
       "icon": {
@@ -5269,15 +5277,15 @@
         {}
       ],
       "properties": {
-        "order": 92,
-        "id": 121,
+        "order": 502,
+        "id": 122,
         "name": "pagar",
         "prevSize": 32,
         "code": 59725
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 121
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 122
     },
     {
       "icon": {
@@ -5317,15 +5325,15 @@
         {}
       ],
       "properties": {
-        "order": 93,
-        "id": 122,
+        "order": 503,
+        "id": 123,
         "name": "usuario-ok",
         "prevSize": 32,
         "code": 59726
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 122
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 123
     },
     {
       "icon": {
@@ -5365,15 +5373,15 @@
         {}
       ],
       "properties": {
-        "order": 97,
-        "id": 123,
+        "order": 504,
+        "id": 124,
         "name": "cuenta-destacada",
         "prevSize": 32,
         "code": 59727
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 123
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 124
     },
     {
       "icon": {
@@ -5413,15 +5421,15 @@
         {}
       ],
       "properties": {
-        "order": 99,
-        "id": 124,
+        "order": 505,
+        "id": 125,
         "name": "agregar",
         "prevSize": 32,
         "code": 59728
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 124
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 125
     },
     {
       "icon": {
@@ -5471,15 +5479,15 @@
         {}
       ],
       "properties": {
-        "order": 101,
-        "id": 125,
+        "order": 506,
+        "id": 126,
         "name": "transferencia-cta-propia",
         "prevSize": 32,
         "code": 59729
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 125
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 126
     },
     {
       "icon": {
@@ -5509,15 +5517,15 @@
         {}
       ],
       "properties": {
-        "order": 112,
-        "id": 126,
+        "order": 507,
+        "id": 127,
         "name": "cajero-notouch",
         "prevSize": 32,
         "code": 59730
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 126
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 127
     },
     {
       "icon": {
@@ -5547,15 +5555,15 @@
         {}
       ],
       "properties": {
-        "order": 116,
-        "id": 127,
+        "order": 508,
+        "id": 128,
         "name": "negocio",
         "prevSize": 32,
         "code": 59731
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 127
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 128
     },
     {
       "icon": {
@@ -5585,15 +5593,15 @@
         {}
       ],
       "properties": {
-        "order": 117,
-        "id": 128,
+        "order": 509,
+        "id": 129,
         "name": "saldo",
         "prevSize": 32,
         "code": 59732
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 128
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 129
     },
     {
       "icon": {
@@ -5623,15 +5631,15 @@
         {}
       ],
       "properties": {
-        "order": 14,
-        "id": 129,
+        "order": 510,
+        "id": 130,
         "name": "consulta-saldo",
         "prevSize": 32,
         "code": 59733
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 129
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 130
     },
     {
       "icon": {
@@ -5666,15 +5674,15 @@
         {}
       ],
       "properties": {
-        "order": 16,
-        "id": 130,
+        "order": 511,
+        "id": 131,
         "name": "disponible",
         "prevSize": 32,
         "code": 59734
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 130
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 131
     },
     {
       "icon": {
@@ -5719,15 +5727,15 @@
         {}
       ],
       "properties": {
-        "order": 59,
-        "id": 131,
+        "order": 512,
+        "id": 132,
         "name": "ultimos-movimientos",
         "prevSize": 32,
         "code": 59735
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 131
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 132
     },
     {
       "icon": {
@@ -5757,15 +5765,15 @@
         {}
       ],
       "properties": {
-        "order": 61,
-        "id": 132,
+        "order": 513,
+        "id": 133,
         "name": "consulta-movimientos",
         "prevSize": 32,
         "code": 59736
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 132
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 133
     },
     {
       "icon": {
@@ -5795,15 +5803,15 @@
         {}
       ],
       "properties": {
-        "order": 94,
-        "id": 133,
+        "order": 514,
+        "id": 134,
         "name": "mail",
         "prevSize": 32,
         "code": 59737
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 133
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 134
     },
     {
       "icon": {
@@ -5838,15 +5846,15 @@
         {}
       ],
       "properties": {
-        "order": 95,
-        "id": 134,
+        "order": 515,
+        "id": 135,
         "name": "cbu",
         "prevSize": 32,
         "code": 59738
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 134
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 135
     },
     {
       "icon": {
@@ -5886,15 +5894,15 @@
         {}
       ],
       "properties": {
-        "order": 96,
-        "id": 135,
+        "order": 516,
+        "id": 136,
         "name": "consulta-cbu",
         "prevSize": 32,
         "code": 59739
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 135
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 136
     },
     {
       "icon": {
@@ -5929,15 +5937,15 @@
         {}
       ],
       "properties": {
-        "order": 98,
-        "id": 136,
+        "order": 517,
+        "id": 137,
         "name": "cuenta",
         "prevSize": 32,
         "code": 59740
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 136
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 137
     },
     {
       "icon": {
@@ -5972,15 +5980,15 @@
         {}
       ],
       "properties": {
-        "order": 100,
-        "id": 137,
+        "order": 518,
+        "id": 138,
         "name": "billetera",
         "prevSize": 32,
         "code": 59741
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 137
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 138
     },
     {
       "icon": {
@@ -6025,15 +6033,15 @@
         {}
       ],
       "properties": {
-        "order": 113,
-        "id": 138,
+        "order": 519,
+        "id": 139,
         "name": "billete",
         "prevSize": 32,
         "code": 59742
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 138
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 139
     },
     {
       "icon": {
@@ -6068,15 +6076,15 @@
         {}
       ],
       "properties": {
-        "order": 114,
-        "id": 139,
+        "order": 520,
+        "id": 140,
         "name": "pesos",
         "prevSize": 32,
         "code": 59743
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 139
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 140
     },
     {
       "icon": {
@@ -6121,15 +6129,15 @@
         {}
       ],
       "properties": {
-        "order": 115,
-        "id": 140,
+        "order": 521,
+        "id": 141,
         "name": "dolares",
         "prevSize": 32,
         "code": 59744
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 140
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 141
     },
     {
       "icon": {
@@ -6164,15 +6172,15 @@
         {}
       ],
       "properties": {
-        "order": 118,
-        "id": 141,
+        "order": 522,
+        "id": 142,
         "name": "euros",
         "prevSize": 32,
         "code": 59745
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 141
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 142
     },
     {
       "icon": {
@@ -6217,15 +6225,15 @@
         {}
       ],
       "properties": {
-        "order": 13,
-        "id": 142,
+        "order": 523,
+        "id": 143,
         "name": "adelanto",
         "prevSize": 32,
         "code": 59746
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 142
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 143
     },
     {
       "icon": {
@@ -6270,15 +6278,15 @@
         {}
       ],
       "properties": {
-        "order": 15,
-        "id": 143,
+        "order": 524,
+        "id": 144,
         "name": "reconocimiento-billete",
         "prevSize": 32,
         "code": 59747
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 143
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 144
     },
     {
       "icon": {
@@ -6318,15 +6326,15 @@
         {}
       ],
       "properties": {
-        "order": 11,
-        "id": 144,
+        "order": 525,
+        "id": 145,
         "name": "transferencia-envio",
         "prevSize": 32,
         "code": 59748
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 144
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 145
     },
     {
       "icon": {
@@ -6366,15 +6374,15 @@
         {}
       ],
       "properties": {
-        "order": 2,
-        "id": 145,
+        "order": 526,
+        "id": 146,
         "name": "transferencia-recepcion",
         "prevSize": 32,
         "code": 59749
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 145
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 146
     },
     {
       "icon": {
@@ -6424,15 +6432,15 @@
         {}
       ],
       "properties": {
-        "order": 3,
-        "id": 146,
+        "order": 527,
+        "id": 147,
         "name": "deposito-cta-propia",
         "prevSize": 32,
         "code": 59750
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 146
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 147
     },
     {
       "icon": {
@@ -6482,15 +6490,15 @@
         {}
       ],
       "properties": {
-        "order": 4,
-        "id": 147,
+        "order": 528,
+        "id": 148,
         "name": "deposito-cta-terceros",
         "prevSize": 32,
         "code": 59751
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 147
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 148
     },
     {
       "icon": {
@@ -6525,15 +6533,15 @@
         {}
       ],
       "properties": {
-        "order": 8,
-        "id": 148,
+        "order": 529,
+        "id": 149,
         "name": "limite-compra",
         "prevSize": 32,
         "code": 59752
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 148
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 149
     },
     {
       "icon": {
@@ -6578,15 +6586,15 @@
         {}
       ],
       "properties": {
-        "order": 9,
-        "id": 149,
+        "order": 530,
+        "id": 150,
         "name": "limite-pagos",
         "prevSize": 32,
         "code": 59753
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 149
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 150
     },
     {
       "icon": {
@@ -6621,15 +6629,15 @@
         {}
       ],
       "properties": {
-        "order": 40,
-        "id": 150,
+        "order": 531,
+        "id": 151,
         "name": "clave-mobile",
         "prevSize": 32,
         "code": 59754
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 150
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 151
     },
     {
       "icon": {
@@ -6664,15 +6672,15 @@
         {}
       ],
       "properties": {
-        "order": 39,
-        "id": 151,
+        "order": 532,
+        "id": 152,
         "name": "recarga-tel",
         "prevSize": 32,
         "code": 59755
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 151
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 152
     },
     {
       "icon": {
@@ -6702,15 +6710,15 @@
         {}
       ],
       "properties": {
-        "order": 38,
-        "id": 152,
+        "order": 533,
+        "id": 153,
         "name": "giftcard",
         "prevSize": 32,
         "code": 59756
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 152
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 153
     },
     {
       "icon": {
@@ -6780,15 +6788,15 @@
         {}
       ],
       "properties": {
-        "order": 37,
-        "id": 153,
+        "order": 534,
+        "id": 154,
         "name": "tarjeta-coordenadas",
         "prevSize": 32,
         "code": 59757
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 153
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 154
     },
     {
       "icon": {
@@ -6833,15 +6841,15 @@
         {}
       ],
       "properties": {
-        "order": 18,
-        "id": 154,
+        "order": 535,
+        "id": 155,
         "name": "extraccion",
         "prevSize": 32,
         "code": 59759
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 154
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 155
     },
     {
       "icon": {
@@ -6881,15 +6889,15 @@
         {}
       ],
       "properties": {
-        "order": 20,
-        "id": 155,
+        "order": 536,
+        "id": 156,
         "name": "consultas",
         "prevSize": 32,
         "code": 59760
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 155
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 156
     },
     {
       "icon": {
@@ -6929,15 +6937,15 @@
         {}
       ],
       "properties": {
-        "order": 21,
-        "id": 156,
+        "order": 537,
+        "id": 157,
         "name": "si-no",
         "prevSize": 32,
         "code": 59761
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 156
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 157
     },
     {
       "icon": {
@@ -6967,15 +6975,15 @@
         {}
       ],
       "properties": {
-        "order": 25,
-        "id": 157,
+        "order": 538,
+        "id": 158,
         "name": "empresa",
         "prevSize": 32,
         "code": 59762
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 157
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 158
     },
     {
       "icon": {
@@ -7005,15 +7013,15 @@
         {}
       ],
       "properties": {
-        "order": 24,
-        "id": 158,
+        "order": 539,
+        "id": 159,
         "name": "en-auto",
         "prevSize": 32,
         "code": 59763
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 158
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 159
     },
     {
       "icon": {
@@ -7063,15 +7071,15 @@
         {}
       ],
       "properties": {
-        "order": 28,
-        "id": 159,
+        "order": 540,
+        "id": 160,
         "name": "banco",
         "prevSize": 32,
         "code": 59764
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 159
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 160
     },
     {
       "icon": {
@@ -7101,15 +7109,15 @@
         {}
       ],
       "properties": {
-        "order": 10,
-        "id": 160,
+        "order": 541,
+        "id": 161,
         "name": "factura",
         "prevSize": 32,
         "code": 59765
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 160
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 161
     },
     {
       "icon": {
@@ -7139,15 +7147,15 @@
         {}
       ],
       "properties": {
-        "order": 30,
-        "id": 161,
+        "order": 542,
+        "id": 162,
         "name": "donacion",
         "prevSize": 32,
         "code": 59766
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 161
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 162
     },
     {
       "icon": {
@@ -7177,15 +7185,15 @@
         {}
       ],
       "properties": {
-        "order": 31,
-        "id": 162,
+        "order": 543,
+        "id": 163,
         "name": "cpp",
         "prevSize": 32,
         "code": 59767
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 162
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 163
     },
     {
       "icon": {
@@ -7215,15 +7223,15 @@
         {}
       ],
       "properties": {
-        "order": 32,
-        "id": 163,
+        "order": 544,
+        "id": 164,
         "name": "giftcard2",
         "prevSize": 32,
         "code": 59768
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 163
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 164
     },
     {
       "icon": {
@@ -7253,15 +7261,15 @@
         {}
       ],
       "properties": {
-        "order": 33,
-        "id": 164,
+        "order": 545,
+        "id": 165,
         "name": "regalo",
         "prevSize": 32,
         "code": 59769
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 164
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 165
     },
     {
       "icon": {
@@ -7301,15 +7309,15 @@
         {}
       ],
       "properties": {
-        "order": 34,
-        "id": 165,
+        "order": 546,
+        "id": 166,
         "name": "carro",
         "prevSize": 32,
         "code": 59770
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 165
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 166
     },
     {
       "icon": {
@@ -7354,15 +7362,15 @@
         {}
       ],
       "properties": {
-        "order": 35,
-        "id": 166,
+        "order": 547,
+        "id": 167,
         "name": "limite-extraccion",
         "prevSize": 32,
         "code": 59771
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 166
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 167
     },
     {
       "icon": {
@@ -7397,15 +7405,15 @@
         {}
       ],
       "properties": {
-        "order": 17,
-        "id": 167,
+        "order": 548,
+        "id": 168,
         "name": "retire-tarjeta",
         "prevSize": 32,
         "code": 59772
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 167
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 168
     },
     {
       "icon": {
@@ -7440,15 +7448,15 @@
         {}
       ],
       "properties": {
-        "order": 19,
-        "id": 168,
+        "order": 549,
+        "id": 169,
         "name": "ingrese-tarjeta",
         "prevSize": 32,
         "code": 59773
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 168
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 169
     },
     {
       "icon": {
@@ -7483,15 +7491,15 @@
         {}
       ],
       "properties": {
-        "order": 22,
-        "id": 169,
+        "order": 550,
+        "id": 170,
         "name": "cardhole-out",
         "prevSize": 32,
         "code": 59774
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 169
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 170
     },
     {
       "icon": {
@@ -7526,15 +7534,15 @@
         {}
       ],
       "properties": {
-        "order": 23,
-        "id": 170,
+        "order": 551,
+        "id": 171,
         "name": "cardhole-in",
         "prevSize": 32,
         "code": 59775
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 170
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 171
     },
     {
       "icon": {
@@ -7564,15 +7572,15 @@
         {}
       ],
       "properties": {
-        "order": 26,
-        "id": 171,
+        "order": 552,
+        "id": 172,
         "name": "tarjeta90",
         "prevSize": 32,
         "code": 59776
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 171
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 172
     },
     {
       "icon": {
@@ -7602,15 +7610,15 @@
         {}
       ],
       "properties": {
-        "order": 27,
-        "id": 172,
+        "order": 553,
+        "id": 173,
         "name": "arriba",
         "prevSize": 32,
         "code": 59777
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 172
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 173
     },
     {
       "icon": {
@@ -7640,15 +7648,15 @@
         {}
       ],
       "properties": {
-        "order": 29,
-        "id": 173,
+        "order": 554,
+        "id": 174,
         "name": "abajo",
         "prevSize": 32,
         "code": 59778
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 173
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 174
     },
     {
       "icon": {
@@ -7688,15 +7696,15 @@
         {}
       ],
       "properties": {
-        "order": 7,
-        "id": 174,
+        "order": 555,
+        "id": 175,
         "name": "touch",
         "prevSize": 32,
         "code": 59779
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 174
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 175
     },
     {
       "icon": {
@@ -7726,15 +7734,15 @@
         {}
       ],
       "properties": {
-        "order": 6,
-        "id": 175,
+        "order": 556,
+        "id": 176,
         "name": "mensaje",
         "prevSize": 32,
         "code": 59780
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 175
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 176
     },
     {
       "icon": {
@@ -7769,15 +7777,15 @@
         {}
       ],
       "properties": {
-        "order": 5,
-        "id": 176,
+        "order": 557,
+        "id": 177,
         "name": "archivar",
         "prevSize": 32,
         "code": 59781
       },
-      "setIdx": 1,
-      "setId": 0,
-      "iconIdx": 176
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 177
     }
   ],
   "height": 1024,
