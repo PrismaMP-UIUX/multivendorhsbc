@@ -47,6 +47,9 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   position: relative;
   top: 2px;
 
+  &.accion-pagar:before {
+  content: "\e999";
+  }
   &.rubros_generico:before {
     content: "\e998";
   }
@@ -181,9 +184,6 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   }
   &.cierre-cuenta:before {
     content: "\e988";
-  }
-  &.accion-pagar:before {
-    content: "\e914";
   }
   &.deposito-efectivo:before {
     content: "\e911";
