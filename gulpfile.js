@@ -9,8 +9,8 @@ var clean = require('gulp-clean');
 var config = require('./config.json');
 var browserSync = require('browser-sync');
 var mainNpmFiles = require('gulp-main-npm-files');
-var include = require('gulp-file-include'); 
-var ejs = require('gulp-ejs'); 
+var include = require('gulp-file-include');
+var ejs = require('gulp-ejs');
 
 gulp.task('scripts', function() {
     return gulp.src(['app/**/*.js'], {base: 'app/js'})
@@ -19,7 +19,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('../server/dist/'+config.name+'/js/'))
         .pipe(browserSync.stream());
 });
- 
+
 gulp.task('styles', function() {
     return gulp.src(['app/**/*.scss', 'app/**/*.css'],{base:'app/sass'})
         .pipe(sass())
@@ -39,7 +39,7 @@ gulp.task('html', function() {
     // return gulp.src(['app/*.html'])
         .pipe(embedlr())
         .pipe(include({prefix: '@@', basepath: '@file'}))
-        .pipe(ejs({},{}, {ext:'.html'})) 
+        .pipe(ejs({},{}, {ext:'.html'}))
         .pipe(gulp.dest('../server/dist/'+config.name))
         .pipe(browserSync.stream());
 })

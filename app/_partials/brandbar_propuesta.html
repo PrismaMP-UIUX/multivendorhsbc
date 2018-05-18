@@ -32,21 +32,19 @@
     display: flex;
     align-items: center;
 ">
-		<p class="btn btn-chico gris" style="
-    /* position: absolute; */
-    /* top: 16px; */
-    /* right: 15px; */
-    /* z-index: 9999; */
-    margin-top: 10px;
-    margin-right: 25px;
-"><i class="prisma ojo"></i>  Ayuda visual</p><a href="claves_movil_dni_generacion_telefoniamodal_area.html" class="containerdeinput boton">
-				<input type="text" size="16" placeholder="" style="
-    height: 48px;
-    width: 105px;
-">
-				<span class="btn azul btn-chico" style="
-"><i class="prisma buscar"></i></span>
-			</a>
+		<!-- <a class="btn btn-chico gris" id="botonayudavisual" style="margin-top: 10px; margin-right: 25px;"><i class="prisma ojo"></i>  Activar ayuda visual</a> -->
+    <div>
+      <label class="toggle-switch">
+        <input class="toggle-switch__input" value="foo" type="checkbox"           />
+        <span class="toggle-switch__slider"></span>
+        <p class="mg-b-0 mg-l-5">Activar ayuda visual</p>
+      </label>
+    </div>
+
+            <!-- <a href="claves_movil_dni_generacion_telefoniamodal_area.html" class="containerdeinput boton">
+				<input type="text" size="16" placeholder="" style="height: 48px; width: 105px;">
+				<span class="btn azul btn-chico" style=""> <i class="prisma buscar"></i></span>
+			</a> -->
 	</div>
 
 	<script type="text/javascript">
@@ -54,6 +52,8 @@
 			var a = document.getElementById('otratarjeta');
 			a.className = a.className + " deshabilitado";
 		}
+
+
 	</script>
 
 </div>
