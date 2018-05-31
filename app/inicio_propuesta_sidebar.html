@@ -15,6 +15,10 @@
 		<div class="panel pd-25 left sidebar">
       <div id="main-menu" class="flex flex-d-collum justify-between height-full mg-b-25">
         <!-- <div class="devider-b"><p class="mg-0" style="font-size: 32px;">¡Hola Patricio!</p></div> -->
+        <div class="devider-b pd-b-10">
+          <p>Bienvenido Patricio</p>
+          <p class="font-20">¿Qué operación te gustaría hacer?</p>
+        </div>
         <div>
             <a href="#!" class="btn-flat link block mg-b-15 gris" data-menu="consultas"><i class="prisma consultas"></i><span> Balance</span></a>
             <a href="#!" class="btn-flat link block mg-b-15 gris" data-menu="pagos"><i class="prisma accion-pagar"></i><span> Pagos y recargas</span> <!-- <div class="timer">%2min</div> --></a>
@@ -28,56 +32,61 @@
 
       <div class="oculto" id="masop">
         <a href="#!" class="btn-flat btn-chico link block mg-b-15 gris align-center justify-center mg-neg-r-25 mg-neg-l-25" id="menosop" data-menu="menosop"><svg xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg); fill: #428ccf; width: 20px; margin-right: 10px;" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg> Volver</a>
-        <a href="#!" class="btn-flat link block gris"><i class="prisma cierre-cuenta"></i> Cerrar una cuenta</a>
-        <a href="#!" class="btn-flat link block gris"><i class="prisma seguros"></i> Gestionar un seguro</a>
-        <a href="#!" class="btn-flat link block gris"><i class="prisma prestamos"></i> Obtener mi préstamo</a>
-        <a href="#!" class="btn-flat link block gris"><i class="prisma adherir-celular"></i> Adherir un celular</a>
-        <a href="#!" class="btn-flat link block gris"><i class="prisma mensaje"></i> Enviar un mensaje</a>
-        <a href="#!" class="btn-flat link block gris"><i class="prisma cpp2"></i> CPP - Comprobantes</a>
+        <a href="cierre_de_cuentas.html" class="btn-chico link block gris"><i class="prisma cierre-cuenta"></i> Cerrar una cuenta</a>
+        <a href="seguros.html" class="btn-chico link block gris"><i class="prisma seguros"></i> Gestionar un seguros</a>
+        <a href="prestamos.html" class="btn-chico link block gris"><i class="prisma prestamos"></i> Obtener mi préstamo</a>
+        <a href="ad_celular_1.html" class="btn-chico link block gris"><i class="prisma adherir-celular"></i> Adherir un celular</a>
+        <a href="mensajes.html" class="btn-chico link block gris"><i class="prisma mensaje"></i> Enviar mensajes</a>
+        <a href="prestamos.html" class="btn-chico link block gris"><i class="prisma cpp2"></i> CPP - Comprobantes</a>
       </div>
 			<!-- <a href="#!" class="btn-flat link block gris"><i class="prisma mas"></i><span> Más operaciones</span></a> -->
 		</div>
 
 
 		<div class="panel pd-25 left sub sidebar oculto" id="consultas">
-			<a href="#!" class="btn link block azul"><i class="prisma consulta-saldo"></i> Dinero en cuenta</a>
-			<a href="#!" class="btn link block gris"><i class="prisma consulta-movimientos"></i> Últimos movimientos</a>
-			<a href="#!" class="btn link block gris"><i class="prisma consulta-cbu"></i> Mi CBU/Alias</a>
-      <a href="#!" class="btn link block gris"><i class="prisma cajero-notouch"></i> Cajeros cercanos</a>
-      <a href="#!" class="btn link block gris"><i class="prisma limite-compra"></i> Límite de compras</a>
+			<a href="consultasaldo_revelado.html" class="btn link block azul"><i class="prisma consulta-saldo"></i> Dinero en cuenta</a>
+			<a href="consultamovimientos_v2_revelados.html" class="btn link block gris"><i class="prisma consulta-movimientos"></i> Últimos movimientos</a>
+			<a href="consultacbu.html" class="btn link block gris"><i class="prisma consulta-cbu"></i> Mi CBU/Alias</a>
+      <a href="cajeros_cercanos.html" class="btn link block gris"><i class="prisma cajero-notouch"></i> Cajeros cercanos</a>
+      <a href="consultasaldo_revelado.html" class="btn link block gris"><i class="prisma limite-compra"></i> Límite de compras</a>
 		</div>
     <div class="panel pd-25 left sub sidebar oculto" id="pagos">
-      <a href="#!" class="btn link block azul"><i class="prisma mas"></i> Nuevo pago</a>
-      <a href="#!" class="btn link block gris"><i class="prisma pagar"></i> Próximos vencimientos</a>
-      <a href="#!" class="btn link block gris"><i class="prisma pagar"></i> Últimos realizados</a>
-      <a href="#!" class="btn link block gris"><i class="prisma limite-pagos"></i> Límite diario</a>
+      <a href="pagar_servicio.html" class="btn link block azul"><i class="prisma mas"></i> Nuevo pago</a>
+      <a href="pagar_imprimir_proximos_rubros.html" class="btn link block gris"><i class="prisma pagar"></i> Próximos vencimientos</a>
+      <a href="pagar_reimpresion_rubros.html" class="btn link block gris"><i class="prisma pagar"></i> Últimos realizados</a>
+      <a href="consultasaldo_revelado.html" class="btn link block gris"><i class="prisma limite-pagos"></i> Límite diario</a>
       <div class="devider-t">
-        <a href="#!" class="btn link block azul"><i class="prisma rubros_recargas"></i> Recargas</a>
+        <a href="pagar_recargas_buscar_por_rubro_empresas.html" class="btn link block azul"><i class="prisma rubros_recargas"></i> Recargas</a>
       </div>
     </div>
     <div class="panel pd-25 left sub sidebar oculto" id="transf">
-      <a href="#!" class="btn link block azul"><i class="prisma mas"></i> Nueva transferencia</a>
-      <a href="#!" class="btn link block gris"><i class="prisma transferencia-envio"></i> Realizadas</a>
-      <a href="#!" class="btn link block gris"><i class="prisma transferencia-recepcion"></i> Recibidas</a>
-      <a href="#!" class="btn link block gris"><i class="prisma consulta-cbu"></i> Mi CBU/Alias</a>
-      <a href="#!" class="btn link block gris"><i class="prisma limite-transferencias"></i> Límites diario</a>
+      <a href="transferencias_origen.html" class="btn link block azul"><i class="prisma mas"></i> Nueva transferencia</a>
+      <a href="transferencias_ultimas_realizadas.html" class="btn link block gris"><i class="prisma transferencia-envio"></i> Realizadas</a>
+      <a href="transferencias_ultimas_recibidas.html" class="btn link block gris"><i class="prisma transferencia-recepcion"></i> Recibidas</a>
+      <a href="consultacbu.html" class="btn link block gris"><i class="prisma consulta-cbu"></i> Mi CBU/Alias</a>
+      <a href="consultasaldo_revelado.html" class="btn link block gris"><i class="prisma limite-transferencias"></i> Límites diario</a>
     </div>
     <div class="panel pd-25 left sub sidebar oculto" id="depositos">
-      <a href="#!" class="btn link block gris"><i class="prisma cheques"></i> Depositar cheques</a>
-      <a href="#!" class="btn link block gris"><i class="prisma deposito-efectivo"></i> Depositar efectivo</a>
-    </div>
-    <div class="panel pd-25 left sub sidebar oculto" id="masop">
-      <a href="#!" class="btn link block gris"><i class="prisma cierre-cuenta"></i> Cerrar una cuenta</a>
-      <a href="#!" class="btn link block gris"><i class="prisma seguros"></i> Gestionar un seguros</a>
-      <a href="#!" class="btn link block gris"><i class="prisma prestamos"></i> Obtener mi préstamo</a>
-      <a href="#!" class="btn link block gris"><i class="prisma adherir-celular"></i> Adherir un celular</a>
-      <a href="#!" class="btn link block gris"><i class="prisma mensaje"></i> Enviar mensajes</a>
-      <a href="#!" class="btn link block gris"><i class="prisma cpp2"></i> CPP - Comprobantes</a>
+      <a href="deposito_conTarjeta_2.html?flujo=cheque" class="btn link block gris"><i class="prisma cheques"></i> Depositar cheques</a>
+      <a href="deposito_conTarjeta_2.html?flujo=efectivo" class="btn link block gris"><i class="prisma deposito-efectivo"></i> Depositar efectivo</a>
     </div>
     <div class="panel pd-25 left sub sidebar width-400 oculto" id="claves">
-      <a href="#!" class="btn link block gris"><i class="prisma clave-cajero"></i> Cambiar mi clave</a>
-      <a href="#!" class="btn link block gris"><i class="prisma clave"></i> Gestionar otras claves</a>
-      <a href="#!" class="btn link block gris align-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" style="fill:#fff; margin-right: 10px;" width="24" height="24" viewBox="0 0 24 24"><path d="M4 24h-2v-24h2v24zm18-21.387s-1.621 1.43-3.754 1.43c-3.36 0-3.436-2.895-7.337-2.895-2.108 0-4.075.98-4.909 1.694v12.085c1.184-.819 2.979-1.681 4.923-1.681 3.684 0 4.201 2.754 7.484 2.754 2.122 0 3.593-1.359 3.593-1.359v-12.028z"/></svg> Cambiar idioma</a>
+      <a href="cambioclave1.html" class="btn link block gris"><i class="prisma clave-cajero"></i> Cambiar mi clave</a>
+      <a href="claves_menu.html" class="btn link block gris"><i class="prisma clave"></i> Gestionar otras claves</a>
+      <!-- <a href="#!" class="btn link block gris align-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" style="fill:#fff; margin-right: 10px;" width="24" height="24" viewBox="0 0 24 24"><path d="M4 24h-2v-24h2v24zm18-21.387s-1.621 1.43-3.754 1.43c-3.36 0-3.436-2.895-7.337-2.895-2.108 0-4.075.98-4.909 1.694v12.085c1.184-.819 2.979-1.681 4.923-1.681 3.684 0 4.201 2.754 7.484 2.754 2.122 0 3.593-1.359 3.593-1.359v-12.028z"/></svg> Cambiar idioma</a> -->
+
+      <div class="devider-t">
+        <label class="toggle-switch">
+          <input class="toggle-switch__input" value="foo" type="checkbox">
+          <span class="toggle-switch__slider"></span>
+          <p class="mg-b-0 mg-l-5">Alto contraste</p>
+        </label>
+        <label class="toggle-switch mg-t-15">
+          <p class="mg-b-0 mg-l-5 mg-r-15">Tamaño de texto</p>
+          <button href="!#" class="width-50 height-50 justify-center align-center flex mg-r-5" style="border: 0px;background-color: rgba(32, 37, 50, 0.14);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);border-radius: 50%;font-size: 2em;">-</button>
+          <button href="!#" class="width-50 height-50 justify-center align-center flex" style="border: 0px;background-color: rgba(32, 37, 50, 0.14);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);border-radius: 50%;font-size: 2em;">+</button>
+         </label>
+      </div>
 
       <div class="devider-t">
         <p>Seleccioná la cuenta con la que querés operar por defecto:</p>
@@ -142,31 +151,13 @@
   <script>
     // PARA PROPUESTA
 
-  	$(".sidebar:not(.sub) a.link").click(function(){
+  	$(".sidebar:not(.sub) #main-menu a.link").click(function(){
       if ($(this).hasClass("link-activo")) {
         $(".sidebar.sub").addClass("oculto");
         $(".fondo-menu").addClass("oculto");
         $("a.link").removeClass("link-activo");
         return false;
       };
-
-      // Más/menos operaciones
-      if ($(this).data("menu") == "masop") {
-        var menuH = $("#main-menu").height() - 40;
-        $("#main-menu").css("margin-top", "-" + menuH + "px");
-        $("#main-menu").removeClass("height-full");
-        $("#masop").removeClass("oculto");
-        return false;
-      } else if ($(this).data("menu") == "menosop"){
-        $("#main-menu").addClass("height-full");
-        $("#main-menu").css("margin-top", 0);
-        setTimeout(function(){
-          $("#masop").addClass("oculto");
-        },200);
-        return false;
-      }
-
-
       var thisData = $(this).data("menu");
   		$(this).siblings(".link-activo").removeClass("link-activo");
   		$(this).addClass("link-activo");
@@ -186,6 +177,34 @@
             $("a.link").removeClass("link-activo");
             $(".fondo-menu").addClass("oculto");
         }
+    });
+
+
+
+    // Más/menos operaciones
+    $(".sidebar:not(.sub) a.link").click(function(){
+      if ($(this).data("menu") == "masop") {
+        var menuH = $(".sidebar:not(.sub)").height() +50; // El 50 es por el padding
+        $("#main-menu").css("margin-top", "-" + menuH + "px");
+        $("#main-menu").removeClass("height-full");
+        $("#masop").removeClass("oculto");
+        //cierra submenú
+        $(".sidebar.sub").addClass("oculto");
+        $(".fondo-menu").addClass("oculto");
+        $("a.link").removeClass("link-activo");
+        return false;
+      } else if ($(this).data("menu") == "menosop"){
+        $("#main-menu").addClass("height-full");
+        $("#main-menu").css("margin-top", 0);
+        setTimeout(function(){
+          $("#masop").addClass("oculto");
+        },200);
+        //cierra submenú
+        $(".sidebar.sub").addClass("oculto");
+        $(".fondo-menu").addClass("oculto");
+        $("a.link").removeClass("link-activo");
+        return false;
+      }
     });
 
     $('.sidebar').click(function(event){
