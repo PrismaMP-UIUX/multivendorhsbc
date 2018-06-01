@@ -4,8 +4,8 @@
 // Solo con estas lineas puedo reemplazar font awesome completo por las versiones que quiera
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../font/awesome/fontawesome-webfont.eot');
-  src: url('../font/awesome/fontawesome-webfont.eot') format('embedded-opentype'), url('../font/awesome/fontawesome-webfont.woff2') format('woff2'), url('../font/awesome/fontawesome-webfont.woff') format('woff'), url('../font/awesome/fontawesome-webfont.ttf') format('truetype'), url('../font/awesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  src: url('../fonts/awesome/fontawesome-webfont.eot');
+  src: url('../fonts/awesome/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/awesome/fontawesome-webfont.woff2') format('woff2'), url('../fonts/awesome/fontawesome-webfont.woff') format('woff'), url('../fonts/awesome/fontawesome-webfont.ttf') format('truetype'), url('../fonts/awesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,11 +21,11 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
 // Iconos Prisma
 @font-face {
   font-family: 'prisma';
-  src: url('../font/iconos-prisma/prisma.eot');
-  src: url('../font/iconos-prisma/prisma.eot') format('embedded-opentype'),
-  		url('../font/iconos-prisma/prisma.woff') format('woff'),
-  		url('../font/iconos-prisma/prisma.ttf') format('truetype'),
-  		url('../font/iconos-prisma/prisma.svg#prisma') format('svg');
+  src: url('../fonts/iconos-prisma/prisma.eot');
+  src: url('../fonts/iconos-prisma/prisma.eot') format('embedded-opentype'),
+  		url('../fonts/iconos-prisma/prisma.woff') format('woff'),
+  		url('../fonts/iconos-prisma/prisma.ttf') format('truetype'),
+  		url('../fonts/iconos-prisma/prisma.svg#prisma') format('svg');
   font-weight: normal;
   font-style: normal;
 }

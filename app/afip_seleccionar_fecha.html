@@ -14,23 +14,22 @@
     </div>
 
     <div class="flex-wrap width-630 justify-between" id="calendario">
-      <a class="btn fijo-140 azul">Enero</a>
-      <a class="btn fijo-140 azul">Febrero</a>
-      <a class="btn fijo-140 azul">Marzo</a>
-      <a class="btn fijo-140 azul">Abril</a>
-      <a class="btn fijo-140 azul">Mayo</a>
-      <a class="btn fijo-140 azul">Junio</a>
-      <a class="btn fijo-140 azul">Julio</a>
-      <a class="btn fijo-140 azul">Agosto</a>
-      <a class="btn fijo-140 azul">Septiembre</a>
-      <a class="btn fijo-140 azul">Octubre</a>
-      <a class="btn fijo-140 azul">Noviembre</a>
-      <a class="btn fijo-140 azul">Diciembre</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Enero</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Febrero</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Marzo</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Abril</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Mayo</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Junio</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Julio</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Agosto</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Septiembre</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Octubre</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Noviembre</a>
+      <a href="pagar_afip_4.html" class="btn fijo-140 azul">Diciembre</a>
     </div>
 
     <hr class="piemodal">
     <a href="pagar_afip_3.html" class="btn-flat gris mg-r-10"><i class="prisma cerrar"></i> Cerrar</a>
-    <a href="pagar_afip_4.html" class="btn azul confirmar right deshabilitado" id="continue"><i class="prisma confirmar"></i> Listo</a>
   </div>
 </div>
 
@@ -39,11 +38,5 @@
   scaleBorrar("importe", "borrar");
   deleteValue("#importe","#borrar");
   borrarTodo("#importe");
-
-  $('#calendario .btn').click(function(){
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-    $('#continue').removeClass('deshabilitado')
-  })
 
 </script>
