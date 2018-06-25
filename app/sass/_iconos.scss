@@ -47,6 +47,9 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   position: relative;
   top: 2px;
 
+  &.pagar:before {
+  content: "\e94d";
+  }
   &.mano-despedida:before {
   content: "\e914";
   }
@@ -415,9 +418,6 @@ $tamanio-iconos-menu-fa:  $tamanio-iconos-fa*1.1;
   }
   &.sin-tarjeta:before {
     content: "\e94c";
-  }
-  &.pagar:before {
-    content: "\e94d";
   }
   &.usuario-ok:before {
     content: "\e94e";
