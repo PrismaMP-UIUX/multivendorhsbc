@@ -6,3 +6,4 @@ dist/
 *.lock
 config.json
 prepros-6.config
+config.json
