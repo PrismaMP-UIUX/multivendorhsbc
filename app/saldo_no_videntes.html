@@ -1,0 +1,44 @@
+<!-- Header -->
+@@include('_partials/head.html')
+<body class="bnlc"><!-- ayuda / bnlc -->
+
+<div class="draw">
+
+<!-- Brandbar -->
+@@include('_partials/brandbar.html')
+
+<!-- Contenido de la página -->
+<div class="content"><div class="iconback"><i class="prisma extraccion"></i></div>
+
+	<div class="centradovertical">
+		<div class="panel centrado">
+			<h5 class="titulo mg-b-20"><span class="azul"><i class="prisma saldo"></i> |</span> Mi saldo</h5>
+			<p class="mg-b-20">El dinero total en tu cuenta es: <b>$32.000,23</b></p>
+			<p class="mg-b-20">Para hoy tenés disponible: <b>$2.500,50</b></p>
+		</div>
+	</div>
+
+</div><!-- /Contenido de la página -->
+
+<!-- Footer -->
+<div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
+	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="retire_ticket.html" class="btn azul right"><i class="prisma imprimir"></i> Imprimir</a>
+</div>
+
+<!-- Javascript -->
+  @@include('_partials/scripts.html')
+
+<script type="text/javascript">
+	// seleccionar fila
+	$('tr').click( function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		$(this).find('td input[type=radio]').prop( "checked", true );
+		$('.deshabilitado').removeClass("deshabilitado");
+	})
+</script>
+
+</body>
+</html>
