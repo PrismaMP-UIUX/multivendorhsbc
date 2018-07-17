@@ -8,45 +8,38 @@
 @@include('_partials/brandbar.html')
 
 <!-- Contenido de la página -->
-<div class="content"><div class="iconback"><i class="prisma cambio-de-clave"></i></div>
+<div class="content">
 
 	<div class="centradovertical">
 
 		<div class="panel-sinfondo centrado"> <!-- Este div se cierra en cada uno -->
+
 			<div id="notice" class="panel centrado content-modal mg-t-30 bounceIn animated">
-				<div class="close"><a href="inicio.html"><i class="prisma cerrar"></i></a></div>
-				<h5 class="titulo"><span class="azul"><i class="prisma cambio-de-clave"></i> |</span> Cambio de clave</h5>
-				<p class="alinear-centro naranja font_78"><i class="prisma informacion"></i> Por el momento solamente podemos ofrecerte <br> la opción de cambiar la clave de tu tarjeta. <br> Al finalizar esta operación se devolverá la tarjeta.</p>
-				<p class="alinear-centro mg-t-30 ">¿Querés <b>cambiar tu clave</b>?</p>
-				<hr class="piemodal">
-				<a href="inicio.html" class="btn naranja"><i class="prisma inicio mg-r-5"></i> No, volver a inicio</a>
-				<a href="cambioclave1.html" class="btn azul"><i class="prisma cambio-de-clave mg-r-5"></i> Si, cambiar la clave</a>
+				<h5 class="titulo"><span class="azul"><i class="prisma consultas"></i> |</span> Consulta</h5>
+				<div class="infopanel mg-b-20">
+					<p><i class="prisma informacion"></i> Solo podemos ofrecerte la opción de cambiar la clave de tu tarjeta.</p>
+				</div>
+				<p class="mg-b-30">¿Querés cambiar tu clave?</p>
+				<div class="alinear-derecha">
+					<a href="mau2.html" class="btn rojo"><i class="prisma cancelar"></i> No, salir</a>
+					<a href="mau2.html" class="btn azul"><i class="prisma confirmar"></i> Si, cambiar mi clave</a>
+				</div>
 			</div>
 
-		</div>
-		<div class="fondomodal"></div>
-
+		</div> <!-- div consultas -->
 
 	</div>
 
-
-
-
-
 </div><!-- /Contenido de la página -->
-
 
 <!-- Footer -->
 <div class="footer">
-	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
+	<a href="loop.html" class="btn rojo"><i class="prisma salir"></i> Salir</a>
 </div>
 
 
 <!-- Javascript -->
   @@include('_partials/scripts.html')
-<script type="text/javascript">
-	alescribir("password1","siguiente");
-	alescribir("password1","notita");
-</script>
+
 </body>
 </html>

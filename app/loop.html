@@ -29,14 +29,46 @@
 <div class="footer">
 	<div class="animated infinite fadeInUp animaciontarjeta"><i class="prisma tarjeta90 font_120 gris"></i></div>
 	<p class="left big mg-t-20 mg-l-15"><i class="prisma cardhole-in font_79"></i> | <span class="mg-t-20">Para operar ingresá tu tarjeta</span></p>
-	<a href="login.html" class="right">Ingresa tarjeta</a>
-	<a href="espera_aplicacion.html" class="right mg-r-10">%Reconocimiento Tarjeta</a>
 	<a href="operaciones_sintarjeta.html" class="btn azul right"><i class="prisma sin-tarjeta"></i> Sin tarjeta</a>
 </div>
 
 
 <!-- Javascript -->
 @@include('_partials/scripts.html')
+
+<div class="fuera-de-maqueta">
+	<ul class="acciones-humanas">
+		<li><h4>Acciones fuera del sistema:</h4></li>
+		<li><a href="login.html" id="ingresar-tarjeta">Ingresa tarjeta</a></li>
+		<li><input type="checkbox" id="auricular" value="true"><label for="auricular"> Conecta auricular</label></li>
+	</ul>
+	<ul id="setear-tarjeta">
+		<li><h4>Operar con tarjeta de:</h4></li>
+		<li><input type="radio" name="tarjeta" id="debito-banelco" class="tarjetaOperando" value="debito-banelco" checked><label for="debito-banelco"> Débito, de banco privado (Banelco)</a></li>
+		<div class="devider-b"></div>
+		<li><input type="radio" name="tarjeta" id="debito-link" class="tarjetaOperando" value="debito-link"><label for="debito-link"> Débito, de banco público (Link)</a></li>
+		<li><input type="radio" name="tarjeta" id="credito" class="tarjetaOperando" value="credito"><label for="credito"> Crédito</a></li>
+		<li><input type="checkbox" id="reconocimiento"><label for="reconocimiento"> Con reconocimiento</label></li>
+	</ul>
+	<ul id="setear-cajero">
+		<li><h4>Setear cajero:</h4></li>
+		<li><input type="checkbox" id="sindinero"><label for="sindinero"> Sin dinero</label></li>
+		<li><input type="checkbox" id="sinpapel"><label for="sinpapel"> Sin papel</label></li>
+	</ul>
+</div>
+
+
+<script>
+	// ATM Settings
+	$(document).ready(function(){
+		// Borra seteo anterior
+    localStorage.clear();
+      // Por default opera con débito banelco en un ATM con dinero y papel
+      var tarjeta = localStorage.setItem("tarjeta", "debito-banelco"),
+          sindinero = localStorage.setItem("sindinero", "false"),
+          sinpapel = localStorage.setItem("sinpapel", "false");
+	});
+</script>
 
 </body>
 </html>

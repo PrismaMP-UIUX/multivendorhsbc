@@ -572,11 +572,28 @@ $color-ticket-ayuda: invert($color-ticket);
 	.numero {
 		@extend .bold;
 		@extend .big_20;
-		color: $gris_oscuro;
+		height: 30px;
+		display: flex;
+		align-center: center;
 		border-bottom: 2px solid $gris_masclaro;
 		letter-spacing: 0.16em;
+
 		.ayuda & {
 			color: $blanco;
+		}
+		& > div {
+			width: 25px;
+			height: 25px;
+			background-color: $gris_oscuro;
+			border-radius: 50%;
+			margin: 0 3px;
+    	opacity: 0.4;
+
+			.ayuda & {
+				width: 25px;
+				height: 25px;
+    	opacity: 1;
+			}
 		}
 	}
 	.label {
@@ -589,12 +606,24 @@ $color-ticket-ayuda: invert($color-ticket);
 	}
 
 	&.versucursal {
+
 		.bloque {
 			p {
 				color: $gris_masclaro;
 			}
-			&.sucursal > p {
-				color: $gris_oscuro;
+			&.sucursal {
+				line-height: 1;
+
+				.numero {
+					line-height: 1;
+
+					.ayuda & {
+						line-height: 0.8;
+					}
+				}
+				& > * {
+					color: $gris_oscuro;
+				}
 			}
 			&.sucursal .numero {
 				border-bottom: 2px solid $gris_oscuro;

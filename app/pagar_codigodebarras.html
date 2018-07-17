@@ -12,16 +12,12 @@
 
 	<div class="centradovertical">
 		<div class="panel centrado">
-			<h5 class="titulo"><span class="azul"><i class="prisma rubros_tarjeta-credito"></i> |</span> ¿Con qué querés operar?</h5>
-			<!-- <p>Solo podés realizar una operación:</p> -->
-			<div class="justify-center">
-				<div class="width-450">
-					<a href="inicio.html" class="btn azul block">VISA DEBITO</a>
-					<a href="inicio_tc_1_propuesta.html" class="btn azul block">VISA CREDITO</a>
-					<a href="inicio_tc_1_propuesta.html" class="btn azul block">VISA RECARGABLE</a>
-					<a href="#!" class="btn gris block">Ver más</a>
+			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma banelco"></i> |</span> Pagar</h5>
+			 <div>
+				<div class="col_left max-400 mg-0">
+					<p class="mg-b-15">acá va una pantalla con instrucciones que se está hacinedo</p>
 				</div>
-			</div>
+			 </div>
 		</div>
 	</div>
 
@@ -29,8 +25,10 @@
 
 <!-- Footer -->
 <div class="footer">
+	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="extraccion2.html" class="btn azul right continuar" id="continuar">Continuar <i class="prisma continuar"></i></a>
+	<a href="pagar_servicio_2.html" class="right mg-r-10">% Leer factura</a>
+	<a href="pagar_codigodebarras_error.html" class="right mg-r-10">% Error de lectura</a>
 </div>
 
 <style type="text/css">
@@ -38,10 +36,14 @@
 </style>
 <!-- Javascript -->
   @@include('_partials/scripts.html')
-<script src="js/component/inputListenerBotones.js"></script>
+
+<!-- <script src="js/component/inputListenerBotones.js"></script> -->
 <script type="text/javascript">
 	alescribir("extraccion","borrar");
 	alescribir("extraccion","continuar");
+	scaleBorrar("extraccion", "borrar");
+	deleteValue("#extraccion","#borrar");
+	borrarTodo("#extraccion");
 </script>
 </body>
 </html>
