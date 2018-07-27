@@ -19,14 +19,14 @@
 			<h5 class="titulo"><span class="azul"><i class="prisma transferencia"></i> |</span> Transferencias</h5>
 			<ul class="pasos mg-t-30">
 				<li><a href="transferencias_origen.html">1. Origen</a></li>
-				<li><a href="transferencias_destino.html">2. Destino</a></li>
-				<li class="active"><a href="transferencias_importe.html">3. Importe</a></li>
+				<li class="active"><a href="transferencias_importe.html">2. Importe</a></li>
+				<li class="disabled"><a href="transferencias_destino.html">3. Destino</a></li>
 				<li class="disabled"><a href="transferencias_motivo.html">4. Concepto</a></li>
 				<li class="disabled"><a href="transferencias_confirmacion.html">5. Confirmación</a></li>
 			</ul>
 
-			<p class="mg-t-50">Seleccioná la moneda en que recibirá el destinatario el dinero</p>
-			<div class="btn-group btn-inputs mg-b-50">
+			<p class="mg-t-50 mg-b-15">Seleccioná la moneda en que recibirá el destinatario el dinero</p>
+			<div class="btn-group btn-inputs mg-b-10">
 				<label class="btn azul mg-l-0">
 					<input type="radio" name="options" id="peso"><i class="prisma pesos"></i> Pesos
 				</label>
@@ -35,7 +35,15 @@
 				</label>
 			</div>
 
-			<a id="ingresarMonto" class="btn azul mg-l-0" href="transferencias_importe_ingresar.html" style="display:none">Ingresar monto</a>
+			<div class="deshabilitado" id="ingresarMonto"><a class="btn azul mg-l-0" href="transferencias_importe_ingresar.html">Ingresar monto</a></div>
+
+			<div class="flex height-65 left mg-t-10">
+				<a href="#!" id="bt_revtransfer" class="btn-chico gris waves-effect"><i class="prisma informacion"></i> ¿Hasta cuánto puedo transferir?</a>
+				<div class="infopanel" style="display: none !important">
+					<p><i class="prisma informacion"></i> Podés transferir hasta <b>$3000</b>.</p>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
@@ -46,7 +54,7 @@
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="transferencias_motivo.html" class="btn azul right" style="display: none;">Siguiente <i class="prisma derecha"></i></a>
+	<a href="transferencias_destino.html" class="btn azul right" style="display: none;">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
 
@@ -55,7 +63,11 @@
 
   <script type="text/javascript">
   	$('.btn-inputs label').click( function(){
-  		$('#ingresarMonto').show();
+  		$('#ingresarMonto').removeClass("deshabilitado");
+  	})
+  	$('#bt_revtransfer').click( function(){
+  		$(this).hide();
+  		$(this).siblings().show();
   	})
   </script>
 </body>

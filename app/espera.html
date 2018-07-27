@@ -26,16 +26,35 @@
 						<div class="indeterminate"></div>
 					</div>
 				</div>
-				
+
 			</div>
 
 
 
 		</div><!-- /Contenido de la página -->
 
-
+		<div class="fuera-de-maqueta">
+			<ul class="acciones-humanas">
+				<li><h4>Acciones:</h4></li>
+				<li><a href="#!" id="accion-continuar">Continuar</a></li>
+			</ul>
+		</div>
 		<!-- Javascript -->
 		  @@include('_partials/scripts.html')
+
+		<script>
+			// Query navegation
+			var queries = {};
+			$.each(window.location.search.substr(1).split('&'),function(c,q){
+				var i = q.split('=');
+				queries[i[0].toString()] = i[1].toString();
+			});
+		  if (queries.flujo == "debito-privado"){
+		  	$("#accion-continuar").attr("href", "inicio.html");
+			} else if (queries.flujo == "debito-publico"){
+		  	$("#accion-continuar").attr("href", "inicio_link.html");
+			}
+		</script>
 
 	</body>
 	</html>

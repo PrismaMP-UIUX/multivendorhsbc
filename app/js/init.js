@@ -1,6 +1,50 @@
 var $slider;
 (function($){
   $(function(){
+  //ATM settings
+    // Los settings por default van en la pantalla del loop
+    // Definición de variables
+    var auri = localStorage.getItem("auri"),
+        tarjeta = localStorage.getItem("tarjeta"),
+        reco = localStorage.getItem("reco"),
+        sindinero = localStorage.getItem("sindinero"),
+        sinpapel = localStorage.getItem("sinpapel");
+
+    if (auri) { $("body").addClass("ayuda") }
+      // Auricular
+      $("#auricular").change(function(){
+        $("body").toggleClass("bnlc", "ayuda");
+        !auri ? localStorage.setItem("auri", true) : localStorage.setItem("auri", false);
+        auri = localStorage.getItem("auri");
+      });
+      // Tarjeta
+      $(".tarjetaOperando").change(function(){
+          var tarjetaVal = $(this).val();
+          localStorage.setItem("tarjeta", tarjetaVal);
+          tarjeta = localStorage.getItem("tarjeta");
+      });
+      // Reconocimiento
+      $("#reconocimiento").change(function(){
+        !reco ? localStorage.setItem("reco", true) : localStorage.setItem("reco", false);
+        reco = localStorage.getItem("reco");
+        console.log(sindinero)
+      });
+      // ATM sin papel y/o dinero
+      $("#sindinero").change(function(){
+        if (sindinero != true) {localStorage.setItem("sindinero", true)} else if (sindinero === true) {alert("aaa")}
+        sindinero = localStorage.getItem("sindinero");
+        console.log(sindinero)
+      });
+      $("#sinpapel").change(function(){
+        !sinpapel ? localStorage.setItem("sinpapel", true) : localStorage.setItem("sinpapel", false);
+        sinpapel = localStorage.getItem("sinpapel");
+      });
+
+      console.log("¿Auriculares? " + auri);
+      console.log("¿Cón qué tarjeta?" + tarjeta);
+      console.log("¿Tarjeta con reconocimiento? " + reco);
+      console.log("¿Atm sin dinero?" + sindinero);
+      console.log("¿Atm sin papel?" + sinpapel);
 
     // Si no hay logo se rearma el brandbar
     if($("#logo-container > svg").length == 0) {

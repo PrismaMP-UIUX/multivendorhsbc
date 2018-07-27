@@ -37,3 +37,41 @@
 @import "_fixes.scss";
 
 
+// --- Acciones de pantalla --- //
+.fuera-de-maqueta {
+  position: absolute;
+  left: -335px;
+  top: 5px;
+  width: 300px;
+  padding: 15px;
+  opacity: 0.4;
+
+    * {
+      font-size: 20px;
+    }
+    ul {
+      margin-bottom: 35px;
+
+      li:first-of-type {
+        list-style: none;
+
+        h4 {
+          font-size: 24px;
+          color: white;
+          margin-bottom: 0;
+        }
+      }
+      li {
+        margin-bottom: 15px;
+        color: #6aa5d9;
+
+        a {
+          text-decoration: none; color: #6aa5d9; padding-bottom: 10px; &:hover { text-decoration: underline }
+        }
+      }
+      input[type="checkbox"], input[type="radio"]  {
+        width: 20px;
+        height: 20px;
+      }
+    }
+}

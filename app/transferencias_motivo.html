@@ -19,23 +19,38 @@
 			<h5 class="titulo"><span class="azul"><i class="prisma transferencia"></i> |</span> Transferencias</h5>
 			<ul class="pasos mg-t-30">
 				<li><a href="transferencias_origen.html">1. Origen</a></li>
-				<li><a href="transferencias_destino.html">2. Destino</a></li>
-				<li><a href="transferencias_importe.html">3. Importe</a></li>
+				<li><a href="transferencias_importe.html">2. Importe</a></li>
+        <li><a href="transferencias_destino.html">3. Destino</a></li>
 				<li class="active"><a href="transferencias_motivo.html">4. Concepto</a></li>
 				<li class="disabled"><a href="transferencias_confirmacion.html">5. Confirmación</a></li>
 			</ul>
 
 			<p class="mg-t-50">Ingresá el motivo y referencia de la transferencia</p>
 
-			<div class="mg-t-20 align-center">
-				<p class="alinear-derecha inline font_110 mg-r-15 col-3" style="vertical-align: middle">Concepto:</p>
-				<a class="btn azul mg-0" href="transferencias_motivo_seleccionar.html" style="min-width: 214px">Ingresar</a>
-			</div>
+      <div class="mg-t-20 align-center">
+        <p class="alinear-derecha inline font_110 mg-0 mg-r-15">Concepto:</p>
+        <div>
+          <div id="tipo" class="dropdown btn gris block mg-0">
+            <div class="contenedor">
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Seleccioná</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Varios</div>
+              <div indice="1" data-dd="data1"><i class="prisma cuenta"></i> Alquileres</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Cuota</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Expensas</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Factura</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Préstamo</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Seguro</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Honorarios</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Haberes</div>
+              <div indice="2" data-dd="data2"><i class="prisma cuenta"></i> Otra</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="mg-t-20 align-center deshabilitado">
-				<p class="alinear-derecha inline font_110 mg-r-15 col-3" style="vertical-align: middle">Referencia:</p>
-				<a class="btn azul mg-0" href="transferencias_motivo_referencia.html">Ingresar</a>
-        <p class="mg-l-10">(opcional)</p>
+			<div class="mg-t-20 align-center deshabilitado" id="referencia">
+				<p class="alinear-derecha inline font_110 mg-r-15">Referencia (opcional):</p>
+				<a class="btn-chico gris mg-0 width-200" href="transferencias_motivo_referencia.html">Ingresar</a>
 			</div>
 		</div>
 	</div>
@@ -47,7 +62,7 @@
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="transferencias_confirmacion.html" class="btn azul right deshabilitado">Siguiente <i class="prisma derecha"></i></a>
+	<a href="transferencias_confirmacion.html" class="btn azul right deshabilitado" id="siguiente">Siguiente <i class="prisma derecha"></i></a>
 </div>
 
 
@@ -55,10 +70,17 @@
   @@include('_partials/scripts.html')
 
   <script type="text/javascript">
-  	$('.btn-inputs label').click( function(){
-  		$(this).addClass('active');
-  		$(this).siblings().removeClass('active');
-  	})
+  	$("#tipo .contenedor div").click(function(){
+      $("#referencia").removeClass("deshabilitado");
+      $("#siguiente").removeClass("deshabilitado");
+    });
+  $('#tipo').click(function(){
+    var childs = $('#tipo > .contenedor').children().length;
+    if(childs > 6) {
+      var resto = (childs - 6) * 62;
+      $('#tipo > .contenedor').css("top", -105  - resto + "px")
+    }
+  });
   </script>
 </body>
 </html>
