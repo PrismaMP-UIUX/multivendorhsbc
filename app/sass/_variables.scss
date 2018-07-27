@@ -642,7 +642,7 @@ $tabla_de_imagenes:(
   operacion_exitosa,
 	leyendo_chip,
 	sin_fondos,
-	error_limites,
+  error_limites,
 	tarjeta_coordenadas,
 	error_en_pin,
 	error_tiempo,
@@ -656,7 +656,8 @@ $tabla_de_imagenes:(
   sobre_dinero_ticket,
 	sobre_documentos,
 	retencion_banco,
-
+  bajarsubirvolumen,
+  prenderapagarpantalla
 	);
 
 .imagen {

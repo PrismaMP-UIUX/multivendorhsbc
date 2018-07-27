@@ -12,10 +12,15 @@
 
 	<div class="centradovertical">
 		<div class="panel centrado">
-			 <h5 class="titulo mg-b-20"><span class="azul"><i class="prisma banelco"></i> |</span> Pagar</h5>
-			 <div>
-				<div class="col_left max-400 mg-0">
-					<p class="mg-b-15">acá va una pantalla con instrucciones que se está hacinedo</p>
+			 <h5 class="titulo"><span class="azul"><i class="prisma deposito"></i> |</span> Escanear código de barras</h5>
+			 <div class="clearfix">
+				<div class="imagen col_left height-265 width-350">
+					<video width="350" autoplay="autoplay" loop="loop">
+						<source src="videos/codigo-barras.webm" type="video/webm">
+					</video>
+				</div>
+				<div class="col_right width-400 mg-r-20">
+					<p class="mg-b-20">Coloque la factura con el código de barras en el dispositivo.</p>
 				</div>
 			 </div>
 		</div>
@@ -27,8 +32,10 @@
 <div class="footer">
 	<a href="inicio.html" class="btn naranja"><i class="prisma inicio"></i> Volver a inicio</a>
 	<a href="loop.html" class="btn rojo "><i class="prisma salir"></i> Salir</a>
-	<a href="pagar_servicio_2.html" class="right mg-r-10">% Leer factura</a>
-	<a href="pagar_codigodebarras_error.html" class="right mg-r-10">% Error de lectura</a>
+	<div class="right">
+		<a href="pagar_servicio_2.html">% Leer factura</a><br>
+		<a href="pagar_codigodebarras_error.html">% Error</a><br>
+	</div>
 </div>
 
 <style type="text/css">
@@ -44,6 +51,14 @@
 	scaleBorrar("extraccion", "borrar");
 	deleteValue("#extraccion","#borrar");
 	borrarTodo("#extraccion");
+
+	$("#encuenta").click(function(){
+		$(".ayudaContainer").removeClass("oculto");
+	});
+	$(".close").click(function(){
+		$(".ayudaContainer").addClass("oculto");
+	});
+
 </script>
 </body>
 </html>

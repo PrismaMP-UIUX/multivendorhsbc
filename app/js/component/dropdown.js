@@ -14,15 +14,16 @@ function dropdown_init(textDefault, preselect) {
 
 	// cuando hago click en el boton del dropdown
 	$('.dropdown').click(function(){
-		clickea(this.id); 
+		clickea(this.id);
 	});
 	function clickea(idHtml){
-		if(open==false){ 
+		if(open==false){
+			$("body").append("<div class='dropdown-blocker'>");
 			$('#'+idHtml+' > .contenedor').addClass("active"); //$('div',$('#'+idHtml+' > div')).fadeToggle(300);
 			$('#'+idHtml).addClass("active");
 			if((textDefault!=null || textDefault!=undefined) && textDefault.lenght>0){
 				$('#'+idHtml+' span span').html(textDefault);
-			} 
+			}
 			open = true;
 		}
 	}
@@ -39,7 +40,7 @@ function dropdown_init(textDefault, preselect) {
 
 	$(window).click(function(e) {
 		if(open == true){
-			cerrar();	
+			cerrar();
 			open = false;
 		}
 	});
@@ -61,6 +62,7 @@ function dropdown_init(textDefault, preselect) {
 
 
 function cerrar(e) {
+	$(".dropdown-blocker").remove();
 	if(e){
 		e.stopPropagation();
 		$('#'+ e.currentTarget.parentElement.parentElement.id +' .contenedor').toggleClass('active',function(e){
