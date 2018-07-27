@@ -1,5 +1,10 @@
 {
+<<<<<<< HEAD
+  "images": "C:/Users/infra/Dropbox/Multivendor/img",
+  "name" : "multivendorhsbc"
+=======
   "images": "C:/Users/pgraglia.NET01/Dropbox/Multivendor/img",
   "name" : "multivendorhsbc",
   "videos" : "app/videos"
+>>>>>>> 7371d3d468fa05d3e4cb0a44028692de2b01a9bd
 }
